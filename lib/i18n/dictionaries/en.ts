@@ -30,38 +30,47 @@ const en: Dictionary = {
     title: "Development services tailored to your business",
     items: {
       wordpress: {
+        eyebrow: "Manageable CMS",
         title: "WordPress sites",
         text: "Manageable, fast and secure sites your team can edit with ease.",
       },
       webdev: {
+        eyebrow: "Custom development",
         title: "Web development",
         text: "Custom sites with modern tech, optimized for speed and SEO.",
       },
       lms: {
+        eyebrow: "Online learning",
         title: "LMS sites",
         text: "Online course platforms with payments, certificates and student tracking.",
       },
       ecommerce: {
+        eyebrow: "Online sales",
         title: "E-commerce",
         text: "Online stores that sell: catalog, payments and logistics integrated.",
       },
       realestate: {
+        eyebrow: "Real estate",
         title: "Real Estate",
         text: "Real estate portals with advanced search, listings and lead capture.",
       },
       systems: {
+        eyebrow: "Custom software",
         title: "Custom systems",
         text: "Internal software and platforms that automate your operation.",
       },
       mobile: {
+        eyebrow: "iOS & Android",
         title: "Mobile apps",
         text: "iOS and Android apps connected to your business and your data.",
       },
       automation: {
+        eyebrow: "Operational efficiency",
         title: "Automations",
         text: "We integrate your tools and remove repetitive manual work.",
       },
     },
+    title2: "Discover what we do",
     cta: "View service",
   },
   calculator: {

@@ -28,38 +28,47 @@ const es = {
     title: "Servicios de desarrollo a la medida de tu negocio",
     items: {
       wordpress: {
+        eyebrow: "CMS administrable",
         title: "Sitios WordPress",
         text: "Sitios administrables, rápidos y seguros, listos para que tu equipo los edite.",
       },
       webdev: {
+        eyebrow: "Desarrollo a medida",
         title: "Desarrollo de páginas web",
         text: "Sitios a medida con tecnología moderna, optimizados para velocidad y SEO.",
       },
       lms: {
+        eyebrow: "Educación en línea",
         title: "Sitios LMS",
         text: "Plataformas de cursos en línea con pagos, certificados y seguimiento de alumnos.",
       },
       ecommerce: {
+        eyebrow: "Ventas en línea",
         title: "E-commerce",
         text: "Tiendas en línea que venden: catálogo, pagos y logística integrados.",
       },
       realestate: {
+        eyebrow: "Inmobiliario",
         title: "Real Estate",
         text: "Portales inmobiliarios con búsqueda avanzada, fichas y captación de leads.",
       },
       systems: {
+        eyebrow: "Software a medida",
         title: "Sistemas a medida",
         text: "Software interno y plataformas que automatizan tu operación.",
       },
       mobile: {
+        eyebrow: "iOS y Android",
         title: "Apps móviles",
         text: "Aplicaciones iOS y Android conectadas a tu negocio y tus datos.",
       },
       automation: {
+        eyebrow: "Eficiencia operativa",
         title: "Automatizaciones",
         text: "Integramos tus herramientas y eliminamos el trabajo manual repetitivo.",
       },
     },
+    title2: "Descubre lo que hacemos",
     cta: "Ver servicio",
   },
   calculator: {
