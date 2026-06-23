@@ -7,7 +7,7 @@ import {
   getAllServiceSlugs,
   RELATED_PORTFOLIO,
 } from "@/lib/content/services";
-import { type ServiceId } from "@/lib/services";
+import { SERVICES, type ServiceId } from "@/lib/services";
 import { getProject } from "@/lib/content/portfolio";
 import ServiceLanding from "@/components/services/ServiceLanding";
 import {
@@ -68,6 +68,7 @@ export default async function ServicePage({
   const c = content[l];
 
   const serviceTitle = dict.services.items[content.serviceId as ServiceId].title;
+  const icon = SERVICES.find((s) => s.id === content.serviceId)?.icon ?? "";
 
   const relatedSlugs = RELATED_PORTFOLIO[content.serviceId] ?? [];
   const related = relatedSlugs
@@ -91,6 +92,7 @@ export default async function ServicePage({
         dict={dict}
         content={c}
         accent={content.accent}
+        icon={icon}
         serviceTitle={serviceTitle}
         keywords={content.targetKeywords}
         related={related}

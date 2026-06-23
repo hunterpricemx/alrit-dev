@@ -5,6 +5,8 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { SERVICES } from "@/lib/services";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
+import Reveal from "@/components/ui/Reveal";
+import Tilt from "@/components/ui/Tilt";
 
 const SITE_URL = "https://alrit.dev";
 
@@ -57,30 +59,32 @@ export default async function ServicesHub({
         </header>
 
         <ul className="hub__grid">
-          {SERVICES.map((s) => {
+          {SERVICES.map((s, i) => {
             const copy = dict.services.items[s.id];
             return (
-              <li key={s.id}>
-                <Link
-                  href={`/${locale}/servicios/${s.slug}`}
-                  className="hub-card"
-                  style={{ "--accent": s.accent } as React.CSSProperties}
-                >
-                  <span className="hub-card__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <path d={s.icon} />
-                    </svg>
-                  </span>
-                  <h2 className="hub-card__title">{copy.title}</h2>
-                  <p className="hub-card__text">{copy.text}</p>
-                  <span className="hub-card__cta">
-                    {dict.services.cta}
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                  </span>
-                </Link>
-              </li>
+              <Reveal as="li" key={s.id} delay={i * 55}>
+                <Tilt>
+                  <Link
+                    href={`/${locale}/servicios/${s.slug}`}
+                    className="hub-card"
+                    style={{ "--accent": s.accent } as React.CSSProperties}
+                  >
+                    <span className="hub-card__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                        <path d={s.icon} />
+                      </svg>
+                    </span>
+                    <h2 className="hub-card__title">{copy.title}</h2>
+                    <p className="hub-card__text">{copy.text}</p>
+                    <span className="hub-card__cta">
+                      {dict.services.cta}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                  </Link>
+                </Tilt>
+              </Reveal>
             );
           })}
         </ul>

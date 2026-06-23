@@ -59,30 +59,29 @@ export default function Services({
           return (
             <li
               key={service.id}
-              className={`gallery-card gallery-card--${service.tone}${
-                isOpen ? " gallery-card--open" : ""
-              }`}
+              className={`gallery-card${isOpen ? " gallery-card--open" : ""}`}
               style={{ "--accent": service.accent } as React.CSSProperties}
             >
               <Link
                 href={`/${locale}/servicios/${service.slug}`}
-                className="gallery-card__media"
+                className="gallery-card__face"
+                aria-label={copy.title}
                 tabIndex={isOpen ? -1 : 0}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="gallery-card__img"
-                  src={service.image}
-                  alt={copy.title}
-                  loading="lazy"
-                  draggable={false}
-                />
+                <span className="gallery-card__glow" aria-hidden="true" />
+                <svg className="gallery-card__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d={service.icon} />
+                </svg>
+                <span className="gallery-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path d={service.icon} />
+                  </svg>
+                </span>
+                <span className="gallery-card__head">
+                  <span className="gallery-card__eyebrow">{copy.eyebrow}</span>
+                  <span className="gallery-card__name">{copy.title}</span>
+                </span>
               </Link>
-
-              <div className="gallery-card__head">
-                <p className="gallery-card__eyebrow">{copy.eyebrow}</p>
-                <h3 className="gallery-card__name">{copy.title}</h3>
-              </div>
 
               <div className="gallery-card__panel" aria-hidden={!isOpen}>
                 <p className="gallery-card__text">{copy.text}</p>
