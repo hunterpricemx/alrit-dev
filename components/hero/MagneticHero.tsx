@@ -1,38 +1,45 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import type { Dictionary } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n/config";
 
 type Card = {
   src: string;
   alt: string;
-  rot: number; // base tilt in deg (from reference: 2, -3, 6, -2, 2)
-  depth: number; // parallax weight
-  floatDur: number; // float animation duration (s)
-  floatDelay: number; // float phase offset (s)
+  rot: number;
+  depth: number;
+  floatDur: number;
+  floatDelay: number;
 };
 
 const CARDS: Card[] = [
-  { src: "https://picsum.photos/seed/alrit-vr/600", alt: "Proyecto inmersivo", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
-  { src: "https://picsum.photos/seed/alrit-form/600", alt: "Identidad de marca", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
-  { src: "https://picsum.photos/seed/alrit-jar/600", alt: "Producto digital", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
-  { src: "https://picsum.photos/seed/alrit-spoon/600", alt: "Campaña visual", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
-  { src: "https://picsum.photos/seed/alrit-dragon/600", alt: "Personaje 3D", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
+  { src: "https://picsum.photos/seed/alrit-1/600", alt: "Proyecto web", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
+  { src: "https://picsum.photos/seed/alrit-2/600", alt: "E-commerce", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
+  { src: "https://picsum.photos/seed/alrit-3/600", alt: "Sistema a medida", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
+  { src: "https://picsum.photos/seed/alrit-4/600", alt: "App móvil", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
+  { src: "https://picsum.photos/seed/alrit-5/600", alt: "Plataforma LMS", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
 ];
 
-const PULL_RADIUS = 260; // px — magnetic field reach
-const MAX_PULL = 28; // px — strongest attraction toward cursor
-const MAX_PARALLAX = 16; // px — ambient drift across the cluster
+const PULL_RADIUS = 260;
+const MAX_PULL = 28;
+const MAX_PARALLAX = 16;
 
-export default function MagneticHero() {
+export default function MagneticHero({
+  dict,
+  locale,
+}: {
+  dict: Dictionary;
+  locale: Locale;
+}) {
   const stageRef = useRef<HTMLDivElement>(null);
   const magnetsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     const stage = stageRef.current;
     if (!stage) return;
-
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let frame = 0;
     let pointer = { x: 0, y: 0, active: false };
@@ -46,16 +53,13 @@ export default function MagneticHero() {
       magnetsRef.current.forEach((el) => {
         if (!el) return;
         const depth = Number(el.dataset.depth) || 1;
-
         let tx = 0;
         let ty = 0;
 
         if (pointer.active) {
-          // ambient parallax: whole cluster drifts with the cursor
           tx += ((pointer.x - cx) / rect.width) * MAX_PARALLAX * depth;
           ty += ((pointer.y - cy) / rect.height) * MAX_PARALLAX * depth;
 
-          // magnetic attraction toward the cursor when it's nearby
           const b = el.getBoundingClientRect();
           const bx = b.left + b.width / 2;
           const by = b.top + b.height / 2;
@@ -77,12 +81,10 @@ export default function MagneticHero() {
     const schedule = () => {
       if (!frame) frame = requestAnimationFrame(apply);
     };
-
     const onMove = (e: PointerEvent) => {
       pointer = { x: e.clientX, y: e.clientY, active: true };
       schedule();
     };
-
     const onLeave = () => {
       pointer.active = false;
       schedule();
@@ -90,13 +92,14 @@ export default function MagneticHero() {
 
     stage.addEventListener("pointermove", onMove);
     stage.addEventListener("pointerleave", onLeave);
-
     return () => {
       stage.removeEventListener("pointermove", onMove);
       stage.removeEventListener("pointerleave", onLeave);
       if (frame) cancelAnimationFrame(frame);
     };
   }, []);
+
+  const base = `/${locale}`;
 
   return (
     <section className="hero">
@@ -105,9 +108,9 @@ export default function MagneticHero() {
 
       <header className="hero__head">
         <h1 className="hero__title">
-          <span className="hero__title-line">Un lugar para mostrar</span>
+          <span className="hero__title-line">{dict.hero.titleA}</span>
           <span className="hero__title-line hero__title-line--2">
-            tu <span className="hero__title-accent">obra maestra</span>
+            <span className="hero__title-accent">{dict.hero.titleAccent}</span>
           </span>
         </h1>
       </header>
@@ -137,12 +140,7 @@ export default function MagneticHero() {
                   }
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    className="hero__card-img"
-                    src={card.src}
-                    alt={card.alt}
-                    draggable={false}
-                  />
+                  <img className="hero__card-img" src={card.src} alt={card.alt} draggable={false} />
                 </div>
               </div>
             </div>
@@ -150,18 +148,15 @@ export default function MagneticHero() {
         </div>
       </div>
 
-      <p className="hero__lede">
-        Diseñamos y construimos experiencias web que se sienten vivas. Cada
-        proyecto, una pieza que merece mostrarse.
-      </p>
+      <p className="hero__lede">{dict.hero.lede}</p>
 
       <div className="hero__actions">
-        <button className="hero__btn hero__btn--primary" type="button">
-          Contáctame
-        </button>
-        <button className="hero__btn hero__btn--ghost" type="button">
-          Descubre el trabajo
-        </button>
+        <Link href={`${base}#calculator`} className="hero__btn hero__btn--primary">
+          {dict.hero.primary}
+        </Link>
+        <Link href={`${base}#portfolio`} className="hero__btn hero__btn--ghost">
+          {dict.hero.secondary}
+        </Link>
       </div>
     </section>
   );

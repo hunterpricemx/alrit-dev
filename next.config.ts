@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Hrefs are built from dynamic locale segments (`/${locale}#...`), so we opt
+  // out of typed routes to keep those template-literal links ergonomic.
+  typedRoutes: false,
 };
 
 export default nextConfig;
