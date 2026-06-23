@@ -17,16 +17,6 @@ const CARD_IMG: Partial<Record<ServiceId, string>> = {
   realestate: "/hero/realstate.png",
 };
 
-const STAT_ICONS = [
-  // rocket
-  "M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.7-.84.69-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0 M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5",
-  // code
-  "m8 9-3 3 3 3m8-6 3 3-3 3M13 6l-2 12",
-  // globe
-  "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 0c-3 2.6-3 15.4 0 18m0-18c3 2.6 3 15.4 0 18M3.6 9h16.8M3.6 15h16.8",
-];
-const STAT_ACCENTS = ["#6c5ce7", "#e84393", "#fd9644"];
-
 const LOGOS = [
   { name: "Interlace", file: "interlace" },
   { name: "Comint", file: "comint" },
@@ -138,7 +128,7 @@ export default function Services({
   return (
     <section className="svcx" id="services">
       <div className="svcx__inner">
-        {/* Header: intro + stats */}
+        {/* Header */}
         <div className="svcx__top">
           <div className="svcx__intro">
             <p className="svcx__eyebrow">{t.eyebrow}</p>
@@ -147,25 +137,6 @@ export default function Services({
             </h2>
             <p className="svcx__sub">{t.subtitle}</p>
           </div>
-
-          <ul className="svcx__stats">
-            {t.stats.map((s, i) => (
-              <li
-                key={i}
-                className="svcx-stat"
-                style={{ "--accent": STAT_ACCENTS[i] } as React.CSSProperties}
-              >
-                <span className="svcx-stat__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d={STAT_ICONS[i]} />
-                  </svg>
-                </span>
-                <span className="svcx-stat__value">{s.value}</span>
-                <span className="svcx-stat__label">{s.label}</span>
-                <span className="svcx-stat__caption">{s.caption}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Cards carousel */}

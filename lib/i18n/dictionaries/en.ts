@@ -218,13 +218,32 @@ const en: Dictionary = {
   },
   process: {
     eyebrow: "How we work",
-    title: "A clear process, no surprises",
+    titleA: "A clear process,",
+    titleAccent: "no surprises",
+    subtitle: "An agile, transparent methodology to deliver quality projects at every stage.",
     steps: [
-      { title: "Discovery", text: "We understand your business, goals and audience." },
-      { title: "Design", text: "We prototype the experience before writing code." },
-      { title: "Development", text: "We build fast, with quality and SEO from day one." },
-      { title: "Launch", text: "We ship, measure and optimize to convert." },
+      { title: "Discovery", text: "We understand your business, goals and audience to define the best digital strategy.", items: ["Kickoff workshop", "Market analysis", "Scope definition"] },
+      { title: "UX/UI Design", text: "We design intuitive, attractive experiences focused on the user and your goals.", items: ["Wireframes", "Interactive prototypes", "Validation and feedback"] },
+      { title: "Development", text: "We build your project with clean code, best practices and the best technology.", items: ["Agile development", "Integrations", "Quality testing"] },
+      { title: "Launch", text: "We ship, measure and optimize to guarantee results from day one.", items: ["QA & Testing", "Secure deployment", "Support and optimization"] },
     ],
+    banner: "Fast delivery, constant communication and a results-first focus.",
+  },
+  results: {
+    eyebrow: "Results",
+    titleA: "We build solutions",
+    titleAccent: "that create impact",
+    stats: [
+      { value: "+50", label: "Projects delivered", caption: "across industries" },
+      { value: "10+", label: "Years of experience", caption: "building solutions" },
+      { value: "3", label: "Countries", caption: "Mexico · USA · Spain" },
+      { value: "99%", label: "Satisfied clients", caption: "and successful projects" },
+      { value: "24/7", label: "Support and maintenance", caption: "for your peace of mind" },
+    ],
+  },
+  tech: {
+    eyebrow: "Technologies",
+    title: "Tools that power our projects",
   },
   testimonials: {
     eyebrow: "Testimonials",
@@ -236,8 +255,8 @@ const en: Dictionary = {
     ],
   },
   finalCta: {
-    title: "Ready to build something that converts?",
-    text: "Tell us your idea and we'll turn it into a digital product that sells.",
+    title: "Ready to build your next project?",
+    text: "Tell us your idea and let's make something amazing together.",
     primary: "Get a quote",
     secondary: "Message us on WhatsApp",
   },

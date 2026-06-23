@@ -216,13 +216,32 @@ const es = {
   },
   process: {
     eyebrow: "Cómo trabajamos",
-    title: "Un proceso claro, sin sorpresas",
+    titleA: "Un proceso claro,",
+    titleAccent: "sin sorpresas",
+    subtitle: "Metodología ágil y transparente para entregar proyectos de calidad en cada etapa.",
     steps: [
-      { title: "Descubrimiento", text: "Entendemos tu negocio, metas y audiencia." },
-      { title: "Diseño", text: "Prototipamos la experiencia antes de escribir código." },
-      { title: "Desarrollo", text: "Construimos rápido, con calidad y SEO desde el día uno." },
-      { title: "Lanzamiento", text: "Publicamos, medimos y optimizamos para convertir." },
+      { title: "Descubrimiento", text: "Entendemos tu negocio, objetivos y audiencia para definir la mejor estrategia digital.", items: ["Workshop inicial", "Análisis de mercado", "Definición de alcance"] },
+      { title: "Diseño UX/UI", text: "Diseñamos experiencias intuitivas y atractivas centradas en el usuario y en tus objetivos.", items: ["Wireframes", "Prototipos interactivos", "Validación y feedback"] },
+      { title: "Desarrollo", text: "Construimos tu proyecto con código limpio, buenas prácticas y la mejor tecnología.", items: ["Desarrollo ágil", "Integraciones", "Pruebas de calidad"] },
+      { title: "Lanzamiento", text: "Publicamos, medimos y optimizamos para garantizar resultados desde el primer día.", items: ["QA & Testing", "Despliegue seguro", "Soporte y optimización"] },
     ],
+    banner: "Entregas rápidas, comunicación constante y enfoque en resultados.",
+  },
+  results: {
+    eyebrow: "Resultados",
+    titleA: "Construimos soluciones",
+    titleAccent: "que generan impacto",
+    stats: [
+      { value: "+50", label: "Proyectos entregados", caption: "en diferentes industrias" },
+      { value: "10+", label: "Años de experiencia", caption: "desarrollando soluciones" },
+      { value: "3", label: "Países", caption: "México · USA · España" },
+      { value: "99%", label: "Clientes satisfechos", caption: "y proyectos exitosos" },
+      { value: "24/7", label: "Soporte y mantenimiento", caption: "para tu tranquilidad" },
+    ],
+  },
+  tech: {
+    eyebrow: "Tecnologías",
+    title: "Herramientas que impulsan nuestros proyectos",
   },
   testimonials: {
     eyebrow: "Testimonios",
@@ -234,8 +253,8 @@ const es = {
     ],
   },
   finalCta: {
-    title: "¿List@ para construir algo que convierta?",
-    text: "Cuéntanos tu idea y la convertimos en un producto digital que vende.",
+    title: "¿Listo para construir tu próximo proyecto?",
+    text: "Cuéntanos tu idea y hagamos algo increíble juntos.",
     primary: "Cotiza tu proyecto",
     secondary: "Escríbenos por WhatsApp",
   },

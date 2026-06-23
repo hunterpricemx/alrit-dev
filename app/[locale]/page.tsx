@@ -6,7 +6,8 @@ import Services from "@/components/sections/Services";
 import Calculator from "@/components/sections/Calculator";
 import Portfolio from "@/components/sections/Portfolio";
 import Process from "@/components/sections/Process";
-import Testimonials from "@/components/sections/Testimonials";
+import Results from "@/components/sections/Results";
+import Technologies from "@/components/sections/Technologies";
 import FinalCta from "@/components/sections/FinalCta";
 
 export default async function Home({
@@ -26,7 +27,8 @@ export default async function Home({
       <Calculator dict={dict} />
       <Portfolio dict={dict} locale={l} />
       <Process dict={dict} />
-      <Testimonials dict={dict} />
+      <Results dict={dict} />
+      <Technologies dict={dict} />
       <FinalCta dict={dict} locale={l} />
     </>
   );

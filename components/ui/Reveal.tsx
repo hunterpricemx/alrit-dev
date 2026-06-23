@@ -8,6 +8,7 @@ type RevealProps = {
   /** Stagger delay in ms applied as a CSS var. */
   delay?: number;
   as?: "div" | "li" | "section" | "article";
+  style?: React.CSSProperties;
 };
 
 export default function Reveal({
@@ -15,6 +16,7 @@ export default function Reveal({
   className = "",
   delay = 0,
   as = "div",
+  style,
 }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
@@ -44,7 +46,7 @@ export default function Reveal({
     <Tag
       ref={ref}
       className={`reveal${visible ? " is-visible" : ""} ${className}`.trim()}
-      style={{ "--reveal-delay": `${delay}ms` } as React.CSSProperties}
+      style={{ "--reveal-delay": `${delay}ms`, ...style } as React.CSSProperties}
     >
       {children}
     </Tag>
