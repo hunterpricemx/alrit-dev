@@ -1,0 +1,234 @@
+/* ============================================================
+   Portfolio bento (reference design)
+   ============================================================ */
+.pf2 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(4rem, 9vw, 7rem) clamp(1.5rem, 5vw, 3rem);
+}
+
+.pf2__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.pf2__intro { max-width: 40rem; }
+.pf2__eyebrow {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e84393;
+  margin: 0 0 1rem;
+}
+.pf2__title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  margin: 0;
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+.pf2__sub {
+  margin: 1.1rem 0 0;
+  max-width: 36rem;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.6;
+}
+.pf2__all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  border: 1.5px solid color-mix(in srgb, #e84393 45%, transparent);
+  color: #e84393;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.4s var(--ease-spring);
+}
+.pf2__all svg { width: 18px; height: 18px; transition: transform 0.35s var(--ease-spring); }
+.pf2__all:hover { background: #e84393; color: #fff; border-color: transparent; transform: translateY(-2px); }
+.pf2__all:hover svg { transform: translateX(4px); }
+
+/* ---- grid ---- */
+.pf2__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-areas:
+    "a b c"
+    "a d e";
+}
+@media (max-width: 980px) {
+  .pf2__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+  }
+}
+@media (max-width: 600px) {
+  .pf2__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c" "d" "e";
+  }
+}
+
+/* ---- card ---- */
+.pf2-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 1.5rem;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  background: #15151a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s var(--ease-spring), box-shadow 0.4s ease;
+}
+.pf2-card--featured { min-height: 520px; }
+@media (max-width: 980px) {
+  .pf2-card--featured { min-height: 380px; }
+}
+.pf2-card:hover { transform: translateY(-6px); box-shadow: 0 28px 56px rgba(0, 0, 0, 0.28); }
+
+.pf2-card__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-spring);
+}
+.pf2-card:hover .pf2-card__bg { transform: scale(1.05); }
+.pf2-card__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(45% 35% at 16% 14%, color-mix(in srgb, var(--accent) 32%, transparent), transparent 60%),
+    linear-gradient(180deg, rgba(10, 10, 12, 0.35) 0%, rgba(10, 10, 12, 0.5) 42%, rgba(10, 10, 12, 0.9) 100%);
+}
+
+.pf2-card__icon {
+  position: relative;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: color-mix(in srgb, var(--accent) 34%, rgba(255, 255, 255, 0.05));
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  backdrop-filter: blur(4px);
+}
+.pf2-card__icon svg { width: 24px; height: 24px; }
+
+.pf2-card__body {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.75rem;
+}
+.pf2-card__eyebrow {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--accent) 35%, white);
+  margin-bottom: 0.5rem;
+}
+.pf2-card__name {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-size: clamp(1.35rem, 1.9vw, 2rem);
+  color: #fff;
+  margin-bottom: 0.55rem;
+}
+.pf2-card--featured .pf2-card__name { font-size: clamp(1.8rem, 2.6vw, 2.6rem); }
+.pf2-card__name-accent { color: color-mix(in srgb, var(--accent) 35%, white); }
+.pf2-card__desc {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 36ch;
+}
+
+.pf2-card__features {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.pf2-card--featured .pf2-card__features {
+  margin-top: 0.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+.pf2-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.92rem;
+}
+.pf2-card__features svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  color: color-mix(in srgb, var(--accent) 40%, white);
+}
+
+.pf2-card__foot {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem 1.25rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+.pf2-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #15151a;
+}
+.pf2-card__btn svg { width: 16px; height: 16px; transition: transform 0.35s var(--ease-spring); }
+.pf2-card:hover .pf2-card__btn svg { transform: translateX(3px); }
+.pf2-card__stack {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.62);
+  letter-spacing: 0.01em;
+}

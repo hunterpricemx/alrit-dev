@@ -153,9 +153,10 @@ const es = {
   portfolio: {
     eyebrow: "Portafolio",
     title: "Proyectos que hablan por nosotros",
-    text: "Una muestra de lo que construimos. Pronto, casos de estudio completos.",
+    text: "Creamos soluciones digitales a medida que generan resultados. Conoce algunos de los proyectos que hemos desarrollado.",
     cta: "Ver todos los proyectos",
     seeMore: "Ver caso",
+    seeMoreFeatured: "Ver caso de éxito",
     quote: "Cotizar proyecto",
     categories: {
       webdev: "Desarrollo web",

@@ -155,9 +155,10 @@ const en: Dictionary = {
   portfolio: {
     eyebrow: "Portfolio",
     title: "Projects that speak for us",
-    text: "A sample of what we build. Full case studies coming soon.",
+    text: "We build custom digital solutions that deliver results. Explore some of the projects we've developed.",
     cta: "View all projects",
     seeMore: "View case",
+    seeMoreFeatured: "View success story",
     quote: "Quote a project",
     categories: {
       webdev: "Web development",
