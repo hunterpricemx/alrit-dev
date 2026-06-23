@@ -161,6 +161,7 @@ body {
 }
 
 .hero__card-media {
+  position: relative;
   width: clamp(8.5rem, 15vw, 14.25rem);
   aspect-ratio: 1 / 1;
   border-radius: 24px;
@@ -187,6 +188,30 @@ body {
   display: block;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.hero__card-label {
+  position: absolute;
+  left: 50%;
+  bottom: 0.85rem;
+  z-index: 2;
+  transform: translate(-50%, 10px);
+  opacity: 0;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(18, 18, 22, 0.78);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.45s var(--ease-spring);
+}
+.hero__card:hover .hero__card-label {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 /* ---- supporting copy + actions ---- */

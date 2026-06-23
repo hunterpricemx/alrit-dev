@@ -4,10 +4,12 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
+import type { ServiceId } from "@/lib/services";
 
 type Card = {
   src: string;
   alt: string;
+  serviceId: ServiceId;
   rot: number;
   depth: number;
   floatDur: number;
@@ -15,11 +17,11 @@ type Card = {
 };
 
 const CARDS: Card[] = [
-  { src: "/hero/sass.png", alt: "Plataforma y dashboard a la medida", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
-  { src: "/hero/ecommerce.png", alt: "Tienda en línea (e-commerce)", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
-  { src: "/hero/realstate.png", alt: "Portal inmobiliario", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
-  { src: "/hero/app.png", alt: "App móvil", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
-  { src: "/hero/lms.png", alt: "Plataforma LMS de cursos", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
+  { src: "/hero/sass.png", alt: "Plataforma y dashboard a la medida", serviceId: "systems", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
+  { src: "/hero/ecommerce.png", alt: "Tienda en línea (e-commerce)", serviceId: "ecommerce", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
+  { src: "/hero/realstate.png", alt: "Portal inmobiliario", serviceId: "realestate", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
+  { src: "/hero/app.png", alt: "App móvil", serviceId: "mobile", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
+  { src: "/hero/lms.png", alt: "Plataforma LMS de cursos", serviceId: "lms", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
 ];
 
 const PULL_RADIUS = 260;
@@ -141,6 +143,9 @@ export default function MagneticHero({
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img className="hero__card-img" src={card.src} alt={card.alt} draggable={false} />
+                  <span className="hero__card-label">
+                    {dict.services.items[card.serviceId].title}
+                  </span>
                 </div>
               </div>
             </div>
