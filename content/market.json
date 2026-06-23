@@ -1,0 +1,1379 @@
+[
+  {
+    "serviceId": "wordpress",
+    "mx": {
+      "primary": [
+        {
+          "kw": "diseño de páginas web WordPress México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia WordPress México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo web WordPress México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta una página web en WordPress",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "diseño web profesional para empresas WordPress",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "página web autoadministrable WordPress",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear tienda en línea WooCommerce México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia diseño WordPress CDMX",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "precio diseño página web México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "mantenimiento WordPress México",
+          "intent": "transactional",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "qué es una web autoadministrable y cómo funciona con WordPress",
+        "cómo mejorar la velocidad de carga de WordPress",
+        "ventajas de WordPress para tu negocio en México",
+        "WordPress vs Wix cuál es mejor para una empresa",
+        "cómo optimizar Core Web Vitals en WordPress",
+        "cómo proteger un sitio WordPress de hackeos",
+        "mejores plugins para WordPress 2026",
+        "cuánto cuesta mantener una página web al año en México",
+        "cómo elegir hosting para WordPress en México",
+        "diferencia entre landing page y sitio web corporativo"
+      ],
+      "competitors": [
+        "mexicowordpress.com (Mexico WordPress)",
+        "bigredes.com (BigRedes)",
+        "jdigital.mx (JDigital)",
+        "pixelar.com.mx (Pixelar)",
+        "newemage.com.mx (Newemage)"
+      ],
+      "opportunities": [
+        "Pocas agencias MX comunican métricas concretas de velocidad/Core Web Vitals (LCP, INP) como diferenciador medible; ofrecer garantía de PageSpeed 90+ cubre intención no atendida.",
+        "Gap entre contenido de precios (alto volumen 'cuánto cuesta') y páginas de servicio con presupuesto transparente: publicar rangos en MXN por tipo de sitio capta tráfico transaccional.",
+        "Seguridad rara vez se vende como servicio premium en MX (a diferencia de ES); empaquetar 'sitio rápido y seguro con monitoreo y respaldos' diferencia ante la competencia de bajo costo.",
+        "Term 'autoadministrable' tiene demanda informativa pero pocas agencias lo convierten en propuesta comercial clara (cliente edita sin programador): bridge contenido educativo a CTA.",
+        "Modificadores locales (CDMX, Guadalajara, Monterrey) poco saturados frente a keywords nacionales; landing pages por ciudad capturan intención local con menor competencia."
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "diseño web WordPress",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia WordPress España",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño web WordPress Madrid",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "presupuesto página web WordPress",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "mantenimiento WordPress",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "precio diseño web WordPress",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo WordPress para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño web WordPress Barcelona",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "mantenimiento y seguridad WordPress",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "empresa diseño páginas web WordPress",
+          "intent": "commercial",
+          "volume": "medium"
+        }
+      ],
+      "secondary": [
+        "cómo mejorar la velocidad de WordPress",
+        "cómo crear una página web en WordPress paso a paso",
+        "cuánto cuesta el mantenimiento de una web WordPress al mes",
+        "cómo proteger WordPress de ataques y hackeos",
+        "qué es WPO y cómo optimizar el rendimiento de WordPress",
+        "mejores plugins de seguridad para WordPress",
+        "WordPress vs otros CMS para tu negocio",
+        "cada cuánto hay que actualizar WordPress y los plugins",
+        "cómo hacer copias de seguridad de WordPress",
+        "diseño web responsive con WordPress qué es"
+      ],
+      "competitors": [
+        "neoattack.com (NeoAttack)",
+        "todobravo.es (TodoBravo)",
+        "webempresa.com (Webempresa)",
+        "destaca.es (Destaca SL)",
+        "gboo.es (Gboo Agencia)"
+      ],
+      "opportunities": [
+        "España es uno de los países con más ciberataques a pymes; el ángulo 'sitio seguro con monitorización 24/7, respaldos diarios y SLA' está validado por demanda pero dominado por empresas de mantenimiento, no de diseño: empaquetar diseño+seguridad capta ambas intenciones.",
+        "Alta demanda transaccional de 'presupuesto' y 'precio': páginas con calculadora o rangos en euros por tipo de proyecto cubren intención que muchas agencias ocultan tras formularios.",
+        "WPO/velocidad tiene fuerte volumen informativo pero poca conexión comercial; ofrecer auditoría WPO gratuita como lead magnet hacia el servicio de diseño es un gap.",
+        "SERPs muy fragmentadas por ciudad (Madrid, Barcelona, Sevilla); oportunidad en ciudades secundarias (Valencia, Bilbao, Málaga) menos competidas con landings locales.",
+        "Mantenimiento recurrente (69-300 EUR/mes) es modelo de ingresos validado: cross-sell de planes mensuales tras la entrega del sitio es intención no integrada por agencias enfocadas solo en el proyecto inicial."
+      ]
+    },
+    "notes": "Estimaciones cualitativas (high/medium/low) basadas en WebSearch sobre SERPs es-MX y es-ES en junio 2026, no en datos exactos de volumen. Vocabulario: en ambos mercados domina \"página web\"/\"diseño web\" sobre \"sitio web\" en consultas comerciales; \"sitio web\" se usa más en copy de agencias que en búsquedas de usuario. MX usa MXN, enfatiza \"autoadministrable\" y WooCommerce; ES usa euros, enfatiza fuertemente \"presupuesto\", \"mantenimiento\" y \"seguridad\", con SERPs muy segmentadas por ciudad. La seguridad es ángulo más maduro y demandado en ES que en MX. Term técnico clave compartido: WPO/velocidad/Core Web Vitals con alto interés informativo pero baja conversión comercial directa (oportunidad de lead magnet en ambos)."
+  },
+  {
+    "serviceId": "webdev",
+    "mx": {
+      "primary": [
+        {
+          "kw": "diseño de páginas web",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de páginas web",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia de diseño web México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta una página web en México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "cotizar página web",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño de páginas web CDMX",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño de páginas web Guadalajara",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "diseño de páginas web Monterrey",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "precio diseño de páginas web México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo web a la medida México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño de tienda en línea México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "página web para empresas México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia desarrollo web Next.js México",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "cómo crear una página web",
+        "cómo hacer una página web profesional",
+        "qué es mejor página web o sitio web diferencia",
+        "página web vs sitio web",
+        "tipos de diseño de páginas web para mi empresa",
+        "qué incluye el diseño de una página web profesional",
+        "importancia del diseño web para negocios México",
+        "Core Web Vitals México velocidad web",
+        "cómo optimizar una página web para Google",
+        "página web sin código vs desarrollo a medida",
+        "cuánto tarda hacer una página web",
+        "qué necesito para hacer una página web (dominio, hosting, SSL)",
+        "diseño web responsive para celular México",
+        "ventajas de Next.js para SEO"
+      ],
+      "competitors": [
+        "disenador-web-mexico.com (Agencia DWM)",
+        "listoweb.com.mx",
+        "newemage.com.mx",
+        "paginaswebenmexico.com.mx (Bridge Studio)",
+        "bigredes.com",
+        "digitweb.com.mx",
+        "GoDaddy / Wix (DIY, captan informacionales de alto volumen)"
+      ],
+      "opportunities": [
+        "Casi todo el SERP MX rankea con WordPress/plantillas y page builders; un ángulo 'desarrollo a medida en Next.js/React con PageSpeed 95+' es un gap claro de diferenciación técnica.",
+        "Contenido sobre velocidad real en redes 4G mexicanas (descarga promedio ~21.8 Mbps): 'tu web debe cargar rápido incluso en datos móviles' es intención no cubierta y muy relevante para conversión local.",
+        "La keyword transaccional 'cuánto cuesta una página web en México' está saturada de listicles genéricos; falta una calculadora/cotizador interactivo con rangos reales segmentados por tipo (landing, corporativa, e-commerce).",
+        "Pocos competidores explican el ROI de Core Web Vitals/INP vinculado a ventas (ej. e-commerce que duplica ventas mejorando velocidad). Crear casos de estudio con métricas antes/después.",
+        "Vocabulario MX dominante: 'página web' (no 'sitio web'), 'diseño de páginas web', 'tienda en línea' (no 'tienda online'), 'celular/responsive'. Optimizar copy y H1 con estos términos vs los de España.",
+        "Páginas locales por ciudad (CDMX, GDL, MTY, Puebla, Querétaro) están poco cubiertas con calidad técnica; oportunidad de landings geo-segmentadas para captar intención transaccional local."
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "diseño web",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo web a medida",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia de diseño web Madrid",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "cuánto cuesta una página web",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "precio diseño web España",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "presupuesto página web",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño web Barcelona",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "diseño web Valencia",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo web Next.js React España",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "diseño web para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia desarrollo web a medida",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño de tienda online",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "página web corporativa profesional",
+          "intent": "commercial",
+          "volume": "medium"
+        }
+      ],
+      "secondary": [
+        "desarrollo web a medida vs WordPress",
+        "diseño web a medida o plantilla WordPress cuál es mejor",
+        "diferencia entre diseño y desarrollo web",
+        "qué es mejor para SEO web a medida o WordPress",
+        "cómo mejorar la velocidad de carga de mi web",
+        "Core Web Vitals qué son y cómo mejorarlos",
+        "qué es INP nueva métrica Core Web Vitals 2025",
+        "por qué mi web WordPress va lenta PageSpeed",
+        "cuánto tarda en desarrollarse una página web",
+        "qué necesito para crear una página web profesional",
+        "ventajas de Next.js para posicionamiento SEO",
+        "web rápida y optimizada para Google",
+        "diseño web responsive para móvil",
+        "costes ocultos de una web WordPress mantenimiento"
+      ],
+      "competitors": [
+        "databay.solutions",
+        "nattia.com",
+        "seoro.es",
+        "proun.es",
+        "todobravo.es",
+        "adrianpozo.es",
+        "Sortlist.es (directorio/agregador que rankea por keywords de agencia)"
+      ],
+      "opportunities": [
+        "La batalla 'web a medida vs WordPress' tiene altísimo volumen informacional-comercial en España y enlaza directamente con la propuesta Next.js/React; crear contenido pilar comparativo con datos (la media de webs WordPress PYME puntúa <50 en PageSpeed) y CTA a desarrollo a medida.",
+        "Varias agencias ES ya mencionan Next.js/React (Databay, SEORO, Nattia), por lo que el diferencial no es solo la tecnología sino demostrarla: mostrar PageSpeed/Core Web Vitals reales del propio sitio y de clientes como prueba.",
+        "Falta contenido que traduzca Core Web Vitals (LCP, INP, CLS) a impacto de negocio para no técnicos; nicho de 'velocidad web = más conversiones/ventas' poco cubierto con datos.",
+        "Vocabulario ES dominante: 'diseño web' y 'web a medida' (no 'diseño de páginas web' como en MX), 'web/página web corporativa', 'tienda online' (no 'tienda en línea'), 'móvil' (no 'celular'), 'presupuesto' (no 'cotizar'). Adaptar copy por país.",
+        "Keywords geo (Madrid, Barcelona, Valencia) muy competidas por agencias y freelancers; oportunidad en nichos sectoriales (clínicas, despachos, SaaS, startups) + ángulo técnico, donde hay menos saturación.",
+        "Los precios medios de agencia en España son altos (~13.000€) frente a freelancers; hay un gap de posicionamiento de 'calidad de agencia técnica a precio transparente con web a medida' que pocos comunican con rangos claros."
+      ]
+    },
+    "notes": "Estimaciones cualitativas de volumen (high/medium/low) basadas en SERPs y señales de demanda de WebSearch (jun 2026), no en match exacto de Keyword Planner. Diferencia léxica clave MX vs ES: MX usa 'diseño/desarrollo de páginas web', 'página web', 'tienda en línea', 'celular', 'cotizar'; ES usa 'diseño web', 'web a medida', 'tienda online', 'móvil', 'presupuesto'. En ambos mercados el SERP transaccional está dominado por WordPress/plantillas y listicles de precios, lo que abre un hueco fuerte para el posicionamiento técnico Next.js/React + Core Web Vitals con prueba de rendimiento medible. El ángulo 'web a medida vs WordPress' es especialmente potente en España (alto volumen y conexión directa con la propuesta de valor)."
+  },
+  {
+    "serviceId": "lms",
+    "mx": {
+      "primary": [
+        {
+          "kw": "desarrollo de plataforma LMS a la medida México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear plataforma para vender cursos en línea",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia desarrollo plataforma e-learning México",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "plataforma LMS con certificados DC3 STPS",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta una plataforma educativa / LMS",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo plataforma de capacitación en línea para empresas",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear academia online propia México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "plataforma de cursos con Mercado Pago y OXXO",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "desarrollo Moodle a medida México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "plataforma e-learning marca blanca sin comisiones",
+          "intent": "commercial",
+          "volume": "medium"
+        }
+      ],
+      "secondary": [
+        "qué es un LMS y para qué sirve",
+        "cómo vender cursos online sin pagar comisiones a Hotmart o Udemy",
+        "diferencia entre LMS propio y marketplace (Udemy, Domestika)",
+        "qué es el formato DC3 y cómo generarlo automáticamente",
+        "cómo reportar capacitación al SIRCE de la STPS",
+        "Moodle vs LearnDash vs plataforma a medida",
+        "qué es SCORM y xAPI en e-learning",
+        "cómo emitir certificados y constancias en una plataforma de cursos",
+        "cómo integrar pasarela de pago (Stripe, Mercado Pago) en cursos online",
+        "ideas para monetizar una academia online (membresías, cursos, certificados de pago)",
+        "requisitos legales de la capacitación en línea ante la STPS",
+        "gamificación e insignias (badges) en plataformas de capacitación"
+      ],
+      "competitors": [
+        "Inediti (inediti.com.mx)",
+        "CENCADE (cencade.com.mx)",
+        "TAEC (taec.com.mx) / Globalec (globalec.com.mx)",
+        "Capadoccia (capadoccia.com.mx)",
+        "Novemp (novemp.com.mx) y Mexicoelearning.com",
+        "Plattform (plattform.mx) - SaaS academia marca blanca"
+      ],
+      "opportunities": [
+        "Cumplimiento STPS como gancho de venta: muy pocos competidores posicionan landing transaccional para 'plataforma LMS con DC3, DC4 y carga masiva a SIRCE automática'; alto valor para RH corporativo.",
+        "Pagos locales: contenido y páginas optimizadas para 'cursos con OXXO, SPEI y Mercado Pago' (intención no cubierta por SaaS extranjeros tipo Teachable/Kajabi).",
+        "Ángulo 'sin comisiones': capturar a creadores cansados del 10% de Hotmart/Udemy con comparativa LMS propio vs marketplace y calculadora de ahorro.",
+        "Transparencia de precios: la mayoría oculta costos; una página '¿Cuánto cuesta una plataforma LMS en México? (rangos 2026)' captura intención comercial alta poco atendida.",
+        "Vocabulario MX: priorizar 'capacitación en línea', 'cursos en línea', 'constancias/certificados', 'a la medida' frente a calcos de España.",
+        "Nicho academias/infoproductores: kit 'academia digital marca blanca' con dominio propio, membresías y certificados, segmento entre el SaaS barato y el desarrollo enterprise."
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "desarrollo de plataforma LMS a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "plataforma de teleformación FUNDAE / bonificada",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "crear campus virtual a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia desarrollo e-learning a medida España",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "desarrollo Moodle a medida / partner Moodle",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear plataforma para vender cursos online",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "precio plataforma LMS / cuánto cuesta Moodle",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear academia online propia",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "plataforma LMS para empresas a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo aula virtual WordPress LearnDash",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "qué requisitos debe cumplir una plataforma de teleformación para FUNDAE",
+        "cómo acreditar un centro de teleformación ante el SEPE",
+        "qué es la formación bonificada y cómo funciona FUNDAE para empresas",
+        "qué es un usuario inspector SEPE/FUNDAE en la plataforma",
+        "LearnDash vs Moodle: cuál elegir para tu proyecto de formación",
+        "qué es un LMS y tipos de plataformas e-learning",
+        "cómo vender cursos online en WordPress (plugins y temas)",
+        "diferencia entre campus virtual propio y marketplace",
+        "cómo integrar pasarela de pago (Stripe, PayPal) en un campus virtual",
+        "trazabilidad y registro de tiempos de conexión en teleformación",
+        "qué es SCORM y xAPI",
+        "cómo monetizar una academia online con membresías y certificados"
+      ],
+      "competitors": [
+        "Dayvo Sistemas (dayvo.com)",
+        "iTopTraining (itoptraining.com)",
+        "Educativa (educativa.es)",
+        "AulasLMS (aulaslms.org) / Endeavour Learning (endeavour-learning.es)",
+        "BrainsPro (brainspro.com) - SaaS academia marca blanca",
+        "ClassOnLive / Plataforma SELF (plataformaself.com)"
+      ],
+      "opportunities": [
+        "FUNDAE como eje transaccional: enorme intención comercial en 'plataforma de teleformación válida para FUNDAE'; oportunidad de landing que traduce los requisitos SEPE (usuario inspector, trazabilidad, tutorización proactiva, cuestionario de calidad) en checklist de venta.",
+        "Aclarar el mito de homologación: contenido 'FUNDAE no homologa plataformas' con guía de cumplimiento real; gap informativo con alta conversión hacia el servicio a medida.",
+        "Acreditación de centro de teleformación ante SEPE/CCAA: servicio/consultoría complementaria poco posicionada en SERP transaccional.",
+        "Comparativa de coste y escalabilidad: 'LearnDash no escala a miles de alumnos vs Moodle' como ángulo técnico para captar proyectos medianos/grandes que dudan entre WordPress y Moodle.",
+        "Vocabulario ES: usar 'teleformación', 'formación online', 'campus virtual', 'alumnado', 'móvil', 'diplomas/certificados' frente al vocabulario MX ('capacitación', 'celular', 'constancias').",
+        "Segmento infoproductor/academia: ángulo 'tu academia online con dominio propio y sin comisiones' frente a Hotmart/Udemy, con pasarela Stripe/PayPal y certificados de finalización."
+      ]
+    },
+    "notes": "Volúmenes = estimación cualitativa basada en SERPs y oferta de agencias, no datos exactos de Keyword Planner. Diferencia regulatoria clave que define la intención transaccional en cada mercado: en MX el gancho es cumplimiento STPS (DC3/DC4/SIRCE) y pagos locales (Mercado Pago/OXXO/SPEI); en ES el gancho es FUNDAE/SEPE (formación bonificada, teleformación, acreditación de centro) y pagos vía Stripe/PayPal. Vocabulario: MX 'capacitación / cursos en línea / constancias / celular'; ES 'teleformación / formación online / campus virtual / diplomas / móvil'. Ambos mercados comparten el ángulo 'academia propia marca blanca sin comisiones a Hotmart/Udemy' y la comparativa Moodle vs LearnDash vs desarrollo a medida. Competidores SaaS marca blanca (Plattform en MX, BrainsPro en ES) compiten por las keywords de 'crear academia online' frente a las agencias de desarrollo a medida."
+  },
+  {
+    "serviceId": "ecommerce",
+    "mx": {
+      "primary": [
+        {
+          "kw": "agencia ecommerce México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear tienda en línea",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de tienda en línea",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseño de tienda en línea",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia Shopify México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo ecommerce a medida",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "cuánto cuesta una tienda en línea",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "hacer tienda en línea profesional",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "expertos Shopify México",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "desarrollo WooCommerce México",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "cómo vender por internet en México",
+        "marketplace vs tienda propia",
+        "cómo vender en Mercado Libre",
+        "mejores pasarelas de pago en México (Mercado Pago, Conekta, Stripe)",
+        "Shopify vs Tiendanube vs WooCommerce",
+        "cómo integrar Mercado Pago en mi tienda en línea",
+        "qué necesito para abrir una tienda en línea",
+        "logística y paquetería para ecommerce en México",
+        "cómo optimizar la conversión de mi tienda en línea",
+        "SEO para tiendas en línea en México",
+        "facturación electrónica (CFDI) en ecommerce",
+        "carrito abandonado cómo recuperarlo"
+      ],
+      "competitors": [
+        "Tiendanube (tiendanube.com)",
+        "Intagono (intagono.com)",
+        "Tebiko (tebiko.com)",
+        "Mobkii - Shopify Experts (mobkii.com)",
+        "Panamerik (panamerik.com)",
+        "Gestomarketing (gestomarketing.com.mx)"
+      ],
+      "opportunities": [
+        "Contenido transaccional con precios transparentes en MXN (rangos por tipo de proyecto): la mayoría de agencias ocultan precios; una landing con calculadora/rangos capta el alto volumen de 'cuánto cuesta una tienda en línea'.",
+        "Ángulo de integración nativa con el ecosistema local (Mercado Pago, Mercado Envíos, CFDI/SAT, OXXO Pay) — gap frente a agencias genéricas enfocadas solo en Shopify global.",
+        "Estrategia omnicanal Marketplace + Tienda propia: pocas agencias posicionan el 'vender en Mercado Libre Y tener tienda propia sincronizada' (gestión de inventario unificada).",
+        "Optimización mobile-first y velocidad para el comprador mexicano que mayormente navega desde el celular; pocas landings atacan 'tienda en línea optimizada para celular'.",
+        "Casos de éxito locales con métricas (ROI, ticket promedio, tasa de conversión) en español MX — diferenciación sobre agencias que solo muestran portafolio visual."
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "agencia ecommerce España",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear tienda online",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "diseño tienda online",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia Shopify España",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo tienda online a medida",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta una tienda online",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia PrestaShop",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "presupuesto tienda online",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "Shopify Partners España",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "migración a Shopify Plus",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "desarrollo WooCommerce España",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "cómo crear una tienda online paso a paso",
+        "Shopify vs PrestaShop vs WooCommerce cuál elegir",
+        "mejores pasarelas de pago para ecommerce (Bizum, Stripe, Redsys, PayPal)",
+        "cómo configurar Bizum en mi tienda online",
+        "migración de PrestaShop a Shopify guía",
+        "cómo vender B2B con Shopify (net 30/60/90)",
+        "tienda online multiidioma para vender en Europa",
+        "SEO para ecommerce en España",
+        "cómo cumplir RGPD y normativa cookies en una tienda online",
+        "logística y envíos para ecommerce (fulfillment)",
+        "cómo reducir el abandono de carrito",
+        "tienda online vs marketplace (Amazon) ventajas"
+      ],
+      "competitors": [
+        "Aelis (aelis.es)",
+        "The Atlas (theatlas.es)",
+        "Innovadeluxe (innovadeluxe.com)",
+        "Neuraweb (neuraweb.com)",
+        "Inforges - Shopify Plus Partner (inforges.es)",
+        "TodoBravo - Agencia PrestaShop (todobravo.es)"
+      ],
+      "opportunities": [
+        "Posicionar el eje B2B con Shopify Plus (catálogos por cliente, precios negociados, net 30/60/90) y migraciones desde PrestaShop — intención de alto valor poco cubierta por agencias generalistas.",
+        "Contenido comparativo PrestaShop vs Shopify enfocado al mercado español (donde PrestaShop sigue muy implantado): captar tráfico de quien duda entre migrar o quedarse.",
+        "Transparencia de precios en EUR por tipo de plataforma (plantilla vs a medida) — gap: la mayoría pide presupuesto sin dar rangos, perdiendo el alto volumen de 'cuánto cuesta una tienda online'.",
+        "Especialización en pasarelas y métodos locales europeos (Bizum, Redsys/TPV bancario) + cumplimiento RGPD/cookies como diferenciador de confianza.",
+        "Tienda online multiidioma/multimoneda para vender desde España al resto de Europa y LATAM — ángulo de expansión internacional poco explotado en las landings actuales."
+      ]
+    },
+    "notes": "Diferencias de vocabulario clave: MX usa \"tienda en línea\" y \"celular\"; ES usa \"tienda online\" y \"móvil\". Ecosistema de pago/logística distinto: MX gira en torno a Mercado Pago, Mercado Envíos, Conekta, OXXO Pay, CFDI/SAT y Mercado Libre como marketplace dominante; ES gira en torno a Bizum, Redsys (TPV bancario), Stripe, PayPal, RGPD y Amazon como marketplace de referencia. Plataformas: en MX destacan Shopify, Tiendanube y WooCommerce; en ES sigue muy presente PrestaShop junto a Shopify/Shopify Plus y WooCommerce. Estimaciones de volumen son cualitativas (no exact match). Las queries \"cuánto cuesta\" tienen alto volumen y alta intención comercial en ambos mercados y representan la mayor oportunidad de captación."
+  },
+  {
+    "serviceId": "realestate",
+    "notes": "Servicio analizado: portales/sitios web inmobiliarios con buscador avanzado de propiedades y captacion de leads. MX e ES son mercados muy distintos. En MX domina vocabulario \"pagina web\", \"bienes raices\", \"celular\", precios en MXN/USD y fuerte enfoque en desarrollos/preventa y leads via WhatsApp/Meta Ads. En ES domina \"sitio/pagina web\", \"inmueble/piso\", \"movil\", y todo gira en torno a la integracion/multipublicacion con los portales dominantes Idealista y Fotocasa (>70% del trafico) y CRMs lider (Inmovilla de Idealista, Inmoweb de Fotocasa). Gap clave comun: la mayoria vende CRM o solo campanas de ads; pocos venden un portal propio con buscador avanzado + captacion de leads integrada como activo de marca independiente de los portales (reduce dependencia y coste por lead de Idealista/Fotocasa). Volumenes son estimacion cualitativa, no exact match.",
+    "mx": {
+      "primary": [
+        {
+          "kw": "pagina web para inmobiliaria",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de portal inmobiliario",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "diseno web para bienes raices",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia de marketing inmobiliario Mexico",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "captacion de leads inmobiliarios",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "sitio web con buscador de propiedades",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "cuanto cuesta una pagina web inmobiliaria",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "generar leads calificados inmobiliaria",
+          "intent": "transactional",
+          "volume": "medium"
+        }
+      ],
+      "secondary": [
+        "como vender mas inmuebles con marketing digital",
+        "estrategias de marketing digital para inmobiliarias",
+        "como captar clientes para bienes raices",
+        "que debe tener la pagina web de una inmobiliaria",
+        "buscador avanzado de propiedades para sitio web",
+        "campanas de Meta Ads para vender departamentos en preventa",
+        "WhatsApp Business para inmobiliarias",
+        "como generar prospectos para desarrollos inmobiliarios",
+        "embudo de ventas inmobiliario",
+        "SEO local para inmobiliarias en Mexico"
+      ],
+      "competitors": [
+        "Acelerads (acelerads.com)",
+        "Agency 4 Real Estate / A4R (agency4realestate.com)",
+        "NOCNOK (CRM con IA, nocnok.com)",
+        "Aloha Creativos (alohacreativos.com)",
+        "IdeasWeb Mexico (ideasweb.mx)"
+      ],
+      "opportunities": [
+        "Posicionar el portal propio como activo de marca que reduce la dependencia y el costo por lead de portales tipo Inmuebles24/Lamudi",
+        "Cubrir intencion de fondo de embudo poco atendida: 'sitio web con buscador avanzado + captura de leads integrada' (la mayoria solo vende CRM o ads sueltos)",
+        "Contenido de comparativa de precios MXN vs USD por nivel (catalogo basico vs sitio con CRM/IA) que casi nadie tabula con claridad",
+        "Angulo desarrolladores/preventa: landing pages de proyecto con buscador y formularios que disparan a WhatsApp en segundos",
+        "SEO local por ciudad (CDMX, Monterrey, Guadalajara, Merida, Tulum) combinado con buscador de propiedades para capturar long-tail de zona"
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "diseno web para inmobiliarias",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "pagina web inmobiliaria con buscador de inmuebles",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de portal inmobiliario",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "web para inmobiliaria con CRM",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "captacion de leads inmobiliarios",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia marketing inmobiliario",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "multipublicacion Idealista Fotocasa",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "software para agencia inmobiliaria",
+          "intent": "commercial",
+          "volume": "high"
+        }
+      ],
+      "secondary": [
+        "como crear una pagina web de inmobiliaria en WordPress",
+        "que debe tener una web inmobiliaria que venda",
+        "mejores portales inmobiliarios en Espana",
+        "idealista o fotocasa cual es mejor para vender",
+        "como automatizar una inmobiliaria con un CRM",
+        "estrategias de marketing digital para inmobiliarias",
+        "como captar leads sin depender de los portales",
+        "buscador avanzado de inmuebles para web",
+        "tour virtual 360 para inmuebles",
+        "SEO inmobiliario para agencias"
+      ],
+      "competitors": [
+        "Inmovilla (CRM de Idealista, inmovilla.com)",
+        "Inmoweb (grupo Fotocasa, inmoweb.es)",
+        "InmoCMS / InmoGesco (inmocms.com, inmogesco.com)",
+        "Webparainmobiliaria.es",
+        "Platino Web (platinoweb.com)"
+      ],
+      "opportunities": [
+        "Diferenciacion clave: web propia que reduce la dependencia y el coste por lead de Idealista/Fotocasa (que concentran +70% del trafico) en vez de competir contra ellos",
+        "Hueco de contenido: la mayoria vende CRM cerrado del ecosistema Idealista/Fotocasa; pocos ofrecen portal independiente con buscador avanzado + captacion propia y multipublicacion neutral",
+        "Intencion no cubierta: 'web inmobiliaria con IA que responde el lead en segundos' (match automatico inmueble-cliente) fuera de los CRMs propietarios",
+        "Angulo SEO de zona (Madrid, Barcelona, Malaga, Costa del Sol, Valencia) y para extranjeros (Kyero, idioma multilingue) que las plantillas genericas no cubren",
+        "Comparativas honestas Inmovilla vs Inmoweb vs InmoCMS y por que un sitio propio complementa pero no sustituye al CRM, captando trafico informacional de decision"
+      ]
+    }
+  },
+  {
+    "serviceId": "systems",
+    "notes": "\"Sistemas a medida\" es un nicho B2B con intención de compra alta pero volumen moderado; el cabezal de demanda real está en \"software a medida\" / \"desarrollo de software a la medida\" (MX usa más \"a la medida\", ES más \"a medida\"). En MX el comprador busca con sufijos geográficos (CDMX, Guadalajara, Monterrey) y enfoca en automatización para PyMEs; el SERP mezcla agencias locales con directorios (Capterra/GetApp MX). En ES domina la asociación con ERP/CRM a medida y la palabra \"gestión empresarial\"; alta competencia de agencias regionales (Madrid, Barcelona, País Vasco). Diferencias de vocabulario clave: MX \"a la medida\" / \"cotización\" / \"PyME\" / \"celular\"; ES \"a medida\" / \"presupuesto\" / \"pyme\" / \"móvil\". Gap transversal: contenido de fondo (precios reales, ROI, comparativa medida vs estándar, automatización por sector) lo dominan blogs de agencias, dejando hueco para páginas de servicio que combinen intención transaccional + tabla de precios + casos por proceso. Volúmenes son estimación cualitativa, no exact-match.",
+    "mx": {
+      "primary": [
+        {
+          "kw": "desarrollo de software a la medida",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "software a la medida para empresas",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "empresa de desarrollo de software México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "sistemas a la medida México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de sistemas web a la medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "software para automatizar procesos empresa",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta un software a la medida",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de software a la medida CDMX",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia de desarrollo de software a la medida",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "sistema de gestión interna a la medida",
+          "intent": "transactional",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "qué es el software a la medida",
+        "software a la medida vs software estándar",
+        "ventajas del software a la medida para PyMEs",
+        "cómo automatizar procesos en una empresa",
+        "cuánto tiempo tarda desarrollar un software a la medida",
+        "ejemplos de automatización de procesos empresariales",
+        "software a la medida o ERP estándar cuál conviene",
+        "cómo elegir una empresa de desarrollo de software en México",
+        "automatización empresarial para PyMEs en México",
+        "beneficios de un sistema interno personalizado"
+      ],
+      "competitors": [
+        "Dosbytes (dosbytes.com.mx)",
+        "KOUD (koud.mx)",
+        "Maindsoft (maindsoft.net)",
+        "Grupo PERTI (grupoperti.com.mx)",
+        "Magokoro (magokoro.mx)",
+        "Capterra/GetApp México (directorios)"
+      ],
+      "opportunities": [
+        "Página transaccional con tabla de precios reales en MXN por tipo de proyecto (automatización acotada, sistema web, ERP a medida), intención que hoy solo cubren blogs sueltos",
+        "Landing por proceso/sector (manufactura, logística, distribución) en vez de página genérica, capturando long-tail de automatización por industria",
+        "Calculadora o cotizador interactivo de software a la medida; la intención 'cuánto cuesta' tiene volumen y poca cobertura con herramienta",
+        "Contenido comparativo 'a la medida vs Odoo/Zoho/SAP B1' para interceptar al comprador que evalúa estándar vs personalizado",
+        "Geo-páginas para CDMX, Guadalajara y Monterrey con casos locales, aprovechando que los competidores rankean débil fuera de CDMX",
+        "Ángulo MVP en semanas + ROI medible, intención de urgencia/justificación que las agencias mexicanas no comunican bien"
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "desarrollo de software a medida",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "software a medida para empresas",
+          "intent": "transactional",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de aplicaciones web a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "software de gestión a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "ERP a medida",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "empresa de desarrollo de software a medida",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "software a medida Madrid",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "programación a medida para empresas",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "aplicaciones a medida para automatizar procesos",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "presupuesto desarrollo software a medida",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "qué es el software a medida",
+        "software a medida vs software estándar",
+        "ventajas del software a medida para pymes",
+        "cómo automatizar procesos de una empresa",
+        "ERP a medida o ERP estándar diferencias",
+        "cuánto cuesta desarrollar un software a medida",
+        "cómo integrar aplicaciones a medida con el ERP",
+        "automatización de tareas repetitivas con apps a medida",
+        "desarrollo de software a medida por fases y MVP",
+        "cómo elegir una empresa de software a medida"
+      ],
+      "competitors": [
+        "FDSA (fdsa.es)",
+        "Illusion Studio (illusionstudio.es)",
+        "Murosoft (murosoft.es)",
+        "MELIT Technologies (melit.es)",
+        "Babooni Technologies (babooni.com)",
+        "Arteco Consulting (arteco-consulting.com)"
+      ],
+      "opportunities": [
+        "Cluster ERP/CRM a medida + integración por API, intención comercial fuerte en ES que las agencias tratan de forma genérica; oportunidad de páginas modulares por módulo (almacén, partes, presupuestos)",
+        "Contenido de precios y modelo por fases/MVP en euros; 'cuánto cuesta' y 'presupuesto' están poco cubiertos con cifras concretas",
+        "Geo-páginas Madrid y Barcelona con casos; competencia regional fragmentada deja hueco para autoridad nacional",
+        "Ángulo automatización de tareas con IA (lectura de PDF, extracción de datos a ERP) como diferenciador frente a agencias que solo hablan de 'desarrollo a medida'",
+        "Comparativa 'a medida vs SaaS estándar (Holded, Odoo, ClaveiGes)' para captar al comprador en fase de evaluación",
+        "Páginas por sector vertical (logística, transporte, industrial) replicando el enfoque de Naimitech pero con mejor intención transaccional y prueba social"
+      ]
+    }
+  },
+  {
+    "serviceId": "mobile",
+    "mx": {
+      "primary": [
+        {
+          "kw": "desarrollo de apps móviles México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "agencia de desarrollo de aplicaciones móviles",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "empresa de desarrollo de apps iOS Android",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta una app en México",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "cotización app móvil México",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear app para mi negocio México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de aplicaciones móviles a medida",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de apps en CDMX Guadalajara Monterrey",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "precio desarrollar app para empresa",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo app React Native México",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "cuánto tiempo tarda desarrollar una app",
+        "app nativa o híbrida cuál conviene para mi negocio",
+        "qué es una app empresarial conectada al negocio",
+        "cómo subir mi app a App Store y Google Play",
+        "mantenimiento de aplicaciones móviles costo mensual",
+        "etapas del desarrollo de una aplicación móvil",
+        "MVP de app qué es y cuánto cuesta",
+        "cómo integrar mi app con mi sistema o ERP",
+        "ejemplos de apps para PyMEs en México",
+        "ventajas de tener una app para mi empresa",
+        "app vs página web para mi negocio",
+        "cómo elegir agencia de desarrollo de apps"
+      ],
+      "competitors": [
+        "Ingeniería Pixel (ingenieriapixel.com)",
+        "Sferea (sferea.com)",
+        "BluePixel (bluepixel.mx)",
+        "Bridge Studio (bridgestudio.mx)",
+        "Magokoro (magokoro.mx)",
+        "ZDAPPS (zdapps.com.mx)"
+      ],
+      "opportunities": [
+        "Transparencia de precios: publicar rangos reales en MXN por tipo de app (básica/intermedia/compleja) ya que competidores como Magokoro y Creaun rankean fuerte con contenido de 'cuánto cuesta' - hay espacio para una calculadora interactiva",
+        "Ángulo 'app conectada al negocio': casi todos venden 'desarrollo de apps' genérico; diferenciar con integración real a ERP/CRM/punto de venta y operación del negocio",
+        "SEO local por ciudad poco explotado fuera de CDMX (Guadalajara, Monterrey, Querétaro, Mérida, Puebla) con landings dedicadas",
+        "Contenido para PyMEs/decisores no técnicos que explique ROI y casos de uso por giro (restaurantes, retail, logística, salud)",
+        "Comparativas honestas no-code vs desarrollo a medida y nativa vs React Native orientadas a la decisión de compra",
+        "Casos de éxito con métricas (descargas, retención, ingresos) que la mayoría de agencias mexicanas no muestran"
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "desarrollo de aplicaciones móviles a medida",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "empresa de desarrollo de apps España",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de apps Madrid",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "desarrollo de aplicaciones móviles Barcelona",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "cuánto cuesta crear una app",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "presupuesto aplicación móvil",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "crear app para mi negocio",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo apps iOS y Android para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia desarrollo de apps",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo software a medida apps móviles",
+          "intent": "commercial",
+          "volume": "low"
+        }
+      ],
+      "secondary": [
+        "app nativa o híbrida cuál es mejor",
+        "qué es React Native ventajas y desventajas",
+        "cuánto se tarda en desarrollar una app",
+        "apps nativas multiplataforma y web apps diferencias",
+        "cómo publicar una app en App Store y Google Play",
+        "coste de mantenimiento de una app móvil al año",
+        "fases del desarrollo de una aplicación móvil",
+        "app a medida vs no-code qué elegir",
+        "cómo integrar una app con mi software de gestión",
+        "ventajas de una app móvil para tu empresa",
+        "cuánto cuesta una app en España 2026",
+        "tarifa hora desarrollador app España"
+      ],
+      "competitors": [
+        "Doonamis (doonamis.com)",
+        "Develoop Software (develoop.net)",
+        "Dribba (dribba.com)",
+        "Vanadis (vanadis.es)",
+        "Appcinking / Cink (cink.es)",
+        "Squareet (squareet.com)"
+      ],
+      "opportunities": [
+        "Mercado saturado en 'cuánto cuesta crear una app' (isvisoft, aulacm, sortlist.es); diferenciar con desglose en € por funcionalidad y calculadora, no solo rangos genéricos",
+        "Ángulo 'app conectada al negocio' / integración con ERP-CRM-TPV poco trabajado frente al genérico 'app a medida'",
+        "SEO local más allá de Madrid y Barcelona (Valencia, Sevilla, Bilbao, Málaga) con coste/hora por región como gancho de contenido",
+        "Contenido orientado a normativa y confianza (RGPD, accesibilidad, requisitos de publicación en stores) que casi nadie cubre y aporta E-E-A-T",
+        "Diferenciación nativa vs Flutter/React Native con criterio de negocio, no técnico, para decisores",
+        "Casos de éxito sectoriales con métricas y un proceso transparente (descubrimiento, diseño, MVP, escalado) que reduzca la fricción de contratación"
+      ]
+    },
+    "notes": "Vocabulario MX vs ES: en MX predomina 'app/aplicación móvil' y 'celular'; en ES 'app/aplicación móvil' y 'móvil' (no 'celular'). Ambos mercados usan 'app a medida'. MX dice 'cotización' y 'cotizar', mientras ES dice 'presupuesto' y 'presupuestar' (keyword transaccional clave distinta por mercado). MX usa 'PyME', ES usa 'pyme/autónomo'. Precios de referencia: MX app básica 80K-150K MXN, intermedia 150K-350K, compleja 350K-800K+; ES 3.000-20.000€+ con tarifas de 38-40€/hora en agencias. Competidores rankean fuerte por keyword de precio ('cuánto cuesta') en ambos mercados: ese es el principal campo de batalla de contenido comercial. El mayor gap compartido es el ángulo de 'app conectada al negocio' (integración operativa real) frente al 'desarrollo de apps' genérico, más SEO local por ciudad secundaria. Volúmenes son estimación cualitativa basada en densidad de SERP, número de anunciantes y agencias compitiendo, no en match exacto de un keyword planner."
+  },
+  {
+    "serviceId": "automation",
+    "mx": {
+      "primary": [
+        {
+          "kw": "agencia de automatización de procesos",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "consultor n8n México",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "automatización de procesos con IA para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "contratar automatización de procesos",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "implementación n8n empresa",
+          "intent": "transactional",
+          "volume": "low"
+        },
+        {
+          "kw": "agencia de automatización con Make y Zapier",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "cuánto cuesta automatizar un proceso",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "desarrollo de agentes de IA para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "integración de APIs y CRM",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "automatización de procesos para PyMEs",
+          "intent": "commercial",
+          "volume": "medium"
+        }
+      ],
+      "secondary": [
+        "n8n vs Make vs Zapier cuál elegir",
+        "qué es n8n y cómo funciona",
+        "cómo automatizar mi negocio con n8n",
+        "automatizar WhatsApp con IA para ventas",
+        "qué procesos puedo automatizar en mi empresa",
+        "ejemplos de automatización de procesos con IA",
+        "cómo crear un agente de IA paso a paso",
+        "n8n self-hosted en VPS tutorial",
+        "automatización de cobranza y facturación",
+        "integrar HubSpot con n8n",
+        "flujos de trabajo automatizados para marketing",
+        "ROI de la automatización de procesos"
+      ],
+      "competitors": [
+        "Gabriel Neuman (gabrielneuman.com)",
+        "Duotach (duotach.com)",
+        "ADD / add.com.mx",
+        "Consultor N8N (consultorn8n.com)",
+        "IAmanos (iamanos.com)",
+        "Varela Insights"
+      ],
+      "opportunities": [
+        "Tablas de precios transparentes en MXN (rango por workflow/integración) — pocos competidores publican costos cerrados",
+        "Casos de uso verticalizados para PyME mexicana: cobranza, facturación CFDI/SAT, WhatsApp Business",
+        "Comparativa de costos self-hosted n8n vs suscripción Zapier/Make en pesos",
+        "Contenido sobre cumplimiento y privacidad de datos con n8n self-hosted (datos en México)",
+        "Calculadora de ROI / ahorro de horas-hombre para captar intención transaccional",
+        "Ángulo agentes de IA + automatización integrados a la operación (SDR, soporte, RRHH), no solo flujos simples",
+        "Integraciones con stack local mexicano (Conekta, facturación electrónica, bancos)"
+      ]
+    },
+    "es": {
+      "primary": [
+        {
+          "kw": "agencia de automatización de procesos",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "agencia n8n España",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "consultor n8n",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "automatización de procesos con IA para empresas",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "contratar consultor de IA para pyme",
+          "intent": "transactional",
+          "volume": "medium"
+        },
+        {
+          "kw": "automatizar procesos pyme",
+          "intent": "commercial",
+          "volume": "high"
+        },
+        {
+          "kw": "integración de APIs y CRM para empresas",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "agencia de automatización Make",
+          "intent": "commercial",
+          "volume": "low"
+        },
+        {
+          "kw": "desarrollo de agentes de IA para empresas",
+          "intent": "commercial",
+          "volume": "medium"
+        },
+        {
+          "kw": "Kit Digital agente digitalizador IA",
+          "intent": "transactional",
+          "volume": "high"
+        }
+      ],
+      "secondary": [
+        "n8n vs Make cuál elegir",
+        "qué es n8n y para qué sirve",
+        "cómo automatizar procesos en mi pyme con IA",
+        "por dónde empezar a automatizar una empresa",
+        "mejores herramientas de automatización de procesos",
+        "cómo migrar de Zapier a n8n",
+        "n8n self-hosted y RGPD",
+        "automatizar atención al cliente con IA",
+        "ejemplos de automatización de procesos empresariales",
+        "agente de IA para calificar prospectos",
+        "comparativa n8n vs Make vs Power Automate",
+        "cuánto cuesta automatizar procesos en una empresa"
+      ],
+      "competitors": [
+        "Javadex (javadex.es)",
+        "LaudeMMedia (laudemmedia.com)",
+        "Codificable (codificable.es)",
+        "Hack'celeration (hackceleration.com)",
+        "Upliora (upliora.es)",
+        "AI Connect (aiconnect.es)"
+      ],
+      "opportunities": [
+        "Aprovechar el Kit Digital / subvenciones a fondo perdido (6.000-12.000€) como gancho de captación — alta intención y financiación pública",
+        "Énfasis en RGPD y soberanía del dato con n8n self-hosted (diferenciador fuerte frente a Zapier/Make cloud)",
+        "Precios cerrados llave en mano en euros (5.000-25.000€) con plazos de 4-8 semanas, generando confianza B2B",
+        "Comparativa de costes de ejecuciones (500-5.000€/mes Zapier/Make vs 20-100€/mes n8n) con cálculo de amortización",
+        "Contenido de proceso 'qué automatizar primero' para PYMEs sin equipo técnico (modelo llave en mano)",
+        "Casos verticales: facturación, atención al cliente, calificación de leads con agentes de IA y escalado a humano",
+        "Posicionarse como Agente Digitalizador acreditado para capturar tráfico de búsqueda subvencionado"
+      ]
+    },
+    "notes": "Vocabulario MX vs ES: en MX domina \"PyME/PyMEs\" y precios en MXN, integraciones locales (CFDI/SAT, WhatsApp Business, Conekta); en ES domina \"pyme\", precios en euros, RGPD y especialmente el Kit Digital / subvenciones públicas (Agente Digitalizador) que no existe en México y representa la mayor oportunidad transaccional. Ambos mercados muestran que la intención de búsqueda está fusionada: \"automatización\" rara vez se busca sola, casi siempre acompañada de \"IA\"/\"agentes de IA\" y nombres de herramientas (n8n con fuerte momentum por self-hosting/coste, Make para lógica visual, Zapier como referencia de comparación). Gap común: pocos competidores publican precios transparentes; alta oportunidad de captar intención comercial con tablas de precios y calculadoras de ROI. Estimaciones de volumen son cualitativas (high/medium/low), no exact match de un keyword tool."
+  }
+]

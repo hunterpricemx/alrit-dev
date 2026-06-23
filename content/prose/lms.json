@@ -1,0 +1,52 @@
+{
+  "serviceId": "lms",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu plataforma LMS",
+        "body": "Construimos plataformas de cursos en línea completas, listas para vender y escalar: catálogo de cursos con lecciones en video, módulos, quizzes y seguimiento de progreso para cada alumno. Sumamos pasarela de pagos, membresías recurrentes y certificados descargables que se emiten al completar cada programa. También te entregamos panel de administración para gestionar contenido, estudiantes y reportes, además del diseño responsivo y la configuración de accesos por niveles o suscripción."
+      },
+      {
+        "heading": "Por qué construir tu LMS con Alrit.dev",
+        "body": "La mayoría de las plataformas armadas con plantillas genéricas se vuelven lentas y difíciles de posicionar en cuanto crece el contenido. Nosotros desarrollamos tu LMS con ingeniería moderna enfocada en velocidad real (Core Web Vitals) y SEO técnico desde el código, para que tus cursos carguen rápido y te encuentren en Google. Como evolucionamos de la agencia Hunter Price Mx, dejamos atrás el marketing genérico para entregarte un activo digital de alto rendimiento, con precios transparentes en MXN y rangos honestos, sin promesas infladas."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Arrancamos con un descubrimiento donde mapeamos tu oferta de cursos, modelo de membresía y reglas de acceso. Luego diseñamos la arquitectura y los flujos de compra, desarrollamos la plataforma con entregas que puedes revisar por etapas, e integramos pagos, certificados y notificaciones. Cerramos con pruebas, capacitación para tu equipo y puesta en marcha, dejándote una plataforma de cursos en línea que tú mismo puedes administrar sin depender de nadie."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Trabajamos con Next.js y React cuando buscas máximo rendimiento y experiencia premium, o con WordPress cuando priorizas autonomía total para cargar tu propio contenido. Integramos tu LMS con el ecosistema de pagos local: Mercado Pago, OXXO y SPEI para cobrar como tus alumnos prefieren, facturación CFDI ante el SAT y avisos por WhatsApp Business para onboarding y recordatorios. Así tu plataforma de cursos en línea cobra, factura y comunica en el idioma y los medios de tu mercado."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Desarrollamos Bodhi Medicine, una plataforma multilingüe de formación en salud holística que combina membresía, contenido por niveles y certificaciones para sus alumnos. La venta y gestión de accesos se resolvió con ThriveCart, integrando el cobro con la experiencia de aprendizaje. Es el tipo de plataforma de cursos en línea que construimos: pensada para vender formación, gestionar comunidades y entregar certificados a escala."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your LMS platform includes",
+        "body": "We build complete online course platforms that are ready to sell and scale: a course catalog with video lessons, modules, quizzes, and per-student progress tracking. We add payment processing, recurring memberships, and downloadable certificates issued automatically when learners complete each program. You also get an admin dashboard to manage content, students, and reports, plus responsive design and tiered or subscription-based access control."
+      },
+      {
+        "heading": "Why build your LMS with Alrit.dev",
+        "body": "Most platforms built on generic templates turn slow and hard to rank as soon as content grows. We engineer your LMS with a modern stack focused on real speed (Core Web Vitals) and technical SEO baked into the code, so your courses load fast and get found on Google. Having evolved from the Hunter Price Mx agency, we left generic marketing behind to deliver a high-performance digital asset, with transparent pricing in MXN and honest ranges instead of inflated promises."
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start with a discovery phase to map your course offering, membership model, and access rules. Then we design the architecture and purchase flows, develop the platform with milestones you can review along the way, and integrate payments, certificates, and notifications. We finish with testing, team training, and launch, handing you an online course platform you can administer yourself without depending on anyone."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "We work with Next.js and React when you want maximum performance and a premium experience, or with WordPress when full autonomy to upload your own content matters most. We connect your LMS to the local payments ecosystem: Mercado Pago, OXXO, and SPEI so students pay how they prefer, CFDI invoicing with the SAT, and WhatsApp Business messaging for onboarding and reminders. That way your online course platform charges, invoices, and communicates in the language and channels your market actually uses."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We built Bodhi Medicine, a multilingual holistic health training platform that combines memberships, tiered content, and certifications for its students. Sales and access management were handled with ThriveCart, tying checkout directly to the learning experience. It's exactly the kind of online course platform we build: designed to sell training, manage communities, and deliver certificates at scale."
+      }
+    ]
+  },
+  "slug": "plataformas-lms"
+}

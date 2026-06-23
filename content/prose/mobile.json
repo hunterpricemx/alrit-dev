@@ -1,0 +1,52 @@
+{
+  "serviceId": "mobile",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu app móvil iOS y Android",
+        "body": "Construimos tu aplicación móvil iOS y Android completa: arquitectura, diseño de experiencia (UX/UI), desarrollo nativo o multiplataforma, y conexión real con tu negocio vía ERP, CRM o POS. Entregamos pantallas de onboarding, autenticación, notificaciones push, panel de administración y las integraciones que tu operación necesita. Te dejamos la app publicada en App Store y Google Play, con documentación técnica y soporte para que el lanzamiento no dependa de nadie más."
+      },
+      {
+        "heading": "Por qué desarrollar tu app con Alrit.dev",
+        "body": "No partimos de plantillas genéricas: cada app móvil iOS y Android la diseñamos como un activo digital de alto rendimiento, con foco en velocidad, fluidez y SEO técnico desde el código para que tu ficha y tu contenido posicionen. Conectamos tu app con el ecosistema local que de verdad usas en México (Mercado Pago, OXXO/SPEI, CFDI-SAT y WhatsApp Business), no con integraciones a medias. Y trabajamos con precios transparentes en MXN y rangos reales, sin promesas infladas: ingeniería moderna, honesta y orientada a resultados."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Empezamos con un descubrimiento donde definimos alcance, flujos clave e integraciones de tu app móvil iOS y Android. Después pasamos a diseño de UX/UI y prototipo navegable para que valides la experiencia antes de escribir una sola línea de producción. Desarrollamos por entregas, con pruebas y revisiones contigo en cada hito, y cerramos con la publicación en tiendas, capacitación y un plan de mantenimiento para que la app crezca con tu negocio."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Apostamos por ingeniería moderna basada en React y el ecosistema Next.js para los paneles y backends que alimentan tu app móvil iOS y Android, con APIs limpias y seguras. Integramos pagos y cobranza con Mercado Pago, OXXO y SPEI, facturación CFDI-SAT y comunicación directa con tus clientes vía WhatsApp Business. Todo pensado para que tu app no sea una isla, sino una pieza conectada a tu ERP, CRM o POS y al stack que ya usas día a día."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Desarrollamos Conectas, una app móvil para descubrir y reservar experiencias, donde resolvimos la búsqueda, el descubrimiento y el flujo de reserva en una experiencia fluida para el usuario final. También construimos Programarte, una app de bienestar mental enfocada en acompañar al usuario con una interfaz cuidada y cercana. Son ejemplos reales de cómo llevamos una app móvil iOS y Android desde la idea hasta las tiendas, conectada al negocio y lista para usarse."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your iOS and Android app includes",
+        "body": "We build your complete iOS and Android mobile app: architecture, UX/UI design, native or cross-platform development, and a real connection to your business through ERP, CRM or POS. You get onboarding screens, authentication, push notifications, an admin panel and the integrations your operation actually needs. We hand it over published on the App Store and Google Play, with technical documentation and support so your launch never depends on anyone else."
+      },
+      {
+        "heading": "Why build your app with Alrit.dev",
+        "body": "We don't start from generic templates: every iOS and Android mobile app is engineered as a high-performance digital asset, with a focus on speed, smoothness and technical SEO from the code so your listing and content rank. We connect your app to the local ecosystem you really use in Mexico (Mercado Pago, OXXO/SPEI, CFDI-SAT and WhatsApp Business), not half-finished integrations. And we work with transparent pricing in MXN and honest, realistic ranges, no inflated promises: modern engineering built around results."
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start with a discovery phase where we define scope, key flows and the integrations of your iOS and Android mobile app. Then we move into UX/UI design and a clickable prototype so you can validate the experience before a single line of production code is written. We develop in increments, with testing and reviews alongside you at every milestone, and close with store publishing, training and a maintenance plan so the app grows with your business."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "We rely on modern engineering built on React and the Next.js ecosystem for the panels and backends that power your iOS and Android mobile app, with clean, secure APIs. We integrate payments and collections through Mercado Pago, OXXO and SPEI, CFDI-SAT invoicing, and direct customer communication via WhatsApp Business. It's all designed so your app isn't an island, but a connected piece of your ERP, CRM or POS and the stack you already use every day."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We built Conectas, a mobile app to discover and book experiences, where we solved search, discovery and the booking flow in a smooth experience for the end user. We also developed Programarte, a mental wellness app focused on supporting users through a careful, approachable interface. They're real examples of how we take an iOS and Android mobile app from idea to the stores, connected to the business and ready to use."
+      }
+    ]
+  },
+  "slug": "apps-moviles"
+}

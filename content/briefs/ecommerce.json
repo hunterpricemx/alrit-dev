@@ -1,0 +1,189 @@
+{
+  "serviceId": "ecommerce",
+  "slug": "ecommerce",
+  "schema": "Service, FAQPage, BreadcrumbList, Organization (WebDevelopment/ProfessionalService con areaServed MX/ES), Product/OfferCatalog opcional para paquetes. Para EN replicar Service + FAQPage + BreadcrumbList con inLanguage=\"en\".",
+  "targetKeywords": [
+    "agencia ecommerce México",
+    "crear tienda en línea",
+    "desarrollo de tienda en línea",
+    "diseño de tienda en línea",
+    "agencia Shopify México",
+    "desarrollo ecommerce a medida",
+    "cuánto cuesta una tienda en línea",
+    "hacer tienda en línea profesional",
+    "desarrollo WooCommerce México",
+    "agencia ecommerce España",
+    "crear tienda online",
+    "diseño tienda online",
+    "agencia Shopify España",
+    "desarrollo tienda online a medida",
+    "agencia PrestaShop",
+    "presupuesto tienda online",
+    "integrar Mercado Pago",
+    "SEO para tiendas en línea",
+    "recuperar carrito abandonado",
+    "facturación electrónica CFDI ecommerce"
+  ],
+  "es": {
+    "metaTitle": "Tienda en Línea a Medida | E-commerce Alrit.dev",
+    "metaDescription": "Creamos tu tienda en línea rápida que vende: pagos, catálogo y logística integrados. PageSpeed 90+ y SEO desde el código. Pide tu cotización.",
+    "h1": "Crea una tienda en línea que carga rápido, posiciona y vende",
+    "heroSub": "Diseñamos y desarrollamos tu e-commerce con pagos locales, catálogo y logística listos para operar. No plantillas lentas: una página web que convierte visitas en ventas.",
+    "sections": [
+      {
+        "heading": "Qué incluye tu tienda en línea",
+        "cover": "Listar el alcance completo del servicio: diseño de tienda en línea a la medida, catálogo de productos con variantes e inventario, carrito y checkout optimizado, pasarelas de pago (Mercado Pago, Conekta, Stripe, SPEI/OXXO; Bizum/Redsys para España), facturación electrónica CFDI-SAT, integración de logística y paquetería, panel de administración y reportes. Dejar claro que se entrega lista para vender, no una demo."
+      },
+      {
+        "heading": "Por qué elegir a Alrit.dev para tu e-commerce",
+        "cover": "Diferenciadores frente a plantillas y agencias de marketing: ingeniería moderna con PageSpeed 90+ y Core Web Vitals en verde, SEO técnico desde el código, integración real con el ecosistema mexicano e hispano (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business). Posicionar a Alrit.dev como estudio que construye activos digitales que rinden, evolución de la agencia Hunter Price Mx. Enfatizar velocidad, conversión y propiedad del código."
+      },
+      {
+        "heading": "Nuestro proceso: de la idea a tu primera venta",
+        "cover": "Explicar el proceso por fases: 1) Descubrimiento y estrategia (catálogo, márgenes, logística, pagos); 2) Diseño UX/UI orientado a conversión; 3) Desarrollo e integraciones (pagos, envíos, CFDI, ERP/CRM); 4) SEO técnico, pruebas y carga de productos; 5) Lanzamiento, capacitación y soporte. Mencionar tiempos estimados y comunicación clara por WhatsApp."
+      },
+      {
+        "heading": "Casos y portafolio de tiendas en línea",
+        "cover": "Mostrar proyectos de e-commerce y plataformas relacionadas del portafolio de Alrit.dev (retail, catálogo B2B, marcas DTC). Incluir métricas de resultado cuando existan: aumento de conversión, mejora de velocidad, reducción de carrito abandonado. Enlazar a servicios relacionados como real estate, LMS y sistemas a medida para clientes con necesidades híbridas."
+      },
+      {
+        "heading": "Tecnología y plataformas que dominamos",
+        "cover": "Detallar el stack: Shopify y Shopify Plus, WooCommerce sobre WordPress, headless con Next.js/React para máxima velocidad, y desarrollo e-commerce a medida cuando el negocio lo requiere. Explicar cuándo conviene cada plataforma (presupuesto, escala, B2B, multiidioma) y la capacidad de migración entre ellas (por ejemplo de PrestaShop a Shopify)."
+      },
+      {
+        "heading": "Empieza a vender en línea",
+        "cover": "Sección de cierre con CTA: invitar a cotizar la tienda en línea, agendar una llamada o escribir por WhatsApp. Reforzar la propuesta de valor (rápido, posiciona, convierte) y reducir fricción ofreciendo una asesoría sin costo para definir alcance y presupuesto."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Carga rápida que vende más",
+        "text": "PageSpeed 90+ y Core Web Vitals en verde. Cada segundo cuenta: una tienda veloz reduce el rebote y sube tu conversión."
+      },
+      {
+        "title": "Pagos locales sin fricción",
+        "text": "Integramos Mercado Pago, Conekta, Stripe, SPEI y OXXO (y Bizum/Redsys para España) para que cobres como tus clientes prefieren pagar."
+      },
+      {
+        "title": "Facturación CFDI automática",
+        "text": "Conectamos tu tienda con el SAT para emitir CFDI sin tareas manuales. Cumples con Hacienda y tus clientes reciben su factura al instante."
+      },
+      {
+        "title": "Logística y envíos listos",
+        "text": "Integramos paqueterías y cálculo de envíos en tiempo real para que cada pedido salga sin complicaciones desde el primer día."
+      },
+      {
+        "title": "SEO desde el código",
+        "text": "Estructura técnica optimizada para que tus productos posicionen en Google y atraigas tráfico que compra, no solo visitas."
+      },
+      {
+        "title": "Menos carritos abandonados",
+        "text": "Checkout optimizado y recuperación automática de carritos para rescatar las ventas que hoy estás perdiendo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta una tienda en línea?",
+        "a": "El costo de una tienda en línea depende del número de productos, las integraciones (pagos, CFDI, logística) y si usas Shopify, WooCommerce o un desarrollo a la medida. En Alrit.dev armamos un presupuesto cerrado según tu alcance; agenda una asesoría sin costo y te damos una cotización clara, sin sorpresas."
+      },
+      {
+        "q": "¿Qué pasarelas de pago integran en la tienda?",
+        "a": "Integramos las principales pasarelas del mercado: Mercado Pago, Conekta, Stripe y pagos en efectivo o transferencia con SPEI y OXXO en México, además de Bizum, Redsys y PayPal para España. Configuramos la opción que mejor se adapte a tus márgenes y a cómo paga tu cliente."
+      },
+      {
+        "q": "¿Conviene más Shopify, WooCommerce o una tienda a la medida?",
+        "a": "Shopify es ideal si quieres lanzar rápido con bajo mantenimiento; WooCommerce te da control total sobre WordPress; y un desarrollo a la medida o headless con Next.js conviene cuando necesitas máxima velocidad, reglas B2B o integraciones especiales. En la asesoría analizamos tu caso y te recomendamos la plataforma correcta."
+      },
+      {
+        "q": "¿La tienda emite facturas CFDI ante el SAT?",
+        "a": "Sí. Conectamos tu tienda en línea con un proveedor autorizado para emitir CFDI 4.0 de forma automática tras cada compra. Así cumples con el SAT, evitas tareas manuales y tus clientes reciben su factura electrónica al momento."
+      },
+      {
+        "q": "¿En cuánto tiempo está lista mi tienda en línea?",
+        "a": "Una tienda con Shopify o WooCommerce y catálogo definido suele estar lista para vender en pocas semanas; un desarrollo a la medida toma más según las integraciones. Tras la fase de descubrimiento te entregamos un cronograma con fechas claras y avances visibles."
+      }
+    ],
+    "cta": "Cotiza tu tienda en línea"
+  },
+  "en": {
+    "metaTitle": "Custom Online Store Development | Alrit.dev",
+    "metaDescription": "We build fast online stores that sell: payments, catalog and logistics integrated. PageSpeed 90+ and SEO from the code. Get your quote today.",
+    "h1": "Build an online store that loads fast, ranks and sells",
+    "heroSub": "We design and develop your e-commerce with local payments, catalog and logistics ready to operate. No slow templates: a website that turns visits into sales.",
+    "sections": [
+      {
+        "heading": "What your online store includes",
+        "cover": "List the full scope: custom online store design, product catalog with variants and inventory, optimized cart and checkout, payment gateways (Mercado Pago, Conekta, Stripe, SPEI/OXXO for Mexico; Bizum/Redsys/PayPal for Spain), electronic invoicing (CFDI-SAT in Mexico), shipping and logistics integration, admin panel and reports. Make clear it ships ready to sell, not as a demo."
+      },
+      {
+        "heading": "Why choose Alrit.dev for your e-commerce",
+        "cover": "Differentiators versus templates and marketing agencies: modern engineering with PageSpeed 90+ and green Core Web Vitals, technical SEO from the code, real integration with the local Hispanic ecosystem (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business). Position Alrit.dev as a studio that builds digital assets that perform, the evolution of the Hunter Price Mx agency. Emphasize speed, conversion and code ownership."
+      },
+      {
+        "heading": "Our process: from idea to first sale",
+        "cover": "Explain the phased process: 1) Discovery and strategy (catalog, margins, logistics, payments); 2) Conversion-focused UX/UI design; 3) Development and integrations (payments, shipping, invoicing, ERP/CRM); 4) Technical SEO, testing and product loading; 5) Launch, training and support. Mention estimated timelines and clear communication via WhatsApp."
+      },
+      {
+        "heading": "Online store cases and portfolio",
+        "cover": "Showcase e-commerce and related platform projects from the Alrit.dev portfolio (retail, B2B catalog, DTC brands). Include outcome metrics when available: conversion lift, speed improvements, reduced cart abandonment. Link to related services such as real estate, LMS and custom systems for clients with hybrid needs."
+      },
+      {
+        "heading": "Technology and platforms we master",
+        "cover": "Detail the stack: Shopify and Shopify Plus, WooCommerce on WordPress, headless with Next.js/React for maximum speed, and fully custom e-commerce when the business requires it. Explain when each platform fits (budget, scale, B2B, multilingual) and our migration capability between them (for example PrestaShop to Shopify)."
+      },
+      {
+        "heading": "Start selling online",
+        "cover": "Closing section with CTA: invite the visitor to request a quote, book a call or message via WhatsApp. Reinforce the value proposition (fast, ranks, converts) and reduce friction by offering a free consultation to define scope and budget."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fast loading that sells more",
+        "text": "PageSpeed 90+ and green Core Web Vitals. Every second counts: a fast store lowers bounce and lifts your conversion rate."
+      },
+      {
+        "title": "Frictionless local payments",
+        "text": "We integrate Mercado Pago, Conekta, Stripe, SPEI and OXXO (plus Bizum/Redsys for Spain) so customers pay the way they prefer."
+      },
+      {
+        "title": "Automatic CFDI invoicing",
+        "text": "We connect your store to the SAT to issue CFDI invoices with no manual work. You stay compliant and customers get their invoice instantly."
+      },
+      {
+        "title": "Shipping and logistics ready",
+        "text": "We integrate carriers and real-time shipping rates so every order goes out smoothly from day one."
+      },
+      {
+        "title": "SEO from the code",
+        "text": "Optimized technical structure so your products rank on Google and attract traffic that buys, not just visits."
+      },
+      {
+        "title": "Fewer abandoned carts",
+        "text": "Optimized checkout and automated cart recovery to win back the sales you're losing today."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does an online store cost?",
+        "a": "The cost of an online store depends on the number of products, integrations (payments, invoicing, logistics) and whether you use Shopify, WooCommerce or a custom build. At Alrit.dev we prepare a fixed quote based on your scope; book a free consultation and we'll give you a clear estimate with no surprises."
+      },
+      {
+        "q": "Which payment gateways do you integrate?",
+        "a": "We integrate the market's leading gateways: Mercado Pago, Conekta, Stripe and cash or transfer payments via SPEI and OXXO in Mexico, plus Bizum, Redsys and PayPal for Spain. We set up the option that best fits your margins and how your customers pay."
+      },
+      {
+        "q": "Should I choose Shopify, WooCommerce or a custom store?",
+        "a": "Shopify is ideal if you want to launch fast with low maintenance; WooCommerce gives you full control on WordPress; and a custom or headless build with Next.js fits when you need maximum speed, B2B rules or special integrations. In the consultation we analyze your case and recommend the right platform."
+      },
+      {
+        "q": "Does the store issue CFDI invoices for the SAT?",
+        "a": "Yes. We connect your online store to an authorized provider to issue CFDI 4.0 invoices automatically after each purchase. You stay compliant with the SAT, avoid manual work and customers receive their electronic invoice instantly."
+      },
+      {
+        "q": "How long does it take to have my online store ready?",
+        "a": "A store on Shopify or WooCommerce with a defined catalog is usually ready to sell in a few weeks; a custom build takes longer depending on integrations. After the discovery phase we deliver a timeline with clear dates and visible progress."
+      }
+    ],
+    "cta": "Get your online store quote"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "positioning": "Alrit.dev es el estudio de desarrollo web y software a medida que evolucionó de la agencia Hunter Price Mx: dejamos de \"hacer marketing\" para construir activos digitales que rinden. Diseñamos y desarrollamos sitios, plataformas y apps de alto rendimiento (Next.js/React, WordPress, LMS, e-commerce, real estate, sistemas a medida, apps móviles y automatizaciones) para PyMEs y empresas medianas en México y el mundo hispanohablante (incluida España) que están cansadas de plantillas lentas y agencias que solo prometen tráfico. ¿Por qué elegirnos? Porque combinamos ingeniería moderna (PageSpeed 90+, Core Web Vitals en verde), SEO técnico desde el código e integración real con el ecosistema local (Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS, WhatsApp Business). Construimos productos que cargan rápido, posicionan en Google y convierten, no solo páginas bonitas.",
+  "valueProps": [
+    "Rendimiento garantizado: entregamos sitios con PageSpeed 90+ y Core Web Vitals en verde (LCP, INP, CLS), porque la velocidad real -incluso en redes 4G mexicanas a ~21.8 Mbps- es la base de la conversion y del ranking.",
+    "SEO tecnico desde el codigo, no como parche: arquitectura semantica, schema estructurado, hreflang ES-MX/EN, sitemaps y renderizado optimizado integrados al desarrollo en Next.js/React.",
+    "Integracion nativa con el ecosistema local: Mercado Pago, Mercado Envios, OXXO Pay, SPEI, facturacion CFDI/SAT, certificados DC3/DC4 y carga a SIRCE (STPS), WhatsApp Business.",
+    "Precios transparentes en MXN: publicamos rangos reales y una calculadora por tipo de proyecto (sitio, tienda, app, LMS, automatizacion), cubriendo la intencion 'cuanto cuesta' que la mayoria de agencias oculta.",
+    "Portafolio real y verificable en 7 industrias (gaming, foodtech, salud holistica, wellness, educacion superior, proptech, automotriz) que demuestra capacidad multi-vertical.",
+    "Activos que reducen dependencia de terceros: portales inmobiliarios propios que bajan el costo por lead frente a Inmuebles24/Lamudi, LMS propios frente a Teachable/Kajabi, sistemas a medida frente a SaaS rentado.",
+    "Estudio bilingue ES/EN con un solo equipo: capacidad de servir clientes en Mexico, LatAm, Espana y mercados de habla inglesa sin intermediarios."
+  ],
+  "differentiators": [
+    "Enfoque de estudio de desarrollo (ingenieria) vs agencia de marketing generica: vendemos producto y rendimiento medible, no impresiones ni 'gestion de redes'.",
+    "Stack moderno Next.js/React con PageSpeed 95+ como gap claro frente a un SERP MX saturado de WordPress, plantillas y page builders lentos.",
+    "Metricas concretas como diferenciador comercial: comunicamos LCP/INP y garantia de velocidad, algo que casi ninguna agencia MX expone.",
+    "Cumplimiento y pagos locales como gancho de venta verticalizado (DC3-STPS para LMS, CFDI-SAT y OXXO/SPEI para e-commerce y automatizacion).",
+    "Transparencia de precios con calculadora interactiva en MXN, convirtiendo trafico transaccional de alto volumen ('cuanto cuesta') que los competidores dejan sin atender.",
+    "Continuidad de marca: la trayectoria de Hunter Price Mx aporta historial y credibilidad de marketing, ahora potenciada por capacidad tecnica real.",
+    "Landings por proceso/sector e industria (manufactura, logistica, inmobiliario, RH corporativo) en lugar de paginas genericas, capturando long-tail de alta intencion."
+  ],
+  "audiences": [
+    {
+      "who": "PyME y empresa mediana en Mexico que necesita renovar o crear su sitio/tienda",
+      "need": "Un sitio o e-commerce rapido, posicionable y con pagos locales (Mercado Pago, OXXO, SPEI, CFDI) a un precio claro en MXN, sin la lentitud de plantillas; busca activos que conviertan, no solo presencia."
+    },
+    {
+      "who": "Director de RH / formacion y academias que venden cursos en linea",
+      "need": "Plataforma LMS o campus virtual a medida con certificados DC3/DC4, carga masiva a SIRCE (STPS) y pagos locales; alternativa propietaria a Teachable/Kajabi que cumpla normativa mexicana (y FUNDAE en Espana)."
+    },
+    {
+      "who": "Inmobiliarias, asesores y proptech",
+      "need": "Portal inmobiliario propio con buscador avanzado, captura de leads y CRM que reduzca la dependencia y el costo por lead de Inmuebles24/Lamudi, posicionando su marca como activo."
+    },
+    {
+      "who": "Empresas y operaciones que requieren software, automatizacion o apps a medida",
+      "need": "Sistemas a medida, automatizaciones (n8n, IA, cobranza, facturacion CFDI, WhatsApp Business) y apps moviles conectadas al negocio (ERP/CRM/POS) con precios cerrados y enfoque por proceso/industria."
+    },
+    {
+      "who": "Cliente hispanohablante en Espana (y mercados EN)",
+      "need": "Estudio de desarrollo bilingue para diseno web a medida, e-commerce, LMS bonificable (FUNDAE) y apps, con calidad tecnica y posicionamiento en el SERP local de Madrid/Barcelona."
+    }
+  ],
+  "architecture": [
+    {
+      "url": "/es | /en",
+      "type": "Home (pillar)",
+      "purpose": "Landing principal por locale. Propuesta de valor (estudio de desarrollo, PageSpeed 90+, precios transparentes), accesos a 8 servicios, prueba social (portafolio) y CTA a contacto/calculadora. Hub de enlazado interno."
+    },
+    {
+      "url": "/es/servicios | /en/services",
+      "type": "Hub de servicios (pillar)",
+      "purpose": "Pagina indice que lista y enlaza los 8 servicios; consolida autoridad tematica y distribuye link equity a cada servicio."
+    },
+    {
+      "url": "/es/servicios/sitios-wordpress | /en/services/wordpress-websites",
+      "type": "Servicio (commercial landing)",
+      "purpose": "Targeting 'diseno de paginas web WordPress Mexico / diseno web WordPress'. Garantia de velocidad, rangos de precio MXN, FAQ schema, CTA calculadora y casos (BDS Motos, RCIU)."
+    },
+    {
+      "url": "/es/servicios/desarrollo-web | /en/services/web-development",
+      "type": "Servicio (commercial landing)",
+      "purpose": "Targeting 'diseno/desarrollo de paginas web', 'desarrollo web a medida'. Angulo Next.js/React PageSpeed 95+ vs plantillas. Casos: Conquer Classic Plus, Conectas, Programarte."
+    },
+    {
+      "url": "/es/servicios/plataformas-lms | /en/services/lms-platforms",
+      "type": "Servicio (transactional landing)",
+      "purpose": "Targeting 'plataforma LMS a la medida', 'vender cursos en linea', 'DC3 STPS' (MX) y 'FUNDAE/teleformacion bonificada' (ES). Caso Bodhi Medicine. CTA cotizar."
+    },
+    {
+      "url": "/es/servicios/ecommerce | /en/services/ecommerce",
+      "type": "Servicio (transactional landing)",
+      "purpose": "Targeting 'crear tienda en linea/online', 'agencia ecommerce'. Integracion Mercado Pago/Envios, OXXO Pay, CFDI/SAT. Rangos de precio + calculadora."
+    },
+    {
+      "url": "/es/servicios/real-estate | /en/services/real-estate",
+      "type": "Servicio (transactional landing)",
+      "purpose": "Targeting 'pagina web para inmobiliaria', 'portal inmobiliario', 'web con buscador + CRM'. Angulo reduccion de costo por lead vs Inmuebles24/Lamudi. Caso BDweb."
+    },
+    {
+      "url": "/es/servicios/sistemas-a-medida | /en/services/custom-systems",
+      "type": "Servicio (transactional landing)",
+      "purpose": "Targeting 'desarrollo de software a la medida', 'sistemas a la medida Mexico'. Tabla de precios por tipo (automatizacion acotada, sistema web, ERP). Sub-landings por sector."
+    },
+    {
+      "url": "/es/servicios/apps-moviles | /en/services/mobile-apps",
+      "type": "Servicio (commercial landing)",
+      "purpose": "Targeting 'desarrollo de apps moviles Mexico/Madrid', 'cuanto cuesta una app'. Rangos basica/intermedia/compleja + angulo 'app conectada al negocio' (ERP/CRM/POS)."
+    },
+    {
+      "url": "/es/servicios/automatizaciones | /en/services/automation",
+      "type": "Servicio (commercial/transactional landing)",
+      "purpose": "Targeting 'automatizacion de procesos', 'consultor n8n', 'automatizacion con IA'. Casos verticalizados PyME: cobranza, facturacion CFDI/SAT, WhatsApp Business. Rangos por workflow."
+    },
+    {
+      "url": "/es/calculadora | /en/pricing-calculator",
+      "type": "Herramienta transaccional (conversion)",
+      "purpose": "Calculadora interactiva de rangos en MXN por tipo de proyecto; captura el alto volumen de 'cuanto cuesta'. Fuente principal de leads y de enlazado desde cada servicio."
+    },
+    {
+      "url": "/es/portafolio | /en/portfolio",
+      "type": "Hub de portafolio (pillar)",
+      "purpose": "Indice filtrable por categoria (webdev, wordpress, lms, ecommerce, realestate, systems, mobile, automation). Prueba social y enlazado cruzado a servicios."
+    },
+    {
+      "url": "/es/portafolio/{slug} | /en/portfolio/{slug}",
+      "type": "Caso de estudio (detalle)",
+      "purpose": "Detalle por proyecto (Conquer Classic Plus, Conectas, Bodhi Medicine, Programarte, RCIU Education, BDweb, BDS Motos) con problema/solucion/resultados (metricas de velocidad y conversion) y CTA al servicio relacionado."
+    },
+    {
+      "url": "/es/nosotros | /en/about",
+      "type": "Institucional",
+      "purpose": "Historia de la evolucion Hunter Price Mx -> Alrit.dev, equipo, metodologia, stack y filosofia de rendimiento. Genera E-E-A-T y confianza."
+    },
+    {
+      "url": "/es/contacto | /en/contact",
+      "type": "Conversion",
+      "purpose": "Formulario de contacto/cotizacion, WhatsApp Business, NAP completo, mapa y schema LocalBusiness. Destino final de CTAs."
+    },
+    {
+      "url": "/es/blog | /en/blog",
+      "type": "Hub de blog (pillar)",
+      "purpose": "Indice editorial para capturar intencion informacional y de medio embudo (velocidad en redes 4G, costos, DC3, CFDI, Next.js vs WordPress). Alimenta autoridad tematica."
+    },
+    {
+      "url": "/es/blog/{slug} | /en/blog/{slug}",
+      "type": "Articulo",
+      "purpose": "Contenido cluster enlazado a su servicio pillar (ej. 'cuanto cuesta una pagina web en Mexico' -> /servicios/desarrollo-web y /calculadora)."
+    },
+    {
+      "url": "/es/precios | /en/pricing",
+      "type": "Pagina de precios (commercial)",
+      "purpose": "Rangos transparentes en MXN por servicio en formato comparativo; captura 'presupuesto/cuanto cuesta' y enlaza a la calculadora y a cada servicio."
+    }
+  ],
+  "hreflang": "Estrategia de tres locales sobre subdirectorios bajo un mismo dominio alrit.dev: rutas /es (default para hispanohablantes), /en y, en una fase 2, /es-es para Espana. Implementacion: (1) Etiquetas hreflang reciprocas en cada URL: hreflang='es-mx' apuntando a /es (o tag explicito es-mx si se separa MX), hreflang='es' como version generica para el resto de LatAm, hreflang='en' para /en y hreflang='x-default' apuntando a /es o a un selector. (2) Fase 1 -> servir un solo arbol en espanol (/es) optimizado para Mexico como mercado primario, con hreflang='es-mx' y un fallback hreflang='es' que captura Espana y LatAm; el contenido se redacta en espanol neutro con localismos MX en señales de servicio (CFDI, DC3, OXXO). (3) Fase 2 cuando Espana justifique inversion -> crear subarbol /es-es con contenido adaptado (FUNDAE en vez de STPS, IVA/facturacion espanola, precios en EUR, ciudades Madrid/Barcelona) y hreflang='es-es' propio, evitando canibalizacion via hreflang correcto y contenido diferenciado, no duplicado. (4) Cada par de URLs ES/EN debe enlazarse mutuamente con hreflang y compartir x-default. (5) Sitemaps XML por locale con anotaciones hreflang. (6) Selector de idioma/region manual en header (nunca redireccion automatica por IP que bloquee a Googlebot); persistir preferencia en cookie. (7) URLs traducidas (slugs localizados: /servicios vs /services) para relevancia semantica en cada idioma.",
+  "internalLinking": [
+    "Cada pagina de servicio enlaza a: (a) la calculadora con anchor transaccional ('Calcula tu presupuesto en MXN'), (b) 2-3 casos de portafolio de su misma categoria (cat coincidente), y (c) 1-2 articulos de blog del cluster del servicio.",
+    "Cada caso de estudio de portafolio enlaza de regreso al servicio pillar correspondiente segun su 'cat' (webdev->desarrollo-web, wordpress->sitios-wordpress, lms->plataformas-lms, realestate->real-estate) y a la calculadora.",
+    "El hub /servicios enlaza a los 8 servicios; cada servicio enlaza de vuelta al hub (breadcrumb) formando una estructura pillar-cluster.",
+    "Articulos de blog informacionales/'cuanto cuesta' enlazan al servicio comercial relevante y a la calculadora/pagina de precios con anchors descriptivos y ricos en keyword.",
+    "La calculadora y la pagina de precios enlazan a cada servicio y a 'contacto' para cerrar el embudo; son nodos de conversion, no de salida muerta.",
+    "Breadcrumbs con schema BreadcrumbList en todas las paginas profundas (servicio, caso, articulo) para reforzar jerarquia y distribuir equity.",
+    "Mantener anchors descriptivos y variados (no 'clic aqui'); priorizar keywords primarias de la investigacion por servicio.",
+    "Cross-linking por industria: un caso inmobiliario (BDweb) puede enlazar a articulos de proptech y al servicio real-estate; un caso LMS (Bodhi) a contenido DC3/FUNDAE.",
+    "Limitar enlaces salientes a competidores; cuando se mencionen portales (Inmuebles24/Teachable) usar para contraste sin enlace o con nofollow.",
+    "Enlazado footer con los 8 servicios + portafolio + calculadora en cada pagina para garantizar profundidad de rastreo <=3 clics desde home."
+  ],
+  "localSeo": [
+    "Crear y verificar Google Business Profile como 'Estudio de desarrollo web / Software' con categoria primaria 'Diseñador de paginas web' y secundarias (Desarrollador de software, Servicio de marketing); aprovechar el historial de Hunter Price Mx si existe ficha previa (actualizar nombre y datos, no duplicar).",
+    "Definir NAP unico y consistente (Nombre, Direccion, Telefono MX +52) replicado identico en sitio (footer + /contacto), GBP y directorios; usar telefono local mexicano y WhatsApp Business.",
+    "Implementar schema LocalBusiness/ProfessionalService en /contacto y home con address, geo, openingHours, areaServed (Mexico + ciudades clave), sameAs (redes y GBP) y priceRange.",
+    "Schema Organization en todo el sitio con logo, fundacion, sameAs y, donde aplique, AggregateRating si se recopilan reseñas verificables.",
+    "Estrategia de reseñas: solicitar reseñas en GBP a clientes del portafolio (BDweb, BDS Motos, etc.) para construir señales locales y prueba social.",
+    "Citas/directorios locales MX: alta consistente en directorios de negocios y tecnologia mexicanos relevantes manteniendo NAP identico.",
+    "Paginas o secciones geo-orientadas para ciudades MX prioritarias (CDMX, Monterrey, Guadalajara) si hay demanda, evitando doorway pages; integrar areaServed en schema en lugar de paginas vacias.",
+    "Contenido localizado de senales de confianza: facturacion CFDI/SAT, pagos OXXO/SPEI/Mercado Pago, cumplimiento DC3-STPS, mencionados explicitamente para relevancia local y conversion.",
+    "Para Espana (fase 2): GBP/ficha y NAP separados con telefono +34 y schema areaServed Espana, sin mezclar con la ficha MX.",
+    "Optimizar para busqueda movil local (velocidad en 4G, click-to-call, click-to-WhatsApp, mapa embebido) dado el peso del trafico movil en Mexico.",
+    "Embeber Google Maps en /contacto y subir fotos reales del equipo/oficina y proyectos a GBP de forma periodica para mantener la ficha activa."
+  ],
+  "brandVoice": "Tono de experto cercano y directo: hablamos de tu a la PyME y de usted institucional solo cuando el sector lo pide. Profesional pero sin jerga vacia de agencia; cuando usamos terminos tecnicos (Core Web Vitals, Next.js, CFDI, DC3) los explicamos en una linea. Voz orientada a resultados y evidencia: afirmaciones respaldadas con metricas (PageSpeed 90+, LCP en verde, costo por lead), nunca promesas infladas. Honesta y transparente, sobre todo en precios -decimos rangos reales en MXN en lugar de 'cotiza para enterarte'. Confiada sin ser arrogante: somos ingenieros que tambien entienden marketing y conversion. En espanol neutro con localismos mexicanos en señales de servicio; en EN, tono profesional internacional equivalente. Evitamos emojis en contextos B2B/institucionales y mantenemos consistencia ES/EN en claims y CTAs ('Calcula tu presupuesto' / 'Get your estimate')."
+}

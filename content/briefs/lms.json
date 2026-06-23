@@ -1,0 +1,192 @@
+{
+  "serviceId": "lms",
+  "slug": "lms",
+  "es": {
+    "metaTitle": "Plataforma LMS a Medida México | Alrit.dev",
+    "metaDescription": "Desarrollamos tu plataforma LMS a medida para vender cursos en línea con pagos, certificados DC3 y marca propia. Cotiza tu academia online hoy.",
+    "h1": "Desarrollo de plataforma LMS a la medida para vender tus cursos en línea",
+    "heroSub": "Construimos tu propia plataforma de cursos en línea, rápida y sin comisiones, con pagos en Mercado Pago/OXXO, certificados automáticos y formato DC3 STPS. Tu academia, tus reglas, tus ingresos.",
+    "sections": [
+      {
+        "heading": "Qué incluye tu plataforma LMS a la medida",
+        "cover": "Detallar el alcance del servicio: catálogo de cursos, lecciones en video y SCORM/xAPI, exámenes y evaluaciones, gestión de alumnos y grupos, pasarela de pago integrada (Mercado Pago, OXXO, SPEI, Stripe), emisión automática de certificados y constancias, área de administración, reportes de avance y panel del instructor. Aclarar que es marca blanca (white label) y 100% tuya, sin pagar comisiones por venta a Hotmart o Udemy."
+      },
+      {
+        "heading": "Por qué una plataforma propia y no un marketplace o plantilla",
+        "cover": "Argumentar el valor frente a Udemy/Domestika/Hotmart (te quitan comisión, no tienes la base de datos de alumnos ni la marca) y frente a plantillas lentas. Posicionar Alrit.dev: ingeniería moderna (PageSpeed 90+, Core Web Vitals en verde), SEO técnico desde el código, integración real con el ecosistema mexicano (CFDI-SAT, DC3-STPS, WhatsApp Business). Tú eres dueño del activo y de los ingresos."
+      },
+      {
+        "heading": "Certificados, DC3 y cumplimiento STPS",
+        "cover": "Explicar cómo generamos certificados y constancias de forma automática al terminar un curso, incluido el formato DC3 de la STPS para capacitación empresarial, y cómo facilitamos el reporte al SIRCE. Mencionar trazabilidad de avance, tiempos de conexión y registro de evaluaciones. Para mercado España: compatibilidad con teleformación FUNDAE/bonificada, usuario inspector SEPE y registro de tiempos."
+      },
+      {
+        "heading": "Nuestro proceso de desarrollo",
+        "cover": "Describir las fases: 1) Descubrimiento y definición de modelo de negocio (cursos sueltos, membresías, certificaciones de pago); 2) Arquitectura y diseño UX/UI; 3) Desarrollo e integración de pagos y certificados; 4) Carga de contenido y pruebas; 5) Lanzamiento, capacitación y soporte. Enfatizar entregas claras, tiempos definidos y acompañamiento."
+      },
+      {
+        "heading": "Tecnología y opciones: a medida, Moodle o WordPress/LearnDash",
+        "cover": "Explicar las rutas tecnológicas: desarrollo a medida en Next.js/React para máximo rendimiento y escalabilidad, Moodle a medida cuando se requiere robustez académica, o WordPress + LearnDash para presupuestos más ágiles. Ayudar al usuario a elegir según su proyecto, presupuesto y necesidad de SCORM/xAPI, gamificación e insignias."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "cover": "Mostrar portafolio y casos de éxito relacionados: academias online, plataformas de capacitación empresarial, campus virtuales y sitios e-learning. Reforzar resultados (velocidad, posicionamiento, conversión) y la herencia de Hunter Price Mx evolucionada a Alrit.dev. Incluir enlace o llamado a ver más casos."
+      },
+      {
+        "heading": "Cotiza tu academia online",
+        "cover": "Sección de cierre y conversión: invitar a agendar una llamada o solicitar cotización sin compromiso. Reforzar beneficios clave (sin comisiones, certificados automáticos, pagos locales) y dar un siguiente paso claro con formulario o WhatsApp Business."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Cero comisiones por venta",
+        "text": "Tu plataforma, tus ingresos. Vende cursos sin que Hotmart, Udemy o un marketplace se queden con un porcentaje de cada alumno."
+      },
+      {
+        "title": "Pagos locales sin fricción",
+        "text": "Cobra con Mercado Pago, OXXO, SPEI y tarjeta. Tus alumnos pagan como acostumbran y tú recibes el dinero directo."
+      },
+      {
+        "title": "Certificados y DC3 automáticos",
+        "text": "Genera constancias, certificados y el formato DC3 de la STPS al terminar cada curso, listo para reportar capacitación."
+      },
+      {
+        "title": "Rápida y bien posicionada",
+        "text": "PageSpeed 90+, Core Web Vitals en verde y SEO técnico desde el código para que cargue veloz y aparezca en Google."
+      },
+      {
+        "title": "Marca blanca 100% tuya",
+        "text": "Tu logo, tus colores, tu dominio y tu base de datos de alumnos. Construyes un activo digital, no rentas un espacio prestado."
+      },
+      {
+        "title": "Escalable y a tu medida",
+        "text": "Membresías, certificaciones de pago, gamificación, SCORM/xAPI y reportes. La plataforma crece contigo sin límites de plantilla."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta una plataforma LMS a la medida?",
+        "a": "El costo de una plataforma LMS depende del alcance: número de cursos, integraciones de pago, emisión de certificados DC3, membresías y diseño a la medida. En Alrit.dev cotizamos por proyecto tras una llamada de descubrimiento, con un precio claro y por etapas. Una plataforma a medida suele ser más rentable que pagar comisiones por venta a largo plazo."
+      },
+      {
+        "q": "¿Puedo vender mis cursos en línea sin pagar comisiones?",
+        "a": "Sí. Con una plataforma propia vendes tus cursos sin pagar comisión por alumno a marketplaces como Hotmart o Udemy. Integramos pagos con Mercado Pago, OXXO, SPEI o Stripe directamente en tu sitio, así recibes el 100% del precio (menos la comisión de la pasarela) y eres dueño de tus alumnos."
+      },
+      {
+        "q": "¿La plataforma genera certificados con formato DC3 de la STPS?",
+        "a": "Sí. Configuramos la emisión automática de certificados y constancias al concluir cada curso, incluido el formato DC3 que exige la STPS para capacitación empresarial en México. También facilitamos la trazabilidad de avance y los datos necesarios para el reporte al SIRCE."
+      },
+      {
+        "q": "¿Conviene desarrollo a medida, Moodle o WordPress con LearnDash?",
+        "a": "Depende de tu proyecto. El desarrollo a medida en Next.js/React ofrece máximo rendimiento, escalabilidad y control total. Moodle es ideal cuando necesitas robustez académica y SCORM/xAPI. WordPress con LearnDash es una opción ágil para empezar con menor presupuesto. En la llamada inicial te recomendamos la ruta que mejor se ajusta a tus metas."
+      },
+      {
+        "q": "¿Cuánto tarda en estar lista mi academia online?",
+        "a": "Los tiempos varían según el alcance, pero un proyecto típico de academia online se entrega por etapas en pocas semanas: descubrimiento, diseño, desarrollo e integración de pagos y certificados, carga de contenido y lanzamiento. Te damos un cronograma claro desde la cotización y acompañamiento en la puesta en marcha."
+      }
+    ],
+    "cta": "Cotiza tu plataforma LMS sin compromiso"
+  },
+  "en": {
+    "metaTitle": "Custom LMS Platform Development | Alrit.dev",
+    "metaDescription": "We build your custom LMS to sell online courses with payments, automatic certificates and your own brand. No commissions. Get a free quote today.",
+    "h1": "Custom LMS platform development to sell your online courses",
+    "heroSub": "We build your own online course platform: fast, commission-free, with integrated payments, automatic certificates and full white-label branding. Your academy, your rules, your revenue.",
+    "sections": [
+      {
+        "heading": "What your custom LMS platform includes",
+        "cover": "Detail the service scope: course catalog, video and SCORM/xAPI lessons, quizzes and assessments, student and group management, integrated payment gateways (Stripe, Mercado Pago, PayPal), automatic certificate and diploma issuance, admin dashboard, progress reports and instructor panel. Clarify it is white-label and 100% yours, with no per-sale commissions to marketplaces like Udemy or Hotmart."
+      },
+      {
+        "heading": "Why an owned platform instead of a marketplace or template",
+        "cover": "Make the case against Udemy/Domestika/Hotmart (they take a commission, you don't own the student database or the brand) and against slow templates. Position Alrit.dev: modern engineering (PageSpeed 90+, green Core Web Vitals), technical SEO from the code, and real integrations. You own the asset and the revenue."
+      },
+      {
+        "heading": "Certificates, compliance and traceability",
+        "cover": "Explain how we automatically generate certificates and diplomas upon course completion, plus full progress and connection-time traceability. Note region-specific compliance: Mexico's DC3 (STPS) format for corporate training and SIRCE reporting; Spain's FUNDAE-funded teleformation, SEPE inspector user and time tracking."
+      },
+      {
+        "heading": "Our development process",
+        "cover": "Describe the phases: 1) Discovery and business-model definition (single courses, memberships, paid certifications); 2) Architecture and UX/UI design; 3) Development and integration of payments and certificates; 4) Content loading and testing; 5) Launch, training and support. Emphasize clear deliverables, defined timelines and ongoing support."
+      },
+      {
+        "heading": "Technology and options: custom, Moodle or WordPress/LearnDash",
+        "cover": "Explain the technology paths: fully custom build on Next.js/React for maximum performance and scalability, custom Moodle for academic robustness, or WordPress + LearnDash for leaner budgets. Help the user choose based on project, budget and needs around SCORM/xAPI, gamification and badges."
+      },
+      {
+        "heading": "Related cases and portfolio",
+        "cover": "Showcase related portfolio and success stories: online academies, corporate training platforms, virtual campuses and e-learning sites. Reinforce results (speed, ranking, conversion) and the studio's heritage evolving from the Hunter Price agency into Alrit.dev. Include a link or prompt to view more cases."
+      },
+      {
+        "heading": "Get a quote for your online academy",
+        "cover": "Closing conversion section: invite the user to book a call or request a no-obligation quote. Reinforce key benefits (no commissions, automatic certificates, local payments) and provide a clear next step with a form or WhatsApp Business."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Zero sales commissions",
+        "text": "Your platform, your revenue. Sell courses without Hotmart, Udemy or any marketplace taking a cut of every student."
+      },
+      {
+        "title": "Frictionless local payments",
+        "text": "Charge with Stripe, Mercado Pago, OXXO, SPEI and cards. Your students pay how they prefer and you get paid directly."
+      },
+      {
+        "title": "Automatic certificates",
+        "text": "Issue diplomas and certificates on course completion, including Mexico's DC3 (STPS) format, ready for compliance reporting."
+      },
+      {
+        "title": "Fast and well-ranked",
+        "text": "PageSpeed 90+, green Core Web Vitals and technical SEO from the code so your site loads fast and ranks on Google."
+      },
+      {
+        "title": "100% your white-label brand",
+        "text": "Your logo, colors, domain and student database. You build a digital asset instead of renting borrowed space."
+      },
+      {
+        "title": "Scalable and tailored",
+        "text": "Memberships, paid certifications, gamification, SCORM/xAPI and reports. The platform grows with you, free of template limits."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does a custom LMS platform cost?",
+        "a": "The cost of an LMS depends on scope: number of courses, payment integrations, certificate issuance, memberships and custom design. At Alrit.dev we quote per project after a discovery call, with clear, staged pricing. A custom platform is usually more profitable than paying per-sale commissions over the long term."
+      },
+      {
+        "q": "Can I sell my online courses without paying commissions?",
+        "a": "Yes. With your own platform you sell courses without per-student commissions to marketplaces like Hotmart or Udemy. We integrate payments via Stripe, Mercado Pago, OXXO or SPEI directly on your site, so you keep nearly 100% of the price (minus the gateway fee) and own your students."
+      },
+      {
+        "q": "Does the platform generate completion certificates automatically?",
+        "a": "Yes. We configure automatic issuance of certificates and diplomas when a student finishes a course, including Mexico's DC3 (STPS) format for corporate training. We also build in progress traceability and the data needed for compliance reporting such as SIRCE or FUNDAE."
+      },
+      {
+        "q": "Should I choose custom development, Moodle or WordPress with LearnDash?",
+        "a": "It depends on your project. Custom development on Next.js/React offers maximum performance, scalability and full control. Moodle is ideal when you need academic robustness and SCORM/xAPI. WordPress with LearnDash is an agile option to start with a smaller budget. In the initial call we recommend the path that best fits your goals."
+      },
+      {
+        "q": "How long does it take to launch my online academy?",
+        "a": "Timelines vary by scope, but a typical online academy is delivered in stages over a few weeks: discovery, design, development and integration of payments and certificates, content loading and launch. You get a clear roadmap from the quote stage and support during go-live."
+      }
+    ],
+    "cta": "Get a free quote for your LMS platform"
+  },
+  "schema": "Service (con provider Organization Alrit.dev), FAQPage, BreadcrumbList, WebPage. Opcional: Offer/AggregateOffer dentro de Service para precios, y Organization con sameAs para reforzar la marca.",
+  "targetKeywords": [
+    "desarrollo de plataforma LMS a la medida México",
+    "crear plataforma para vender cursos en línea",
+    "plataforma LMS con certificados DC3 STPS",
+    "desarrollo plataforma de capacitación en línea para empresas",
+    "crear academia online propia México",
+    "plataforma de cursos con Mercado Pago y OXXO",
+    "desarrollo Moodle a medida México",
+    "plataforma e-learning marca blanca sin comisiones",
+    "agencia desarrollo plataforma e-learning México",
+    "cuánto cuesta una plataforma educativa LMS",
+    "desarrollo de plataforma LMS a medida",
+    "plataforma de teleformación FUNDAE bonificada",
+    "crear campus virtual a medida",
+    "desarrollo aula virtual WordPress LearnDash",
+    "crear plataforma para vender cursos online"
+  ]
+}

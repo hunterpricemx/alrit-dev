@@ -1,0 +1,184 @@
+{
+  "serviceId": "automation",
+  "slug": "automatizaciones",
+  "schema": "Service, FAQPage, BreadcrumbList, Organization (con ProfessionalService como subtipo), AggregateRating opcional si hay reseñas. Recomendado: Service (con provider -> Organization Alrit.dev, areaServed MX/ES, serviceType \"Automatización de procesos e integraciones\"), FAQPage (para las 5 preguntas), BreadcrumbList (Inicio > Servicios > Automatizaciones). Considerar WebPage + ItemList para los casos de portafolio.",
+  "targetKeywords": [
+    "agencia de automatización de procesos",
+    "consultor n8n México",
+    "automatización de procesos con IA para empresas",
+    "implementación n8n empresa",
+    "automatización de procesos para PyMEs",
+    "agencia de automatización con Make y Zapier",
+    "integración de APIs y CRM",
+    "desarrollo de agentes de IA para empresas",
+    "contratar automatización de procesos",
+    "cuánto cuesta automatizar un proceso",
+    "agencia n8n España",
+    "consultor n8n",
+    "automatizar procesos pyme",
+    "Kit Digital agente digitalizador IA",
+    "automatizar WhatsApp con IA para ventas"
+  ],
+  "es": {
+    "metaTitle": "Automatización de Procesos con IA | Alrit.dev",
+    "metaDescription": "Agencia de automatización de procesos con n8n, Make, Zapier y APIs. Conecta tu CRM, cobranza y WhatsApp, ahorra horas y escala. Agenda tu diagnóstico.",
+    "h1": "Automatización de procesos con IA que le devuelve horas a tu equipo",
+    "heroSub": "Conectamos tus herramientas, eliminamos el trabajo manual y desplegamos agentes de IA con n8n, Make, Zapier y APIs. Menos tareas repetitivas, más resultados que sí puedes medir.",
+    "sections": [
+      {
+        "heading": "Qué incluye nuestro servicio de automatización de procesos",
+        "cover": "Explica el alcance concreto: mapeo y diagnóstico de procesos, diseño de flujos de trabajo, integración de tus sistemas (CRM, ERP, e-commerce, hojas de cálculo, correo, WhatsApp Business), construcción de agentes de IA, automatización de cobranza y facturación (CFDI-SAT), conexión de APIs y entrega documentada con monitoreo. Deja claro que cubrimos desde una automatización puntual hasta una operación completa orquestada en n8n self-hosted."
+      },
+      {
+        "heading": "Por qué automatizar con Alrit.dev (beneficios)",
+        "cover": "Argumenta el valor frente a hacerlo internamente o con una agencia genérica: ingeniería real (no solo plantillas de Zapier), n8n self-hosted con control total de tus datos, integración con el ecosistema mexicano (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business) y enfoque en ROI medible. Refuerza el posicionamiento: construimos activos digitales que rinden, no promesas."
+      },
+      {
+        "heading": "Nuestro proceso de implementación, paso a paso",
+        "cover": "Describe el método en 4-5 fases: 1) Diagnóstico y mapeo de procesos (dónde se pierde el tiempo), 2) Propuesta con quick wins priorizados por ROI, 3) Diseño y construcción de flujos y agentes, 4) Pruebas e integración con tus sistemas, 5) Despliegue, capacitación y monitoreo continuo. Transmite que empezamos por lo que más impacto tiene y entregamos resultados por etapas."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "cover": "Muestra proyectos del portafolio donde la automatización e integración aportaron valor (plataformas y sistemas a medida como Conectas, BDS Motos, RCIU Education, Programarte). Enfócate en el resultado: procesos conectados, datos sincronizados, cobranza o atención automatizada. Incluir miniaturas/casos y un enlace a portafolio completo."
+      },
+      {
+        "heading": "Tecnología e integraciones que dominamos",
+        "cover": "Lista el stack: n8n (incluido self-hosted en VPS), Make, Zapier, integración de APIs REST/Webhooks, agentes de IA y LLMs, CRMs (HubSpot y otros), e-commerce, Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS, WhatsApp Business. Explica brevemente cuándo conviene cada herramienta (n8n vs Make vs Zapier) para posicionar autoridad y captar las keywords comparativas."
+      },
+      {
+        "heading": "Automatiza tu primer proceso este mes",
+        "cover": "Sección de cierre/CTA: invita a agendar un diagnóstico gratuito de automatización. Reduce la fricción (sin compromiso, te decimos qué automatizar primero y el ROI estimado). Refuerza urgencia suave y el beneficio de empezar ya."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Recupera horas cada semana",
+        "text": "Eliminamos las tareas repetitivas (copiar datos, enviar correos, conciliar pagos) para que tu equipo se enfoque en lo que de verdad genera ingresos."
+      },
+      {
+        "title": "Tus herramientas, por fin conectadas",
+        "text": "Integramos tu CRM, e-commerce, facturación y WhatsApp para que la información fluya sola, sin re-capturas ni errores manuales."
+      },
+      {
+        "title": "Control total con n8n self-hosted",
+        "text": "Desplegamos n8n en tu propio servidor: tus datos no salen de tu infraestructura y te olvidas de los límites de tareas de Zapier."
+      },
+      {
+        "title": "Agentes de IA que trabajan por ti",
+        "text": "Construimos agentes que califican prospectos, responden en WhatsApp y resumen tus datos 24/7, integrados a tus procesos reales."
+      },
+      {
+        "title": "Hecho para México",
+        "text": "Conectamos con Mercado Pago, SPEI/OXXO, CFDI-SAT y WhatsApp Business para automatizar cobranza, facturación y ventas sin parches."
+      },
+      {
+        "title": "ROI medible, no humo",
+        "text": "Priorizamos las automatizaciones por retorno: empezamos por lo que más ahorra y te mostramos el impacto en horas y dinero."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta automatizar un proceso en mi empresa?",
+        "a": "El costo depende de la complejidad del proceso y de cuántos sistemas se integran. Una automatización puntual (por ejemplo, capturar leads de un formulario en tu CRM y WhatsApp) suele ser una inversión accesible y de retorno rápido, mientras que orquestar varios procesos con agentes de IA es un proyecto mayor. En Alrit.dev te damos un diagnóstico gratuito con el alcance, el precio y el ROI estimado antes de empezar."
+      },
+      {
+        "q": "¿Qué es n8n y por qué lo recomiendan frente a Zapier o Make?",
+        "a": "n8n es una plataforma de automatización de flujos de trabajo que puedes alojar en tu propio servidor (self-hosted). A diferencia de Zapier, no cobra por número de tareas y te da control total de tus datos, ideal para cumplir con privacidad y para procesos de alto volumen. Make y Zapier son excelentes para integraciones rápidas en la nube; te ayudamos a elegir la herramienta correcta según tu caso, presupuesto y volumen."
+      },
+      {
+        "q": "¿Qué procesos puedo automatizar en mi negocio?",
+        "a": "Casi cualquier proceso repetitivo y basado en reglas: captura y calificación de prospectos, respuestas en WhatsApp, cobranza y recordatorios de pago, facturación CFDI, sincronización entre tu CRM y tu e-commerce, reportes automáticos, onboarding de clientes y notificaciones internas. Empezamos mapeando dónde tu equipo pierde más tiempo y automatizamos primero lo de mayor impacto."
+      },
+      {
+        "q": "¿Necesito conocimientos técnicos o cambiar mis sistemas actuales?",
+        "a": "No. Trabajamos sobre las herramientas que ya usas e integramos vía APIs y conectores, así que normalmente no necesitas cambiar nada. Nosotros diseñamos, construimos y monitoreamos los flujos, y te capacitamos para que tu equipo los use con confianza. Tú te enfocas en tu negocio."
+      },
+      {
+        "q": "¿Pueden integrar IA y agentes inteligentes en mis automatizaciones?",
+        "a": "Sí. Desarrollamos agentes de IA conectados a tus procesos reales: un agente que responde y califica prospectos en WhatsApp, otro que resume correos o documentos, o uno que clasifica tickets de soporte. Combinamos modelos de IA con n8n, Make o APIs para que la automatización no solo mueva datos, sino que también tome decisiones simples por ti."
+      }
+    ],
+    "cta": "Agenda tu diagnóstico de automatización gratis"
+  },
+  "en": {
+    "metaTitle": "AI Process Automation Agency | Alrit.dev",
+    "metaDescription": "Process automation with n8n, Make, Zapier and APIs. Connect your CRM, billing and WhatsApp, save hours and scale. Book your free automation audit today.",
+    "h1": "AI process automation that gives your team its hours back",
+    "heroSub": "We connect your tools, kill manual work and deploy AI agents with n8n, Make, Zapier and APIs. Fewer repetitive tasks, more results you can actually measure.",
+    "sections": [
+      {
+        "heading": "What our process automation service includes",
+        "cover": "Explain the concrete scope: process mapping and audit, workflow design, integration of your systems (CRM, ERP, e-commerce, spreadsheets, email, WhatsApp Business), AI agent development, billing and payment automation, API connections, and documented delivery with monitoring. Make clear we cover everything from a single automation to a full operation orchestrated on self-hosted n8n."
+      },
+      {
+        "heading": "Why automate with Alrit.dev (benefits)",
+        "cover": "Argue the value versus doing it in-house or with a generic agency: real engineering (not just Zapier templates), self-hosted n8n with full control of your data, integration with local payment and messaging ecosystems, and a focus on measurable ROI. Reinforce the positioning: we build digital assets that perform, not promises."
+      },
+      {
+        "heading": "Our implementation process, step by step",
+        "cover": "Describe the method in 4-5 phases: 1) Audit and process mapping (where time is lost), 2) Proposal with quick wins prioritized by ROI, 3) Workflow and agent design and build, 4) Testing and integration with your systems, 5) Deployment, training and ongoing monitoring. Convey that we start with the highest-impact wins and deliver results in stages."
+      },
+      {
+        "heading": "Related cases and projects",
+        "cover": "Showcase portfolio projects where automation and integration added value (custom platforms and systems such as Conectas, BDS Motos, RCIU Education, Programarte). Focus on outcomes: connected processes, synced data, automated billing or support. Include thumbnails/cases and a link to the full portfolio."
+      },
+      {
+        "heading": "The technology and integrations we master",
+        "cover": "List the stack: n8n (including self-hosted on a VPS), Make, Zapier, REST API and Webhook integrations, AI agents and LLMs, CRMs (HubSpot and others), e-commerce, payment gateways, billing, and WhatsApp Business. Briefly explain when each tool fits (n8n vs Make vs Zapier) to establish authority and capture comparison searches."
+      },
+      {
+        "heading": "Automate your first process this month",
+        "cover": "Closing/CTA section: invite the user to book a free automation audit. Lower friction (no commitment, we tell you what to automate first and the estimated ROI). Reinforce gentle urgency and the benefit of starting now."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Get hours back every week",
+        "text": "We remove repetitive tasks (copying data, sending emails, reconciling payments) so your team can focus on what actually drives revenue."
+      },
+      {
+        "title": "Your tools, finally connected",
+        "text": "We integrate your CRM, e-commerce, billing and WhatsApp so information flows on its own, with no re-entry and no manual errors."
+      },
+      {
+        "title": "Full control with self-hosted n8n",
+        "text": "We deploy n8n on your own server: your data stays in your infrastructure and you forget about Zapier's task limits."
+      },
+      {
+        "title": "AI agents that work for you",
+        "text": "We build agents that qualify leads, reply on WhatsApp and summarize your data 24/7, wired into your real processes."
+      },
+      {
+        "title": "Built for the local ecosystem",
+        "text": "We connect to local payment rails, billing and WhatsApp Business to automate collections, invoicing and sales without workarounds."
+      },
+      {
+        "title": "Measurable ROI, not hype",
+        "text": "We prioritize automations by return: we start with what saves the most and show you the impact in hours and money."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does it cost to automate a process in my company?",
+        "a": "It depends on the complexity of the process and how many systems need to be integrated. A single automation (for example, capturing form leads into your CRM and WhatsApp) is usually an affordable, fast-return investment, while orchestrating several processes with AI agents is a larger project. At Alrit.dev we give you a free audit with the scope, price and estimated ROI before we start."
+      },
+      {
+        "q": "What is n8n and why do you recommend it over Zapier or Make?",
+        "a": "n8n is a workflow automation platform you can host on your own server (self-hosted). Unlike Zapier, it doesn't charge per task and gives you full control of your data, which is ideal for privacy compliance and high-volume processes. Make and Zapier are great for fast cloud integrations; we help you choose the right tool based on your case, budget and volume."
+      },
+      {
+        "q": "What processes can I automate in my business?",
+        "a": "Almost any rule-based, repetitive process: lead capture and qualification, WhatsApp replies, collections and payment reminders, invoicing, syncing your CRM with your e-commerce, automated reports, client onboarding and internal notifications. We start by mapping where your team loses the most time and automate the highest-impact tasks first."
+      },
+      {
+        "q": "Do I need technical skills or to change my current systems?",
+        "a": "No. We work on top of the tools you already use and integrate via APIs and connectors, so you usually don't need to change anything. We design, build and monitor the workflows and train your team to use them with confidence. You stay focused on your business."
+      },
+      {
+        "q": "Can you build AI and intelligent agents into my automations?",
+        "a": "Yes. We develop AI agents wired into your real processes: an agent that replies to and qualifies leads on WhatsApp, one that summarizes emails or documents, or one that classifies support tickets. We combine AI models with n8n, Make or APIs so your automation doesn't just move data, it also makes simple decisions for you."
+      }
+    ],
+    "cta": "Book your free automation audit"
+  }
+}

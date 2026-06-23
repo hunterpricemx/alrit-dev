@@ -1,0 +1,184 @@
+{
+  "serviceId": "webdev",
+  "slug": "desarrollo-web",
+  "es": {
+    "metaTitle": "Desarrollo de Páginas Web a Medida | Alrit.dev",
+    "metaDescription": "Desarrollo de páginas web rápidas, optimizadas para SEO y listas para convertir. Next.js/React, PageSpeed 90+. Cotiza tu sitio hoy con Alrit.dev.",
+    "h1": "Desarrollo de páginas web que cargan rápido, posicionan en Google y convierten",
+    "heroSub": "Diseñamos y desarrollamos tu sitio a medida con ingeniería moderna (Next.js/React), Core Web Vitals en verde y SEO técnico desde el código. Olvídate de plantillas lentas: construimos activos digitales que rinden.",
+    "sections": [
+      {
+        "heading": "Qué incluye nuestro desarrollo de páginas web",
+        "cover": "Detallar todo lo que entra en el servicio: diseño UX/UI a medida, desarrollo Next.js/React, diseño responsive para móvil, SEO técnico on-page, integración con dominio, hosting y SSL, formularios y WhatsApp Business, analítica y carga optimizada. Aclarar que no son plantillas, sino desarrollo a medida."
+      },
+      {
+        "heading": "Por qué elegir desarrollo web a medida (y no una plantilla)",
+        "cover": "Contrastar el desarrollo a medida con WordPress/plantillas lentas: velocidad real (PageSpeed 90+), mejor posicionamiento, costes ocultos de mantenimiento que se evitan, seguridad y escalabilidad. Posicionar a Alrit.dev como estudio que construye productos, no páginas bonitas."
+      },
+      {
+        "heading": "Nuestro proceso de desarrollo paso a paso",
+        "cover": "Explicar las fases: descubrimiento y objetivos, arquitectura y diseño UX/UI, desarrollo y SEO técnico, pruebas de velocidad y Core Web Vitals, lanzamiento y medición. Dar idea de tiempos típicos y de cómo se involucra al cliente."
+      },
+      {
+        "heading": "Tecnología: Next.js, React y SEO desde el código",
+        "cover": "Explicar las ventajas técnicas de Next.js/React para SEO y rendimiento: renderizado del lado del servidor, Core Web Vitals (LCP, INP, CLS), velocidad de carga e integración con el ecosistema local (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business)."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "cover": "Mostrar tipos de proyectos que desarrollamos y resultados: sitios corporativos, tiendas en línea, plataformas, real estate y LMS. Reforzar credibilidad con métricas de velocidad y posicionamiento. Enlazar a portafolio."
+      },
+      {
+        "heading": "Cotiza tu página web a medida",
+        "cover": "Sección de cierre con CTA claro: invitar a cotizar/agendar diagnóstico, explicar qué pasa después de contactar y resolver la objeción de precio con transparencia. Botón a formulario y WhatsApp."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Velocidad real, no promesas",
+        "text": "PageSpeed 90+ y Core Web Vitals en verde. Tu web carga en milisegundos en celular y escritorio, lo que mejora tu posición en Google y reduce el rebote."
+      },
+      {
+        "title": "SEO técnico desde el código",
+        "text": "No lo agregamos después: estructuramos cada página para posicionar. HTML semántico, metadatos, datos estructurados y arquitectura pensada para Google."
+      },
+      {
+        "title": "Diseño a medida, no plantillas",
+        "text": "Tu sitio se diseña para tu marca y tus objetivos de conversión, no para encajar en un tema genérico que comparten miles de negocios."
+      },
+      {
+        "title": "Responsive y perfecto en móvil",
+        "text": "Más del 70% de tus visitas llegan desde el celular. Diseñamos pensando en móvil primero para que se vea y funcione impecable en cualquier pantalla."
+      },
+      {
+        "title": "Integración con el ecosistema local",
+        "text": "Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS y WhatsApp Business conectados de verdad, listos para operar en México y Latinoamérica."
+      },
+      {
+        "title": "Sin costes ocultos de mantenimiento",
+        "text": "Olvídate de plugins que rompen el sitio y actualizaciones constantes. Tu web a medida es estable, segura y económica de mantener a largo plazo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta una página web en México?",
+        "a": "El precio de una página web a medida en México depende del alcance: número de páginas, funcionalidades, integraciones (pagos, CRM, e-commerce) y SEO. Un sitio corporativo profesional suele partir de unos cuantos miles de pesos, mientras que plataformas o tiendas en línea cuestan más. En Alrit.dev cotizamos según tus objetivos, sin costes ocultos: solicita un presupuesto y recibe un desglose claro."
+      },
+      {
+        "q": "¿Cuánto tarda en desarrollarse una página web?",
+        "a": "Un sitio corporativo a medida toma normalmente de 3 a 6 semanas, dependiendo de la cantidad de páginas, el contenido disponible y las integraciones. Tiendas en línea y plataformas pueden requerir más tiempo. Te entregamos un cronograma desde el inicio para que sepas exactamente cuándo estará en línea tu web."
+      },
+      {
+        "q": "¿Qué es mejor para SEO: desarrollo web a medida o WordPress?",
+        "a": "El desarrollo web a medida con Next.js/React suele posicionar mejor porque ofrece mayor velocidad de carga, Core Web Vitals en verde y control total del código y del SEO técnico. WordPress puede funcionar, pero los temas y plugins suelen ralentizar el sitio y generar costes de mantenimiento. Si el rendimiento y el posicionamiento en Google son prioritarios, el desarrollo a medida es la mejor opción."
+      },
+      {
+        "q": "¿Qué necesito para hacer una página web profesional?",
+        "a": "Necesitas tres elementos básicos: un dominio (tu dirección, ejemplo: tumarca.com), hosting (donde vive tu sitio) y un certificado SSL (el candado de seguridad). A eso se suma el diseño, el desarrollo y el contenido. En Alrit.dev te ayudamos con todo el proceso: configuramos dominio, hosting y SSL para que solo te preocupes por hacer crecer tu negocio."
+      },
+      {
+        "q": "¿Mi página web se verá bien en celular?",
+        "a": "Sí. Todas nuestras páginas se desarrollan con diseño responsive y enfoque móvil primero, de modo que se adaptan perfectamente a cualquier pantalla: celular, tablet y escritorio. Además optimizamos la velocidad de carga en móvil, ya que es lo que Google evalúa para posicionar tu sitio."
+      }
+    ],
+    "cta": "Cotiza tu página web a medida"
+  },
+  "en": {
+    "metaTitle": "Custom Web Development Services | Alrit.dev",
+    "metaDescription": "Fast, SEO-optimized custom websites built to convert. Next.js/React, PageSpeed 90+, Core Web Vitals in green. Get your quote today with Alrit.dev.",
+    "h1": "Custom web development that loads fast, ranks on Google and converts",
+    "heroSub": "We design and build your website from scratch with modern engineering (Next.js/React), green Core Web Vitals and SEO baked into the code. Forget slow templates: we build digital assets that perform.",
+    "sections": [
+      {
+        "heading": "What our web development service includes",
+        "cover": "Detail everything in the service: custom UX/UI design, Next.js/React development, mobile-first responsive design, on-page technical SEO, domain/hosting/SSL setup, forms and WhatsApp Business, analytics and optimized loading. Make clear these are not templates but custom builds."
+      },
+      {
+        "heading": "Why choose custom web development (not a template)",
+        "cover": "Contrast custom development with WordPress/slow templates: real speed (PageSpeed 90+), better rankings, avoided hidden maintenance costs, security and scalability. Position Alrit.dev as a studio that builds products, not just pretty pages."
+      },
+      {
+        "heading": "Our step-by-step development process",
+        "cover": "Explain the phases: discovery and goals, architecture and UX/UI design, development and technical SEO, speed and Core Web Vitals testing, launch and measurement. Give an idea of typical timelines and how the client is involved."
+      },
+      {
+        "heading": "Technology: Next.js, React and SEO from the code",
+        "cover": "Explain the technical advantages of Next.js/React for SEO and performance: server-side rendering, Core Web Vitals (LCP, INP, CLS), load speed and integration with the local ecosystem (payments, invoicing, WhatsApp Business)."
+      },
+      {
+        "heading": "Related cases and projects",
+        "cover": "Show the types of projects we build and outcomes: corporate sites, online stores, platforms, real estate and LMS. Reinforce credibility with speed and ranking metrics. Link to portfolio."
+      },
+      {
+        "heading": "Get a quote for your custom website",
+        "cover": "Closing section with a clear CTA: invite to request a quote/book a diagnosis, explain what happens after contact, and address the price objection with transparency. Button to form and WhatsApp."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Real speed, not promises",
+        "text": "PageSpeed 90+ and Core Web Vitals in green. Your site loads in milliseconds on mobile and desktop, improving your Google ranking and cutting bounce rates."
+      },
+      {
+        "title": "SEO baked into the code",
+        "text": "We don't bolt it on afterward: every page is structured to rank. Semantic HTML, metadata, structured data and architecture built for Google."
+      },
+      {
+        "title": "Custom design, not templates",
+        "text": "Your site is designed for your brand and conversion goals, not to fit a generic theme shared by thousands of other businesses."
+      },
+      {
+        "title": "Responsive and flawless on mobile",
+        "text": "Over 70% of your visits come from phones. We design mobile-first so your site looks and works perfectly on any screen."
+      },
+      {
+        "title": "Integrated with the local ecosystem",
+        "text": "Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS and WhatsApp Business truly connected, ready to operate across Mexico and Latin America."
+      },
+      {
+        "title": "No hidden maintenance costs",
+        "text": "No more plugins breaking your site or constant updates. Your custom website is stable, secure and inexpensive to maintain long term."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does a custom website cost?",
+        "a": "The cost of a custom website depends on scope: number of pages, features, integrations (payments, CRM, e-commerce) and SEO. A professional corporate site typically starts in the low thousands, while platforms and online stores cost more. At Alrit.dev we quote based on your goals with no hidden fees: request a quote and get a clear breakdown."
+      },
+      {
+        "q": "How long does it take to develop a website?",
+        "a": "A custom corporate site usually takes 3 to 6 weeks, depending on the number of pages, available content and integrations. Online stores and platforms may take longer. We give you a timeline from the start so you know exactly when your site goes live."
+      },
+      {
+        "q": "Which is better for SEO: custom web development or WordPress?",
+        "a": "Custom development with Next.js/React tends to rank better thanks to faster load times, green Core Web Vitals and full control over the code and technical SEO. WordPress can work, but themes and plugins often slow the site down and add maintenance costs. If performance and Google rankings are a priority, custom development is the better choice."
+      },
+      {
+        "q": "What do I need to build a professional website?",
+        "a": "You need three basics: a domain (your address, e.g. yourbrand.com), hosting (where your site lives) and an SSL certificate (the security padlock). On top of that comes design, development and content. At Alrit.dev we handle the whole process, configuring domain, hosting and SSL so you can focus on growing your business."
+      },
+      {
+        "q": "Will my website look good on mobile?",
+        "a": "Yes. Every site we build uses responsive, mobile-first design, so it adapts perfectly to any screen: phone, tablet and desktop. We also optimize mobile load speed, which is exactly what Google evaluates to rank your site."
+      }
+    ],
+    "cta": "Get your custom website quote"
+  },
+  "schema": "Service, FAQPage, BreadcrumbList, Organization (and optionally WebPage/ProfessionalService for the local MX business signals)",
+  "targetKeywords": [
+    "desarrollo de páginas web",
+    "diseño de páginas web",
+    "desarrollo web a la medida México",
+    "desarrollo web a medida",
+    "agencia de diseño web México",
+    "cuánto cuesta una página web en México",
+    "cotizar página web",
+    "página web para empresas México",
+    "agencia desarrollo web Next.js México",
+    "diseño de páginas web CDMX",
+    "ventajas de Next.js para SEO",
+    "desarrollo web a medida vs WordPress",
+    "página web corporativa profesional",
+    "presupuesto página web",
+    "diseño web a medida"
+  ]
+}

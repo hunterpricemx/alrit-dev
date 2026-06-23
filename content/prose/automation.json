@@ -1,0 +1,52 @@
+{
+  "serviceId": "automation",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye nuestra automatización de procesos",
+        "body": "Conectamos tus herramientas y eliminamos el trabajo manual repetitivo con flujos a la medida en n8n, Make o Zapier, orquestados con IA y APIs. Tú recibes integraciones funcionando entre tu CRM, tu sistema de facturación, tu correo y WhatsApp Business, además de la documentación de cada flujo, manejo de errores y reintentos, y un panel para que veas qué está pasando. Cada automatización queda lista para operar en producción, no como un experimento que se rompe a la primera."
+      },
+      {
+        "heading": "Por qué automatizar tus procesos con Alrit.dev",
+        "body": "No vendemos plantillas genéricas ni recetas de YouTube: diseñamos cada automatización de procesos pensando en cómo factura, cobra y atiende realmente tu negocio en México. Combinamos ingeniería moderna con integración profunda al ecosistema local (CFDI-SAT, SPEI/OXXO, Mercado Pago, WhatsApp Business), y construimos flujos rápidos, estables y mantenibles en lugar de cadenas frágiles que solo entiende quien las armó. Trabajamos con precios transparentes en MXN y rangos honestos, sin promesas infladas de \"todo automático para mañana\"."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Arrancamos con un mapeo de tus procesos actuales para detectar dónde se pierde tiempo y dónde la automatización rinde más rápido. Luego diseñamos el flujo, lo construimos y lo probamos con datos reales, conectando las APIs e integraciones que necesites. Finalmente lo lanzamos a producción con monitoreo y manejo de errores, y te acompañamos en los ajustes para que la automatización de procesos siga funcionando conforme tu operación crece."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Construimos sobre n8n, Make y Zapier según el caso, sumando IA para clasificar, redactar o decidir dentro del flujo, y conectándonos vía API con las plataformas que ya usas. Lo que nos distingue es la integración con el ecosistema mexicano: timbrado y facturación CFDI ante el SAT, conciliación de pagos por SPEI, OXXO y Mercado Pago, y mensajería automatizada por WhatsApp Business. Cuando tu automatización necesita una pieza de software a la medida, la desarrollamos con Next.js/React o el stack que mejor encaje, sin atarte a límites de una sola herramienta."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Hemos ayudado a PyMEs a automatizar su cobranza, enviando recordatorios y dando seguimiento a pagos sin que alguien tenga que perseguir clientes uno por uno. También construimos flujos de facturación CFDI/SAT que generan y envían comprobantes de forma automática, y atención por WhatsApp Business que responde, califica y deriva conversaciones al área correcta. Son automatizaciones de procesos que liberan horas del equipo y reducen errores en tareas que antes se hacían a mano."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What our process automation includes",
+        "body": "We connect your tools and remove repetitive manual work with custom flows built in n8n, Make or Zapier, orchestrated with AI and APIs. You get working integrations across your CRM, billing system, email and WhatsApp Business, plus documentation for every flow, error handling and retries, and a panel so you can see what's happening. Each automation ships ready for production, not as an experiment that breaks the first time something changes."
+      },
+      {
+        "heading": "Why automate your processes with Alrit.dev",
+        "body": "We don't sell generic templates or YouTube recipes: we design every process automation around how your business actually bills, collects and serves customers in Mexico. We combine modern engineering with deep local integration (CFDI-SAT, SPEI/OXXO, Mercado Pago, WhatsApp Business), building flows that are fast, stable and maintainable instead of fragile chains only their author understands. We work with transparent pricing in MXN and honest ranges, with no inflated promises of \"everything automated by tomorrow.\""
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start by mapping your current processes to find where time is lost and where automation pays off fastest. Then we design the flow, build it and test it with real data, connecting the APIs and integrations you need. Finally we launch to production with monitoring and error handling, and we stay with you on the adjustments so your process automation keeps working as your operation grows."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "We build on n8n, Make and Zapier depending on the case, adding AI to classify, draft or decide inside the flow, and connecting via API to the platforms you already use. What sets us apart is integration with the Mexican ecosystem: CFDI invoicing and stamping with the SAT, payment reconciliation through SPEI, OXXO and Mercado Pago, and automated messaging over WhatsApp Business. When your automation needs a custom piece of software, we develop it with Next.js/React or whatever stack fits best, without locking you into the limits of a single tool."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We've helped SMBs automate their collections, sending reminders and following up on payments without anyone chasing clients one by one. We've also built CFDI/SAT invoicing flows that generate and send tax documents automatically, and WhatsApp Business support that replies, qualifies and routes conversations to the right team. These are process automations that free up hours for the team and cut errors in tasks that used to be done by hand."
+      }
+    ]
+  },
+  "slug": "automatizaciones"
+}

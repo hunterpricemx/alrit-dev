@@ -1,0 +1,52 @@
+{
+  "serviceId": "realestate",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu portal inmobiliario",
+        "body": "Construimos webs y portales inmobiliarios completos, listos para vender: buscador avanzado con filtros por zona, precio, recámaras, m² y tipo de operación; fichas de propiedad con galerías, mapa, características y videos; y formularios de captación conectados directo a tu CRM. Cada inmueble queda optimizado para Google y para que tu equipo de ventas reciba leads calificados sin perder tiempo. También dejamos panel para que cargues, edites y publiques propiedades tú mismo, sin depender de nadie."
+      },
+      {
+        "heading": "Por qué desarrollar tu portal inmobiliario con Alrit.dev",
+        "body": "La mayoría de los portales inmobiliarios se montan sobre plantillas genéricas que cargan lento y entierran tus propiedades en Google. Nosotros hacemos lo contrario: ingeniería moderna con foco en velocidad real (Core Web Vitals) y SEO técnico desde el código, para que cada ficha posicione y cada visita cargue en segundos. El resultado es un activo digital que capta leads de forma constante, no un folleto bonito que nadie encuentra."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Arrancamos con una fase de descubrimiento donde entendemos tu inventario, tu proceso de ventas y cómo entran hoy tus leads. Después diseñamos la arquitectura del buscador y las fichas, desarrollamos el portal inmobiliario con entregas que puedes revisar, e integramos tu CRM y canales de contacto. Cerramos con pruebas, optimización de velocidad y SEO, y una capacitación para que tu equipo maneje la plataforma con total autonomía."
+      },
+      {
+        "heading": "Tecnología pensada para captar y para México",
+        "body": "Desarrollamos con Next.js y React cuando necesitas un portal inmobiliario rápido y escalable, o sobre WordPress cuando buscas autogestión sencilla del inventario. Conectamos lo que tu operación necesita: WhatsApp Business para responder leads al instante, pasarelas como Mercado Pago, OXXO y SPEI para apartados o pagos, y CFDI-SAT cuando hay que facturar. Toda la integración se adapta al ecosistema local, con precios transparentes en MXN y sin sorpresas."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Desarrollamos BDweb, una plataforma inmobiliaria con buscador de propiedades, fichas detalladas y captación de prospectos pensada para conectar oferta y demanda de forma ágil. Es el tipo de portal inmobiliario que construimos a medida: enfocado en encontrar el inmueble correcto rápido y en convertir cada visita en un contacto real para tu equipo de ventas."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your real estate portal includes",
+        "body": "We build complete real estate websites and portals that are ready to sell: an advanced search with filters by location, price, bedrooms, square meters and type of operation; property pages with galleries, maps, features and videos; and lead capture forms wired straight into your CRM. Every listing is optimized for Google so your sales team receives qualified leads without wasting time. We also include a panel so you can upload, edit and publish properties yourself, with no dependence on anyone."
+      },
+      {
+        "heading": "Why build your real estate portal with Alrit.dev",
+        "body": "Most real estate portals are built on generic templates that load slowly and bury your listings in Google. We do the opposite: modern engineering focused on real speed (Core Web Vitals) and technical SEO straight from the code, so every property page ranks and every visit loads in seconds. The result is a digital asset that captures leads consistently, not a pretty brochure no one can find."
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start with a discovery phase where we understand your inventory, your sales process and how leads reach you today. Then we design the search and listing architecture, develop the real estate portal with deliverables you can review, and integrate your CRM and contact channels. We finish with testing, speed and SEO optimization, and training so your team runs the platform with full autonomy."
+      },
+      {
+        "heading": "Technology built to capture leads and fit the local market",
+        "body": "We develop with Next.js and React when you need a fast, scalable real estate portal, or on WordPress when you want simple self-management of your inventory. We connect whatever your operation needs: WhatsApp Business to respond to leads instantly, gateways like Mercado Pago, OXXO and SPEI for deposits or payments, and CFDI-SAT invoicing when required. Every integration adapts to the local ecosystem, with transparent pricing in MXN and no surprises."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We built BDweb, a real estate platform with a property search engine, detailed listings and lead capture designed to connect supply and demand quickly. It's exactly the kind of real estate portal we build from scratch: focused on finding the right property fast and turning every visit into a real contact for your sales team."
+      }
+    ]
+  },
+  "slug": "real-estate"
+}

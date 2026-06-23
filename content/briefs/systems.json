@@ -1,0 +1,187 @@
+{
+  "serviceId": "systems",
+  "slug": "sistemas",
+  "schema": "Service, FAQPage, BreadcrumbList, Organization (sameAs Alrit.dev / Hunter Price Mx), AggregateRating opcional si hay reseñas",
+  "targetKeywords": [
+    "desarrollo de software a la medida",
+    "software a la medida para empresas",
+    "sistemas a la medida México",
+    "desarrollo de sistemas web a la medida",
+    "software para automatizar procesos empresa",
+    "empresa de desarrollo de software México",
+    "sistema de gestión interna a la medida",
+    "desarrollo de software a la medida CDMX",
+    "cuánto cuesta un software a la medida",
+    "software a medida para empresas",
+    "desarrollo de aplicaciones web a medida",
+    "ERP a medida",
+    "software de gestión a medida",
+    "software a medida Madrid",
+    "custom software development",
+    "custom business software",
+    "internal web systems",
+    "business process automation software"
+  ],
+  "es": {
+    "metaTitle": "Software a la Medida para Empresas | Alrit.dev",
+    "metaDescription": "Desarrollo de software a la medida que automatiza tu operación. Sistemas web internos que cargan rápido y eliminan trabajo manual. Pide tu cotización.",
+    "h1": "Software a la medida que automatiza tu operación y elimina el trabajo manual",
+    "heroSub": "Diseñamos y desarrollamos sistemas web internos a la medida de tu empresa: lo que hoy haces en hojas de cálculo, WhatsApp y procesos manuales, lo convertimos en una plataforma rápida que trabaja por ti.",
+    "sections": [
+      {
+        "heading": "Qué incluye nuestro desarrollo de software a la medida",
+        "cover": "Explicar el alcance del servicio: análisis de procesos, diseño UX/UI, desarrollo del sistema web a la medida (front y back), panel de administración, roles y permisos, reportes, integraciones (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business), migración de datos, capacitación y soporte. Dejar claro que es a la medida del proceso real de la empresa, no una plantilla. Integrar 'desarrollo de software a la medida' y 'sistema de gestión interna a la medida'."
+      },
+      {
+        "heading": "Por qué un sistema a la medida (y no software estándar)",
+        "cover": "Contrastar software a la medida vs software estándar/ERP genérico. Argumentar: el sistema se adapta a tu proceso (no al revés), sin licencias por usuario que crecen para siempre, sin funciones que no usas, propiedad del código y datos, escala contigo. Mencionar cuándo conviene a medida vs estándar para no sobrevender. Integrar 'software a la medida vs software estándar' y 'ventajas del software a la medida para PyMEs'."
+      },
+      {
+        "heading": "Cómo trabajamos: proceso por fases y MVP",
+        "cover": "Detallar el proceso paso a paso: 1) Descubrimiento y mapeo de procesos, 2) Propuesta, alcance y presupuesto cerrado, 3) Diseño UX/UI y prototipo, 4) Desarrollo por fases empezando por un MVP funcional, 5) Pruebas e integraciones, 6) Lanzamiento, capacitación y soporte/evolución. Enfatizar entregas iterativas, visibilidad y que ves resultados desde la primera fase. Integrar 'desarrollo de software a la medida por fases y MVP'."
+      },
+      {
+        "heading": "Ejemplos de automatización y casos relacionados",
+        "cover": "Mostrar ejemplos concretos de automatización de procesos empresariales que resolvemos: control de inventario y compras, CRM y seguimiento de leads, cotizadores, paneles de operación, gestión de pedidos, facturación CFDI-SAT, constancias DC3-STPS para capacitación, LMS y e-commerce a la medida. Enlazar a portafolio/casos de Alrit.dev (real estate, LMS, e-commerce). Integrar 'ejemplos de automatización de procesos empresariales' y 'cómo automatizar procesos en una empresa'."
+      },
+      {
+        "heading": "Tecnología e ingeniería detrás de cada sistema",
+        "cover": "Explicar el stack y por qué importa: Next.js/React, bases de datos modernas, APIs seguras, PageSpeed 90+ y Core Web Vitals en verde, SEO técnico desde el código cuando aplica, hosting confiable, respaldos y seguridad. Integración real con el ecosistema mexicano (Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS, WhatsApp Business). Posicionar a Alrit.dev como estudio de ingeniería moderna, no agencia de plantillas."
+      },
+      {
+        "heading": "Empieza tu proyecto de software a la medida",
+        "cover": "Sección de cierre/CTA. Invitar a agendar una llamada de diagnóstico gratuita donde mapeamos el proceso a automatizar y entregamos una propuesta con alcance y precio. Reducir fricción: sin compromiso, respuesta rápida, atención directa con el equipo técnico. Reforzar confianza (estudio que evolucionó de Hunter Price Mx)."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Se adapta a tu proceso, no al revés",
+        "text": "Construimos el sistema alrededor de cómo trabaja tu empresa hoy, sin forzarte a cambiar tu operación para encajar en un software genérico."
+      },
+      {
+        "title": "Menos trabajo manual, menos errores",
+        "text": "Automatizamos las tareas repetitivas que hoy comen horas en hojas de cálculo y WhatsApp, para que tu equipo se enfoque en lo que sí importa."
+      },
+      {
+        "title": "Rápido de verdad",
+        "text": "Sistemas con ingeniería moderna (Next.js/React) que cargan al instante, con PageSpeed 90+ y Core Web Vitals en verde."
+      },
+      {
+        "title": "Integrado con tu ecosistema",
+        "text": "Conectamos con Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS y WhatsApp Business para que todo viva dentro de un solo sistema."
+      },
+      {
+        "title": "El código y los datos son tuyos",
+        "text": "Sin licencias por usuario que se disparan con el tiempo. Eres dueño de tu sistema y crece contigo sin pagar de más."
+      },
+      {
+        "title": "Por fases, con resultados visibles",
+        "text": "Empezamos con un MVP funcional y avanzamos por etapas, para que veas valor desde la primera entrega y no después de meses."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el software a la medida?",
+        "a": "El software a la medida es un sistema desarrollado específicamente para los procesos de una empresa, en lugar de un programa estándar que sirve para todos. Se diseña sobre tu forma real de trabajar, automatiza tus tareas concretas y crece contigo, lo que reduce errores y elimina trabajo manual."
+      },
+      {
+        "q": "¿Cuánto cuesta un software a la medida en México?",
+        "a": "El costo de un software a la medida depende del alcance: cantidad de procesos a automatizar, integraciones (como Mercado Pago o CFDI-SAT) y número de usuarios. En Alrit.dev trabajamos por fases y entregamos un presupuesto cerrado tras una llamada de diagnóstico, para que sepas el precio antes de empezar."
+      },
+      {
+        "q": "¿Cuánto tiempo tarda desarrollar un sistema a la medida?",
+        "a": "Un sistema a la medida sencillo puede tener un MVP funcional en pocas semanas, mientras que plataformas más completas tardan algunos meses. Trabajamos por fases y entregamos un primer sistema usable temprano, en lugar de esperar al final para que veas resultados."
+      },
+      {
+        "q": "¿Qué conviene: software a la medida o un ERP estándar?",
+        "a": "Un ERP estándar conviene cuando tu operación encaja en un proceso común y aceptas adaptarte a él. El software a la medida conviene cuando tienes procesos propios, quieres evitar licencias por usuario que crecen sin parar y necesitas que el sistema se ajuste a tu negocio. En muchos casos lo ideal es un sistema a la medida que se integra con las herramientas que ya usas."
+      },
+      {
+        "q": "¿El sistema se puede integrar con las herramientas que ya uso?",
+        "a": "Sí. Desarrollamos integraciones reales con el ecosistema mexicano y con tus herramientas actuales: Mercado Pago, SPEI/OXXO, facturación CFDI-SAT, constancias DC3-STPS, WhatsApp Business y otras APIs. El objetivo es que tu sistema a la medida centralice la operación en un solo lugar."
+      }
+    ],
+    "cta": "Agenda tu diagnóstico gratuito y recibe una propuesta con alcance y precio"
+  },
+  "en": {
+    "metaTitle": "Custom Software Development | Alrit.dev",
+    "metaDescription": "Custom software that automates your operation. Internal web systems built to fit your business, fast and integration-ready. Get your quote today.",
+    "h1": "Custom software that automates your operation and kills manual work",
+    "heroSub": "We design and build internal web systems tailored to your company: the work you do today in spreadsheets, WhatsApp and manual steps becomes a fast platform that runs for you.",
+    "sections": [
+      {
+        "heading": "What our custom software development includes",
+        "cover": "Explain the full scope: process analysis, UX/UI design, custom system development (front and back), admin panel, roles and permissions, reporting, integrations (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business), data migration, training and support. Make clear it is built around the company's real process, not a template. Integrate 'custom software development' and 'internal management system'."
+      },
+      {
+        "heading": "Why custom software instead of off-the-shelf",
+        "cover": "Contrast custom software vs off-the-shelf/generic ERP. Argue: the system adapts to your process (not the other way around), no ever-growing per-user licenses, no features you never use, you own the code and data, it scales with you. Note when off-the-shelf actually makes more sense, to stay credible. Integrate 'custom software vs standard software' and 'benefits of custom software for SMBs'."
+      },
+      {
+        "heading": "How we work: phased delivery and MVP",
+        "cover": "Detail the step-by-step process: 1) Discovery and process mapping, 2) Proposal, scope and fixed budget, 3) UX/UI design and prototype, 4) Phased development starting with a working MVP, 5) Testing and integrations, 6) Launch, training and ongoing support/evolution. Emphasize iterative delivery, visibility and seeing results from the first phase. Integrate 'phased custom software development and MVP'."
+      },
+      {
+        "heading": "Automation examples and related work",
+        "cover": "Show concrete business process automation examples we solve: inventory and purchasing control, CRM and lead tracking, quoting tools, operations dashboards, order management, CFDI-SAT invoicing, DC3-STPS training certificates, custom LMS and e-commerce. Link to Alrit.dev portfolio/case studies (real estate, LMS, e-commerce). Integrate 'business process automation examples' and 'how to automate company processes'."
+      },
+      {
+        "heading": "The technology and engineering behind every system",
+        "cover": "Explain the stack and why it matters: Next.js/React, modern databases, secure APIs, PageSpeed 90+ and green Core Web Vitals, technical SEO from the code when relevant, reliable hosting, backups and security. Real integration with the local ecosystem (Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS, WhatsApp Business). Position Alrit.dev as a modern engineering studio, not a template agency."
+      },
+      {
+        "heading": "Start your custom software project",
+        "cover": "Closing/CTA section. Invite the reader to book a free discovery call where we map the process to automate and deliver a proposal with scope and price. Reduce friction: no commitment, fast response, direct access to the technical team. Reinforce trust (studio evolved from Hunter Price Mx)."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Built around your process, not theirs",
+        "text": "We shape the system around how your company actually works, so you never have to bend your operation to fit generic software."
+      },
+      {
+        "title": "Less manual work, fewer errors",
+        "text": "We automate the repetitive tasks that eat hours in spreadsheets and WhatsApp, freeing your team to focus on what matters."
+      },
+      {
+        "title": "Genuinely fast",
+        "text": "Systems built with modern engineering (Next.js/React) that load instantly, with PageSpeed 90+ and green Core Web Vitals."
+      },
+      {
+        "title": "Integrated with your ecosystem",
+        "text": "We connect with Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS and WhatsApp Business so everything lives inside one system."
+      },
+      {
+        "title": "You own the code and the data",
+        "text": "No per-user licenses that spiral over time. You own your system and it scales with you without paying more."
+      },
+      {
+        "title": "Phased, with visible results",
+        "text": "We start with a working MVP and move in stages, so you see value from the first delivery, not months later."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is custom software?",
+        "a": "Custom software is a system built specifically for a company's processes, instead of an off-the-shelf program made for everyone. It is designed around how you actually work, automates your specific tasks and scales with you, which reduces errors and removes manual work."
+      },
+      {
+        "q": "How much does custom software cost?",
+        "a": "The cost of custom software depends on scope: how many processes you automate, the integrations needed (like Mercado Pago or CFDI-SAT) and the number of users. At Alrit.dev we work in phases and deliver a fixed budget after a discovery call, so you know the price before we start."
+      },
+      {
+        "q": "How long does it take to build custom software?",
+        "a": "A simple custom system can have a working MVP in a few weeks, while larger platforms take a few months. We work in phases and deliver a usable first version early, instead of waiting until the very end for you to see results."
+      },
+      {
+        "q": "Should I choose custom software or an off-the-shelf ERP?",
+        "a": "An off-the-shelf ERP makes sense when your operation fits a common process and you accept adapting to it. Custom software makes sense when you have your own workflows, want to avoid ever-growing per-user licenses and need the system to fit your business. Often the best option is a custom system that integrates with the tools you already use."
+      },
+      {
+        "q": "Can the system integrate with the tools I already use?",
+        "a": "Yes. We build real integrations with the local ecosystem and your current tools: Mercado Pago, SPEI/OXXO, CFDI-SAT invoicing, DC3-STPS certificates, WhatsApp Business and other APIs. The goal is for your custom system to centralize your operation in one place."
+      }
+    ],
+    "cta": "Book your free discovery call and get a proposal with scope and price"
+  }
+}

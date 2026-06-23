@@ -1,0 +1,52 @@
+{
+  "serviceId": "wordpress",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu sitio WordPress",
+        "body": "Construimos sitios WordPress que tú mismo puedes administrar sin depender de nadie: diseño a medida, páginas y secciones editables, blog listo para posicionar, formularios conectados a tu correo o CRM y panel de control entendible. Cada entrega incluye optimización de velocidad, certificado SSL, copias de seguridad, hosting recomendado y una capacitación para que actualices contenido con confianza. No te dejamos una plantilla genérica encima de la mesa: te entregamos un activo digital documentado y listo para crecer."
+      },
+      {
+        "heading": "Por qué desarrollar tu sitio WordPress con Alrit.dev",
+        "body": "La mayoría de los sitios WordPress son lentos porque acumulan plantillas pesadas y plugins de más; nosotros los hacemos al revés, priorizando velocidad real en PageSpeed y Core Web Vitals desde el código. Aplicamos SEO técnico desde la base (estructura, datos, rendimiento) para que Google te encuentre, no solo un plugin que promete posicionarte. Como evolucionamos de la agencia Hunter Price Mx, dejamos atrás el marketing genérico para entregarte ingeniería web moderna con precios transparentes en MXN."
+      },
+      {
+        "heading": "Cómo trabajamos tu proyecto",
+        "body": "Empezamos por entender tu negocio y objetivos para definir arquitectura, contenidos y referencias visuales antes de tocar una sola línea de código. Después diseñamos, desarrollamos tu sitio WordPress y lo optimizamos en velocidad y SEO técnico, manteniéndote al tanto en cada fase. Cerramos con pruebas, capacitación y puesta en línea, y te acompañamos en los ajustes posteriores para que el lanzamiento sea tranquilo y sin sorpresas."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Trabajamos WordPress con un enfoque de ingeniería: temas a medida o headless, plugins justos y bien elegidos, y caché y optimización para que cargue rápido en cualquier dispositivo. Lo conectamos con el ecosistema que usas en México, como Mercado Pago, OXXO y SPEI para cobros, facturación CFDI-SAT y WhatsApp Business para atender a tus clientes. Y cuando tu proyecto pide más potencia, integramos WordPress con Next.js o React para sumar velocidad y experiencias modernas sin perder lo administrable."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Hemos construido sitios institucionales y catálogos exigentes que viven de su contenido y rendimiento. Para RCIU Education desarrollamos el sitio institucional de una red internacional de universidades, con una presencia sólida y administrable. Para BDS Motos creamos la plataforma de su marca de motos y cuatrimotos, con catálogo de modelos, refacciones y talleres lista para que su equipo la actualice."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your WordPress site includes",
+        "body": "We build WordPress sites you can manage yourself without depending on anyone: custom design, editable pages and sections, an SEO-ready blog, forms connected to your inbox or CRM, and a dashboard that actually makes sense. Every delivery includes speed optimization, an SSL certificate, backups, recommended hosting, and training so you can update content with confidence. We don't hand you a generic template; we deliver a documented digital asset that's ready to grow."
+      },
+      {
+        "heading": "Why build your WordPress site with Alrit.dev",
+        "body": "Most WordPress sites are slow because they pile on heavy themes and unnecessary plugins; we do the opposite, prioritizing real speed in PageSpeed and Core Web Vitals from the code up. We apply technical SEO from the foundation (structure, data, performance) so Google finds you, not just a plugin that promises rankings. Having evolved from the Hunter Price Mx agency, we left generic marketing behind to deliver modern web engineering with transparent pricing in MXN."
+      },
+      {
+        "heading": "How we work on your project",
+        "body": "We start by understanding your business and goals to define architecture, content, and visual references before writing a single line of code. Then we design, develop your WordPress site, and optimize it for speed and technical SEO, keeping you in the loop at every phase. We wrap up with testing, training, and go-live, and we stick around for the follow-up tweaks so your launch is calm and free of surprises."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "We approach WordPress as engineering: custom or headless themes, lean and well-chosen plugins, plus caching and optimization so it loads fast on any device. We connect it to the ecosystem you use in Mexico, like Mercado Pago, OXXO, and SPEI for payments, CFDI-SAT invoicing, and WhatsApp Business to serve your customers. And when your project needs more power, we integrate WordPress with Next.js or React to add speed and modern experiences without losing what makes it manageable."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We've built institutional sites and demanding catalogs that live on their content and performance. For RCIU Education we developed the institutional website of an international network of universities, with a solid, manageable presence. For BDS Motos we created the platform for their motorcycle and ATV brand, with a catalog of models, parts, and service centers ready for their team to keep updated."
+      }
+    ]
+  },
+  "slug": "sitios-wordpress"
+}

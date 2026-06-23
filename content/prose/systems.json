@@ -1,0 +1,52 @@
+{
+  "serviceId": "systems",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu sistema a la medida",
+        "body": "Construimos sistemas y software a la medida que se ajustan exactamente a cómo opera tu negocio, no al revés. Recibes una aplicación web interna con paneles de administración, gestión de usuarios y permisos por rol, automatización de tus procesos clave, reportes y tableros con la información que sí necesitas, además de las integraciones que conectan tu operación de punta a punta. Todo queda documentado y entregado con código limpio, listo para crecer contigo."
+      },
+      {
+        "heading": "Por qué desarrollar tu software con Alrit.dev",
+        "body": "La diferencia entre una plantilla genérica y un software a la medida bien hecho se nota en el día a día: el nuestro carga rápido, está pensado con SEO técnico desde el código y se integra con el ecosistema que ya usas en México. No te vendemos un sistema inflado de funciones que nadie usa; construimos justo lo que automatiza tu operación, con ingeniería moderna y precios transparentes en MXN. Somos honestos con los rangos y con lo que sí mueve la aguja en tu negocio."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Arrancamos entendiendo tu operación real para mapear procesos, roles y cuellos de botella antes de escribir una sola línea. Después diseñamos la arquitectura y los flujos, desarrollamos por etapas con entregas que puedes revisar, y probamos a fondo cada módulo de tu sistema a la medida. Cerramos con la puesta en marcha, capacitación a tu equipo y soporte para que la herramienta quede viva y en uso desde el primer día."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Desarrollamos con tecnología moderna como Next.js y React cuando el proyecto pide velocidad y escalabilidad, o WordPress cuando es la mejor base para tu caso. Lo importante es que tu software a la medida conecte con el ecosistema local: cobros con Mercado Pago, OXXO y SPEI, facturación CFDI ante el SAT y notificaciones por WhatsApp Business. Así tu sistema no vive aislado, sino integrado a las herramientas con las que ya operas en México."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Ya hemos llevado esta forma de trabajo a plataformas reales. Conectas es una plataforma multirol con paneles diferenciados según el tipo de usuario, donde cada perfil ve y gestiona exactamente lo que le corresponde. Conquer Classic Plus es una plataforma con registro de usuarios, un mercado de items y sistema de rankings, todo construido a la medida de su operación. Tu sistema puede ser el siguiente en esta lista."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your custom system includes",
+        "body": "We build custom systems and software that fit exactly how your business operates, not the other way around. You get an internal web application with admin panels, role-based user and permission management, automation of your key processes, dashboards and reports with the information you actually need, plus the integrations that connect your operation end to end. Everything is delivered documented and with clean code, ready to grow alongside you."
+      },
+      {
+        "heading": "Why build your software with Alrit.dev",
+        "body": "The gap between a generic template and well-built custom software shows up in daily use: ours loads fast, is engineered with technical SEO from the code, and integrates with the ecosystem you already rely on in Mexico. We won't sell you a system bloated with features nobody uses; we build exactly what automates your operation, with modern engineering and transparent pricing in MXN. We're honest about the real ranges and about what actually moves the needle for your business."
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start by understanding how you really operate, mapping processes, roles, and bottlenecks before writing a single line of code. Then we design the architecture and flows, develop in stages with deliverables you can review, and thoroughly test every module of your custom software. We wrap up with launch, team training, and support so the tool stays alive and in use from day one."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "We develop with modern technology like Next.js and React when the project demands speed and scalability, or WordPress when it's the best foundation for your case. What matters is that your custom software connects with the local ecosystem: payments through Mercado Pago, OXXO, and SPEI, CFDI invoicing with the SAT, and notifications via WhatsApp Business. That way your system doesn't live in isolation, but plugged into the tools you already use in Mexico."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "We've already taken this approach to real platforms. Conectas is a multi-role platform with dedicated panels for each user type, where every profile sees and manages exactly what it should. Conquer Classic Plus is a platform with user registration, an item marketplace, and a ranking system, all built around its specific operation. Your system could be the next one on this list."
+      }
+    ]
+  },
+  "slug": "sistemas-a-medida"
+}

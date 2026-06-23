@@ -1,0 +1,194 @@
+{
+  "serviceId": "mobile",
+  "slug": "apps-moviles",
+  "es": {
+    "metaTitle": "Desarrollo de Apps Móviles México | Alrit.dev",
+    "metaDescription": "Desarrollamos apps iOS y Android a medida conectadas a tu negocio. Rápidas, seguras y listas para escalar. Cotiza tu app móvil hoy.",
+    "h1": "Desarrollo de apps móviles que conectan tu negocio con tus clientes",
+    "heroSub": "Diseñamos y desarrollamos aplicaciones iOS y Android a medida que se integran con tus sistemas, pagos y procesos. No plantillas: software propio que carga rápido, convierte y crece contigo.",
+    "sections": [
+      {
+        "heading": "Qué incluye tu app móvil a medida",
+        "cover": "Detallar el alcance: app nativa o multiplataforma (React Native) para iOS y Android, diseño UX/UI, backend y API, panel de administración, integraciones (pagos, ERP, WhatsApp Business), publicación en App Store y Google Play, y soporte. Dejar claro que es un activo digital propio, no una plantilla."
+      },
+      {
+        "heading": "Por qué elegir Alrit.dev para tu aplicación",
+        "cover": "Posicionamiento de marca: estudio de software a medida que evolucionó de Hunter Price Mx. Ingeniería moderna, apps rápidas y estables, integración real con el ecosistema mexicano (Mercado Pago, SPEI/OXXO, CFDI-SAT, WhatsApp Business). Diferenciar de agencias que solo prometen pero no entregan producto funcional."
+      },
+      {
+        "heading": "Nuestro proceso de desarrollo de apps",
+        "cover": "Explicar las fases del desarrollo de una aplicación móvil: descubrimiento y definición de alcance, diseño UX/UI y prototipo, desarrollo del MVP, pruebas QA, publicación en tiendas y mantenimiento evolutivo. Transmitir orden, tiempos claros y comunicación constante."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "cover": "Mostrar tipos de apps que construimos para PyMEs y empresas medianas: apps de e-commerce, agendas y reservas, apps conectadas a ERP/CRM, real estate, LMS y plataformas de capacitación. Reforzar resultados concretos (uso, retención, automatización) en lugar de solo estética."
+      },
+      {
+        "heading": "Tecnología y arquitectura",
+        "cover": "Stack y enfoque técnico: React Native para iOS y Android desde una sola base de código, backends en Node/Next.js, APIs seguras, integración con sistemas existentes, notificaciones push, analítica y rendimiento. Explicar nativo vs híbrido y cuándo conviene cada uno."
+      },
+      {
+        "heading": "Cotiza tu app móvil",
+        "cover": "Sección de cierre con CTA fuerte: invitar a agendar una llamada o solicitar cotización personalizada. Reducir fricción dejando claro que el primer diagnóstico es sin costo y orientado a resolver el objetivo de negocio."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Conectada a tu negocio de verdad",
+        "text": "Tu app se integra con tu ERP, CRM, inventario y pagos para que opere con datos reales, no como una vitrina aislada."
+      },
+      {
+        "title": "iOS y Android con una sola base",
+        "text": "Con React Native cubrimos ambas tiendas a la vez: menos costo, mismas funciones y actualizaciones más rápidas."
+      },
+      {
+        "title": "Pagos y ecosistema local",
+        "text": "Cobra dentro de la app con Mercado Pago, SPEI y OXXO, y factura con CFDI-SAT sin parches de último momento."
+      },
+      {
+        "title": "Rápida y estable",
+        "text": "Ingeniería moderna y pruebas reales para una app que abre rápido, no se traba y aguanta el crecimiento."
+      },
+      {
+        "title": "Publicación garantizada",
+        "text": "Nos encargamos del proceso completo en App Store y Google Play, incluyendo políticas, fichas y aprobaciones."
+      },
+      {
+        "title": "Soporte y evolución",
+        "text": "Mantenimiento, mejoras y nuevas funciones para que tu app crezca al ritmo de tu negocio."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta desarrollar una app móvil en México?",
+        "a": "El costo de una app en México depende del alcance, las integraciones y si es nativa o multiplataforma. Un MVP funcional suele iniciar en un rango medio, mientras que apps empresariales con ERP, pagos y panel propio cuestan más. Te damos una cotización clara después de un diagnóstico sin costo de tu proyecto."
+      },
+      {
+        "q": "¿Cuánto tiempo tarda desarrollar una aplicación móvil?",
+        "a": "Un MVP de app suele tomar entre 8 y 16 semanas, y un proyecto empresarial completo puede ir de 4 a 6 meses. El tiempo depende del número de funciones, integraciones y revisiones. Definimos un cronograma claro por fases desde el inicio para que sepas qué esperar en cada etapa."
+      },
+      {
+        "q": "¿Conviene una app nativa o híbrida para mi negocio?",
+        "a": "Para la mayoría de los negocios, una app multiplataforma con React Native es la mejor opción: cubre iOS y Android con una sola base de código, cuesta menos y se actualiza más rápido. La app 100% nativa conviene cuando necesitas rendimiento extremo o funciones muy específicas del dispositivo. Te asesoramos según tu caso."
+      },
+      {
+        "q": "¿Pueden integrar la app con mi sistema o ERP?",
+        "a": "Sí. Conectamos tu app con tu ERP, CRM, inventario, pasarelas de pago como Mercado Pago y SPEI, facturación CFDI-SAT y WhatsApp Business mediante APIs seguras. Así tu app trabaja con datos reales y en tiempo real, no como una herramienta aislada del resto de tu operación."
+      },
+      {
+        "q": "¿Ustedes publican la app en App Store y Google Play?",
+        "a": "Sí. Nos encargamos de todo el proceso de publicación en App Store y Google Play: configuración de cuentas de desarrollador, cumplimiento de políticas, fichas de tienda, capturas y el envío para revisión. Te entregamos la app publicada y lista para que tus usuarios la descarguen."
+      }
+    ],
+    "cta": "Cotiza tu app móvil sin costo"
+  },
+  "en": {
+    "metaTitle": "Mobile App Development | Alrit.dev",
+    "metaDescription": "We build custom iOS and Android apps connected to your business. Fast, secure and ready to scale. Get your mobile app quote today.",
+    "h1": "Mobile app development that connects your business to your customers",
+    "heroSub": "We design and build custom iOS and Android apps that integrate with your systems, payments and processes. Not templates: real software that loads fast, converts and scales with you.",
+    "sections": [
+      {
+        "heading": "What your custom mobile app includes",
+        "cover": "Detail the scope: native or cross-platform (React Native) apps for iOS and Android, UX/UI design, backend and API, admin panel, integrations (payments, ERP, WhatsApp Business), App Store and Google Play publishing, and support. Make clear it is an owned digital asset, not a template."
+      },
+      {
+        "heading": "Why choose Alrit.dev for your app",
+        "cover": "Brand positioning: a custom software studio that evolved from the Hunter Price Mx agency. Modern engineering, fast and stable apps, real integration with the Latin American and Spanish ecosystem (payments, invoicing, WhatsApp Business). Differentiate from agencies that promise but never ship a working product."
+      },
+      {
+        "heading": "Our app development process",
+        "cover": "Explain the phases of mobile app development: discovery and scope, UX/UI design and prototype, MVP build, QA testing, store publishing and ongoing maintenance. Convey structure, clear timelines and constant communication."
+      },
+      {
+        "heading": "Related work and use cases",
+        "cover": "Show the types of apps we build for SMBs and mid-market companies: e-commerce apps, booking and scheduling, ERP/CRM-connected apps, real estate, LMS and training platforms. Reinforce concrete results (usage, retention, automation) over aesthetics alone."
+      },
+      {
+        "heading": "Technology and architecture",
+        "cover": "Tech stack and approach: React Native for iOS and Android from a single codebase, Node/Next.js backends, secure APIs, integration with existing systems, push notifications, analytics and performance. Explain native vs hybrid and when each fits."
+      },
+      {
+        "heading": "Get your mobile app quote",
+        "cover": "Closing section with a strong CTA: invite users to book a call or request a tailored quote. Lower friction by making clear the first assessment is free and focused on solving the business goal."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Truly connected to your business",
+        "text": "Your app integrates with your ERP, CRM, inventory and payments so it runs on real data, not as an isolated storefront."
+      },
+      {
+        "title": "iOS and Android from one codebase",
+        "text": "With React Native we cover both stores at once: lower cost, the same features and faster updates."
+      },
+      {
+        "title": "Payments and local ecosystem",
+        "text": "Take in-app payments and connect billing and messaging tools without last-minute workarounds."
+      },
+      {
+        "title": "Fast and stable",
+        "text": "Modern engineering and real testing for an app that opens fast, doesn't freeze and handles growth."
+      },
+      {
+        "title": "Publishing handled for you",
+        "text": "We manage the full process on the App Store and Google Play, including policies, listings and approvals."
+      },
+      {
+        "title": "Support and evolution",
+        "text": "Maintenance, improvements and new features so your app grows at the pace of your business."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does it cost to develop a mobile app?",
+        "a": "The cost of a mobile app depends on the scope, integrations and whether it's native or cross-platform. A working MVP typically starts in a mid range, while enterprise apps with ERP, payments and a custom panel cost more. We provide a clear quote after a free assessment of your project."
+      },
+      {
+        "q": "How long does it take to develop a mobile app?",
+        "a": "An app MVP usually takes 8 to 16 weeks, and a full enterprise project can run 4 to 6 months. The timeline depends on the number of features, integrations and review cycles. We define a clear phased schedule from the start so you know what to expect at each stage."
+      },
+      {
+        "q": "Should I build a native or hybrid app for my business?",
+        "a": "For most businesses, a cross-platform app with React Native is the best option: it covers iOS and Android from a single codebase, costs less and updates faster. A fully native app makes sense when you need extreme performance or very device-specific features. We advise you based on your case."
+      },
+      {
+        "q": "Can you integrate the app with my system or ERP?",
+        "a": "Yes. We connect your app with your ERP, CRM, inventory, payment gateways, billing and WhatsApp Business through secure APIs. That way your app works with real, real-time data instead of being a tool isolated from the rest of your operation."
+      },
+      {
+        "q": "Do you publish the app on the App Store and Google Play?",
+        "a": "Yes. We handle the entire publishing process on the App Store and Google Play: developer account setup, policy compliance, store listings, screenshots and submission for review. We deliver your app published and ready for your users to download."
+      }
+    ],
+    "cta": "Get a free mobile app quote"
+  },
+  "schema": "Service (primary, con provider Organization Alrit.dev, areaServed MX/ES, serviceType \"Desarrollo de aplicaciones móviles\"), FAQPage (para las 5 preguntas frecuentes y featured snippets), BreadcrumbList (Inicio > Servicios > Apps móviles), Organization (datos de marca Alrit.dev), y opcionalmente Offer/AggregateRating dentro de Service si hay reseñas verificables.",
+  "targetKeywords": [
+    "desarrollo de apps móviles México",
+    "agencia de desarrollo de aplicaciones móviles",
+    "empresa de desarrollo de apps iOS Android",
+    "cuánto cuesta una app en México",
+    "cotización app móvil México",
+    "crear app para mi negocio México",
+    "desarrollo de aplicaciones móviles a medida",
+    "desarrollo de apps en CDMX Guadalajara Monterrey",
+    "precio desarrollar app para empresa",
+    "desarrollo app React Native México",
+    "app nativa o híbrida cuál conviene",
+    "MVP de app qué es y cuánto cuesta",
+    "cómo integrar mi app con mi ERP",
+    "mantenimiento de aplicaciones móviles costo",
+    "empresa de desarrollo de apps España",
+    "desarrollo de apps Madrid",
+    "desarrollo de aplicaciones móviles Barcelona",
+    "cuánto cuesta crear una app",
+    "presupuesto aplicación móvil",
+    "desarrollo apps iOS y Android para empresas",
+    "mobile app development",
+    "custom mobile app development",
+    "iOS Android app development company",
+    "how much does a mobile app cost",
+    "React Native app development"
+  ]
+}

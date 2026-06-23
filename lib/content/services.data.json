@@ -1,0 +1,1445 @@
+{
+  "sitios-wordpress": {
+    "serviceId": "wordpress",
+    "slug": "sitios-wordpress",
+    "accent": "#21759b",
+    "schema": "Service (con provider Alrit.dev y areaServed MX/ES), FAQPage (para las 5 preguntas frecuentes), BreadcrumbList (Inicio > Servicios > Sitios WordPress), Organization (datos de Alrit.dev), y opcionalmente WebPage + Offer dentro de Service para precio/cotizacion.",
+    "targetKeywords": [
+      "diseño de páginas web WordPress México",
+      "agencia WordPress México",
+      "desarrollo web WordPress México",
+      "cuánto cuesta una página web en WordPress",
+      "página web autoadministrable WordPress",
+      "diseño web profesional para empresas WordPress",
+      "mantenimiento WordPress México",
+      "crear tienda en línea WooCommerce México",
+      "agencia diseño WordPress CDMX",
+      "diseño web WordPress",
+      "agencia WordPress España",
+      "diseño web WordPress Madrid",
+      "presupuesto página web WordPress",
+      "mantenimiento WordPress",
+      "mantenimiento y seguridad WordPress",
+      "desarrollo WordPress para empresas",
+      "cómo mejorar la velocidad de WordPress",
+      "WordPress vs Wix cuál es mejor",
+      "cómo proteger WordPress de hackeos"
+    ],
+    "es": {
+      "metaTitle": "Diseño Web WordPress México | Alrit.dev",
+      "metaDescription": "Sitios WordPress autoadministrables, rápidos y seguros con PageSpeed 90+. Posiciona en Google y convierte. Pide tu cotización sin costo.",
+      "h1": "Sitios WordPress administrables, rápidos y seguros que sí convierten",
+      "heroSub": "Diseñamos y desarrollamos páginas web en WordPress que cargan en segundos, posicionan en Google y las actualizas tú mismo sin depender de nadie. Ingeniería real, no plantillas lentas.",
+      "benefits": [
+        {
+          "title": "Lo administras tú, sin depender de nadie",
+          "text": "Editas textos, fotos, productos y secciones desde un panel simple. Tu sitio web es tuyo y lo actualizas cuando quieras, sin pagar por cada cambio."
+        },
+        {
+          "title": "Carga rápida, PageSpeed 90+",
+          "text": "Optimizamos cada imagen, caché y línea de código para que tu página web cargue en segundos. Menos rebote, mejor experiencia y más conversiones."
+        },
+        {
+          "title": "Posiciona en Google desde el código",
+          "text": "SEO técnico, Core Web Vitals en verde y estructura semántica para que Google te encuentre y te recomiende. No solo se ve bien: aparece."
+        },
+        {
+          "title": "Seguro y protegido",
+          "text": "Hardening, certificado SSL, copias de seguridad automáticas y plugins de seguridad para mantener tu WordPress a salvo de hackeos y caídas."
+        },
+        {
+          "title": "Integrado con tu ecosistema",
+          "text": "Conectamos Mercado Pago, SPEI, OXXO, CFDI-SAT y WhatsApp Business para que tu sitio web trabaje dentro de tu operación real, no aislado."
+        },
+        {
+          "title": "Diseño a medida, no plantilla",
+          "text": "Tu marca merece un sitio único. Diseñamos cada sección pensada en tus clientes y tus objetivos de negocio, no un molde reciclado."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una página web en WordPress en México?",
+          "a": "El precio de una página web en WordPress en México depende del alcance: un sitio corporativo autoadministrable suele costar desde unos miles de pesos, mientras que una tienda en línea con WooCommerce o un sistema a medida tiene mayor inversión. En Alrit.dev cotizamos según tus objetivos y te damos un presupuesto claro sin costo y sin compromiso."
+        },
+        {
+          "q": "¿Qué es una página web autoadministrable y cómo funciona con WordPress?",
+          "a": "Una página web autoadministrable es un sitio que tú mismo puedes actualizar sin saber programar. Con WordPress accedes a un panel donde editas textos, imágenes, productos y secciones en minutos. Nosotros lo configuramos a medida y te capacitamos para que administres tu sitio con total autonomía."
+        },
+        {
+          "q": "¿Cómo logran que un sitio WordPress cargue rápido?",
+          "a": "Aplicamos WPO (Web Performance Optimization): optimización de imágenes, caché, lazy load, CDN, temas ligeros y código limpio. Con esto alcanzamos PageSpeed 90+ y Core Web Vitals en verde, lo que mejora la velocidad de carga, la experiencia del usuario y tu posicionamiento en Google."
+        },
+        {
+          "q": "¿Cómo protegen mi WordPress de hackeos?",
+          "a": "Reforzamos la seguridad con hardening del servidor, certificado SSL, plugins de seguridad confiables, actualizaciones constantes de WordPress y plugins, y copias de seguridad automáticas. Así reducimos al máximo el riesgo de hackeos y, si algo pasa, podemos restaurar tu sitio rápidamente."
+        },
+        {
+          "q": "¿WordPress o Wix, cuál es mejor para mi empresa?",
+          "a": "Para una empresa que busca crecer, WordPress es mejor que Wix: ofrece control total, mejor SEO, escalabilidad, integraciones ilimitadas y la propiedad real de tu sitio. Wix es más limitado y te ata a su plataforma. Si quieres un activo digital que posicione y crezca contigo, WordPress es la opción profesional."
+        }
+      ],
+      "cta": "Cotiza tu sitio WordPress sin costo",
+      "sections": [
+        {
+          "heading": "Qué incluye tu sitio WordPress",
+          "body": "Construimos sitios WordPress que tú mismo puedes administrar sin depender de nadie: diseño a medida, páginas y secciones editables, blog listo para posicionar, formularios conectados a tu correo o CRM y panel de control entendible. Cada entrega incluye optimización de velocidad, certificado SSL, copias de seguridad, hosting recomendado y una capacitación para que actualices contenido con confianza. No te dejamos una plantilla genérica encima de la mesa: te entregamos un activo digital documentado y listo para crecer."
+        },
+        {
+          "heading": "Por qué desarrollar tu sitio WordPress con Alrit.dev",
+          "body": "La mayoría de los sitios WordPress son lentos porque acumulan plantillas pesadas y plugins de más; nosotros los hacemos al revés, priorizando velocidad real en PageSpeed y Core Web Vitals desde el código. Aplicamos SEO técnico desde la base (estructura, datos, rendimiento) para que Google te encuentre, no solo un plugin que promete posicionarte. Como evolucionamos de la agencia Hunter Price Mx, dejamos atrás el marketing genérico para entregarte ingeniería web moderna con precios transparentes en MXN."
+        },
+        {
+          "heading": "Cómo trabajamos tu proyecto",
+          "body": "Empezamos por entender tu negocio y objetivos para definir arquitectura, contenidos y referencias visuales antes de tocar una sola línea de código. Después diseñamos, desarrollamos tu sitio WordPress y lo optimizamos en velocidad y SEO técnico, manteniéndote al tanto en cada fase. Cerramos con pruebas, capacitación y puesta en línea, y te acompañamos en los ajustes posteriores para que el lanzamiento sea tranquilo y sin sorpresas."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Trabajamos WordPress con un enfoque de ingeniería: temas a medida o headless, plugins justos y bien elegidos, y caché y optimización para que cargue rápido en cualquier dispositivo. Lo conectamos con el ecosistema que usas en México, como Mercado Pago, OXXO y SPEI para cobros, facturación CFDI-SAT y WhatsApp Business para atender a tus clientes. Y cuando tu proyecto pide más potencia, integramos WordPress con Next.js o React para sumar velocidad y experiencias modernas sin perder lo administrable."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Hemos construido sitios institucionales y catálogos exigentes que viven de su contenido y rendimiento. Para RCIU Education desarrollamos el sitio institucional de una red internacional de universidades, con una presencia sólida y administrable. Para BDS Motos creamos la plataforma de su marca de motos y cuatrimotos, con catálogo de modelos, refacciones y talleres lista para que su equipo la actualice."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "WordPress Web Design Mexico | Alrit.dev",
+      "metaDescription": "Self-managed WordPress sites that are fast and secure, with PageSpeed 90+. Rank on Google and convert. Get your free quote today.",
+      "h1": "Fast, secure WordPress sites you can manage yourself, built to convert",
+      "heroSub": "We design and develop WordPress websites that load in seconds, rank on Google, and let you update them yourself, no developer required. Real engineering, not slow templates.",
+      "benefits": [
+        {
+          "title": "You manage it, no one to depend on",
+          "text": "Edit text, photos, products and sections from a simple dashboard. Your website is yours and you update it whenever you want, without paying for every change."
+        },
+        {
+          "title": "Fast loading, PageSpeed 90+",
+          "text": "We optimize every image, cache and line of code so your website loads in seconds. Less bounce, better experience and more conversions."
+        },
+        {
+          "title": "Ranks on Google from the code",
+          "text": "Technical SEO, green Core Web Vitals and semantic structure so Google finds and recommends you. It doesn't just look good: it shows up."
+        },
+        {
+          "title": "Safe and protected",
+          "text": "Hardening, SSL certificate, automatic backups and security plugins to keep your WordPress safe from hacks and downtime."
+        },
+        {
+          "title": "Integrated with your ecosystem",
+          "text": "We connect Mercado Pago, SPEI, OXXO, CFDI-SAT and WhatsApp Business so your site works inside your real operation, not isolated."
+        },
+        {
+          "title": "Custom design, not a template",
+          "text": "Your brand deserves a unique site. We design every section around your customers and business goals, not a recycled mold."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does a WordPress website cost in Mexico?",
+          "a": "The price of a WordPress website in Mexico depends on scope: a self-managed corporate site typically starts in the low thousands of pesos, while a WooCommerce store or a custom system requires more investment. At Alrit.dev we quote based on your goals and give you a clear estimate at no cost and with no commitment."
+        },
+        {
+          "q": "What is a self-managed website and how does it work with WordPress?",
+          "a": "A self-managed website is a site you can update yourself without knowing how to code. With WordPress you access a dashboard where you edit text, images, products and sections in minutes. We configure it custom for you and train you so you can manage your site with full autonomy."
+        },
+        {
+          "q": "How do you make a WordPress site load fast?",
+          "a": "We apply WPO (Web Performance Optimization): image optimization, caching, lazy load, CDN, lightweight themes and clean code. This lets us reach PageSpeed 90+ and green Core Web Vitals, improving load speed, user experience and your Google ranking."
+        },
+        {
+          "q": "How do you protect my WordPress from hacks?",
+          "a": "We strengthen security with server hardening, an SSL certificate, trusted security plugins, constant WordPress and plugin updates, and automatic backups. This minimizes the risk of hacks and, if anything happens, we can restore your site quickly."
+        },
+        {
+          "q": "WordPress or Wix, which is better for my business?",
+          "a": "For a business looking to grow, WordPress beats Wix: it offers full control, better SEO, scalability, unlimited integrations and real ownership of your site. Wix is more limited and locks you into its platform. If you want a digital asset that ranks and grows with you, WordPress is the professional choice."
+        }
+      ],
+      "cta": "Get your free WordPress quote",
+      "sections": [
+        {
+          "heading": "What your WordPress site includes",
+          "body": "We build WordPress sites you can manage yourself without depending on anyone: custom design, editable pages and sections, an SEO-ready blog, forms connected to your inbox or CRM, and a dashboard that actually makes sense. Every delivery includes speed optimization, an SSL certificate, backups, recommended hosting, and training so you can update content with confidence. We don't hand you a generic template; we deliver a documented digital asset that's ready to grow."
+        },
+        {
+          "heading": "Why build your WordPress site with Alrit.dev",
+          "body": "Most WordPress sites are slow because they pile on heavy themes and unnecessary plugins; we do the opposite, prioritizing real speed in PageSpeed and Core Web Vitals from the code up. We apply technical SEO from the foundation (structure, data, performance) so Google finds you, not just a plugin that promises rankings. Having evolved from the Hunter Price Mx agency, we left generic marketing behind to deliver modern web engineering with transparent pricing in MXN."
+        },
+        {
+          "heading": "How we work on your project",
+          "body": "We start by understanding your business and goals to define architecture, content, and visual references before writing a single line of code. Then we design, develop your WordPress site, and optimize it for speed and technical SEO, keeping you in the loop at every phase. We wrap up with testing, training, and go-live, and we stick around for the follow-up tweaks so your launch is calm and free of surprises."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "We approach WordPress as engineering: custom or headless themes, lean and well-chosen plugins, plus caching and optimization so it loads fast on any device. We connect it to the ecosystem you use in Mexico, like Mercado Pago, OXXO, and SPEI for payments, CFDI-SAT invoicing, and WhatsApp Business to serve your customers. And when your project needs more power, we integrate WordPress with Next.js or React to add speed and modern experiences without losing what makes it manageable."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We've built institutional sites and demanding catalogs that live on their content and performance. For RCIU Education we developed the institutional website of an international network of universities, with a solid, manageable presence. For BDS Motos we created the platform for their motorcycle and ATV brand, with a catalog of models, parts, and service centers ready for their team to keep updated."
+        }
+      ]
+    }
+  },
+  "desarrollo-web": {
+    "serviceId": "webdev",
+    "slug": "desarrollo-web",
+    "accent": "#6c5ce7",
+    "schema": "Service, FAQPage, BreadcrumbList, Organization (and optionally WebPage/ProfessionalService for the local MX business signals)",
+    "targetKeywords": [
+      "desarrollo de páginas web",
+      "diseño de páginas web",
+      "desarrollo web a la medida México",
+      "desarrollo web a medida",
+      "agencia de diseño web México",
+      "cuánto cuesta una página web en México",
+      "cotizar página web",
+      "página web para empresas México",
+      "agencia desarrollo web Next.js México",
+      "diseño de páginas web CDMX",
+      "ventajas de Next.js para SEO",
+      "desarrollo web a medida vs WordPress",
+      "página web corporativa profesional",
+      "presupuesto página web",
+      "diseño web a medida"
+    ],
+    "es": {
+      "metaTitle": "Desarrollo de Páginas Web a Medida | Alrit.dev",
+      "metaDescription": "Desarrollo de páginas web rápidas, optimizadas para SEO y listas para convertir. Next.js/React, PageSpeed 90+. Cotiza tu sitio hoy con Alrit.dev.",
+      "h1": "Desarrollo de páginas web que cargan rápido, posicionan en Google y convierten",
+      "heroSub": "Diseñamos y desarrollamos tu sitio a medida con ingeniería moderna (Next.js/React), Core Web Vitals en verde y SEO técnico desde el código. Olvídate de plantillas lentas: construimos activos digitales que rinden.",
+      "benefits": [
+        {
+          "title": "Velocidad real, no promesas",
+          "text": "PageSpeed 90+ y Core Web Vitals en verde. Tu web carga en milisegundos en celular y escritorio, lo que mejora tu posición en Google y reduce el rebote."
+        },
+        {
+          "title": "SEO técnico desde el código",
+          "text": "No lo agregamos después: estructuramos cada página para posicionar. HTML semántico, metadatos, datos estructurados y arquitectura pensada para Google."
+        },
+        {
+          "title": "Diseño a medida, no plantillas",
+          "text": "Tu sitio se diseña para tu marca y tus objetivos de conversión, no para encajar en un tema genérico que comparten miles de negocios."
+        },
+        {
+          "title": "Responsive y perfecto en móvil",
+          "text": "Más del 70% de tus visitas llegan desde el celular. Diseñamos pensando en móvil primero para que se vea y funcione impecable en cualquier pantalla."
+        },
+        {
+          "title": "Integración con el ecosistema local",
+          "text": "Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS y WhatsApp Business conectados de verdad, listos para operar en México y Latinoamérica."
+        },
+        {
+          "title": "Sin costes ocultos de mantenimiento",
+          "text": "Olvídate de plugins que rompen el sitio y actualizaciones constantes. Tu web a medida es estable, segura y económica de mantener a largo plazo."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una página web en México?",
+          "a": "El precio de una página web a medida en México depende del alcance: número de páginas, funcionalidades, integraciones (pagos, CRM, e-commerce) y SEO. Un sitio corporativo profesional suele partir de unos cuantos miles de pesos, mientras que plataformas o tiendas en línea cuestan más. En Alrit.dev cotizamos según tus objetivos, sin costes ocultos: solicita un presupuesto y recibe un desglose claro."
+        },
+        {
+          "q": "¿Cuánto tarda en desarrollarse una página web?",
+          "a": "Un sitio corporativo a medida toma normalmente de 3 a 6 semanas, dependiendo de la cantidad de páginas, el contenido disponible y las integraciones. Tiendas en línea y plataformas pueden requerir más tiempo. Te entregamos un cronograma desde el inicio para que sepas exactamente cuándo estará en línea tu web."
+        },
+        {
+          "q": "¿Qué es mejor para SEO: desarrollo web a medida o WordPress?",
+          "a": "El desarrollo web a medida con Next.js/React suele posicionar mejor porque ofrece mayor velocidad de carga, Core Web Vitals en verde y control total del código y del SEO técnico. WordPress puede funcionar, pero los temas y plugins suelen ralentizar el sitio y generar costes de mantenimiento. Si el rendimiento y el posicionamiento en Google son prioritarios, el desarrollo a medida es la mejor opción."
+        },
+        {
+          "q": "¿Qué necesito para hacer una página web profesional?",
+          "a": "Necesitas tres elementos básicos: un dominio (tu dirección, ejemplo: tumarca.com), hosting (donde vive tu sitio) y un certificado SSL (el candado de seguridad). A eso se suma el diseño, el desarrollo y el contenido. En Alrit.dev te ayudamos con todo el proceso: configuramos dominio, hosting y SSL para que solo te preocupes por hacer crecer tu negocio."
+        },
+        {
+          "q": "¿Mi página web se verá bien en celular?",
+          "a": "Sí. Todas nuestras páginas se desarrollan con diseño responsive y enfoque móvil primero, de modo que se adaptan perfectamente a cualquier pantalla: celular, tablet y escritorio. Además optimizamos la velocidad de carga en móvil, ya que es lo que Google evalúa para posicionar tu sitio."
+        }
+      ],
+      "cta": "Cotiza tu página web a medida",
+      "sections": [
+        {
+          "heading": "Qué incluye tu desarrollo de páginas web a medida",
+          "body": "Cuando trabajas con nosotros, el desarrollo de páginas web a medida abarca todo el ciclo: arquitectura de la información, diseño UI responsivo, programación del front-end y back-end, y puesta en producción lista para crecer. Entregamos un sitio optimizado para SEO desde el código, con velocidad de carga afinada para Core Web Vitals, panel de administración de contenidos, formularios e integraciones que tu negocio necesita, y la documentación para que tengas el control. Nada de plantillas recicladas: cada componente se construye alrededor de tus objetivos reales."
+        },
+        {
+          "heading": "Por qué elegir a Alrit.dev",
+          "body": "La diferencia entre una web genérica y un desarrollo de páginas web a medida se nota en los resultados: aquí cuidamos la velocidad real (PageSpeed y Core Web Vitals), el SEO técnico escrito en el código y la integración con el ecosistema mexicano que de verdad usas. Conectamos Mercado Pago, OXXO, SPEI, facturación CFDI-SAT y WhatsApp Business sin parches ni plugins frágiles. Somos el estudio que evolucionó de la agencia Hunter Price Mx para dejar el marketing genérico y construir activos digitales de alto rendimiento, con precios transparentes en MXN y rangos honestos, sin promesas infladas."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Empezamos por descubrimiento: entendemos tu negocio, tu audiencia y los objetivos del sitio antes de escribir una línea de código. Seguimos con diseño y prototipo para que valides la experiencia, luego desarrollo a medida en sprints donde ves avances reales, y cerramos con pruebas, optimización de velocidad y lanzamiento. Después del despliegue te acompañamos con soporte y mejoras, porque un sitio de alto rendimiento se cuida, no se abandona."
+        },
+        {
+          "heading": "Tecnología y enfoque técnico",
+          "body": "Construimos principalmente con Next.js y React cuando buscas máxima velocidad, escalabilidad y un SEO técnico impecable; también desarrollamos sobre WordPress cuando tu equipo necesita autonomía editorial. Sea cual sea la base, el desarrollo de páginas web a medida se conecta de forma nativa con las herramientas del mercado local: pagos con Mercado Pago, OXXO y SPEI, facturación CFDI-SAT y contacto directo por WhatsApp Business. Elegimos la tecnología por lo que conviene a tu proyecto, no por moda."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Nuestro trabajo habla por sí solo: desarrollamos Conquer Classic Plus, una plataforma de servidor MMO construida con Next.js y Supabase, y Conectas, un marketplace de experiencias gastronómicas en Next.js con pagos vía Stripe. También dimos vida a Programarte, una plataforma de bienestar mental pensada para escalar. Cada proyecto refleja el mismo estándar que aplicamos a tu desarrollo de páginas web a medida: ingeniería moderna, velocidad e integraciones que funcionan en el mundo real."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Custom Web Development Services | Alrit.dev",
+      "metaDescription": "Fast, SEO-optimized custom websites built to convert. Next.js/React, PageSpeed 90+, Core Web Vitals in green. Get your quote today with Alrit.dev.",
+      "h1": "Custom web development that loads fast, ranks on Google and converts",
+      "heroSub": "We design and build your website from scratch with modern engineering (Next.js/React), green Core Web Vitals and SEO baked into the code. Forget slow templates: we build digital assets that perform.",
+      "benefits": [
+        {
+          "title": "Real speed, not promises",
+          "text": "PageSpeed 90+ and Core Web Vitals in green. Your site loads in milliseconds on mobile and desktop, improving your Google ranking and cutting bounce rates."
+        },
+        {
+          "title": "SEO baked into the code",
+          "text": "We don't bolt it on afterward: every page is structured to rank. Semantic HTML, metadata, structured data and architecture built for Google."
+        },
+        {
+          "title": "Custom design, not templates",
+          "text": "Your site is designed for your brand and conversion goals, not to fit a generic theme shared by thousands of other businesses."
+        },
+        {
+          "title": "Responsive and flawless on mobile",
+          "text": "Over 70% of your visits come from phones. We design mobile-first so your site looks and works perfectly on any screen."
+        },
+        {
+          "title": "Integrated with the local ecosystem",
+          "text": "Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS and WhatsApp Business truly connected, ready to operate across Mexico and Latin America."
+        },
+        {
+          "title": "No hidden maintenance costs",
+          "text": "No more plugins breaking your site or constant updates. Your custom website is stable, secure and inexpensive to maintain long term."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does a custom website cost?",
+          "a": "The cost of a custom website depends on scope: number of pages, features, integrations (payments, CRM, e-commerce) and SEO. A professional corporate site typically starts in the low thousands, while platforms and online stores cost more. At Alrit.dev we quote based on your goals with no hidden fees: request a quote and get a clear breakdown."
+        },
+        {
+          "q": "How long does it take to develop a website?",
+          "a": "A custom corporate site usually takes 3 to 6 weeks, depending on the number of pages, available content and integrations. Online stores and platforms may take longer. We give you a timeline from the start so you know exactly when your site goes live."
+        },
+        {
+          "q": "Which is better for SEO: custom web development or WordPress?",
+          "a": "Custom development with Next.js/React tends to rank better thanks to faster load times, green Core Web Vitals and full control over the code and technical SEO. WordPress can work, but themes and plugins often slow the site down and add maintenance costs. If performance and Google rankings are a priority, custom development is the better choice."
+        },
+        {
+          "q": "What do I need to build a professional website?",
+          "a": "You need three basics: a domain (your address, e.g. yourbrand.com), hosting (where your site lives) and an SSL certificate (the security padlock). On top of that comes design, development and content. At Alrit.dev we handle the whole process, configuring domain, hosting and SSL so you can focus on growing your business."
+        },
+        {
+          "q": "Will my website look good on mobile?",
+          "a": "Yes. Every site we build uses responsive, mobile-first design, so it adapts perfectly to any screen: phone, tablet and desktop. We also optimize mobile load speed, which is exactly what Google evaluates to rank your site."
+        }
+      ],
+      "cta": "Get your custom website quote",
+      "sections": [
+        {
+          "heading": "What your custom website development includes",
+          "body": "When you work with us, custom website development covers the full cycle: information architecture, responsive UI design, front-end and back-end programming, and a production-ready launch built to grow. You get a site that is SEO-optimized from the code itself, with load speed tuned for Core Web Vitals, a content management panel, plus the forms and integrations your business actually needs, along with documentation so you stay in control. No recycled templates: every component is built around your real goals."
+        },
+        {
+          "heading": "Why choose Alrit.dev",
+          "body": "The gap between a generic website and true custom website development shows up in the results: we care about real speed (PageSpeed and Core Web Vitals), technical SEO written into the code, and integration with the local ecosystem you truly use. We connect Mercado Pago, OXXO, SPEI, CFDI-SAT invoicing and WhatsApp Business without fragile patches or plugins. We are the studio that evolved from the Hunter Price Mx agency to leave generic marketing behind and build high-performance digital assets, with transparent pricing in MXN and honest ranges, never inflated promises."
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start with discovery: we understand your business, your audience and the site's goals before writing a single line of code. Then we move to design and prototype so you can validate the experience, followed by custom development in sprints where you see real progress, and we close with testing, speed optimization and launch. After deployment we stay with you through support and improvements, because a high-performance site is maintained, not abandoned."
+        },
+        {
+          "heading": "Technology and technical approach",
+          "body": "We build primarily with Next.js and React when you need maximum speed, scalability and flawless technical SEO; we also develop on WordPress when your team needs editorial autonomy. Whatever the foundation, custom website development connects natively with local market tools: payments through Mercado Pago, OXXO and SPEI, CFDI-SAT invoicing and direct contact via WhatsApp Business. We choose the technology based on what suits your project, not on trends."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "Our work speaks for itself: we developed Conquer Classic Plus, an MMO server platform built with Next.js and Supabase, and Conectas, a marketplace of culinary experiences in Next.js with payments via Stripe. We also brought Programarte to life, a mental wellness platform designed to scale. Each project reflects the same standard we apply to your custom website development: modern engineering, speed and integrations that work in the real world."
+        }
+      ]
+    }
+  },
+  "plataformas-lms": {
+    "serviceId": "lms",
+    "slug": "plataformas-lms",
+    "accent": "#0984e3",
+    "schema": "Service (con provider Organization Alrit.dev), FAQPage, BreadcrumbList, WebPage. Opcional: Offer/AggregateOffer dentro de Service para precios, y Organization con sameAs para reforzar la marca.",
+    "targetKeywords": [
+      "desarrollo de plataforma LMS a la medida México",
+      "crear plataforma para vender cursos en línea",
+      "plataforma LMS con certificados DC3 STPS",
+      "desarrollo plataforma de capacitación en línea para empresas",
+      "crear academia online propia México",
+      "plataforma de cursos con Mercado Pago y OXXO",
+      "desarrollo Moodle a medida México",
+      "plataforma e-learning marca blanca sin comisiones",
+      "agencia desarrollo plataforma e-learning México",
+      "cuánto cuesta una plataforma educativa LMS",
+      "desarrollo de plataforma LMS a medida",
+      "plataforma de teleformación FUNDAE bonificada",
+      "crear campus virtual a medida",
+      "desarrollo aula virtual WordPress LearnDash",
+      "crear plataforma para vender cursos online"
+    ],
+    "es": {
+      "metaTitle": "Plataforma LMS a Medida México | Alrit.dev",
+      "metaDescription": "Desarrollamos tu plataforma LMS a medida para vender cursos en línea con pagos, certificados DC3 y marca propia. Cotiza tu academia online hoy.",
+      "h1": "Desarrollo de plataforma LMS a la medida para vender tus cursos en línea",
+      "heroSub": "Construimos tu propia plataforma de cursos en línea, rápida y sin comisiones, con pagos en Mercado Pago/OXXO, certificados automáticos y formato DC3 STPS. Tu academia, tus reglas, tus ingresos.",
+      "benefits": [
+        {
+          "title": "Cero comisiones por venta",
+          "text": "Tu plataforma, tus ingresos. Vende cursos sin que Hotmart, Udemy o un marketplace se queden con un porcentaje de cada alumno."
+        },
+        {
+          "title": "Pagos locales sin fricción",
+          "text": "Cobra con Mercado Pago, OXXO, SPEI y tarjeta. Tus alumnos pagan como acostumbran y tú recibes el dinero directo."
+        },
+        {
+          "title": "Certificados y DC3 automáticos",
+          "text": "Genera constancias, certificados y el formato DC3 de la STPS al terminar cada curso, listo para reportar capacitación."
+        },
+        {
+          "title": "Rápida y bien posicionada",
+          "text": "PageSpeed 90+, Core Web Vitals en verde y SEO técnico desde el código para que cargue veloz y aparezca en Google."
+        },
+        {
+          "title": "Marca blanca 100% tuya",
+          "text": "Tu logo, tus colores, tu dominio y tu base de datos de alumnos. Construyes un activo digital, no rentas un espacio prestado."
+        },
+        {
+          "title": "Escalable y a tu medida",
+          "text": "Membresías, certificaciones de pago, gamificación, SCORM/xAPI y reportes. La plataforma crece contigo sin límites de plantilla."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una plataforma LMS a la medida?",
+          "a": "El costo de una plataforma LMS depende del alcance: número de cursos, integraciones de pago, emisión de certificados DC3, membresías y diseño a la medida. En Alrit.dev cotizamos por proyecto tras una llamada de descubrimiento, con un precio claro y por etapas. Una plataforma a medida suele ser más rentable que pagar comisiones por venta a largo plazo."
+        },
+        {
+          "q": "¿Puedo vender mis cursos en línea sin pagar comisiones?",
+          "a": "Sí. Con una plataforma propia vendes tus cursos sin pagar comisión por alumno a marketplaces como Hotmart o Udemy. Integramos pagos con Mercado Pago, OXXO, SPEI o Stripe directamente en tu sitio, así recibes el 100% del precio (menos la comisión de la pasarela) y eres dueño de tus alumnos."
+        },
+        {
+          "q": "¿La plataforma genera certificados con formato DC3 de la STPS?",
+          "a": "Sí. Configuramos la emisión automática de certificados y constancias al concluir cada curso, incluido el formato DC3 que exige la STPS para capacitación empresarial en México. También facilitamos la trazabilidad de avance y los datos necesarios para el reporte al SIRCE."
+        },
+        {
+          "q": "¿Conviene desarrollo a medida, Moodle o WordPress con LearnDash?",
+          "a": "Depende de tu proyecto. El desarrollo a medida en Next.js/React ofrece máximo rendimiento, escalabilidad y control total. Moodle es ideal cuando necesitas robustez académica y SCORM/xAPI. WordPress con LearnDash es una opción ágil para empezar con menor presupuesto. En la llamada inicial te recomendamos la ruta que mejor se ajusta a tus metas."
+        },
+        {
+          "q": "¿Cuánto tarda en estar lista mi academia online?",
+          "a": "Los tiempos varían según el alcance, pero un proyecto típico de academia online se entrega por etapas en pocas semanas: descubrimiento, diseño, desarrollo e integración de pagos y certificados, carga de contenido y lanzamiento. Te damos un cronograma claro desde la cotización y acompañamiento en la puesta en marcha."
+        }
+      ],
+      "cta": "Cotiza tu plataforma LMS sin compromiso",
+      "sections": [
+        {
+          "heading": "Qué incluye tu plataforma LMS",
+          "body": "Construimos plataformas de cursos en línea completas, listas para vender y escalar: catálogo de cursos con lecciones en video, módulos, quizzes y seguimiento de progreso para cada alumno. Sumamos pasarela de pagos, membresías recurrentes y certificados descargables que se emiten al completar cada programa. También te entregamos panel de administración para gestionar contenido, estudiantes y reportes, además del diseño responsivo y la configuración de accesos por niveles o suscripción."
+        },
+        {
+          "heading": "Por qué construir tu LMS con Alrit.dev",
+          "body": "La mayoría de las plataformas armadas con plantillas genéricas se vuelven lentas y difíciles de posicionar en cuanto crece el contenido. Nosotros desarrollamos tu LMS con ingeniería moderna enfocada en velocidad real (Core Web Vitals) y SEO técnico desde el código, para que tus cursos carguen rápido y te encuentren en Google. Como evolucionamos de la agencia Hunter Price Mx, dejamos atrás el marketing genérico para entregarte un activo digital de alto rendimiento, con precios transparentes en MXN y rangos honestos, sin promesas infladas."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Arrancamos con un descubrimiento donde mapeamos tu oferta de cursos, modelo de membresía y reglas de acceso. Luego diseñamos la arquitectura y los flujos de compra, desarrollamos la plataforma con entregas que puedes revisar por etapas, e integramos pagos, certificados y notificaciones. Cerramos con pruebas, capacitación para tu equipo y puesta en marcha, dejándote una plataforma de cursos en línea que tú mismo puedes administrar sin depender de nadie."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Trabajamos con Next.js y React cuando buscas máximo rendimiento y experiencia premium, o con WordPress cuando priorizas autonomía total para cargar tu propio contenido. Integramos tu LMS con el ecosistema de pagos local: Mercado Pago, OXXO y SPEI para cobrar como tus alumnos prefieren, facturación CFDI ante el SAT y avisos por WhatsApp Business para onboarding y recordatorios. Así tu plataforma de cursos en línea cobra, factura y comunica en el idioma y los medios de tu mercado."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Desarrollamos Bodhi Medicine, una plataforma multilingüe de formación en salud holística que combina membresía, contenido por niveles y certificaciones para sus alumnos. La venta y gestión de accesos se resolvió con ThriveCart, integrando el cobro con la experiencia de aprendizaje. Es el tipo de plataforma de cursos en línea que construimos: pensada para vender formación, gestionar comunidades y entregar certificados a escala."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Custom LMS Platform Development | Alrit.dev",
+      "metaDescription": "We build your custom LMS to sell online courses with payments, automatic certificates and your own brand. No commissions. Get a free quote today.",
+      "h1": "Custom LMS platform development to sell your online courses",
+      "heroSub": "We build your own online course platform: fast, commission-free, with integrated payments, automatic certificates and full white-label branding. Your academy, your rules, your revenue.",
+      "benefits": [
+        {
+          "title": "Zero sales commissions",
+          "text": "Your platform, your revenue. Sell courses without Hotmart, Udemy or any marketplace taking a cut of every student."
+        },
+        {
+          "title": "Frictionless local payments",
+          "text": "Charge with Stripe, Mercado Pago, OXXO, SPEI and cards. Your students pay how they prefer and you get paid directly."
+        },
+        {
+          "title": "Automatic certificates",
+          "text": "Issue diplomas and certificates on course completion, including Mexico's DC3 (STPS) format, ready for compliance reporting."
+        },
+        {
+          "title": "Fast and well-ranked",
+          "text": "PageSpeed 90+, green Core Web Vitals and technical SEO from the code so your site loads fast and ranks on Google."
+        },
+        {
+          "title": "100% your white-label brand",
+          "text": "Your logo, colors, domain and student database. You build a digital asset instead of renting borrowed space."
+        },
+        {
+          "title": "Scalable and tailored",
+          "text": "Memberships, paid certifications, gamification, SCORM/xAPI and reports. The platform grows with you, free of template limits."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does a custom LMS platform cost?",
+          "a": "The cost of an LMS depends on scope: number of courses, payment integrations, certificate issuance, memberships and custom design. At Alrit.dev we quote per project after a discovery call, with clear, staged pricing. A custom platform is usually more profitable than paying per-sale commissions over the long term."
+        },
+        {
+          "q": "Can I sell my online courses without paying commissions?",
+          "a": "Yes. With your own platform you sell courses without per-student commissions to marketplaces like Hotmart or Udemy. We integrate payments via Stripe, Mercado Pago, OXXO or SPEI directly on your site, so you keep nearly 100% of the price (minus the gateway fee) and own your students."
+        },
+        {
+          "q": "Does the platform generate completion certificates automatically?",
+          "a": "Yes. We configure automatic issuance of certificates and diplomas when a student finishes a course, including Mexico's DC3 (STPS) format for corporate training. We also build in progress traceability and the data needed for compliance reporting such as SIRCE or FUNDAE."
+        },
+        {
+          "q": "Should I choose custom development, Moodle or WordPress with LearnDash?",
+          "a": "It depends on your project. Custom development on Next.js/React offers maximum performance, scalability and full control. Moodle is ideal when you need academic robustness and SCORM/xAPI. WordPress with LearnDash is an agile option to start with a smaller budget. In the initial call we recommend the path that best fits your goals."
+        },
+        {
+          "q": "How long does it take to launch my online academy?",
+          "a": "Timelines vary by scope, but a typical online academy is delivered in stages over a few weeks: discovery, design, development and integration of payments and certificates, content loading and launch. You get a clear roadmap from the quote stage and support during go-live."
+        }
+      ],
+      "cta": "Get a free quote for your LMS platform",
+      "sections": [
+        {
+          "heading": "What your LMS platform includes",
+          "body": "We build complete online course platforms that are ready to sell and scale: a course catalog with video lessons, modules, quizzes, and per-student progress tracking. We add payment processing, recurring memberships, and downloadable certificates issued automatically when learners complete each program. You also get an admin dashboard to manage content, students, and reports, plus responsive design and tiered or subscription-based access control."
+        },
+        {
+          "heading": "Why build your LMS with Alrit.dev",
+          "body": "Most platforms built on generic templates turn slow and hard to rank as soon as content grows. We engineer your LMS with a modern stack focused on real speed (Core Web Vitals) and technical SEO baked into the code, so your courses load fast and get found on Google. Having evolved from the Hunter Price Mx agency, we left generic marketing behind to deliver a high-performance digital asset, with transparent pricing in MXN and honest ranges instead of inflated promises."
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start with a discovery phase to map your course offering, membership model, and access rules. Then we design the architecture and purchase flows, develop the platform with milestones you can review along the way, and integrate payments, certificates, and notifications. We finish with testing, team training, and launch, handing you an online course platform you can administer yourself without depending on anyone."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "We work with Next.js and React when you want maximum performance and a premium experience, or with WordPress when full autonomy to upload your own content matters most. We connect your LMS to the local payments ecosystem: Mercado Pago, OXXO, and SPEI so students pay how they prefer, CFDI invoicing with the SAT, and WhatsApp Business messaging for onboarding and reminders. That way your online course platform charges, invoices, and communicates in the language and channels your market actually uses."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We built Bodhi Medicine, a multilingual holistic health training platform that combines memberships, tiered content, and certifications for its students. Sales and access management were handled with ThriveCart, tying checkout directly to the learning experience. It's exactly the kind of online course platform we build: designed to sell training, manage communities, and deliver certificates at scale."
+        }
+      ]
+    }
+  },
+  "ecommerce": {
+    "serviceId": "ecommerce",
+    "slug": "ecommerce",
+    "accent": "#e84393",
+    "schema": "Service, FAQPage, BreadcrumbList, Organization (WebDevelopment/ProfessionalService con areaServed MX/ES), Product/OfferCatalog opcional para paquetes. Para EN replicar Service + FAQPage + BreadcrumbList con inLanguage=\"en\".",
+    "targetKeywords": [
+      "agencia ecommerce México",
+      "crear tienda en línea",
+      "desarrollo de tienda en línea",
+      "diseño de tienda en línea",
+      "agencia Shopify México",
+      "desarrollo ecommerce a medida",
+      "cuánto cuesta una tienda en línea",
+      "hacer tienda en línea profesional",
+      "desarrollo WooCommerce México",
+      "agencia ecommerce España",
+      "crear tienda online",
+      "diseño tienda online",
+      "agencia Shopify España",
+      "desarrollo tienda online a medida",
+      "agencia PrestaShop",
+      "presupuesto tienda online",
+      "integrar Mercado Pago",
+      "SEO para tiendas en línea",
+      "recuperar carrito abandonado",
+      "facturación electrónica CFDI ecommerce"
+    ],
+    "es": {
+      "metaTitle": "Tienda en Línea a Medida | E-commerce Alrit.dev",
+      "metaDescription": "Creamos tu tienda en línea rápida que vende: pagos, catálogo y logística integrados. PageSpeed 90+ y SEO desde el código. Pide tu cotización.",
+      "h1": "Crea una tienda en línea que carga rápido, posiciona y vende",
+      "heroSub": "Diseñamos y desarrollamos tu e-commerce con pagos locales, catálogo y logística listos para operar. No plantillas lentas: una página web que convierte visitas en ventas.",
+      "benefits": [
+        {
+          "title": "Carga rápida que vende más",
+          "text": "PageSpeed 90+ y Core Web Vitals en verde. Cada segundo cuenta: una tienda veloz reduce el rebote y sube tu conversión."
+        },
+        {
+          "title": "Pagos locales sin fricción",
+          "text": "Integramos Mercado Pago, Conekta, Stripe, SPEI y OXXO (y Bizum/Redsys para España) para que cobres como tus clientes prefieren pagar."
+        },
+        {
+          "title": "Facturación CFDI automática",
+          "text": "Conectamos tu tienda con el SAT para emitir CFDI sin tareas manuales. Cumples con Hacienda y tus clientes reciben su factura al instante."
+        },
+        {
+          "title": "Logística y envíos listos",
+          "text": "Integramos paqueterías y cálculo de envíos en tiempo real para que cada pedido salga sin complicaciones desde el primer día."
+        },
+        {
+          "title": "SEO desde el código",
+          "text": "Estructura técnica optimizada para que tus productos posicionen en Google y atraigas tráfico que compra, no solo visitas."
+        },
+        {
+          "title": "Menos carritos abandonados",
+          "text": "Checkout optimizado y recuperación automática de carritos para rescatar las ventas que hoy estás perdiendo."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una tienda en línea?",
+          "a": "El costo de una tienda en línea depende del número de productos, las integraciones (pagos, CFDI, logística) y si usas Shopify, WooCommerce o un desarrollo a la medida. En Alrit.dev armamos un presupuesto cerrado según tu alcance; agenda una asesoría sin costo y te damos una cotización clara, sin sorpresas."
+        },
+        {
+          "q": "¿Qué pasarelas de pago integran en la tienda?",
+          "a": "Integramos las principales pasarelas del mercado: Mercado Pago, Conekta, Stripe y pagos en efectivo o transferencia con SPEI y OXXO en México, además de Bizum, Redsys y PayPal para España. Configuramos la opción que mejor se adapte a tus márgenes y a cómo paga tu cliente."
+        },
+        {
+          "q": "¿Conviene más Shopify, WooCommerce o una tienda a la medida?",
+          "a": "Shopify es ideal si quieres lanzar rápido con bajo mantenimiento; WooCommerce te da control total sobre WordPress; y un desarrollo a la medida o headless con Next.js conviene cuando necesitas máxima velocidad, reglas B2B o integraciones especiales. En la asesoría analizamos tu caso y te recomendamos la plataforma correcta."
+        },
+        {
+          "q": "¿La tienda emite facturas CFDI ante el SAT?",
+          "a": "Sí. Conectamos tu tienda en línea con un proveedor autorizado para emitir CFDI 4.0 de forma automática tras cada compra. Así cumples con el SAT, evitas tareas manuales y tus clientes reciben su factura electrónica al momento."
+        },
+        {
+          "q": "¿En cuánto tiempo está lista mi tienda en línea?",
+          "a": "Una tienda con Shopify o WooCommerce y catálogo definido suele estar lista para vender en pocas semanas; un desarrollo a la medida toma más según las integraciones. Tras la fase de descubrimiento te entregamos un cronograma con fechas claras y avances visibles."
+        }
+      ],
+      "cta": "Cotiza tu tienda en línea",
+      "sections": [
+        {
+          "heading": "Qué incluye tu tienda en línea",
+          "body": "Construimos tu tienda en línea completa: catálogo de productos con variantes, inventario y categorías, carrito y checkout optimizado, y panel de administración para que gestiones todo sin depender de nadie. Integramos pagos locales con Mercado Pago, OXXO y SPEI, además de la facturación CFDI ante el SAT para que cada venta quede en regla. Sumamos buscador, fichas de producto pensadas para convertir, envíos configurables y notificaciones por WhatsApp y correo. Te entregamos un activo listo para vender, no una plantilla a medias."
+        },
+        {
+          "heading": "Por qué tu e-commerce con Alrit.dev",
+          "body": "La mayoría de las tiendas en línea son lentas y eso te cuesta ventas: cada segundo de carga tira tu conversión y tu posición en Google. Nosotros desarrollamos con ingeniería moderna enfocada en velocidad (Core Web Vitals en verde) y SEO técnico desde el código, no como un parche al final. A diferencia de las plantillas genéricas, tu tienda se integra de raíz con el ecosistema mexicano (Mercado Pago, OXXO/SPEI, CFDI, WhatsApp Business) y la diseñamos a la medida de cómo vendes tú. Precios transparentes en pesos, sin sorpresas ni promesas infladas."
+        },
+        {
+          "heading": "Cómo trabajamos",
+          "body": "Arrancamos con una fase de descubrimiento para entender tu catálogo, tu operación y a quién le vendes, y de ahí definimos alcance y rangos reales. Pasamos a diseño y arquitectura de la tienda en línea, luego al desarrollo con avances que puedes revisar, y finalmente integramos pagos, CFDI y pruebas completas antes de salir a producción. Después del lanzamiento te acompañamos con soporte y mejoras, porque un e-commerce vive y evoluciona contigo."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Según tu proyecto, levantamos tu tienda en línea con Next.js/React para máximo rendimiento o con WordPress/WooCommerce cuando buscas autonomía editorial, siempre con SEO técnico cuidado. Conectamos pagos con Mercado Pago, OXXO y SPEI, y la facturación CFDI directamente con el SAT para que tu contabilidad fluya. Integramos WhatsApp Business para atención y seguimiento de pedidos, y dejamos todo medible con analítica para que tomes decisiones con datos reales."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Para BDS Motos desarrollamos el catálogo de producto de una marca automotriz, con fichas claras y una navegación pensada para que el usuario encuentre lo que busca. En Conectas construimos un sistema de cobros y membresías con Stripe, resolviendo pagos recurrentes y gestión de suscriptores. Esa misma experiencia en catálogo, pagos e integraciones es la que aplicamos a cada tienda en línea que construimos."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Custom Online Store Development | Alrit.dev",
+      "metaDescription": "We build fast online stores that sell: payments, catalog and logistics integrated. PageSpeed 90+ and SEO from the code. Get your quote today.",
+      "h1": "Build an online store that loads fast, ranks and sells",
+      "heroSub": "We design and develop your e-commerce with local payments, catalog and logistics ready to operate. No slow templates: a website that turns visits into sales.",
+      "benefits": [
+        {
+          "title": "Fast loading that sells more",
+          "text": "PageSpeed 90+ and green Core Web Vitals. Every second counts: a fast store lowers bounce and lifts your conversion rate."
+        },
+        {
+          "title": "Frictionless local payments",
+          "text": "We integrate Mercado Pago, Conekta, Stripe, SPEI and OXXO (plus Bizum/Redsys for Spain) so customers pay the way they prefer."
+        },
+        {
+          "title": "Automatic CFDI invoicing",
+          "text": "We connect your store to the SAT to issue CFDI invoices with no manual work. You stay compliant and customers get their invoice instantly."
+        },
+        {
+          "title": "Shipping and logistics ready",
+          "text": "We integrate carriers and real-time shipping rates so every order goes out smoothly from day one."
+        },
+        {
+          "title": "SEO from the code",
+          "text": "Optimized technical structure so your products rank on Google and attract traffic that buys, not just visits."
+        },
+        {
+          "title": "Fewer abandoned carts",
+          "text": "Optimized checkout and automated cart recovery to win back the sales you're losing today."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does an online store cost?",
+          "a": "The cost of an online store depends on the number of products, integrations (payments, invoicing, logistics) and whether you use Shopify, WooCommerce or a custom build. At Alrit.dev we prepare a fixed quote based on your scope; book a free consultation and we'll give you a clear estimate with no surprises."
+        },
+        {
+          "q": "Which payment gateways do you integrate?",
+          "a": "We integrate the market's leading gateways: Mercado Pago, Conekta, Stripe and cash or transfer payments via SPEI and OXXO in Mexico, plus Bizum, Redsys and PayPal for Spain. We set up the option that best fits your margins and how your customers pay."
+        },
+        {
+          "q": "Should I choose Shopify, WooCommerce or a custom store?",
+          "a": "Shopify is ideal if you want to launch fast with low maintenance; WooCommerce gives you full control on WordPress; and a custom or headless build with Next.js fits when you need maximum speed, B2B rules or special integrations. In the consultation we analyze your case and recommend the right platform."
+        },
+        {
+          "q": "Does the store issue CFDI invoices for the SAT?",
+          "a": "Yes. We connect your online store to an authorized provider to issue CFDI 4.0 invoices automatically after each purchase. You stay compliant with the SAT, avoid manual work and customers receive their electronic invoice instantly."
+        },
+        {
+          "q": "How long does it take to have my online store ready?",
+          "a": "A store on Shopify or WooCommerce with a defined catalog is usually ready to sell in a few weeks; a custom build takes longer depending on integrations. After the discovery phase we deliver a timeline with clear dates and visible progress."
+        }
+      ],
+      "cta": "Get your online store quote",
+      "sections": [
+        {
+          "heading": "What your online store includes",
+          "body": "We build your complete online store: a product catalog with variants, inventory and categories, an optimized cart and checkout, and an admin panel so you manage everything without depending on anyone. We integrate local payments with Mercado Pago, OXXO and SPEI, plus CFDI invoicing with the SAT so every sale stays compliant. We add search, conversion-focused product pages, configurable shipping, and WhatsApp and email notifications. You get an asset that's ready to sell, not a half-finished template."
+        },
+        {
+          "heading": "Why build your e-commerce with Alrit.dev",
+          "body": "Most online stores are slow, and that costs you sales: every second of load time drags down your conversion and your Google ranking. We develop with modern engineering focused on speed (green Core Web Vitals) and technical SEO baked into the code, not patched on at the end. Unlike generic templates, your store integrates natively with the Mexican ecosystem (Mercado Pago, OXXO/SPEI, CFDI, WhatsApp Business) and is tailored to how you actually sell. Transparent pricing in pesos, with no surprises or inflated promises."
+        },
+        {
+          "heading": "How we work",
+          "body": "We start with a discovery phase to understand your catalog, your operation and who you sell to, and from there we define scope and realistic ranges. Then we move into design and architecture for your online store, followed by development with progress you can review, and finally we integrate payments, CFDI and run full testing before going live. After launch we stay with you through support and improvements, because an e-commerce store lives and evolves alongside you."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "Depending on your project, we build your online store with Next.js/React for maximum performance or with WordPress/WooCommerce when you want editorial autonomy, always with technical SEO done right. We connect payments through Mercado Pago, OXXO and SPEI, and CFDI invoicing directly with the SAT so your accounting flows. We integrate WhatsApp Business for support and order follow-up, and leave everything measurable with analytics so you make decisions based on real data."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "For BDS Motos we developed the product catalog of an automotive brand, with clear product pages and navigation designed to help users find exactly what they need. For Conectas we built a payments and memberships system with Stripe, solving recurring billing and subscriber management. That same expertise in catalog, payments and integrations is what we bring to every online store we build."
+        }
+      ]
+    }
+  },
+  "real-estate": {
+    "serviceId": "realestate",
+    "slug": "real-estate",
+    "accent": "#00b894",
+    "schema": "Service (con provider Organization Alrit.dev y serviceType \"Real estate website development\"), FAQPage (para el bloque de preguntas frecuentes), BreadcrumbList (Inicio > Servicios > Portal Inmobiliario), WebPage y Organization. Opcional: AggregateRating/Review si hay testimoniales y Offer dentro de Service para el rango de precio.",
+    "targetKeywords": [
+      "pagina web para inmobiliaria",
+      "desarrollo de portal inmobiliario",
+      "diseno web para bienes raices",
+      "captacion de leads inmobiliarios",
+      "sitio web con buscador de propiedades",
+      "cuanto cuesta una pagina web inmobiliaria",
+      "generar leads calificados inmobiliaria",
+      "agencia de marketing inmobiliario Mexico",
+      "diseno web para inmobiliarias",
+      "pagina web inmobiliaria con buscador de inmuebles",
+      "web para inmobiliaria con CRM",
+      "software para agencia inmobiliaria",
+      "multipublicacion Idealista Fotocasa",
+      "buscador avanzado de propiedades para sitio web",
+      "SEO local para inmobiliarias en Mexico",
+      "como captar leads sin depender de los portales",
+      "real estate website development",
+      "real estate portal with property search",
+      "real estate lead generation website",
+      "real estate website with CRM"
+    ],
+    "es": {
+      "metaTitle": "Página Web para Inmobiliaria | Alrit.dev",
+      "metaDescription": "Desarrollamos tu portal inmobiliario con buscador avanzado y captación de leads. Carga rápido, posiciona en Google y vende más. Cotiza tu proyecto hoy.",
+      "h1": "Página web para inmobiliaria que capta leads y vende propiedades",
+      "heroSub": "Construimos portales inmobiliarios con buscador avanzado de propiedades, integración con tu CRM y captación de leads calificados. No plantillas lentas: activos digitales que cargan rápido, posicionan en Google y convierten.",
+      "benefits": [
+        {
+          "title": "Buscador avanzado de propiedades",
+          "text": "Filtros por zona, precio, recámaras, m2 y tipo de operación que ayudan al comprador a encontrar su inmueble en segundos y disparan las consultas."
+        },
+        {
+          "title": "Captación de leads calificados",
+          "text": "Formularios inteligentes, agendado de visitas y WhatsApp Business conectados a tu CRM para que ningún prospecto se enfríe."
+        },
+        {
+          "title": "Velocidad y posicionamiento",
+          "text": "PageSpeed 90+, Core Web Vitals en verde y SEO técnico desde el código para que rankees en Google y dejes de depender solo de los portales."
+        },
+        {
+          "title": "Integración con tu ecosistema",
+          "text": "Conectamos tu portal con CRM, multipublicación a Idealista, Fotocasa o Inmuebles24 y mapas, sin doble captura de datos."
+        },
+        {
+          "title": "Diseño a medida, no plantilla",
+          "text": "Un sitio que refleja tu marca y experiencia de usuario pensada para convertir visitas en visitas a propiedades."
+        },
+        {
+          "title": "Escalable y tuyo",
+          "text": "Administras tu inventario, tus leads y tus datos. Un activo digital que crece con tu cartera de inmuebles."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una página web para inmobiliaria?",
+          "a": "El costo de una página web inmobiliaria depende del número de propiedades, las integraciones (CRM, multipublicación, WhatsApp) y si incluye buscador avanzado o tour virtual 360. En Alrit.dev cotizamos cada proyecto a medida tras una asesoría gratuita; te entregamos un presupuesto claro sin sorpresas."
+        },
+        {
+          "q": "¿Qué debe tener la página web de una inmobiliaria?",
+          "a": "Una web inmobiliaria que venda necesita: buscador avanzado con filtros, fichas de propiedad con galería y mapa, formularios y WhatsApp para captar leads, carga rápida (Core Web Vitals en verde), SEO local y conexión con tu CRM. Todo esto lo desarrollamos a medida en Alrit.dev."
+        },
+        {
+          "q": "¿Cómo captar leads sin depender solo de los portales?",
+          "a": "Con un portal propio optimizado para SEO local atraes prospectos desde Google sin pagar por clic en cada consulta. Sumamos formularios, WhatsApp Business y campañas para que captures leads calificados y los conviertas con seguimiento desde tu CRM."
+        },
+        {
+          "q": "¿Pueden integrar el portal con mi CRM y los portales inmobiliarios?",
+          "a": "Sí. Integramos tu sitio con CRM inmobiliario y con multipublicación a portales como Idealista, Fotocasa o Inmuebles24, de modo que publicas una vez y sincronizas tu inventario sin doble captura de datos."
+        },
+        {
+          "q": "¿Cuánto tarda el desarrollo de un portal inmobiliario?",
+          "a": "Un portal inmobiliario a medida suele tomar de 4 a 10 semanas según el tamaño del inventario y las integraciones requeridas. Trabajamos por etapas claras (estrategia, diseño, desarrollo, migración y lanzamiento) para que tengas visibilidad en todo momento."
+        }
+      ],
+      "cta": "Agenda tu asesoría gratuita y cotiza tu portal inmobiliario",
+      "sections": [
+        {
+          "heading": "Qué incluye tu portal inmobiliario",
+          "body": "Construimos webs y portales inmobiliarios completos, listos para vender: buscador avanzado con filtros por zona, precio, recámaras, m² y tipo de operación; fichas de propiedad con galerías, mapa, características y videos; y formularios de captación conectados directo a tu CRM. Cada inmueble queda optimizado para Google y para que tu equipo de ventas reciba leads calificados sin perder tiempo. También dejamos panel para que cargues, edites y publiques propiedades tú mismo, sin depender de nadie."
+        },
+        {
+          "heading": "Por qué desarrollar tu portal inmobiliario con Alrit.dev",
+          "body": "La mayoría de los portales inmobiliarios se montan sobre plantillas genéricas que cargan lento y entierran tus propiedades en Google. Nosotros hacemos lo contrario: ingeniería moderna con foco en velocidad real (Core Web Vitals) y SEO técnico desde el código, para que cada ficha posicione y cada visita cargue en segundos. El resultado es un activo digital que capta leads de forma constante, no un folleto bonito que nadie encuentra."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Arrancamos con una fase de descubrimiento donde entendemos tu inventario, tu proceso de ventas y cómo entran hoy tus leads. Después diseñamos la arquitectura del buscador y las fichas, desarrollamos el portal inmobiliario con entregas que puedes revisar, e integramos tu CRM y canales de contacto. Cerramos con pruebas, optimización de velocidad y SEO, y una capacitación para que tu equipo maneje la plataforma con total autonomía."
+        },
+        {
+          "heading": "Tecnología pensada para captar y para México",
+          "body": "Desarrollamos con Next.js y React cuando necesitas un portal inmobiliario rápido y escalable, o sobre WordPress cuando buscas autogestión sencilla del inventario. Conectamos lo que tu operación necesita: WhatsApp Business para responder leads al instante, pasarelas como Mercado Pago, OXXO y SPEI para apartados o pagos, y CFDI-SAT cuando hay que facturar. Toda la integración se adapta al ecosistema local, con precios transparentes en MXN y sin sorpresas."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Desarrollamos BDweb, una plataforma inmobiliaria con buscador de propiedades, fichas detalladas y captación de prospectos pensada para conectar oferta y demanda de forma ágil. Es el tipo de portal inmobiliario que construimos a medida: enfocado en encontrar el inmueble correcto rápido y en convertir cada visita en un contacto real para tu equipo de ventas."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Real Estate Website Development | Alrit.dev",
+      "metaDescription": "We build real estate portals with advanced property search and lead capture. Fast-loading, SEO-ready and built to convert. Get your free quote today.",
+      "h1": "Real estate website development that captures leads and sells properties",
+      "heroSub": "We build real estate portals with an advanced property search, CRM integration and qualified lead capture. Not slow templates: digital assets that load fast, rank on Google and convert.",
+      "benefits": [
+        {
+          "title": "Advanced property search",
+          "text": "Filters by location, price, bedrooms, sqm and listing type that help buyers find their property in seconds and drive more inquiries."
+        },
+        {
+          "title": "Qualified lead capture",
+          "text": "Smart forms, viewing scheduling and WhatsApp Business connected to your CRM so no prospect ever goes cold."
+        },
+        {
+          "title": "Speed and rankings",
+          "text": "PageSpeed 90+, green Core Web Vitals and SEO from the code so you rank on Google and stop depending on listing portals alone."
+        },
+        {
+          "title": "Ecosystem integration",
+          "text": "We connect your portal to your CRM, multi-posting to major listing portals and maps, with no duplicate data entry."
+        },
+        {
+          "title": "Custom design, not a template",
+          "text": "A site that reflects your brand with a user experience engineered to turn visits into property viewings."
+        },
+        {
+          "title": "Scalable and yours",
+          "text": "You own your inventory, your leads and your data. A digital asset that grows with your property portfolio."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does a real estate website cost?",
+          "a": "The cost of a real estate website depends on the number of listings, integrations (CRM, multi-posting, WhatsApp) and whether it includes advanced search or a 360 virtual tour. At Alrit.dev we quote each project custom after a free consultation and give you a clear, no-surprises estimate."
+        },
+        {
+          "q": "What should a real estate website have?",
+          "a": "A real estate website that sells needs: advanced search with filters, property pages with gallery and map, lead-capture forms and WhatsApp, fast loading (green Core Web Vitals), local SEO and CRM integration. We build all of this custom at Alrit.dev."
+        },
+        {
+          "q": "How can I capture leads without relying only on listing portals?",
+          "a": "With your own SEO-optimized portal you attract prospects from Google without paying per click on every inquiry. We add forms, WhatsApp Business and campaigns so you capture qualified leads and convert them with CRM-driven follow-up."
+        },
+        {
+          "q": "Can you integrate the portal with my CRM and listing portals?",
+          "a": "Yes. We integrate your site with your real estate CRM and with multi-posting to major portals, so you publish once and keep your inventory in sync without duplicate data entry."
+        },
+        {
+          "q": "How long does it take to build a real estate portal?",
+          "a": "A custom real estate portal typically takes 4 to 10 weeks depending on inventory size and required integrations. We work in clear stages (strategy, design, development, migration and launch) so you have visibility at every step."
+        }
+      ],
+      "cta": "Book your free consultation and quote your real estate portal",
+      "sections": [
+        {
+          "heading": "What your real estate portal includes",
+          "body": "We build complete real estate websites and portals that are ready to sell: an advanced search with filters by location, price, bedrooms, square meters and type of operation; property pages with galleries, maps, features and videos; and lead capture forms wired straight into your CRM. Every listing is optimized for Google so your sales team receives qualified leads without wasting time. We also include a panel so you can upload, edit and publish properties yourself, with no dependence on anyone."
+        },
+        {
+          "heading": "Why build your real estate portal with Alrit.dev",
+          "body": "Most real estate portals are built on generic templates that load slowly and bury your listings in Google. We do the opposite: modern engineering focused on real speed (Core Web Vitals) and technical SEO straight from the code, so every property page ranks and every visit loads in seconds. The result is a digital asset that captures leads consistently, not a pretty brochure no one can find."
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start with a discovery phase where we understand your inventory, your sales process and how leads reach you today. Then we design the search and listing architecture, develop the real estate portal with deliverables you can review, and integrate your CRM and contact channels. We finish with testing, speed and SEO optimization, and training so your team runs the platform with full autonomy."
+        },
+        {
+          "heading": "Technology built to capture leads and fit the local market",
+          "body": "We develop with Next.js and React when you need a fast, scalable real estate portal, or on WordPress when you want simple self-management of your inventory. We connect whatever your operation needs: WhatsApp Business to respond to leads instantly, gateways like Mercado Pago, OXXO and SPEI for deposits or payments, and CFDI-SAT invoicing when required. Every integration adapts to the local ecosystem, with transparent pricing in MXN and no surprises."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We built BDweb, a real estate platform with a property search engine, detailed listings and lead capture designed to connect supply and demand quickly. It's exactly the kind of real estate portal we build from scratch: focused on finding the right property fast and turning every visit into a real contact for your sales team."
+        }
+      ]
+    }
+  },
+  "sistemas-a-medida": {
+    "serviceId": "systems",
+    "slug": "sistemas-a-medida",
+    "accent": "#f0a500",
+    "schema": "Service, FAQPage, BreadcrumbList, Organization (sameAs Alrit.dev / Hunter Price Mx), AggregateRating opcional si hay reseñas",
+    "targetKeywords": [
+      "desarrollo de software a la medida",
+      "software a la medida para empresas",
+      "sistemas a la medida México",
+      "desarrollo de sistemas web a la medida",
+      "software para automatizar procesos empresa",
+      "empresa de desarrollo de software México",
+      "sistema de gestión interna a la medida",
+      "desarrollo de software a la medida CDMX",
+      "cuánto cuesta un software a la medida",
+      "software a medida para empresas",
+      "desarrollo de aplicaciones web a medida",
+      "ERP a medida",
+      "software de gestión a medida",
+      "software a medida Madrid",
+      "custom software development",
+      "custom business software",
+      "internal web systems",
+      "business process automation software"
+    ],
+    "es": {
+      "metaTitle": "Software a la Medida para Empresas | Alrit.dev",
+      "metaDescription": "Desarrollo de software a la medida que automatiza tu operación. Sistemas web internos que cargan rápido y eliminan trabajo manual. Pide tu cotización.",
+      "h1": "Software a la medida que automatiza tu operación y elimina el trabajo manual",
+      "heroSub": "Diseñamos y desarrollamos sistemas web internos a la medida de tu empresa: lo que hoy haces en hojas de cálculo, WhatsApp y procesos manuales, lo convertimos en una plataforma rápida que trabaja por ti.",
+      "benefits": [
+        {
+          "title": "Se adapta a tu proceso, no al revés",
+          "text": "Construimos el sistema alrededor de cómo trabaja tu empresa hoy, sin forzarte a cambiar tu operación para encajar en un software genérico."
+        },
+        {
+          "title": "Menos trabajo manual, menos errores",
+          "text": "Automatizamos las tareas repetitivas que hoy comen horas en hojas de cálculo y WhatsApp, para que tu equipo se enfoque en lo que sí importa."
+        },
+        {
+          "title": "Rápido de verdad",
+          "text": "Sistemas con ingeniería moderna (Next.js/React) que cargan al instante, con PageSpeed 90+ y Core Web Vitals en verde."
+        },
+        {
+          "title": "Integrado con tu ecosistema",
+          "text": "Conectamos con Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS y WhatsApp Business para que todo viva dentro de un solo sistema."
+        },
+        {
+          "title": "El código y los datos son tuyos",
+          "text": "Sin licencias por usuario que se disparan con el tiempo. Eres dueño de tu sistema y crece contigo sin pagar de más."
+        },
+        {
+          "title": "Por fases, con resultados visibles",
+          "text": "Empezamos con un MVP funcional y avanzamos por etapas, para que veas valor desde la primera entrega y no después de meses."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es el software a la medida?",
+          "a": "El software a la medida es un sistema desarrollado específicamente para los procesos de una empresa, en lugar de un programa estándar que sirve para todos. Se diseña sobre tu forma real de trabajar, automatiza tus tareas concretas y crece contigo, lo que reduce errores y elimina trabajo manual."
+        },
+        {
+          "q": "¿Cuánto cuesta un software a la medida en México?",
+          "a": "El costo de un software a la medida depende del alcance: cantidad de procesos a automatizar, integraciones (como Mercado Pago o CFDI-SAT) y número de usuarios. En Alrit.dev trabajamos por fases y entregamos un presupuesto cerrado tras una llamada de diagnóstico, para que sepas el precio antes de empezar."
+        },
+        {
+          "q": "¿Cuánto tiempo tarda desarrollar un sistema a la medida?",
+          "a": "Un sistema a la medida sencillo puede tener un MVP funcional en pocas semanas, mientras que plataformas más completas tardan algunos meses. Trabajamos por fases y entregamos un primer sistema usable temprano, en lugar de esperar al final para que veas resultados."
+        },
+        {
+          "q": "¿Qué conviene: software a la medida o un ERP estándar?",
+          "a": "Un ERP estándar conviene cuando tu operación encaja en un proceso común y aceptas adaptarte a él. El software a la medida conviene cuando tienes procesos propios, quieres evitar licencias por usuario que crecen sin parar y necesitas que el sistema se ajuste a tu negocio. En muchos casos lo ideal es un sistema a la medida que se integra con las herramientas que ya usas."
+        },
+        {
+          "q": "¿El sistema se puede integrar con las herramientas que ya uso?",
+          "a": "Sí. Desarrollamos integraciones reales con el ecosistema mexicano y con tus herramientas actuales: Mercado Pago, SPEI/OXXO, facturación CFDI-SAT, constancias DC3-STPS, WhatsApp Business y otras APIs. El objetivo es que tu sistema a la medida centralice la operación en un solo lugar."
+        }
+      ],
+      "cta": "Agenda tu diagnóstico gratuito y recibe una propuesta con alcance y precio",
+      "sections": [
+        {
+          "heading": "Qué incluye tu sistema a la medida",
+          "body": "Construimos sistemas y software a la medida que se ajustan exactamente a cómo opera tu negocio, no al revés. Recibes una aplicación web interna con paneles de administración, gestión de usuarios y permisos por rol, automatización de tus procesos clave, reportes y tableros con la información que sí necesitas, además de las integraciones que conectan tu operación de punta a punta. Todo queda documentado y entregado con código limpio, listo para crecer contigo."
+        },
+        {
+          "heading": "Por qué desarrollar tu software con Alrit.dev",
+          "body": "La diferencia entre una plantilla genérica y un software a la medida bien hecho se nota en el día a día: el nuestro carga rápido, está pensado con SEO técnico desde el código y se integra con el ecosistema que ya usas en México. No te vendemos un sistema inflado de funciones que nadie usa; construimos justo lo que automatiza tu operación, con ingeniería moderna y precios transparentes en MXN. Somos honestos con los rangos y con lo que sí mueve la aguja en tu negocio."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Arrancamos entendiendo tu operación real para mapear procesos, roles y cuellos de botella antes de escribir una sola línea. Después diseñamos la arquitectura y los flujos, desarrollamos por etapas con entregas que puedes revisar, y probamos a fondo cada módulo de tu sistema a la medida. Cerramos con la puesta en marcha, capacitación a tu equipo y soporte para que la herramienta quede viva y en uso desde el primer día."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Desarrollamos con tecnología moderna como Next.js y React cuando el proyecto pide velocidad y escalabilidad, o WordPress cuando es la mejor base para tu caso. Lo importante es que tu software a la medida conecte con el ecosistema local: cobros con Mercado Pago, OXXO y SPEI, facturación CFDI ante el SAT y notificaciones por WhatsApp Business. Así tu sistema no vive aislado, sino integrado a las herramientas con las que ya operas en México."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Ya hemos llevado esta forma de trabajo a plataformas reales. Conectas es una plataforma multirol con paneles diferenciados según el tipo de usuario, donde cada perfil ve y gestiona exactamente lo que le corresponde. Conquer Classic Plus es una plataforma con registro de usuarios, un mercado de items y sistema de rankings, todo construido a la medida de su operación. Tu sistema puede ser el siguiente en esta lista."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Custom Software Development | Alrit.dev",
+      "metaDescription": "Custom software that automates your operation. Internal web systems built to fit your business, fast and integration-ready. Get your quote today.",
+      "h1": "Custom software that automates your operation and kills manual work",
+      "heroSub": "We design and build internal web systems tailored to your company: the work you do today in spreadsheets, WhatsApp and manual steps becomes a fast platform that runs for you.",
+      "benefits": [
+        {
+          "title": "Built around your process, not theirs",
+          "text": "We shape the system around how your company actually works, so you never have to bend your operation to fit generic software."
+        },
+        {
+          "title": "Less manual work, fewer errors",
+          "text": "We automate the repetitive tasks that eat hours in spreadsheets and WhatsApp, freeing your team to focus on what matters."
+        },
+        {
+          "title": "Genuinely fast",
+          "text": "Systems built with modern engineering (Next.js/React) that load instantly, with PageSpeed 90+ and green Core Web Vitals."
+        },
+        {
+          "title": "Integrated with your ecosystem",
+          "text": "We connect with Mercado Pago, SPEI/OXXO, CFDI-SAT, DC3-STPS and WhatsApp Business so everything lives inside one system."
+        },
+        {
+          "title": "You own the code and the data",
+          "text": "No per-user licenses that spiral over time. You own your system and it scales with you without paying more."
+        },
+        {
+          "title": "Phased, with visible results",
+          "text": "We start with a working MVP and move in stages, so you see value from the first delivery, not months later."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is custom software?",
+          "a": "Custom software is a system built specifically for a company's processes, instead of an off-the-shelf program made for everyone. It is designed around how you actually work, automates your specific tasks and scales with you, which reduces errors and removes manual work."
+        },
+        {
+          "q": "How much does custom software cost?",
+          "a": "The cost of custom software depends on scope: how many processes you automate, the integrations needed (like Mercado Pago or CFDI-SAT) and the number of users. At Alrit.dev we work in phases and deliver a fixed budget after a discovery call, so you know the price before we start."
+        },
+        {
+          "q": "How long does it take to build custom software?",
+          "a": "A simple custom system can have a working MVP in a few weeks, while larger platforms take a few months. We work in phases and deliver a usable first version early, instead of waiting until the very end for you to see results."
+        },
+        {
+          "q": "Should I choose custom software or an off-the-shelf ERP?",
+          "a": "An off-the-shelf ERP makes sense when your operation fits a common process and you accept adapting to it. Custom software makes sense when you have your own workflows, want to avoid ever-growing per-user licenses and need the system to fit your business. Often the best option is a custom system that integrates with the tools you already use."
+        },
+        {
+          "q": "Can the system integrate with the tools I already use?",
+          "a": "Yes. We build real integrations with the local ecosystem and your current tools: Mercado Pago, SPEI/OXXO, CFDI-SAT invoicing, DC3-STPS certificates, WhatsApp Business and other APIs. The goal is for your custom system to centralize your operation in one place."
+        }
+      ],
+      "cta": "Book your free discovery call and get a proposal with scope and price",
+      "sections": [
+        {
+          "heading": "What your custom system includes",
+          "body": "We build custom systems and software that fit exactly how your business operates, not the other way around. You get an internal web application with admin panels, role-based user and permission management, automation of your key processes, dashboards and reports with the information you actually need, plus the integrations that connect your operation end to end. Everything is delivered documented and with clean code, ready to grow alongside you."
+        },
+        {
+          "heading": "Why build your software with Alrit.dev",
+          "body": "The gap between a generic template and well-built custom software shows up in daily use: ours loads fast, is engineered with technical SEO from the code, and integrates with the ecosystem you already rely on in Mexico. We won't sell you a system bloated with features nobody uses; we build exactly what automates your operation, with modern engineering and transparent pricing in MXN. We're honest about the real ranges and about what actually moves the needle for your business."
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start by understanding how you really operate, mapping processes, roles, and bottlenecks before writing a single line of code. Then we design the architecture and flows, develop in stages with deliverables you can review, and thoroughly test every module of your custom software. We wrap up with launch, team training, and support so the tool stays alive and in use from day one."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "We develop with modern technology like Next.js and React when the project demands speed and scalability, or WordPress when it's the best foundation for your case. What matters is that your custom software connects with the local ecosystem: payments through Mercado Pago, OXXO, and SPEI, CFDI invoicing with the SAT, and notifications via WhatsApp Business. That way your system doesn't live in isolation, but plugged into the tools you already use in Mexico."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We've already taken this approach to real platforms. Conectas is a multi-role platform with dedicated panels for each user type, where every profile sees and manages exactly what it should. Conquer Classic Plus is a platform with user registration, an item marketplace, and a ranking system, all built around its specific operation. Your system could be the next one on this list."
+        }
+      ]
+    }
+  },
+  "apps-moviles": {
+    "serviceId": "mobile",
+    "slug": "apps-moviles",
+    "accent": "#ff7675",
+    "schema": "Service (primary, con provider Organization Alrit.dev, areaServed MX/ES, serviceType \"Desarrollo de aplicaciones móviles\"), FAQPage (para las 5 preguntas frecuentes y featured snippets), BreadcrumbList (Inicio > Servicios > Apps móviles), Organization (datos de marca Alrit.dev), y opcionalmente Offer/AggregateRating dentro de Service si hay reseñas verificables.",
+    "targetKeywords": [
+      "desarrollo de apps móviles México",
+      "agencia de desarrollo de aplicaciones móviles",
+      "empresa de desarrollo de apps iOS Android",
+      "cuánto cuesta una app en México",
+      "cotización app móvil México",
+      "crear app para mi negocio México",
+      "desarrollo de aplicaciones móviles a medida",
+      "desarrollo de apps en CDMX Guadalajara Monterrey",
+      "precio desarrollar app para empresa",
+      "desarrollo app React Native México",
+      "app nativa o híbrida cuál conviene",
+      "MVP de app qué es y cuánto cuesta",
+      "cómo integrar mi app con mi ERP",
+      "mantenimiento de aplicaciones móviles costo",
+      "empresa de desarrollo de apps España",
+      "desarrollo de apps Madrid",
+      "desarrollo de aplicaciones móviles Barcelona",
+      "cuánto cuesta crear una app",
+      "presupuesto aplicación móvil",
+      "desarrollo apps iOS y Android para empresas",
+      "mobile app development",
+      "custom mobile app development",
+      "iOS Android app development company",
+      "how much does a mobile app cost",
+      "React Native app development"
+    ],
+    "es": {
+      "metaTitle": "Desarrollo de Apps Móviles México | Alrit.dev",
+      "metaDescription": "Desarrollamos apps iOS y Android a medida conectadas a tu negocio. Rápidas, seguras y listas para escalar. Cotiza tu app móvil hoy.",
+      "h1": "Desarrollo de apps móviles que conectan tu negocio con tus clientes",
+      "heroSub": "Diseñamos y desarrollamos aplicaciones iOS y Android a medida que se integran con tus sistemas, pagos y procesos. No plantillas: software propio que carga rápido, convierte y crece contigo.",
+      "benefits": [
+        {
+          "title": "Conectada a tu negocio de verdad",
+          "text": "Tu app se integra con tu ERP, CRM, inventario y pagos para que opere con datos reales, no como una vitrina aislada."
+        },
+        {
+          "title": "iOS y Android con una sola base",
+          "text": "Con React Native cubrimos ambas tiendas a la vez: menos costo, mismas funciones y actualizaciones más rápidas."
+        },
+        {
+          "title": "Pagos y ecosistema local",
+          "text": "Cobra dentro de la app con Mercado Pago, SPEI y OXXO, y factura con CFDI-SAT sin parches de último momento."
+        },
+        {
+          "title": "Rápida y estable",
+          "text": "Ingeniería moderna y pruebas reales para una app que abre rápido, no se traba y aguanta el crecimiento."
+        },
+        {
+          "title": "Publicación garantizada",
+          "text": "Nos encargamos del proceso completo en App Store y Google Play, incluyendo políticas, fichas y aprobaciones."
+        },
+        {
+          "title": "Soporte y evolución",
+          "text": "Mantenimiento, mejoras y nuevas funciones para que tu app crezca al ritmo de tu negocio."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta desarrollar una app móvil en México?",
+          "a": "El costo de una app en México depende del alcance, las integraciones y si es nativa o multiplataforma. Un MVP funcional suele iniciar en un rango medio, mientras que apps empresariales con ERP, pagos y panel propio cuestan más. Te damos una cotización clara después de un diagnóstico sin costo de tu proyecto."
+        },
+        {
+          "q": "¿Cuánto tiempo tarda desarrollar una aplicación móvil?",
+          "a": "Un MVP de app suele tomar entre 8 y 16 semanas, y un proyecto empresarial completo puede ir de 4 a 6 meses. El tiempo depende del número de funciones, integraciones y revisiones. Definimos un cronograma claro por fases desde el inicio para que sepas qué esperar en cada etapa."
+        },
+        {
+          "q": "¿Conviene una app nativa o híbrida para mi negocio?",
+          "a": "Para la mayoría de los negocios, una app multiplataforma con React Native es la mejor opción: cubre iOS y Android con una sola base de código, cuesta menos y se actualiza más rápido. La app 100% nativa conviene cuando necesitas rendimiento extremo o funciones muy específicas del dispositivo. Te asesoramos según tu caso."
+        },
+        {
+          "q": "¿Pueden integrar la app con mi sistema o ERP?",
+          "a": "Sí. Conectamos tu app con tu ERP, CRM, inventario, pasarelas de pago como Mercado Pago y SPEI, facturación CFDI-SAT y WhatsApp Business mediante APIs seguras. Así tu app trabaja con datos reales y en tiempo real, no como una herramienta aislada del resto de tu operación."
+        },
+        {
+          "q": "¿Ustedes publican la app en App Store y Google Play?",
+          "a": "Sí. Nos encargamos de todo el proceso de publicación en App Store y Google Play: configuración de cuentas de desarrollador, cumplimiento de políticas, fichas de tienda, capturas y el envío para revisión. Te entregamos la app publicada y lista para que tus usuarios la descarguen."
+        }
+      ],
+      "cta": "Cotiza tu app móvil sin costo",
+      "sections": [
+        {
+          "heading": "Qué incluye tu app móvil iOS y Android",
+          "body": "Construimos tu aplicación móvil iOS y Android completa: arquitectura, diseño de experiencia (UX/UI), desarrollo nativo o multiplataforma, y conexión real con tu negocio vía ERP, CRM o POS. Entregamos pantallas de onboarding, autenticación, notificaciones push, panel de administración y las integraciones que tu operación necesita. Te dejamos la app publicada en App Store y Google Play, con documentación técnica y soporte para que el lanzamiento no dependa de nadie más."
+        },
+        {
+          "heading": "Por qué desarrollar tu app con Alrit.dev",
+          "body": "No partimos de plantillas genéricas: cada app móvil iOS y Android la diseñamos como un activo digital de alto rendimiento, con foco en velocidad, fluidez y SEO técnico desde el código para que tu ficha y tu contenido posicionen. Conectamos tu app con el ecosistema local que de verdad usas en México (Mercado Pago, OXXO/SPEI, CFDI-SAT y WhatsApp Business), no con integraciones a medias. Y trabajamos con precios transparentes en MXN y rangos reales, sin promesas infladas: ingeniería moderna, honesta y orientada a resultados."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Empezamos con un descubrimiento donde definimos alcance, flujos clave e integraciones de tu app móvil iOS y Android. Después pasamos a diseño de UX/UI y prototipo navegable para que valides la experiencia antes de escribir una sola línea de producción. Desarrollamos por entregas, con pruebas y revisiones contigo en cada hito, y cerramos con la publicación en tiendas, capacitación y un plan de mantenimiento para que la app crezca con tu negocio."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Apostamos por ingeniería moderna basada en React y el ecosistema Next.js para los paneles y backends que alimentan tu app móvil iOS y Android, con APIs limpias y seguras. Integramos pagos y cobranza con Mercado Pago, OXXO y SPEI, facturación CFDI-SAT y comunicación directa con tus clientes vía WhatsApp Business. Todo pensado para que tu app no sea una isla, sino una pieza conectada a tu ERP, CRM o POS y al stack que ya usas día a día."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Desarrollamos Conectas, una app móvil para descubrir y reservar experiencias, donde resolvimos la búsqueda, el descubrimiento y el flujo de reserva en una experiencia fluida para el usuario final. También construimos Programarte, una app de bienestar mental enfocada en acompañar al usuario con una interfaz cuidada y cercana. Son ejemplos reales de cómo llevamos una app móvil iOS y Android desde la idea hasta las tiendas, conectada al negocio y lista para usarse."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "Mobile App Development | Alrit.dev",
+      "metaDescription": "We build custom iOS and Android apps connected to your business. Fast, secure and ready to scale. Get your mobile app quote today.",
+      "h1": "Mobile app development that connects your business to your customers",
+      "heroSub": "We design and build custom iOS and Android apps that integrate with your systems, payments and processes. Not templates: real software that loads fast, converts and scales with you.",
+      "benefits": [
+        {
+          "title": "Truly connected to your business",
+          "text": "Your app integrates with your ERP, CRM, inventory and payments so it runs on real data, not as an isolated storefront."
+        },
+        {
+          "title": "iOS and Android from one codebase",
+          "text": "With React Native we cover both stores at once: lower cost, the same features and faster updates."
+        },
+        {
+          "title": "Payments and local ecosystem",
+          "text": "Take in-app payments and connect billing and messaging tools without last-minute workarounds."
+        },
+        {
+          "title": "Fast and stable",
+          "text": "Modern engineering and real testing for an app that opens fast, doesn't freeze and handles growth."
+        },
+        {
+          "title": "Publishing handled for you",
+          "text": "We manage the full process on the App Store and Google Play, including policies, listings and approvals."
+        },
+        {
+          "title": "Support and evolution",
+          "text": "Maintenance, improvements and new features so your app grows at the pace of your business."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does it cost to develop a mobile app?",
+          "a": "The cost of a mobile app depends on the scope, integrations and whether it's native or cross-platform. A working MVP typically starts in a mid range, while enterprise apps with ERP, payments and a custom panel cost more. We provide a clear quote after a free assessment of your project."
+        },
+        {
+          "q": "How long does it take to develop a mobile app?",
+          "a": "An app MVP usually takes 8 to 16 weeks, and a full enterprise project can run 4 to 6 months. The timeline depends on the number of features, integrations and review cycles. We define a clear phased schedule from the start so you know what to expect at each stage."
+        },
+        {
+          "q": "Should I build a native or hybrid app for my business?",
+          "a": "For most businesses, a cross-platform app with React Native is the best option: it covers iOS and Android from a single codebase, costs less and updates faster. A fully native app makes sense when you need extreme performance or very device-specific features. We advise you based on your case."
+        },
+        {
+          "q": "Can you integrate the app with my system or ERP?",
+          "a": "Yes. We connect your app with your ERP, CRM, inventory, payment gateways, billing and WhatsApp Business through secure APIs. That way your app works with real, real-time data instead of being a tool isolated from the rest of your operation."
+        },
+        {
+          "q": "Do you publish the app on the App Store and Google Play?",
+          "a": "Yes. We handle the entire publishing process on the App Store and Google Play: developer account setup, policy compliance, store listings, screenshots and submission for review. We deliver your app published and ready for your users to download."
+        }
+      ],
+      "cta": "Get a free mobile app quote",
+      "sections": [
+        {
+          "heading": "What your iOS and Android app includes",
+          "body": "We build your complete iOS and Android mobile app: architecture, UX/UI design, native or cross-platform development, and a real connection to your business through ERP, CRM or POS. You get onboarding screens, authentication, push notifications, an admin panel and the integrations your operation actually needs. We hand it over published on the App Store and Google Play, with technical documentation and support so your launch never depends on anyone else."
+        },
+        {
+          "heading": "Why build your app with Alrit.dev",
+          "body": "We don't start from generic templates: every iOS and Android mobile app is engineered as a high-performance digital asset, with a focus on speed, smoothness and technical SEO from the code so your listing and content rank. We connect your app to the local ecosystem you really use in Mexico (Mercado Pago, OXXO/SPEI, CFDI-SAT and WhatsApp Business), not half-finished integrations. And we work with transparent pricing in MXN and honest, realistic ranges, no inflated promises: modern engineering built around results."
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start with a discovery phase where we define scope, key flows and the integrations of your iOS and Android mobile app. Then we move into UX/UI design and a clickable prototype so you can validate the experience before a single line of production code is written. We develop in increments, with testing and reviews alongside you at every milestone, and close with store publishing, training and a maintenance plan so the app grows with your business."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "We rely on modern engineering built on React and the Next.js ecosystem for the panels and backends that power your iOS and Android mobile app, with clean, secure APIs. We integrate payments and collections through Mercado Pago, OXXO and SPEI, CFDI-SAT invoicing, and direct customer communication via WhatsApp Business. It's all designed so your app isn't an island, but a connected piece of your ERP, CRM or POS and the stack you already use every day."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We built Conectas, a mobile app to discover and book experiences, where we solved search, discovery and the booking flow in a smooth experience for the end user. We also developed Programarte, a mental wellness app focused on supporting users through a careful, approachable interface. They're real examples of how we take an iOS and Android mobile app from idea to the stores, connected to the business and ready to use."
+        }
+      ]
+    }
+  },
+  "automatizaciones": {
+    "serviceId": "automation",
+    "slug": "automatizaciones",
+    "accent": "#fd9644",
+    "schema": "Service, FAQPage, BreadcrumbList, Organization (con ProfessionalService como subtipo), AggregateRating opcional si hay reseñas. Recomendado: Service (con provider -> Organization Alrit.dev, areaServed MX/ES, serviceType \"Automatización de procesos e integraciones\"), FAQPage (para las 5 preguntas), BreadcrumbList (Inicio > Servicios > Automatizaciones). Considerar WebPage + ItemList para los casos de portafolio.",
+    "targetKeywords": [
+      "agencia de automatización de procesos",
+      "consultor n8n México",
+      "automatización de procesos con IA para empresas",
+      "implementación n8n empresa",
+      "automatización de procesos para PyMEs",
+      "agencia de automatización con Make y Zapier",
+      "integración de APIs y CRM",
+      "desarrollo de agentes de IA para empresas",
+      "contratar automatización de procesos",
+      "cuánto cuesta automatizar un proceso",
+      "agencia n8n España",
+      "consultor n8n",
+      "automatizar procesos pyme",
+      "Kit Digital agente digitalizador IA",
+      "automatizar WhatsApp con IA para ventas"
+    ],
+    "es": {
+      "metaTitle": "Automatización de Procesos con IA | Alrit.dev",
+      "metaDescription": "Agencia de automatización de procesos con n8n, Make, Zapier y APIs. Conecta tu CRM, cobranza y WhatsApp, ahorra horas y escala. Agenda tu diagnóstico.",
+      "h1": "Automatización de procesos con IA que le devuelve horas a tu equipo",
+      "heroSub": "Conectamos tus herramientas, eliminamos el trabajo manual y desplegamos agentes de IA con n8n, Make, Zapier y APIs. Menos tareas repetitivas, más resultados que sí puedes medir.",
+      "benefits": [
+        {
+          "title": "Recupera horas cada semana",
+          "text": "Eliminamos las tareas repetitivas (copiar datos, enviar correos, conciliar pagos) para que tu equipo se enfoque en lo que de verdad genera ingresos."
+        },
+        {
+          "title": "Tus herramientas, por fin conectadas",
+          "text": "Integramos tu CRM, e-commerce, facturación y WhatsApp para que la información fluya sola, sin re-capturas ni errores manuales."
+        },
+        {
+          "title": "Control total con n8n self-hosted",
+          "text": "Desplegamos n8n en tu propio servidor: tus datos no salen de tu infraestructura y te olvidas de los límites de tareas de Zapier."
+        },
+        {
+          "title": "Agentes de IA que trabajan por ti",
+          "text": "Construimos agentes que califican prospectos, responden en WhatsApp y resumen tus datos 24/7, integrados a tus procesos reales."
+        },
+        {
+          "title": "Hecho para México",
+          "text": "Conectamos con Mercado Pago, SPEI/OXXO, CFDI-SAT y WhatsApp Business para automatizar cobranza, facturación y ventas sin parches."
+        },
+        {
+          "title": "ROI medible, no humo",
+          "text": "Priorizamos las automatizaciones por retorno: empezamos por lo que más ahorra y te mostramos el impacto en horas y dinero."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta automatizar un proceso en mi empresa?",
+          "a": "El costo depende de la complejidad del proceso y de cuántos sistemas se integran. Una automatización puntual (por ejemplo, capturar leads de un formulario en tu CRM y WhatsApp) suele ser una inversión accesible y de retorno rápido, mientras que orquestar varios procesos con agentes de IA es un proyecto mayor. En Alrit.dev te damos un diagnóstico gratuito con el alcance, el precio y el ROI estimado antes de empezar."
+        },
+        {
+          "q": "¿Qué es n8n y por qué lo recomiendan frente a Zapier o Make?",
+          "a": "n8n es una plataforma de automatización de flujos de trabajo que puedes alojar en tu propio servidor (self-hosted). A diferencia de Zapier, no cobra por número de tareas y te da control total de tus datos, ideal para cumplir con privacidad y para procesos de alto volumen. Make y Zapier son excelentes para integraciones rápidas en la nube; te ayudamos a elegir la herramienta correcta según tu caso, presupuesto y volumen."
+        },
+        {
+          "q": "¿Qué procesos puedo automatizar en mi negocio?",
+          "a": "Casi cualquier proceso repetitivo y basado en reglas: captura y calificación de prospectos, respuestas en WhatsApp, cobranza y recordatorios de pago, facturación CFDI, sincronización entre tu CRM y tu e-commerce, reportes automáticos, onboarding de clientes y notificaciones internas. Empezamos mapeando dónde tu equipo pierde más tiempo y automatizamos primero lo de mayor impacto."
+        },
+        {
+          "q": "¿Necesito conocimientos técnicos o cambiar mis sistemas actuales?",
+          "a": "No. Trabajamos sobre las herramientas que ya usas e integramos vía APIs y conectores, así que normalmente no necesitas cambiar nada. Nosotros diseñamos, construimos y monitoreamos los flujos, y te capacitamos para que tu equipo los use con confianza. Tú te enfocas en tu negocio."
+        },
+        {
+          "q": "¿Pueden integrar IA y agentes inteligentes en mis automatizaciones?",
+          "a": "Sí. Desarrollamos agentes de IA conectados a tus procesos reales: un agente que responde y califica prospectos en WhatsApp, otro que resume correos o documentos, o uno que clasifica tickets de soporte. Combinamos modelos de IA con n8n, Make o APIs para que la automatización no solo mueva datos, sino que también tome decisiones simples por ti."
+        }
+      ],
+      "cta": "Agenda tu diagnóstico de automatización gratis",
+      "sections": [
+        {
+          "heading": "Qué incluye nuestra automatización de procesos",
+          "body": "Conectamos tus herramientas y eliminamos el trabajo manual repetitivo con flujos a la medida en n8n, Make o Zapier, orquestados con IA y APIs. Tú recibes integraciones funcionando entre tu CRM, tu sistema de facturación, tu correo y WhatsApp Business, además de la documentación de cada flujo, manejo de errores y reintentos, y un panel para que veas qué está pasando. Cada automatización queda lista para operar en producción, no como un experimento que se rompe a la primera."
+        },
+        {
+          "heading": "Por qué automatizar tus procesos con Alrit.dev",
+          "body": "No vendemos plantillas genéricas ni recetas de YouTube: diseñamos cada automatización de procesos pensando en cómo factura, cobra y atiende realmente tu negocio en México. Combinamos ingeniería moderna con integración profunda al ecosistema local (CFDI-SAT, SPEI/OXXO, Mercado Pago, WhatsApp Business), y construimos flujos rápidos, estables y mantenibles en lugar de cadenas frágiles que solo entiende quien las armó. Trabajamos con precios transparentes en MXN y rangos honestos, sin promesas infladas de \"todo automático para mañana\"."
+        },
+        {
+          "heading": "Cómo trabajamos, fase por fase",
+          "body": "Arrancamos con un mapeo de tus procesos actuales para detectar dónde se pierde tiempo y dónde la automatización rinde más rápido. Luego diseñamos el flujo, lo construimos y lo probamos con datos reales, conectando las APIs e integraciones que necesites. Finalmente lo lanzamos a producción con monitoreo y manejo de errores, y te acompañamos en los ajustes para que la automatización de procesos siga funcionando conforme tu operación crece."
+        },
+        {
+          "heading": "Tecnología e integraciones locales",
+          "body": "Construimos sobre n8n, Make y Zapier según el caso, sumando IA para clasificar, redactar o decidir dentro del flujo, y conectándonos vía API con las plataformas que ya usas. Lo que nos distingue es la integración con el ecosistema mexicano: timbrado y facturación CFDI ante el SAT, conciliación de pagos por SPEI, OXXO y Mercado Pago, y mensajería automatizada por WhatsApp Business. Cuando tu automatización necesita una pieza de software a la medida, la desarrollamos con Next.js/React o el stack que mejor encaje, sin atarte a límites de una sola herramienta."
+        },
+        {
+          "heading": "Casos y proyectos relacionados",
+          "body": "Hemos ayudado a PyMEs a automatizar su cobranza, enviando recordatorios y dando seguimiento a pagos sin que alguien tenga que perseguir clientes uno por uno. También construimos flujos de facturación CFDI/SAT que generan y envían comprobantes de forma automática, y atención por WhatsApp Business que responde, califica y deriva conversaciones al área correcta. Son automatizaciones de procesos que liberan horas del equipo y reducen errores en tareas que antes se hacían a mano."
+        }
+      ]
+    },
+    "en": {
+      "metaTitle": "AI Process Automation Agency | Alrit.dev",
+      "metaDescription": "Process automation with n8n, Make, Zapier and APIs. Connect your CRM, billing and WhatsApp, save hours and scale. Book your free automation audit today.",
+      "h1": "AI process automation that gives your team its hours back",
+      "heroSub": "We connect your tools, kill manual work and deploy AI agents with n8n, Make, Zapier and APIs. Fewer repetitive tasks, more results you can actually measure.",
+      "benefits": [
+        {
+          "title": "Get hours back every week",
+          "text": "We remove repetitive tasks (copying data, sending emails, reconciling payments) so your team can focus on what actually drives revenue."
+        },
+        {
+          "title": "Your tools, finally connected",
+          "text": "We integrate your CRM, e-commerce, billing and WhatsApp so information flows on its own, with no re-entry and no manual errors."
+        },
+        {
+          "title": "Full control with self-hosted n8n",
+          "text": "We deploy n8n on your own server: your data stays in your infrastructure and you forget about Zapier's task limits."
+        },
+        {
+          "title": "AI agents that work for you",
+          "text": "We build agents that qualify leads, reply on WhatsApp and summarize your data 24/7, wired into your real processes."
+        },
+        {
+          "title": "Built for the local ecosystem",
+          "text": "We connect to local payment rails, billing and WhatsApp Business to automate collections, invoicing and sales without workarounds."
+        },
+        {
+          "title": "Measurable ROI, not hype",
+          "text": "We prioritize automations by return: we start with what saves the most and show you the impact in hours and money."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does it cost to automate a process in my company?",
+          "a": "It depends on the complexity of the process and how many systems need to be integrated. A single automation (for example, capturing form leads into your CRM and WhatsApp) is usually an affordable, fast-return investment, while orchestrating several processes with AI agents is a larger project. At Alrit.dev we give you a free audit with the scope, price and estimated ROI before we start."
+        },
+        {
+          "q": "What is n8n and why do you recommend it over Zapier or Make?",
+          "a": "n8n is a workflow automation platform you can host on your own server (self-hosted). Unlike Zapier, it doesn't charge per task and gives you full control of your data, which is ideal for privacy compliance and high-volume processes. Make and Zapier are great for fast cloud integrations; we help you choose the right tool based on your case, budget and volume."
+        },
+        {
+          "q": "What processes can I automate in my business?",
+          "a": "Almost any rule-based, repetitive process: lead capture and qualification, WhatsApp replies, collections and payment reminders, invoicing, syncing your CRM with your e-commerce, automated reports, client onboarding and internal notifications. We start by mapping where your team loses the most time and automate the highest-impact tasks first."
+        },
+        {
+          "q": "Do I need technical skills or to change my current systems?",
+          "a": "No. We work on top of the tools you already use and integrate via APIs and connectors, so you usually don't need to change anything. We design, build and monitor the workflows and train your team to use them with confidence. You stay focused on your business."
+        },
+        {
+          "q": "Can you build AI and intelligent agents into my automations?",
+          "a": "Yes. We develop AI agents wired into your real processes: an agent that replies to and qualifies leads on WhatsApp, one that summarizes emails or documents, or one that classifies support tickets. We combine AI models with n8n, Make or APIs so your automation doesn't just move data, it also makes simple decisions for you."
+        }
+      ],
+      "cta": "Book your free automation audit",
+      "sections": [
+        {
+          "heading": "What our process automation includes",
+          "body": "We connect your tools and remove repetitive manual work with custom flows built in n8n, Make or Zapier, orchestrated with AI and APIs. You get working integrations across your CRM, billing system, email and WhatsApp Business, plus documentation for every flow, error handling and retries, and a panel so you can see what's happening. Each automation ships ready for production, not as an experiment that breaks the first time something changes."
+        },
+        {
+          "heading": "Why automate your processes with Alrit.dev",
+          "body": "We don't sell generic templates or YouTube recipes: we design every process automation around how your business actually bills, collects and serves customers in Mexico. We combine modern engineering with deep local integration (CFDI-SAT, SPEI/OXXO, Mercado Pago, WhatsApp Business), building flows that are fast, stable and maintainable instead of fragile chains only their author understands. We work with transparent pricing in MXN and honest ranges, with no inflated promises of \"everything automated by tomorrow.\""
+        },
+        {
+          "heading": "How we work, phase by phase",
+          "body": "We start by mapping your current processes to find where time is lost and where automation pays off fastest. Then we design the flow, build it and test it with real data, connecting the APIs and integrations you need. Finally we launch to production with monitoring and error handling, and we stay with you on the adjustments so your process automation keeps working as your operation grows."
+        },
+        {
+          "heading": "Technology and local integrations",
+          "body": "We build on n8n, Make and Zapier depending on the case, adding AI to classify, draft or decide inside the flow, and connecting via API to the platforms you already use. What sets us apart is integration with the Mexican ecosystem: CFDI invoicing and stamping with the SAT, payment reconciliation through SPEI, OXXO and Mercado Pago, and automated messaging over WhatsApp Business. When your automation needs a custom piece of software, we develop it with Next.js/React or whatever stack fits best, without locking you into the limits of a single tool."
+        },
+        {
+          "heading": "Related cases and projects",
+          "body": "We've helped SMBs automate their collections, sending reminders and following up on payments without anyone chasing clients one by one. We've also built CFDI/SAT invoicing flows that generate and send tax documents automatically, and WhatsApp Business support that replies, qualifies and routes conversations to the right team. These are process automations that free up hours for the team and cut errors in tasks that used to be done by hand."
+        }
+      ]
+    }
+  }
+}

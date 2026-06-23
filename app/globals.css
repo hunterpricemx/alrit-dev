@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./sections.css";
+@import "./pages.css";
 
 /* ============================================================
    Design tokens

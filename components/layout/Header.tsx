@@ -24,9 +24,9 @@ export default function Header({
 
   const base = `/${locale}`;
   const links = [
-    { href: `${base}#services`, label: dict.nav.services },
+    { href: `${base}/servicios`, label: dict.nav.services },
     { href: `${base}#calculator`, label: dict.nav.calculator },
-    { href: `${base}#portfolio`, label: dict.nav.portfolio },
+    { href: `${base}/portafolio`, label: dict.nav.portfolio },
     { href: `${base}#process`, label: dict.nav.process },
   ];
 

@@ -1,0 +1,52 @@
+{
+  "serviceId": "ecommerce",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu tienda en línea",
+        "body": "Construimos tu tienda en línea completa: catálogo de productos con variantes, inventario y categorías, carrito y checkout optimizado, y panel de administración para que gestiones todo sin depender de nadie. Integramos pagos locales con Mercado Pago, OXXO y SPEI, además de la facturación CFDI ante el SAT para que cada venta quede en regla. Sumamos buscador, fichas de producto pensadas para convertir, envíos configurables y notificaciones por WhatsApp y correo. Te entregamos un activo listo para vender, no una plantilla a medias."
+      },
+      {
+        "heading": "Por qué tu e-commerce con Alrit.dev",
+        "body": "La mayoría de las tiendas en línea son lentas y eso te cuesta ventas: cada segundo de carga tira tu conversión y tu posición en Google. Nosotros desarrollamos con ingeniería moderna enfocada en velocidad (Core Web Vitals en verde) y SEO técnico desde el código, no como un parche al final. A diferencia de las plantillas genéricas, tu tienda se integra de raíz con el ecosistema mexicano (Mercado Pago, OXXO/SPEI, CFDI, WhatsApp Business) y la diseñamos a la medida de cómo vendes tú. Precios transparentes en pesos, sin sorpresas ni promesas infladas."
+      },
+      {
+        "heading": "Cómo trabajamos",
+        "body": "Arrancamos con una fase de descubrimiento para entender tu catálogo, tu operación y a quién le vendes, y de ahí definimos alcance y rangos reales. Pasamos a diseño y arquitectura de la tienda en línea, luego al desarrollo con avances que puedes revisar, y finalmente integramos pagos, CFDI y pruebas completas antes de salir a producción. Después del lanzamiento te acompañamos con soporte y mejoras, porque un e-commerce vive y evoluciona contigo."
+      },
+      {
+        "heading": "Tecnología e integraciones locales",
+        "body": "Según tu proyecto, levantamos tu tienda en línea con Next.js/React para máximo rendimiento o con WordPress/WooCommerce cuando buscas autonomía editorial, siempre con SEO técnico cuidado. Conectamos pagos con Mercado Pago, OXXO y SPEI, y la facturación CFDI directamente con el SAT para que tu contabilidad fluya. Integramos WhatsApp Business para atención y seguimiento de pedidos, y dejamos todo medible con analítica para que tomes decisiones con datos reales."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Para BDS Motos desarrollamos el catálogo de producto de una marca automotriz, con fichas claras y una navegación pensada para que el usuario encuentre lo que busca. En Conectas construimos un sistema de cobros y membresías con Stripe, resolviendo pagos recurrentes y gestión de suscriptores. Esa misma experiencia en catálogo, pagos e integraciones es la que aplicamos a cada tienda en línea que construimos."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your online store includes",
+        "body": "We build your complete online store: a product catalog with variants, inventory and categories, an optimized cart and checkout, and an admin panel so you manage everything without depending on anyone. We integrate local payments with Mercado Pago, OXXO and SPEI, plus CFDI invoicing with the SAT so every sale stays compliant. We add search, conversion-focused product pages, configurable shipping, and WhatsApp and email notifications. You get an asset that's ready to sell, not a half-finished template."
+      },
+      {
+        "heading": "Why build your e-commerce with Alrit.dev",
+        "body": "Most online stores are slow, and that costs you sales: every second of load time drags down your conversion and your Google ranking. We develop with modern engineering focused on speed (green Core Web Vitals) and technical SEO baked into the code, not patched on at the end. Unlike generic templates, your store integrates natively with the Mexican ecosystem (Mercado Pago, OXXO/SPEI, CFDI, WhatsApp Business) and is tailored to how you actually sell. Transparent pricing in pesos, with no surprises or inflated promises."
+      },
+      {
+        "heading": "How we work",
+        "body": "We start with a discovery phase to understand your catalog, your operation and who you sell to, and from there we define scope and realistic ranges. Then we move into design and architecture for your online store, followed by development with progress you can review, and finally we integrate payments, CFDI and run full testing before going live. After launch we stay with you through support and improvements, because an e-commerce store lives and evolves alongside you."
+      },
+      {
+        "heading": "Technology and local integrations",
+        "body": "Depending on your project, we build your online store with Next.js/React for maximum performance or with WordPress/WooCommerce when you want editorial autonomy, always with technical SEO done right. We connect payments through Mercado Pago, OXXO and SPEI, and CFDI invoicing directly with the SAT so your accounting flows. We integrate WhatsApp Business for support and order follow-up, and leave everything measurable with analytics so you make decisions based on real data."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "For BDS Motos we developed the product catalog of an automotive brand, with clear product pages and navigation designed to help users find exactly what they need. For Conectas we built a payments and memberships system with Stripe, solving recurring billing and subscriber management. That same expertise in catalog, payments and integrations is what we bring to every online store we build."
+      }
+    ]
+  },
+  "slug": "ecommerce"
+}

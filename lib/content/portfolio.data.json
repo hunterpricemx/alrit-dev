@@ -1,0 +1,250 @@
+[
+  {
+    "slug": "conectas-plataforma-experiencias-gastronomicas",
+    "image": "/portfolio/conectas.png",
+    "bg": "#fdeaf2",
+    "cat": "webdev",
+    "relatedService": "desarrollo-web",
+    "url": "https://dev.conectas.ai/",
+    "status": "live",
+    "industry": "Marketplace de experiencias gastronomicas / marketing de influencers y hospitalidad (foodtech y experiential dining)",
+    "tech": "Aplicacion web custom construida con Next.js (React); pagos integrados con Stripe; sistema de autenticacion con paneles por rol. No usa CMS tipo WordPress.",
+    "es": {
+      "title": "Conectas - Plataforma de experiencias gastronomicas que conecta marcas, influencers y usuarios",
+      "short": "Marketplace web a medida que une a marcas, influencers y comensales en experiencias gastronomicas reservables.",
+      "long": "El reto era unir a tres audiencias muy distintas (marcas, influencers y usuarios) en una sola plataforma sin friccion. Desarrollamos un marketplace a medida en Next.js con paneles por rol, membresias, reservas, mapas y cobros seguros con Stripe. El resultado es una experiencia unificada donde restaurantes, hoteles y museos publican beneficios y los usuarios reservan y los aprovechan en pocos clics."
+    },
+    "en": {
+      "title": "Conectas - Gastronomic Experiences Platform Connecting Brands, Influencers, and Users",
+      "short": "Custom web marketplace linking brands, influencers, and diners through bookable gastronomic experiences.",
+      "long": "The challenge was bringing three very different audiences (brands, influencers, and users) together on one frictionless platform. We built a custom Next.js marketplace with role-based dashboards, memberships, bookings, maps, and secure Stripe payments. The result is a unified experience where restaurants, hotels, and museums publish benefits and users book and redeem them in just a few clicks."
+    },
+    "highlights": [
+      "Marketplace multilateral con paneles dedicados para influencers, marcas y usuarios",
+      "Pagos seguros integrados con Stripe y gestion de membresias por niveles",
+      "Reservas, cuponera de beneficios y vistas de mapa para descubrir experiencias",
+      "Construido con Next.js para una experiencia rapida y moderna",
+      "Catalogo de marcas filtrable por tipo: restaurantes, hoteles y museos"
+    ],
+    "tags": [
+      "marketplace",
+      "nextjs",
+      "experiencias-gastronomicas",
+      "influencer-marketing",
+      "stripe",
+      "plataforma-web"
+    ]
+  },
+  {
+    "slug": "conquer-classic-plus",
+    "image": "/portfolio/conquer-classic-plus.png",
+    "bg": "#1c1c22",
+    "cat": "webdev",
+    "relatedService": "desarrollo-web",
+    "url": "https://conquerclassicplus.com/",
+    "status": "live",
+    "industry": "Gaming / Servidores privados de videojuegos MMO (Conquer Online)",
+    "tech": "Next.js (React) + Supabase",
+    "es": {
+      "title": "Portal y plataforma de servidor privado para Conquer Classic Plus",
+      "short": "Plataforma web a la medida en Next.js para un servidor privado de Conquer Online con registro, mercado y rankings.",
+      "long": "El reto era unificar dos versiones de un servidor MMO (Classic 1.0 y Experience 2.0) en un solo portal moderno que diera servicio a una comunidad de jugadores. Desarrollamos una plataforma a la medida en Next.js con backend en Supabase que integra registro de cuentas, mercado de items entre versiones, rankings competitivos, noticias con parches, descargas de cliente y calendario de eventos. El resultado es un sitio rapido y escalable que centraliza toda la experiencia del jugador y conecta con la comunidad de Discord."
+    },
+    "en": {
+      "title": "Web portal and platform for the Conquer Classic Plus private server",
+      "short": "Custom Next.js web platform for a Conquer Online private server with account registration, marketplace, and rankings.",
+      "long": "The challenge was to unify two versions of an MMO server (Classic 1.0 and Experience 2.0) into a single modern portal serving an active player community. We built a custom Next.js platform powered by a Supabase backend, integrating account registration, a cross-version item marketplace, competitive rankings, patch news, client downloads, and an event calendar. The result is a fast, scalable site that centralizes the entire player experience and connects seamlessly with the Discord community."
+    },
+    "highlights": [
+      "Plataforma a la medida construida en Next.js con backend Supabase",
+      "Sistema de registro y gestion de cuentas de jugadores",
+      "Mercado de items con compra-venta entre versiones del servidor",
+      "Rankings competitivos, noticias/parches y calendario de eventos PvP",
+      "Soporte multiversion (Classic 1.0 y Experience 2.0) en un solo portal"
+    ],
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "Gaming",
+      "MMO",
+      "Plataforma web",
+      "Comunidad"
+    ]
+  },
+  {
+    "slug": "bodhi-medicine-plataforma-formacion-salud-holistica",
+    "image": "/portfolio/bodhi-medicine.png",
+    "bg": "#eef3ee",
+    "cat": "lms",
+    "relatedService": "plataformas-lms",
+    "url": "https://bodhimedicine.com/",
+    "status": "live",
+    "industry": "Educación en salud holística e integrativa (medicina alternativa, bienestar y formación profesional)",
+    "tech": "WordPress + WPML (sitio multilingüe ES/EN), pasarela ThriveCart para venta de cursos/membresías y certificaciones",
+    "es": {
+      "title": "Bodhi Medicine: plataforma de formación y membresía en salud holística",
+      "short": "Sitio multilingüe en WordPress para vender cursos, membresías y certificaciones de salud integrativa a una audiencia internacional.",
+      "long": "Bodhi Medicine necesitaba un solo lugar donde su audiencia internacional pudiera descubrir, comprar y acceder a formaciones, la membresía \"Medicina con Amor\" y certificaciones profesionales, todo en español e inglés. Construimos un sitio en WordPress con soporte multilingüe (WPML) y venta integrada vía ThriveCart, centralizando cursos, talleres en vivo, consultas y rutas de certificación en una experiencia clara orientada a la conversión. El resultado es una plataforma educativa coherente que comunica la metodología del Dr. Yonatan y facilita la inscripción desde cualquier país."
+    },
+    "en": {
+      "title": "Bodhi Medicine: Holistic Health Training & Membership Platform",
+      "short": "Multilingual WordPress site selling integrative-health courses, memberships, and professional certifications to a global audience.",
+      "long": "Bodhi Medicine needed a single home where an international audience could discover, purchase, and access trainings, the \"Medicine with Love\" membership, and professional certifications in both Spanish and English. We delivered a WordPress site with multilingual support (WPML) and integrated ThriveCart checkout, centralizing courses, live workshops, consultations, and certification tracks into a clear, conversion-focused experience. The outcome is a cohesive education platform that conveys Dr. Yonatan's methodology and makes enrollment easy from anywhere in the world."
+    },
+    "highlights": [
+      "Sitio multilingüe (español/inglés) con WPML para una audiencia internacional",
+      "Catálogo de formaciones online, talleres en vivo y consultas 1 a 1",
+      "Membresía recurrente \"Medicina con Amor\" con contenido y sesiones en vivo mensuales",
+      "Rutas de certificación profesional (Embajador y Terapeuta) con venta integrada",
+      "Checkout de cursos y membresías mediante ThriveCart"
+    ],
+    "tags": [
+      "wordpress",
+      "wpml-multilingue",
+      "cursos-online",
+      "membresia",
+      "salud-holistica",
+      "certificacion"
+    ]
+  },
+  {
+    "slug": "bdweb-plataforma-inmobiliaria",
+    "image": "/portfolio/bdweb.png",
+    "bg": "#e7f7f0",
+    "cat": "realestate",
+    "relatedService": "real-estate",
+    "url": "https://bdwebmx.com/",
+    "status": "live",
+    "industry": "Bienes raíces / PropTech (plataforma B2B y B2C para asesores, proveedores y agencias inmobiliarias en México)",
+    "tech": "Plataforma a la medida (custom web app) sobre Supabase (almacenamiento/backend); CDN de medios dedicado; sin CMS tradicional tipo WordPress detectado",
+    "es": {
+      "title": "BDweb — Plataforma inmobiliaria integral con marketplace, red de asesores y academia",
+      "short": "Plataforma PropTech a la medida que conecta asesores, proveedores y propiedades en un solo ecosistema con membresías y academia de formación.",
+      "long": "El reto era unificar marketplace de propiedades, directorio de asesores verificados, red de proveedores y formación profesional en una sola plataforma escalable. Desarrollamos un ecosistema inmobiliario a la medida sobre Supabase, con búsqueda y filtrado de inmuebles, mapas interactivos, gestión de clientes, membresías anuales y una academia (LMS) integrada. El resultado es una plataforma operativa que centraliza la operación comercial de cientos de profesionales del sector en México."
+    },
+    "en": {
+      "title": "BDweb — All-in-one real estate platform with marketplace, advisor network and academy",
+      "short": "Custom PropTech platform connecting advisors, vendors and properties in a single ecosystem with memberships and a training academy.",
+      "long": "The challenge was to unify a property marketplace, a verified advisor directory, a vendor network and professional training into one scalable platform. We built a custom real estate ecosystem on Supabase featuring property search and filtering, interactive maps, client management, annual memberships and an integrated learning academy (LMS). The result is a working platform that centralizes the commercial operations of hundreds of real estate professionals across Mexico."
+    },
+    "highlights": [
+      "Marketplace de propiedades en venta y renta con filtros avanzados y mapas interactivos",
+      "Red de asesores verificados y directorio de proveedores especializados (fotografía, notaría, crédito hipotecario)",
+      "Academia / LMS integrada para formación continua de profesionales inmobiliarios",
+      "Sistema de membresías anuales (Platinum para asesores y plan de proveedores)",
+      "Backend a la medida sobre Supabase con CDN de medios dedicado (media2.bdwebmx.com)"
+    ],
+    "tags": [
+      "bienes-raices",
+      "proptech",
+      "marketplace",
+      "supabase",
+      "lms"
+    ]
+  },
+  {
+    "slug": "programarte-plataforma-bienestar-mental",
+    "image": "/portfolio/programarte.png",
+    "bg": "#eeeafc",
+    "cat": "webdev",
+    "relatedService": "desarrollo-web",
+    "url": "https://programarte.app/",
+    "status": "live",
+    "industry": "Bienestar mental y desarrollo personal (wellness tech / salud digital)",
+    "tech": "SPA moderna (React/Next.js) con backend y almacenamiento en Supabase; flujo de autenticacion login/signup",
+    "es": {
+      "title": "Programarte: plataforma web de bienestar mental con experiencias guiadas",
+      "short": "Plataforma web a la medida para sesiones guiadas de bienestar mental, con acceso seguro de usuarios y entrega de audio en la nube.",
+      "long": "El reto era llevar un metodo de transformacion personal basado en psicologia y neurociencia a una experiencia digital inmersiva y facil de usar. Desarrollamos una aplicacion web a la medida con flujo de registro e inicio de sesion, organizacion por intenciones (amor propio, duelo, autodisciplina, sanacion fisica y gratitud) y entrega de contenido de audio respaldada por Supabase. El resultado es una plataforma moderna y escalable que guia al usuario en su proceso de bienestar con un entorno sonoro y visual cuidado."
+    },
+    "en": {
+      "title": "Programarte: Custom Mental-Wellness Web Platform with Guided Experiences",
+      "short": "Custom web platform delivering guided mental-wellness sessions with secure user accounts and cloud-based audio delivery.",
+      "long": "The challenge was to turn a personal-transformation method rooted in psychology and neuroscience into an immersive, easy-to-use digital experience. We built a custom web application with sign-up and login flows, content organized by intentions (self-love, grief, self-discipline, physical healing, and gratitude), and Supabase-backed audio delivery. The result is a modern, scalable platform that guides users through their wellness journey within a carefully crafted sound and visual environment."
+    },
+    "highlights": [
+      "Aplicacion web a la medida con arquitectura SPA moderna (React/Next.js)",
+      "Sistema de cuentas de usuario con registro e inicio de sesion seguro",
+      "Backend y almacenamiento de medios en Supabase para entrega de audio escalable",
+      "Contenido organizado en cinco intenciones de bienestar (amor propio, duelo, autodisciplina, sanacion fisica, gratitud)",
+      "Experiencia inmersiva con entorno sonoro y visual cuidado"
+    ],
+    "tags": [
+      "bienestar",
+      "desarrollo-web",
+      "supabase",
+      "react",
+      "salud-mental"
+    ]
+  },
+  {
+    "slug": "rciu-education-red-universidades-wordpress",
+    "image": "/portfolio/rciu-education.png",
+    "bg": "#e9eefb",
+    "cat": "wordpress",
+    "relatedService": "sitios-wordpress",
+    "url": "https://rciueducation.org/",
+    "status": "live",
+    "industry": "Educación superior / Red internacional de universidades católicas (Regnum Christi)",
+    "tech": "WordPress (CMS) con sitio multilingüe ES/EN (WPML/Polylang) y portal de investigadores en subdominio",
+    "es": {
+      "title": "Portal institucional multilingüe para una red internacional de universidades católicas",
+      "short": "Sitio institucional en WordPress, bilingüe ES/EN, para la red de universidades del Regnum Christi con noticias, eventos y portal de investigadores.",
+      "long": "El reto era unificar bajo una sola identidad digital a más de una decena de universidades católicas distribuidas en cinco países y comunicar su misión compartida a estudiantes, investigadores e instituciones. Desarrollamos un portal institucional en WordPress, completamente bilingüe (español e inglés), con secciones de universidades miembro, líneas estratégicas, noticias, eventos y recursos formativos, integrado con un portal de investigadores. El resultado es una plataforma escalable y fácil de administrar que proyecta una marca académica internacional coherente y centraliza la comunicación de toda la red."
+    },
+    "en": {
+      "title": "Multilingual institutional portal for an international Catholic university network",
+      "short": "A bilingual EN/ES WordPress institutional site for the Regnum Christi university network, with news, events, and a researcher portal.",
+      "long": "The challenge was to unify more than a dozen Catholic universities across five countries under a single digital identity and communicate their shared mission to students, researchers, and institutions. We built a fully bilingual (Spanish and English) WordPress institutional portal featuring member universities, strategic lines, news, events, and formative resources, integrated with a dedicated researcher portal. The result is a scalable, easy-to-manage platform that projects a coherent international academic brand and centralizes communication for the entire network."
+    },
+    "highlights": [
+      "Sitio institucional bilingüe ES/EN para una red de 13-15 universidades en 5 países",
+      "Construido sobre WordPress, fácil de administrar y escalable para crecer con la red",
+      "Secciones de universidades miembro, líneas estratégicas, noticias y eventos",
+      "Recursos formativos y portal de investigadores integrados",
+      "Identidad de marca académica internacional coherente y profesional"
+    ],
+    "tags": [
+      "wordpress",
+      "sitio-institucional",
+      "educacion-superior",
+      "multilingue",
+      "universidades"
+    ]
+  },
+  {
+    "slug": "bds-motos",
+    "image": "/portfolio/bds-motos.png",
+    "bg": "#f3f4f6",
+    "cat": "wordpress",
+    "relatedService": "sitios-wordpress",
+    "url": "https://bdsmotos.com.mx/",
+    "status": "live",
+    "industry": "Industria automotriz / motocicletas (manufactura y venta de vehiculos de 2 y 4 ruedas) en Mexico",
+    "tech": "WordPress (estructura /wp-content/ visible, blog, formularios de contacto y cotizacion; catalogo administrado por CMS, sin carrito ni checkout transaccional)",
+    "es": {
+      "title": "BDS Motos — Catalogo digital y localizador de distribuidores para una marca de motocicletas",
+      "short": "Sitio en WordPress que convierte el catalogo de motos BDS en prospectos para su red de mas de 150 distribuidores.",
+      "long": "El reto era presentar una linea amplia de motocicletas, motonetas y cuatrimotos, y conectar a cada visitante con el distribuidor o taller correcto en todo Mexico. Construimos un sitio en WordPress con catalogo por categorias, fichas de modelo con especificaciones, cotizador de refacciones y un localizador de distribuidores por estado. El resultado es una vitrina digital clara y escalable que canaliza la intencion de compra hacia la red de mas de 150 puntos de venta y talleres autorizados."
+    },
+    "en": {
+      "title": "BDS Motos — Digital Catalog and Dealer Locator for a Motorcycle Brand",
+      "short": "A WordPress site that turns the BDS motorcycle catalog into leads for a network of 150+ dealers.",
+      "long": "The challenge was to showcase a broad lineup of motorcycles, scooters and ATVs while connecting each visitor to the right dealer or service shop across Mexico. We built a WordPress site featuring a category-based catalog, model spec sheets, a spare-parts quoting flow, and a state-by-state dealer locator. The result is a clear, scalable digital storefront that channels purchase intent toward a network of 150+ authorized sales and service points."
+    },
+    "highlights": [
+      "Catalogo de motos organizado por categorias (urbana, trabajo, doble proposito, adventure, motonetas, cuatrimotos, semiautomaticas)",
+      "Fichas de modelo con especificaciones tecnicas y precios de referencia en MXN",
+      "Cotizador de refacciones con captura de modelo, numero de serie y codigos de pieza",
+      "Localizador de distribuidores y talleres autorizados por estado (red de mas de 150 puntos)",
+      "Blog y secciones de soporte/post-venta para SEO y retencion"
+    ],
+    "tags": [
+      "wordpress",
+      "motocicletas",
+      "catalogo-digital",
+      "generacion-de-prospectos",
+      "localizador-de-distribuidores"
+    ]
+  }
+]

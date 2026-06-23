@@ -5,16 +5,22 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 
-type ProjectArt = { seed: string; slug: string; bg: string };
+type ProjectArt = {
+  slug: string;
+  image: string;
+  bg: string;
+  cat: "webdev" | "wordpress" | "lms" | "ecommerce" | "realestate" | "systems" | "mobile" | "automation";
+};
 
-// Visual data (placeholder art + soft tinted backgrounds). Copy lives in the dict.
+// Real client projects. Copy (name/desc) lives in the dict, aligned by index.
 const PROJECTS: ProjectArt[] = [
-  { seed: "alrit-pf-aurora", slug: "tienda-aurora", bg: "#fdecef" },
-  { seed: "alrit-pf-edu", slug: "edumas-lms", bg: "#e9f0fe" },
-  { seed: "alrit-pf-vertice", slug: "inmobiliaria-vertice", bg: "#e7f7f0" },
-  { seed: "alrit-pf-sazon", slug: "sazon-bistro", bg: "#fdf0e6" },
-  { seed: "alrit-pf-logi", slug: "logitrack", bg: "#eeeafc" },
-  { seed: "alrit-pf-pulse", slug: "pulsefit", bg: "#fdeaf2" },
+  { slug: "conectas-plataforma-experiencias-gastronomicas", image: "/portfolio/conectas.png", bg: "#fdeaf2", cat: "webdev" },
+  { slug: "conquer-classic-plus", image: "/portfolio/conquer-classic-plus.png", bg: "#1c1c22", cat: "webdev" },
+  { slug: "bodhi-medicine-plataforma-formacion-salud-holistica", image: "/portfolio/bodhi-medicine.png", bg: "#eef3ee", cat: "lms" },
+  { slug: "bdweb-plataforma-inmobiliaria", image: "/portfolio/bdweb.png", bg: "#e7f7f0", cat: "realestate" },
+  { slug: "programarte-plataforma-bienestar-mental", image: "/portfolio/programarte.png", bg: "#eeeafc", cat: "webdev" },
+  { slug: "rciu-education-red-universidades-wordpress", image: "/portfolio/rciu-education.png", bg: "#e9eefb", cat: "wordpress" },
+  { slug: "bds-motos", image: "/portfolio/bds-motos.png", bg: "#f3f4f6", cat: "wordpress" },
 ];
 
 export default function Portfolio({
@@ -83,14 +89,15 @@ export default function Portfolio({
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  className="family-card__img"
-                  src={`https://picsum.photos/seed/${art.seed}/800/800`}
-                  alt={copy.name}
+                  className="family-card__img family-card__img--cover"
+                  src={art.image}
+                  alt={`${copy.name} — ${dict.portfolio.categories[art.cat]}`}
                   loading="lazy"
                   draggable={false}
                 />
               </Link>
 
+              <p className="family-card__cat">{dict.portfolio.categories[art.cat]}</p>
               <h3 className="family-card__name">{copy.name}</h3>
               <p className="family-card__desc">{copy.desc}</p>
 

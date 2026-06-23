@@ -1,0 +1,189 @@
+{
+  "serviceId": "realestate",
+  "slug": "real-estate",
+  "es": {
+    "metaTitle": "Página Web para Inmobiliaria | Alrit.dev",
+    "metaDescription": "Desarrollamos tu portal inmobiliario con buscador avanzado y captación de leads. Carga rápido, posiciona en Google y vende más. Cotiza tu proyecto hoy.",
+    "h1": "Página web para inmobiliaria que capta leads y vende propiedades",
+    "heroSub": "Construimos portales inmobiliarios con buscador avanzado de propiedades, integración con tu CRM y captación de leads calificados. No plantillas lentas: activos digitales que cargan rápido, posicionan en Google y convierten.",
+    "sections": [
+      {
+        "heading": "Qué incluye tu portal inmobiliario",
+        "cover": "Detalla el entregable: buscador avanzado de propiedades con filtros (zona, precio, recámaras, m2, tipo de operación), fichas de inmueble con galería y mapa, multipublicación a portales (Idealista, Fotocasa, Inmuebles24), formularios y WhatsApp Business para captación de leads, panel de administración de propiedades, tour virtual 360 e integración con CRM. Dejar claro que es a medida, no plantilla."
+      },
+      {
+        "heading": "Por qué tu inmobiliaria necesita su propio portal",
+        "cover": "Argumentar el dolor: depender solo de los portales es caro y diluye tu marca. Un sitio propio con SEO local te trae leads que no pagas por clic, refuerza autoridad y te da control total de los datos. Conectar con el posicionamiento Alrit.dev: ingeniería moderna, PageSpeed 90+, Core Web Vitals en verde, SEO técnico desde el código."
+      },
+      {
+        "heading": "Nuestro proceso de desarrollo",
+        "cover": "Explicar las etapas en lenguaje claro: 1) Descubrimiento y estrategia (inventario, zonas, buyer persona), 2) Arquitectura SEO y diseño UX del buscador, 3) Desarrollo y conexión a CRM/portales, 4) Migración de inventario y pruebas, 5) Lanzamiento, medición y optimización continua. Transmitir orden y acompañamiento."
+      },
+      {
+        "heading": "Casos y portafolio inmobiliario",
+        "cover": "Mostrar proyectos relacionados: desarrollos en preventa, agencias con cartera amplia, brokers independientes. Resaltar resultados medibles (tiempo de carga, leads/mes, posiciones en Google) y enlazar a otros servicios de Alrit.dev (e-commerce, sistemas a medida, apps móviles) para cross-sell."
+      },
+      {
+        "heading": "Tecnología y rendimiento",
+        "cover": "Detallar el stack: Next.js/React o WordPress según el caso, buscador con filtrado en tiempo real, integración con CRM inmobiliario y APIs de portales, WhatsApp Business, mapas, Core Web Vitals en verde, hosting optimizado. Enfatizar SEO técnico desde el código y escalabilidad."
+      },
+      {
+        "heading": "Empieza a captar leads hoy",
+        "cover": "Sección de cierre con CTA fuerte: invitar a agendar una asesoría sin costo para diagnosticar el portal actual o cotizar uno nuevo. Reducir fricción y reforzar que se construye un activo que vende, no solo una página bonita."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Buscador avanzado de propiedades",
+        "text": "Filtros por zona, precio, recámaras, m2 y tipo de operación que ayudan al comprador a encontrar su inmueble en segundos y disparan las consultas."
+      },
+      {
+        "title": "Captación de leads calificados",
+        "text": "Formularios inteligentes, agendado de visitas y WhatsApp Business conectados a tu CRM para que ningún prospecto se enfríe."
+      },
+      {
+        "title": "Velocidad y posicionamiento",
+        "text": "PageSpeed 90+, Core Web Vitals en verde y SEO técnico desde el código para que rankees en Google y dejes de depender solo de los portales."
+      },
+      {
+        "title": "Integración con tu ecosistema",
+        "text": "Conectamos tu portal con CRM, multipublicación a Idealista, Fotocasa o Inmuebles24 y mapas, sin doble captura de datos."
+      },
+      {
+        "title": "Diseño a medida, no plantilla",
+        "text": "Un sitio que refleja tu marca y experiencia de usuario pensada para convertir visitas en visitas a propiedades."
+      },
+      {
+        "title": "Escalable y tuyo",
+        "text": "Administras tu inventario, tus leads y tus datos. Un activo digital que crece con tu cartera de inmuebles."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta una página web para inmobiliaria?",
+        "a": "El costo de una página web inmobiliaria depende del número de propiedades, las integraciones (CRM, multipublicación, WhatsApp) y si incluye buscador avanzado o tour virtual 360. En Alrit.dev cotizamos cada proyecto a medida tras una asesoría gratuita; te entregamos un presupuesto claro sin sorpresas."
+      },
+      {
+        "q": "¿Qué debe tener la página web de una inmobiliaria?",
+        "a": "Una web inmobiliaria que venda necesita: buscador avanzado con filtros, fichas de propiedad con galería y mapa, formularios y WhatsApp para captar leads, carga rápida (Core Web Vitals en verde), SEO local y conexión con tu CRM. Todo esto lo desarrollamos a medida en Alrit.dev."
+      },
+      {
+        "q": "¿Cómo captar leads sin depender solo de los portales?",
+        "a": "Con un portal propio optimizado para SEO local atraes prospectos desde Google sin pagar por clic en cada consulta. Sumamos formularios, WhatsApp Business y campañas para que captures leads calificados y los conviertas con seguimiento desde tu CRM."
+      },
+      {
+        "q": "¿Pueden integrar el portal con mi CRM y los portales inmobiliarios?",
+        "a": "Sí. Integramos tu sitio con CRM inmobiliario y con multipublicación a portales como Idealista, Fotocasa o Inmuebles24, de modo que publicas una vez y sincronizas tu inventario sin doble captura de datos."
+      },
+      {
+        "q": "¿Cuánto tarda el desarrollo de un portal inmobiliario?",
+        "a": "Un portal inmobiliario a medida suele tomar de 4 a 10 semanas según el tamaño del inventario y las integraciones requeridas. Trabajamos por etapas claras (estrategia, diseño, desarrollo, migración y lanzamiento) para que tengas visibilidad en todo momento."
+      }
+    ],
+    "cta": "Agenda tu asesoría gratuita y cotiza tu portal inmobiliario"
+  },
+  "en": {
+    "metaTitle": "Real Estate Website Development | Alrit.dev",
+    "metaDescription": "We build real estate portals with advanced property search and lead capture. Fast-loading, SEO-ready and built to convert. Get your free quote today.",
+    "h1": "Real estate website development that captures leads and sells properties",
+    "heroSub": "We build real estate portals with an advanced property search, CRM integration and qualified lead capture. Not slow templates: digital assets that load fast, rank on Google and convert.",
+    "sections": [
+      {
+        "heading": "What your real estate portal includes",
+        "cover": "Detail the deliverable: advanced property search with filters (location, price, bedrooms, sqm, listing type), property pages with gallery and map, multi-posting to portals, lead-capture forms and WhatsApp Business, property admin panel, 360 virtual tours and CRM integration. Make clear it is custom-built, not a template."
+      },
+      {
+        "heading": "Why your agency needs its own portal",
+        "cover": "Make the pain explicit: relying only on listing portals is expensive and dilutes your brand. Your own SEO-optimized site brings leads you do not pay per click for, builds authority and gives you full control of the data. Tie back to Alrit.dev positioning: modern engineering, PageSpeed 90+, green Core Web Vitals, SEO baked into the code."
+      },
+      {
+        "heading": "Our development process",
+        "cover": "Explain stages in plain language: 1) Discovery and strategy (inventory, areas, buyer persona), 2) SEO architecture and search UX design, 3) Development and CRM/portal connections, 4) Inventory migration and testing, 5) Launch, measurement and ongoing optimization. Convey structure and partnership."
+      },
+      {
+        "heading": "Real estate case studies and portfolio",
+        "cover": "Show related projects: pre-sale developments, high-volume agencies, independent brokers. Highlight measurable results (load time, leads/month, Google rankings) and link to other Alrit.dev services (e-commerce, custom systems, mobile apps) for cross-sell."
+      },
+      {
+        "heading": "Technology and performance",
+        "cover": "Detail the stack: Next.js/React or WordPress as fits the case, real-time search filtering, CRM and portal API integration, WhatsApp Business, maps, green Core Web Vitals and optimized hosting. Emphasize SEO from the code and scalability."
+      },
+      {
+        "heading": "Start capturing leads today",
+        "cover": "Closing section with a strong CTA: invite the visitor to book a free consultation to audit their current portal or quote a new one. Reduce friction and reinforce that we build an asset that sells, not just a pretty page."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Advanced property search",
+        "text": "Filters by location, price, bedrooms, sqm and listing type that help buyers find their property in seconds and drive more inquiries."
+      },
+      {
+        "title": "Qualified lead capture",
+        "text": "Smart forms, viewing scheduling and WhatsApp Business connected to your CRM so no prospect ever goes cold."
+      },
+      {
+        "title": "Speed and rankings",
+        "text": "PageSpeed 90+, green Core Web Vitals and SEO from the code so you rank on Google and stop depending on listing portals alone."
+      },
+      {
+        "title": "Ecosystem integration",
+        "text": "We connect your portal to your CRM, multi-posting to major listing portals and maps, with no duplicate data entry."
+      },
+      {
+        "title": "Custom design, not a template",
+        "text": "A site that reflects your brand with a user experience engineered to turn visits into property viewings."
+      },
+      {
+        "title": "Scalable and yours",
+        "text": "You own your inventory, your leads and your data. A digital asset that grows with your property portfolio."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does a real estate website cost?",
+        "a": "The cost of a real estate website depends on the number of listings, integrations (CRM, multi-posting, WhatsApp) and whether it includes advanced search or a 360 virtual tour. At Alrit.dev we quote each project custom after a free consultation and give you a clear, no-surprises estimate."
+      },
+      {
+        "q": "What should a real estate website have?",
+        "a": "A real estate website that sells needs: advanced search with filters, property pages with gallery and map, lead-capture forms and WhatsApp, fast loading (green Core Web Vitals), local SEO and CRM integration. We build all of this custom at Alrit.dev."
+      },
+      {
+        "q": "How can I capture leads without relying only on listing portals?",
+        "a": "With your own SEO-optimized portal you attract prospects from Google without paying per click on every inquiry. We add forms, WhatsApp Business and campaigns so you capture qualified leads and convert them with CRM-driven follow-up."
+      },
+      {
+        "q": "Can you integrate the portal with my CRM and listing portals?",
+        "a": "Yes. We integrate your site with your real estate CRM and with multi-posting to major portals, so you publish once and keep your inventory in sync without duplicate data entry."
+      },
+      {
+        "q": "How long does it take to build a real estate portal?",
+        "a": "A custom real estate portal typically takes 4 to 10 weeks depending on inventory size and required integrations. We work in clear stages (strategy, design, development, migration and launch) so you have visibility at every step."
+      }
+    ],
+    "cta": "Book your free consultation and quote your real estate portal"
+  },
+  "schema": "Service (con provider Organization Alrit.dev y serviceType \"Real estate website development\"), FAQPage (para el bloque de preguntas frecuentes), BreadcrumbList (Inicio > Servicios > Portal Inmobiliario), WebPage y Organization. Opcional: AggregateRating/Review si hay testimoniales y Offer dentro de Service para el rango de precio.",
+  "targetKeywords": [
+    "pagina web para inmobiliaria",
+    "desarrollo de portal inmobiliario",
+    "diseno web para bienes raices",
+    "captacion de leads inmobiliarios",
+    "sitio web con buscador de propiedades",
+    "cuanto cuesta una pagina web inmobiliaria",
+    "generar leads calificados inmobiliaria",
+    "agencia de marketing inmobiliario Mexico",
+    "diseno web para inmobiliarias",
+    "pagina web inmobiliaria con buscador de inmuebles",
+    "web para inmobiliaria con CRM",
+    "software para agencia inmobiliaria",
+    "multipublicacion Idealista Fotocasa",
+    "buscador avanzado de propiedades para sitio web",
+    "SEO local para inmobiliarias en Mexico",
+    "como captar leads sin depender de los portales",
+    "real estate website development",
+    "real estate portal with property search",
+    "real estate lead generation website",
+    "real estate website with CRM"
+  ]
+}

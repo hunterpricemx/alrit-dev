@@ -1,0 +1,52 @@
+{
+  "serviceId": "webdev",
+  "es": {
+    "sections": [
+      {
+        "heading": "Qué incluye tu desarrollo de páginas web a medida",
+        "body": "Cuando trabajas con nosotros, el desarrollo de páginas web a medida abarca todo el ciclo: arquitectura de la información, diseño UI responsivo, programación del front-end y back-end, y puesta en producción lista para crecer. Entregamos un sitio optimizado para SEO desde el código, con velocidad de carga afinada para Core Web Vitals, panel de administración de contenidos, formularios e integraciones que tu negocio necesita, y la documentación para que tengas el control. Nada de plantillas recicladas: cada componente se construye alrededor de tus objetivos reales."
+      },
+      {
+        "heading": "Por qué elegir a Alrit.dev",
+        "body": "La diferencia entre una web genérica y un desarrollo de páginas web a medida se nota en los resultados: aquí cuidamos la velocidad real (PageSpeed y Core Web Vitals), el SEO técnico escrito en el código y la integración con el ecosistema mexicano que de verdad usas. Conectamos Mercado Pago, OXXO, SPEI, facturación CFDI-SAT y WhatsApp Business sin parches ni plugins frágiles. Somos el estudio que evolucionó de la agencia Hunter Price Mx para dejar el marketing genérico y construir activos digitales de alto rendimiento, con precios transparentes en MXN y rangos honestos, sin promesas infladas."
+      },
+      {
+        "heading": "Cómo trabajamos, fase por fase",
+        "body": "Empezamos por descubrimiento: entendemos tu negocio, tu audiencia y los objetivos del sitio antes de escribir una línea de código. Seguimos con diseño y prototipo para que valides la experiencia, luego desarrollo a medida en sprints donde ves avances reales, y cerramos con pruebas, optimización de velocidad y lanzamiento. Después del despliegue te acompañamos con soporte y mejoras, porque un sitio de alto rendimiento se cuida, no se abandona."
+      },
+      {
+        "heading": "Tecnología y enfoque técnico",
+        "body": "Construimos principalmente con Next.js y React cuando buscas máxima velocidad, escalabilidad y un SEO técnico impecable; también desarrollamos sobre WordPress cuando tu equipo necesita autonomía editorial. Sea cual sea la base, el desarrollo de páginas web a medida se conecta de forma nativa con las herramientas del mercado local: pagos con Mercado Pago, OXXO y SPEI, facturación CFDI-SAT y contacto directo por WhatsApp Business. Elegimos la tecnología por lo que conviene a tu proyecto, no por moda."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "body": "Nuestro trabajo habla por sí solo: desarrollamos Conquer Classic Plus, una plataforma de servidor MMO construida con Next.js y Supabase, y Conectas, un marketplace de experiencias gastronómicas en Next.js con pagos vía Stripe. También dimos vida a Programarte, una plataforma de bienestar mental pensada para escalar. Cada proyecto refleja el mismo estándar que aplicamos a tu desarrollo de páginas web a medida: ingeniería moderna, velocidad e integraciones que funcionan en el mundo real."
+      }
+    ]
+  },
+  "en": {
+    "sections": [
+      {
+        "heading": "What your custom website development includes",
+        "body": "When you work with us, custom website development covers the full cycle: information architecture, responsive UI design, front-end and back-end programming, and a production-ready launch built to grow. You get a site that is SEO-optimized from the code itself, with load speed tuned for Core Web Vitals, a content management panel, plus the forms and integrations your business actually needs, along with documentation so you stay in control. No recycled templates: every component is built around your real goals."
+      },
+      {
+        "heading": "Why choose Alrit.dev",
+        "body": "The gap between a generic website and true custom website development shows up in the results: we care about real speed (PageSpeed and Core Web Vitals), technical SEO written into the code, and integration with the local ecosystem you truly use. We connect Mercado Pago, OXXO, SPEI, CFDI-SAT invoicing and WhatsApp Business without fragile patches or plugins. We are the studio that evolved from the Hunter Price Mx agency to leave generic marketing behind and build high-performance digital assets, with transparent pricing in MXN and honest ranges, never inflated promises."
+      },
+      {
+        "heading": "How we work, phase by phase",
+        "body": "We start with discovery: we understand your business, your audience and the site's goals before writing a single line of code. Then we move to design and prototype so you can validate the experience, followed by custom development in sprints where you see real progress, and we close with testing, speed optimization and launch. After deployment we stay with you through support and improvements, because a high-performance site is maintained, not abandoned."
+      },
+      {
+        "heading": "Technology and technical approach",
+        "body": "We build primarily with Next.js and React when you need maximum speed, scalability and flawless technical SEO; we also develop on WordPress when your team needs editorial autonomy. Whatever the foundation, custom website development connects natively with local market tools: payments through Mercado Pago, OXXO and SPEI, CFDI-SAT invoicing and direct contact via WhatsApp Business. We choose the technology based on what suits your project, not on trends."
+      },
+      {
+        "heading": "Related cases and projects",
+        "body": "Our work speaks for itself: we developed Conquer Classic Plus, an MMO server platform built with Next.js and Supabase, and Conectas, a marketplace of culinary experiences in Next.js with payments via Stripe. We also brought Programarte to life, a mental wellness platform designed to scale. Each project reflects the same standard we apply to your custom website development: modern engineering, speed and integrations that work in the real world."
+      }
+    ]
+  },
+  "slug": "desarrollo-web"
+}

@@ -1,0 +1,188 @@
+{
+  "serviceId": "wordpress",
+  "slug": "wordpress",
+  "es": {
+    "metaTitle": "Diseño Web WordPress México | Alrit.dev",
+    "metaDescription": "Sitios WordPress autoadministrables, rápidos y seguros con PageSpeed 90+. Posiciona en Google y convierte. Pide tu cotización sin costo.",
+    "h1": "Sitios WordPress administrables, rápidos y seguros que sí convierten",
+    "heroSub": "Diseñamos y desarrollamos páginas web en WordPress que cargan en segundos, posicionan en Google y las actualizas tú mismo sin depender de nadie. Ingeniería real, no plantillas lentas.",
+    "sections": [
+      {
+        "heading": "Qué incluye tu sitio WordPress",
+        "cover": "Detalla el entregable completo: diseño a medida (no plantilla genérica), panel autoadministrable para editar textos, imágenes y secciones sin tocar código, diseño responsive, optimización SEO técnica desde el código, configuración de seguridad, hosting recomendado, certificado SSL, integración con WhatsApp Business y formularios. Aclara que el cliente queda dueño total de su sitio y puede administrarlo solo."
+      },
+      {
+        "heading": "Por qué elegir Alrit.dev para tu WordPress",
+        "cover": "Diferenciación frente a agencias tradicionales y freelancers que entregan plantillas lentas. Enfatiza PageSpeed 90+, Core Web Vitals en verde, SEO técnico desde el código, integración con el ecosistema mexicano (Mercado Pago, SPEI, OXXO, CFDI-SAT, WhatsApp Business) y la evolución de Hunter Price Mx: construimos activos digitales que rinden, no solo páginas bonitas."
+      },
+      {
+        "heading": "Nuestro proceso de trabajo",
+        "cover": "Explica las etapas paso a paso: 1) Descubrimiento y objetivos del negocio, 2) Arquitectura de contenido y wireframes, 3) Diseño UI a medida, 4) Desarrollo y optimización WPO, 5) Carga de contenido y pruebas en dispositivos, 6) Lanzamiento + capacitación para que administres tu sitio. Transmite claridad, tiempos estimados y comunicación constante."
+      },
+      {
+        "heading": "Casos y proyectos relacionados",
+        "cover": "Muestra portafolio de sitios WordPress y proyectos relacionados (corporativos, e-commerce con WooCommerce, real estate, LMS). Incluye métricas reales cuando existan (velocidad de carga, mejoras de posicionamiento, incremento de leads) y un par de testimonios o logos de clientes para construir confianza."
+      },
+      {
+        "heading": "Tecnología y rendimiento",
+        "cover": "Explica el stack técnico y de optimización: WordPress con temas ligeros o desarrollo headless cuando aplica, WPO (optimización de imágenes, caché, lazy load, CDN), hardening de seguridad, copias de seguridad automáticas, plugins seleccionados con criterio y mantenimiento opcional. Conecta cada decisión técnica con un beneficio de negocio: velocidad, SEO, seguridad."
+      },
+      {
+        "heading": "Cotiza tu sitio WordPress",
+        "cover": "CTA final con cierre de conversión. Reitera la propuesta de valor (rápido, seguro, autoadministrable, que posiciona), elimina fricción (cotización sin costo, sin compromiso) e invita a agendar una llamada o enviar mensaje por WhatsApp. Refuerza confianza con disponibilidad para México y todo el mundo hispanohablante."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Lo administras tú, sin depender de nadie",
+        "text": "Editas textos, fotos, productos y secciones desde un panel simple. Tu sitio web es tuyo y lo actualizas cuando quieras, sin pagar por cada cambio."
+      },
+      {
+        "title": "Carga rápida, PageSpeed 90+",
+        "text": "Optimizamos cada imagen, caché y línea de código para que tu página web cargue en segundos. Menos rebote, mejor experiencia y más conversiones."
+      },
+      {
+        "title": "Posiciona en Google desde el código",
+        "text": "SEO técnico, Core Web Vitals en verde y estructura semántica para que Google te encuentre y te recomiende. No solo se ve bien: aparece."
+      },
+      {
+        "title": "Seguro y protegido",
+        "text": "Hardening, certificado SSL, copias de seguridad automáticas y plugins de seguridad para mantener tu WordPress a salvo de hackeos y caídas."
+      },
+      {
+        "title": "Integrado con tu ecosistema",
+        "text": "Conectamos Mercado Pago, SPEI, OXXO, CFDI-SAT y WhatsApp Business para que tu sitio web trabaje dentro de tu operación real, no aislado."
+      },
+      {
+        "title": "Diseño a medida, no plantilla",
+        "text": "Tu marca merece un sitio único. Diseñamos cada sección pensada en tus clientes y tus objetivos de negocio, no un molde reciclado."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta una página web en WordPress en México?",
+        "a": "El precio de una página web en WordPress en México depende del alcance: un sitio corporativo autoadministrable suele costar desde unos miles de pesos, mientras que una tienda en línea con WooCommerce o un sistema a medida tiene mayor inversión. En Alrit.dev cotizamos según tus objetivos y te damos un presupuesto claro sin costo y sin compromiso."
+      },
+      {
+        "q": "¿Qué es una página web autoadministrable y cómo funciona con WordPress?",
+        "a": "Una página web autoadministrable es un sitio que tú mismo puedes actualizar sin saber programar. Con WordPress accedes a un panel donde editas textos, imágenes, productos y secciones en minutos. Nosotros lo configuramos a medida y te capacitamos para que administres tu sitio con total autonomía."
+      },
+      {
+        "q": "¿Cómo logran que un sitio WordPress cargue rápido?",
+        "a": "Aplicamos WPO (Web Performance Optimization): optimización de imágenes, caché, lazy load, CDN, temas ligeros y código limpio. Con esto alcanzamos PageSpeed 90+ y Core Web Vitals en verde, lo que mejora la velocidad de carga, la experiencia del usuario y tu posicionamiento en Google."
+      },
+      {
+        "q": "¿Cómo protegen mi WordPress de hackeos?",
+        "a": "Reforzamos la seguridad con hardening del servidor, certificado SSL, plugins de seguridad confiables, actualizaciones constantes de WordPress y plugins, y copias de seguridad automáticas. Así reducimos al máximo el riesgo de hackeos y, si algo pasa, podemos restaurar tu sitio rápidamente."
+      },
+      {
+        "q": "¿WordPress o Wix, cuál es mejor para mi empresa?",
+        "a": "Para una empresa que busca crecer, WordPress es mejor que Wix: ofrece control total, mejor SEO, escalabilidad, integraciones ilimitadas y la propiedad real de tu sitio. Wix es más limitado y te ata a su plataforma. Si quieres un activo digital que posicione y crezca contigo, WordPress es la opción profesional."
+      }
+    ],
+    "cta": "Cotiza tu sitio WordPress sin costo"
+  },
+  "en": {
+    "metaTitle": "WordPress Web Design Mexico | Alrit.dev",
+    "metaDescription": "Self-managed WordPress sites that are fast and secure, with PageSpeed 90+. Rank on Google and convert. Get your free quote today.",
+    "h1": "Fast, secure WordPress sites you can manage yourself, built to convert",
+    "heroSub": "We design and develop WordPress websites that load in seconds, rank on Google, and let you update them yourself, no developer required. Real engineering, not slow templates.",
+    "sections": [
+      {
+        "heading": "What your WordPress site includes",
+        "cover": "Detail the full deliverable: custom design (not a generic template), a self-managed dashboard to edit text, images and sections without code, responsive design, technical SEO from the code, security configuration, recommended hosting, SSL certificate, WhatsApp Business integration and forms. Make clear the client fully owns the site and can manage it independently."
+      },
+      {
+        "heading": "Why choose Alrit.dev for WordPress",
+        "cover": "Differentiate from traditional agencies and freelancers who ship slow templates. Emphasize PageSpeed 90+, green Core Web Vitals, technical SEO from the code, integration with the Mexican and Hispanic ecosystem (Mercado Pago, SPEI, OXXO, CFDI-SAT, WhatsApp Business) and the evolution from Hunter Price Mx: we build digital assets that perform, not just pretty pages."
+      },
+      {
+        "heading": "Our process",
+        "cover": "Explain the step-by-step stages: 1) Discovery and business goals, 2) Content architecture and wireframes, 3) Custom UI design, 4) Development and WPO optimization, 5) Content load and cross-device testing, 6) Launch + training so you can manage your own site. Convey clarity, estimated timelines and constant communication."
+      },
+      {
+        "heading": "Related cases and projects",
+        "cover": "Show a portfolio of WordPress sites and related projects (corporate, WooCommerce e-commerce, real estate, LMS). Include real metrics when available (load speed, ranking gains, lead increases) and a couple of testimonials or client logos to build trust."
+      },
+      {
+        "heading": "Technology and performance",
+        "cover": "Explain the technical and optimization stack: WordPress with lightweight themes or headless development when it fits, WPO (image optimization, caching, lazy load, CDN), security hardening, automatic backups, carefully selected plugins and optional maintenance. Tie every technical decision to a business benefit: speed, SEO, security."
+      },
+      {
+        "heading": "Get your WordPress quote",
+        "cover": "Final CTA with a conversion close. Restate the value proposition (fast, secure, self-managed, ranks well), remove friction (free quote, no commitment) and invite the visitor to book a call or message via WhatsApp. Reinforce trust with availability for Mexico and the entire Spanish-speaking world."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "You manage it, no one to depend on",
+        "text": "Edit text, photos, products and sections from a simple dashboard. Your website is yours and you update it whenever you want, without paying for every change."
+      },
+      {
+        "title": "Fast loading, PageSpeed 90+",
+        "text": "We optimize every image, cache and line of code so your website loads in seconds. Less bounce, better experience and more conversions."
+      },
+      {
+        "title": "Ranks on Google from the code",
+        "text": "Technical SEO, green Core Web Vitals and semantic structure so Google finds and recommends you. It doesn't just look good: it shows up."
+      },
+      {
+        "title": "Safe and protected",
+        "text": "Hardening, SSL certificate, automatic backups and security plugins to keep your WordPress safe from hacks and downtime."
+      },
+      {
+        "title": "Integrated with your ecosystem",
+        "text": "We connect Mercado Pago, SPEI, OXXO, CFDI-SAT and WhatsApp Business so your site works inside your real operation, not isolated."
+      },
+      {
+        "title": "Custom design, not a template",
+        "text": "Your brand deserves a unique site. We design every section around your customers and business goals, not a recycled mold."
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does a WordPress website cost in Mexico?",
+        "a": "The price of a WordPress website in Mexico depends on scope: a self-managed corporate site typically starts in the low thousands of pesos, while a WooCommerce store or a custom system requires more investment. At Alrit.dev we quote based on your goals and give you a clear estimate at no cost and with no commitment."
+      },
+      {
+        "q": "What is a self-managed website and how does it work with WordPress?",
+        "a": "A self-managed website is a site you can update yourself without knowing how to code. With WordPress you access a dashboard where you edit text, images, products and sections in minutes. We configure it custom for you and train you so you can manage your site with full autonomy."
+      },
+      {
+        "q": "How do you make a WordPress site load fast?",
+        "a": "We apply WPO (Web Performance Optimization): image optimization, caching, lazy load, CDN, lightweight themes and clean code. This lets us reach PageSpeed 90+ and green Core Web Vitals, improving load speed, user experience and your Google ranking."
+      },
+      {
+        "q": "How do you protect my WordPress from hacks?",
+        "a": "We strengthen security with server hardening, an SSL certificate, trusted security plugins, constant WordPress and plugin updates, and automatic backups. This minimizes the risk of hacks and, if anything happens, we can restore your site quickly."
+      },
+      {
+        "q": "WordPress or Wix, which is better for my business?",
+        "a": "For a business looking to grow, WordPress beats Wix: it offers full control, better SEO, scalability, unlimited integrations and real ownership of your site. Wix is more limited and locks you into its platform. If you want a digital asset that ranks and grows with you, WordPress is the professional choice."
+      }
+    ],
+    "cta": "Get your free WordPress quote"
+  },
+  "schema": "Service (con provider Alrit.dev y areaServed MX/ES), FAQPage (para las 5 preguntas frecuentes), BreadcrumbList (Inicio > Servicios > Sitios WordPress), Organization (datos de Alrit.dev), y opcionalmente WebPage + Offer dentro de Service para precio/cotizacion.",
+  "targetKeywords": [
+    "diseño de páginas web WordPress México",
+    "agencia WordPress México",
+    "desarrollo web WordPress México",
+    "cuánto cuesta una página web en WordPress",
+    "página web autoadministrable WordPress",
+    "diseño web profesional para empresas WordPress",
+    "mantenimiento WordPress México",
+    "crear tienda en línea WooCommerce México",
+    "agencia diseño WordPress CDMX",
+    "diseño web WordPress",
+    "agencia WordPress España",
+    "diseño web WordPress Madrid",
+    "presupuesto página web WordPress",
+    "mantenimiento WordPress",
+    "mantenimiento y seguridad WordPress",
+    "desarrollo WordPress para empresas",
+    "cómo mejorar la velocidad de WordPress",
+    "WordPress vs Wix cuál es mejor",
+    "cómo proteger WordPress de hackeos"
+  ]
+}

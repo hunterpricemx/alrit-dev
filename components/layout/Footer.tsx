@@ -34,13 +34,13 @@ export default function Footer({
 
         <nav className="footer__col" aria-label={dict.footer.columns.company}>
           <h3 className="footer__heading">{dict.footer.columns.company}</h3>
-          <Link href={`${base}#portfolio`} className="footer__link">
+          <Link href={`${base}/portafolio`} className="footer__link">
             {dict.footer.company.portfolio}
           </Link>
           <Link href={`${base}#process`} className="footer__link">
             {dict.footer.company.process}
           </Link>
-          <Link href={`${base}#services`} className="footer__link">
+          <Link href={`${base}/servicios`} className="footer__link">
             {dict.nav.services}
           </Link>
         </nav>

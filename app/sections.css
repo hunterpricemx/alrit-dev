@@ -657,9 +657,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   transition: transform 0.8s var(--ease-spring);
 }
-.family-card__media:hover .family-card__img { transform: scale(1.05); }
+.family-card__media:hover .family-card__img { transform: scale(1.04); }
+.family-card__cat {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff5a3d;
+  margin: 0 0 0.4rem;
+}
 .family-card__name {
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
