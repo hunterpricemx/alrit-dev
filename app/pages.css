@@ -5,7 +5,7 @@
 .case {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 7rem 1.5rem 2rem;
+  padding: 2.5rem 1.5rem 2rem;
 }
 
 .svc__crumbs,
@@ -317,7 +317,7 @@
 .faq__a p { margin: 0; color: var(--color-muted); font-size: 1rem; line-height: 1.65; max-width: 44rem; }
 
 /* ---- Hubs (services + portfolio index) ---- */
-.hub { max-width: 1200px; margin: 0 auto; padding: 7rem 1.5rem 4rem; }
+.hub { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
 .hub__head { max-width: 44rem; margin: 0 auto 3rem; text-align: center; }
 .hub__eyebrow {
   font-family: var(--font-display), sans-serif;
