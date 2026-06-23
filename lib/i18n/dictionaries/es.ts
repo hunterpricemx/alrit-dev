@@ -229,7 +229,9 @@ const es = {
   serviceLanding: {
     home: "Inicio",
     services: "Servicios",
-    benefitsTitle: "Por qué elegir Alrit.dev",
+    benefitsEyebrow: "Por qué elegir Alrit.dev",
+    benefitsTitleA: "Todo lo que necesitas para destacar en",
+    benefitsTitleAccent: "internet",
     faqTitle: "Preguntas frecuentes",
     relatedTitle: "Proyectos relacionados",
     relatedText: "Casos reales de esta especialidad.",

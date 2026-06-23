@@ -3,7 +3,7 @@
    ============================================================ */
 .svc,
 .case {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem 2rem;
 }
@@ -149,45 +149,106 @@
   margin: 0 0 1.75rem;
   color: var(--color-ink);
 }
+/* benefits header (centered, eyebrow + gradient title + underline) */
+.svc__benefits-head { text-align: center; max-width: 40rem; margin: 0 auto 2.75rem; }
+.svc__benefits-eyebrow {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a6bff;
+  margin: 0 0 1rem;
+}
+.svc__benefits-title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  margin: 0;
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+.svc__benefits-accent { position: relative; white-space: nowrap; }
+.svc__benefits-accent {
+  background: linear-gradient(120deg, #ff8a3d, #ff4d8d 50%, #8a6bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.svc__benefits-underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.45em;
+  width: 100%;
+  height: 0.4em;
+}
+
 .svc__benefits {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
+@media (max-width: 860px) { .svc__benefits { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .svc__benefits { grid-template-columns: 1fr; } }
 .svc__benefits > .reveal { height: 100%; }
 .svc-benefit {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 1.75rem;
-  border-radius: 20px;
+  border-radius: 22px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  overflow: hidden;
   transition: transform 0.5s var(--ease-spring), box-shadow 0.4s ease, border-color 0.3s ease;
 }
 .svc-benefit:hover { box-shadow: 0 22px 44px rgba(0, 0, 0, 0.1); border-color: transparent; }
-.svc-benefit__bar {
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 45%, #ff4d8d));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.45s var(--ease-spring);
+.svc-benefit__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, white);
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s var(--ease-spring);
 }
-.svc-benefit:hover .svc-benefit__bar { transform: scaleX(1); }
+.svc-benefit__icon svg { width: 28px; height: 28px; }
+.svc-benefit:hover .svc-benefit__icon { transform: scale(1.08) rotate(-4deg); }
+.svc-benefit__num {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--accent);
+  opacity: 0.4;
+}
 .svc-benefit__title {
   font-family: var(--font-display), sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
-  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0 0 0.55rem;
   color: var(--color-ink);
 }
-.svc-benefit__text { margin: 0; color: var(--color-muted); font-size: 0.96rem; line-height: 1.55; }
+.svc-benefit__text { margin: 0; color: var(--color-muted); font-size: 0.96rem; line-height: 1.55; flex: 1; }
+.svc-benefit__bar {
+  width: 2.5rem;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  background: var(--accent);
+}
 
 .svc__prose {
   display: grid;

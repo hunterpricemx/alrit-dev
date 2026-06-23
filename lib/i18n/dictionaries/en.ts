@@ -231,7 +231,9 @@ const en: Dictionary = {
   serviceLanding: {
     home: "Home",
     services: "Services",
-    benefitsTitle: "Why choose Alrit.dev",
+    benefitsEyebrow: "Why choose Alrit.dev",
+    benefitsTitleA: "Everything you need to stand out",
+    benefitsTitleAccent: "online",
     faqTitle: "Frequently asked questions",
     relatedTitle: "Related projects",
     relatedText: "Real cases from this specialty.",
