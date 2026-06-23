@@ -24,6 +24,7 @@ const en: Dictionary = {
     eyebrow: "The evolution of Hunter Price Mx",
     title: "From a marketing agency to a web development studio",
     text: "Over a decade building digital presence. Today we bring that experience to code: fast, scalable sites built to sell.",
+    trusted: "Brands that have trusted us",
   },
   services: {
     eyebrow: "What we do",

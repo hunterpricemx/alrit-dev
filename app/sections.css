@@ -176,24 +176,59 @@
   font-size: 1.1rem;
   line-height: 1.6;
 }
-.social__logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem 3rem;
-  align-items: center;
-  margin-top: 3rem;
-}
-.social__logo {
+.social__trusted {
+  margin: 3rem 0 1.4rem;
   font-family: var(--font-display), sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #b6b6bd;
-  filter: grayscale(1);
-  transition: color 0.3s ease, transform 0.3s var(--ease-spring);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
 }
-.social__logo:hover {
-  color: var(--color-ink);
-  transform: translateY(-3px);
+.social__marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.social__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 48s linear infinite;
+}
+.social__marquee:hover .social__track { animation-play-state: paused; }
+.social__row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.625rem;
+}
+.brand {
+  flex: 0 0 auto;
+  width: 152px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease;
+}
+.brand:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08); }
+.brand__img {
+  max-width: 80px;
+  max-height: 66px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.68;
+  transition: filter 0.35s ease, opacity 0.35s ease;
+}
+.brand:hover .brand__img { filter: grayscale(0); opacity: 1; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* ---- Services gallery (Apple "Descubre la Mac" style) ---- */

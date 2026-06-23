@@ -22,6 +22,7 @@ const es = {
     eyebrow: "La evolución de Hunter Price Mx",
     title: "De agencia de marketing a estudio de desarrollo web",
     text: "Más de una década creando presencia digital. Hoy llevamos esa experiencia al código: sitios rápidos, escalables y pensados para vender.",
+    trusted: "Marcas que han confiado en nosotros",
   },
   services: {
     eyebrow: "Qué hacemos",
