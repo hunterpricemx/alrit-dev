@@ -1,0 +1,97 @@
+/* ============================================================
+   Device mockups (iMac + iPhone 17 Pro), pure CSS
+   ============================================================ */
+.case__devices { margin: 1rem 0 3.5rem; }
+.devices {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-right: 2.5rem;
+}
+
+/* ---- iMac ---- */
+.imac { display: flex; flex-direction: column; align-items: center; }
+.imac__screen {
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  background: #0b0b0d;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.18);
+}
+.imac__cam {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #26262b;
+}
+.imac__shot {
+  overflow: hidden;
+  border-radius: 5px;
+  aspect-ratio: 16 / 10;
+  background: #000;
+}
+.imac__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.imac__chin {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, #e2e4e9, #c2c5cd);
+  border-radius: 0 0 18px 18px;
+}
+.imac__stand {
+  width: 112px;
+  height: 46px;
+  margin-top: -1px;
+  background: linear-gradient(180deg, #d2d5dc, #b0b4bd);
+  clip-path: polygon(36% 0, 64% 0, 100% 100%, 0 100%);
+}
+.imac__base {
+  width: 210px;
+  height: 11px;
+  background: linear-gradient(180deg, #c4c7cf, #a7abb4);
+  border-radius: 0 0 8px 8px;
+}
+
+/* ---- iPhone 17 Pro ---- */
+.iphone {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  width: 168px;
+  padding: 7px;
+  border-radius: 32px;
+  background: linear-gradient(140deg, #4a4a52, #1a1a1f 55%, #2c2c33);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.3);
+}
+.iphone__shot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px;
+  aspect-ratio: 9 / 19.5;
+  background: #000;
+}
+.iphone__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.iphone__island {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 52px;
+  height: 16px;
+  border-radius: 10px;
+  background: #000;
+}
+.iphone__btn { position: absolute; background: #2b2b31; border-radius: 2px; }
+.iphone__btn--power { right: -2px; top: 62px; width: 3px; height: 36px; }
+.iphone__btn--vol-up { left: -2px; top: 52px; width: 3px; height: 26px; }
+.iphone__btn--vol-dn { left: -2px; top: 86px; width: 3px; height: 26px; }
+
+@media (max-width: 640px) {
+  .devices { padding-right: 0; }
+  .iphone { position: static; width: 190px; margin: 1.5rem auto 0; }
+}

@@ -33,7 +33,8 @@
       "influencer-marketing",
       "stripe",
       "plataforma-web"
-    ]
+    ],
+    "imageMobile": "/portfolio/conectas-mobile.png"
   },
   {
     "slug": "conquer-classic-plus",
@@ -69,7 +70,8 @@
       "MMO",
       "Plataforma web",
       "Comunidad"
-    ]
+    ],
+    "imageMobile": "/portfolio/conquer-classic-plus-mobile.png"
   },
   {
     "slug": "bodhi-medicine-plataforma-formacion-salud-holistica",
@@ -105,7 +107,8 @@
       "membresia",
       "salud-holistica",
       "certificacion"
-    ]
+    ],
+    "imageMobile": "/portfolio/bodhi-medicine-mobile.png"
   },
   {
     "slug": "bdweb-plataforma-inmobiliaria",
@@ -140,7 +143,8 @@
       "marketplace",
       "supabase",
       "lms"
-    ]
+    ],
+    "imageMobile": "/portfolio/bdweb-mobile.png"
   },
   {
     "slug": "programarte-plataforma-bienestar-mental",
@@ -175,7 +179,8 @@
       "supabase",
       "react",
       "salud-mental"
-    ]
+    ],
+    "imageMobile": "/portfolio/programarte-mobile.png"
   },
   {
     "slug": "rciu-education-red-universidades-wordpress",
@@ -210,7 +215,8 @@
       "educacion-superior",
       "multilingue",
       "universidades"
-    ]
+    ],
+    "imageMobile": "/portfolio/rciu-education-mobile.png"
   },
   {
     "slug": "bds-motos",
@@ -245,6 +251,7 @@
       "catalogo-digital",
       "generacion-de-prospectos",
       "localizador-de-distribuidores"
-    ]
+    ],
+    "imageMobile": "/portfolio/bds-motos-mobile.png"
   }
 ]

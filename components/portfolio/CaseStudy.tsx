@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import type { Project } from "@/lib/content/portfolio";
+import DeviceFrame from "@/components/ui/DeviceFrame";
 
 export default function CaseStudy({
   locale,
@@ -54,9 +55,8 @@ export default function CaseStudy({
         </div>
       </header>
 
-      <div className="case__shot" style={{ "--bg": project.bg } as React.CSSProperties}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={project.image} alt={p.title} />
+      <div className="case__devices" style={{ "--bg": project.bg } as React.CSSProperties}>
+        <DeviceFrame desktop={project.image} mobile={project.imageMobile} alt={p.title} />
       </div>
 
       <div className="case__body">

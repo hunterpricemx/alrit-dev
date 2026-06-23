@@ -5,6 +5,7 @@ export type ProjectLocale = { title: string; short: string; long: string };
 export type Project = {
   slug: string;
   image: string;
+  imageMobile: string;
   bg: string;
   cat: string;
   relatedService: string;
