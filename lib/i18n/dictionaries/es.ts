@@ -72,6 +72,31 @@ const es = {
     title2: "Descubre lo que hacemos",
     cta: "Ver servicio",
   },
+  servicesX: {
+    eyebrow: "Servicios",
+    titleA: "Soluciones digitales que",
+    titleAccent: "impulsan tu negocio",
+    subtitle:
+      "Desarrollamos plataformas, aplicaciones y sistemas a la medida de tus objetivos. Tecnología que genera resultados.",
+    stats: [
+      { value: "+50", label: "Proyectos entregados", caption: "en los últimos años" },
+      { value: "10+", label: "Años de experiencia", caption: "construyendo soluciones" },
+      { value: "3", label: "Países", caption: "México · USA · España" },
+    ],
+    cards: {
+      webdev: { title: "Desarrollo a medida", text: "Sitios web rápidos, escalables y pensados para convertir." },
+      lms: { title: "Sitios LMS", text: "Plataformas educativas modernas, intuitivas y fáciles de administrar." },
+      ecommerce: { title: "E-commerce", text: "Tiendas online optimizadas para vender más y brindar la mejor experiencia." },
+      realestate: { title: "Real Estate", text: "Portales inmobiliarios con búsqueda avanzada, mapas y experiencias únicas." },
+      mobile: { title: "Apps móviles", text: "Aplicaciones iOS y Android con diseño moderno y alto rendimiento." },
+      systems: { title: "Sistemas y automatización", text: "Herramientas internas que optimizan procesos y ahorran tiempo." },
+    },
+    trust: "Empresas que confían en nuestro trabajo",
+    badges: [
+      { title: "Comprometidos con la calidad", text: "Código limpio y buenas prácticas" },
+      { title: "Seguridad y rendimiento", text: "Sitios rápidos y protegidos" },
+    ],
+  },
   calculator: {
     eyebrow: "Calculadora de proyectos",
     title: "¿Cuánto cuesta tu proyecto?",

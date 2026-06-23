@@ -74,6 +74,31 @@ const en: Dictionary = {
     title2: "Discover what we do",
     cta: "View service",
   },
+  servicesX: {
+    eyebrow: "Services",
+    titleA: "Digital solutions that",
+    titleAccent: "drive your business",
+    subtitle:
+      "We build platforms, apps and systems tailored to your goals. Technology that delivers results.",
+    stats: [
+      { value: "+50", label: "Projects delivered", caption: "in recent years" },
+      { value: "10+", label: "Years of experience", caption: "building solutions" },
+      { value: "3", label: "Countries", caption: "Mexico · USA · Spain" },
+    ],
+    cards: {
+      webdev: { title: "Custom development", text: "Fast, scalable websites built to convert." },
+      lms: { title: "LMS sites", text: "Modern, intuitive learning platforms that are easy to manage." },
+      ecommerce: { title: "E-commerce", text: "Online stores optimized to sell more and delight customers." },
+      realestate: { title: "Real Estate", text: "Real estate portals with advanced search, maps and unique experiences." },
+      mobile: { title: "Mobile apps", text: "iOS and Android apps with modern design and high performance." },
+      systems: { title: "Systems & automation", text: "Internal tools that streamline processes and save time." },
+    },
+    trust: "Companies that trust our work",
+    badges: [
+      { title: "Committed to quality", text: "Clean code and best practices" },
+      { title: "Security and performance", text: "Fast, protected sites" },
+    ],
+  },
   calculator: {
     eyebrow: "Project calculator",
     title: "How much does your project cost?",
