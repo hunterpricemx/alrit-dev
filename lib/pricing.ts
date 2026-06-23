@@ -1,43 +1,38 @@
 /**
- * Modelo de precios de la mini-calculadora.
+ * Modelo de precios de la calculadora.
  *
- * ⚠️ VALORES PLACEHOLDER (MXN). Reemplaza `base`, `sizeMultipliers` y `extras`
- * con los precios reales — la calculadora y el copy se actualizan solos.
+ * ⚠️ VALORES PLACEHOLDER (MXN). Reemplaza `base`, `weeks` y `EXTRAS` con los
+ * precios y tiempos reales — la calculadora y el resumen se actualizan solos.
  */
 
 export type ProjectTypeId =
   | "landing"
-  | "wordpress"
   | "ecommerce"
   | "lms"
   | "realestate"
-  | "custom"; // sistema / app a medida → captura datos, sin precio
+  | "mobile"
+  | "custom"; // sistema / app a medida → cotización personalizada
 
-export type SizeId = "small" | "medium" | "large";
 export type ExtraId = "multilang" | "blog" | "payments" | "seo";
 
 export type ProjectType = {
   id: ProjectTypeId;
   /** Precio base en MXN. `null` => proyecto a medida (sin precio instantáneo). */
   base: number | null;
+  /** Rango de tiempo estimado. `null` para proyectos a medida. */
+  weeks: string | null;
 };
 
 export const CURRENCY = "MXN";
 
 export const PROJECT_TYPES: ProjectType[] = [
-  { id: "landing", base: 8000 },
-  { id: "wordpress", base: 18000 },
-  { id: "ecommerce", base: 35000 },
-  { id: "lms", base: 45000 },
-  { id: "realestate", base: 40000 },
-  { id: "custom", base: null },
+  { id: "landing", base: 8000, weeks: "2 a 3 semanas" },
+  { id: "ecommerce", base: 35000, weeks: "4 a 6 semanas" },
+  { id: "lms", base: 45000, weeks: "4 a 6 semanas" },
+  { id: "realestate", base: 40000, weeks: "5 a 7 semanas" },
+  { id: "mobile", base: 60000, weeks: "8 a 12 semanas" },
+  { id: "custom", base: null, weeks: null },
 ];
-
-export const SIZE_MULTIPLIERS: Record<SizeId, number> = {
-  small: 1,
-  medium: 1.6,
-  large: 2.5,
-};
 
 export const EXTRAS: Record<ExtraId, number> = {
   multilang: 6000,
@@ -46,21 +41,21 @@ export const EXTRAS: Record<ExtraId, number> = {
   seo: 7000,
 };
 
+export const EXTRA_IDS = Object.keys(EXTRAS) as ExtraId[];
+
+export function getType(id: ProjectTypeId): ProjectType | undefined {
+  return PROJECT_TYPES.find((t) => t.id === id);
+}
+
 export type Estimate =
   | { kind: "price"; amount: number }
   | { kind: "custom" };
 
-export function estimate(
-  typeId: ProjectTypeId,
-  size: SizeId,
-  extras: ExtraId[]
-): Estimate {
-  const type = PROJECT_TYPES.find((t) => t.id === typeId);
-  if (!type || type.base === null) return { kind: "custom" };
-
+export function estimate(typeId: ProjectTypeId, extras: ExtraId[]): Estimate {
+  const t = getType(typeId);
+  if (!t || t.base === null) return { kind: "custom" };
   const extrasTotal = extras.reduce((sum, id) => sum + (EXTRAS[id] ?? 0), 0);
-  const amount = Math.round(type.base * SIZE_MULTIPLIERS[size] + extrasTotal);
-  return { kind: "price", amount };
+  return { kind: "price", amount: t.base + extrasTotal };
 }
 
 export function formatMXN(amount: number): string {

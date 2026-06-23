@@ -4,30 +4,35 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Dictionary } from "@/lib/i18n";
 import {
   PROJECT_TYPES,
-  SIZE_MULTIPLIERS,
   EXTRAS,
+  EXTRA_IDS,
+  getType,
   estimate,
   formatMXN,
   type ProjectTypeId,
-  type SizeId,
   type ExtraId,
 } from "@/lib/pricing";
 
-const SIZES = Object.keys(SIZE_MULTIPLIERS) as SizeId[];
-const EXTRA_IDS = Object.keys(EXTRAS) as ExtraId[];
+const GRID_ORDER: ProjectTypeId[] = ["landing", "ecommerce", "lms", "realestate", "custom", "mobile"];
 
-type StepKey = "type" | "size" | "extras" | "result" | "contact";
+const META: Record<ProjectTypeId, { accent: string; image: string; icon: string }> = {
+  landing: { accent: "#8a6bff", image: "/hero/sass.png", icon: "M3 3v18h18M7 16v-5M12 16V8M17 16v-9" },
+  ecommerce: { accent: "#ff5e57", image: "/hero/ecommerce.png", icon: "M5 7h14l-1.2 9.5a2 2 0 0 1-2 1.5H8.2a2 2 0 0 1-2-1.5L5 7Zm3 0a4 4 0 0 1 8 0" },
+  lms: { accent: "#8a6bff", image: "/hero/lms.png", icon: "M3 7l9-4 9 4-9 4-9-4Zm3 2v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9" },
+  realestate: { accent: "#00b894", image: "/hero/realstate.png", icon: "M4 11 12 4l8 7M6 10v9h12v-9M10 19v-5h4v5" },
+  custom: { accent: "#fb8c2e", image: "/hero/sass.png", icon: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" },
+  mobile: { accent: "#3b82f6", image: "/hero/app.png", icon: "M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm3 15h2" },
+};
 
-/** Animated count-up for the estimate. */
 function AnimatedPrice({ amount }: { amount: number }) {
-  const [shown, setShown] = useState(0);
-  const ref = useRef(0);
+  const [shown, setShown] = useState(amount);
+  const ref = useRef(amount);
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let raf = 0;
     const from = ref.current;
     const start = performance.now();
-    const dur = reduced ? 1 : 700;
+    const dur = reduced ? 1 : 600;
     const tick = (t: number) => {
       const p = Math.min(1, (t - start) / dur);
       const eased = 1 - Math.pow(1 - p, 3);
@@ -44,220 +49,302 @@ function AnimatedPrice({ amount }: { amount: number }) {
 
 export default function Calculator({ dict }: { dict: Dictionary }) {
   const t = dict.calculator;
-  const w = t.wizard;
-
-  const [type, setType] = useState<ProjectTypeId | null>(null);
-  const [size, setSize] = useState<SizeId | null>(null);
-  const [extras, setExtras] = useState<ExtraId[]>([]);
   const [step, setStep] = useState(0);
-  const [sent, setSent] = useState(false);
+  const [type, setType] = useState<ProjectTypeId>("landing");
+  const [extras, setExtras] = useState<ExtraId[]>([]);
 
-  const isCustom = type === "custom";
-  const flow: StepKey[] = isCustom
-    ? ["type", "contact"]
-    : ["type", "size", "extras", "result"];
-  const current = flow[Math.min(step, flow.length - 1)];
-  const total = flow.length;
-
-  const result = useMemo(
-    () => (type && size ? estimate(type, size, extras) : null),
-    [type, size, extras]
-  );
+  const meta = META[type];
+  const typeInfo = getType(type);
+  const isCustom = typeInfo?.base === null;
+  const est = useMemo(() => estimate(type, extras), [type, extras]);
 
   const toggleExtra = (id: ExtraId) =>
-    setExtras((prev) =>
-      prev.includes(id) ? prev.filter((e) => e !== id) : [...prev, id]
-    );
+    setExtras((prev) => (prev.includes(id) ? prev.filter((e) => e !== id) : [...prev, id]));
 
-  const chooseType = (id: ProjectTypeId) => {
-    setType(id);
-    setStep(1);
-  };
-  const chooseSize = (id: SizeId) => {
-    setSize(id);
-    setStep(2);
-  };
-  const back = () => setStep((s) => Math.max(0, s - 1));
+  const goNext = () => setStep((s) => Math.min(3, s + 1));
   const restart = () => {
-    setType(null);
-    setSize(null);
-    setExtras([]);
-    setSent(false);
     setStep(0);
+    setType("landing");
+    setExtras([]);
   };
 
-  const progress = (step + 1) / total;
+  const stepTitles = [t.step1Title, t.step2Title, t.step3Title, t.doneTitle];
+  const stepSubs = [t.step1Sub, t.step2Sub, t.step3Sub, t.doneSub];
 
   return (
     <section className="calc" id="calculator">
-      <div className="calc__inner">
-        <div className="calc__head">
-          <p className="calc__eyebrow">{t.eyebrow}</p>
-          <h2 className="calc__title">{t.title}</h2>
-          <p className="calc__subtitle">{t.subtitle}</p>
-        </div>
+      <div className="calc__head">
+        <p className="calc__eyebrow">{t.eyebrow}</p>
+        <h2 className="calc__title">
+          {t.titleA} <span className="calc__title-accent">{t.titleAccent}</span>
+        </h2>
+        <p className="calc__sub">{t.subtitle}</p>
+      </div>
 
-        <div className="calc__panel calc-wizard">
-          <div className="calc-wizard__progress">
-            <span className="calc-wizard__count">
-              {w.step} {Math.min(step + 1, total)} {w.of} {total}
-            </span>
-            <span className="calc-wizard__track">
-              <span
-                className="calc-wizard__bar"
-                style={{ "--p": progress } as React.CSSProperties}
-              />
-            </span>
-          </div>
+      {/* Stepper */}
+      <ol className="calc__stepper">
+        {t.steps.map((s, i) => (
+          <li key={i} className={`cstep${i === step ? " cstep--active" : ""}${i < step ? " cstep--done" : ""}`}>
+            <button
+              type="button"
+              className="cstep__btn"
+              onClick={() => i <= step && setStep(i)}
+              disabled={i > step}
+            >
+              <span className="cstep__num">{i < step ? "✓" : i + 1}</span>
+              <span className="cstep__label">
+                <span className="cstep__title">{s.title}</span>
+                <span className="cstep__caption">{s.caption}</span>
+              </span>
+            </button>
+            {i < t.steps.length - 1 && <span className="cstep__line" aria-hidden="true" />}
+          </li>
+        ))}
+      </ol>
 
-          <div className="calc-wizard__stage" key={current}>
-            {current === "type" && (
-              <div className="calc-step">
-                <h3 className="calc-step__q">{w.typeQuestion}</h3>
-                <div className="calc-step__grid">
-                  {PROJECT_TYPES.map((pt) => (
-                    <button
-                      key={pt.id}
-                      type="button"
-                      className={`calc-option${type === pt.id ? " calc-option--active" : ""}`}
-                      onClick={() => chooseType(pt.id)}
-                    >
-                      <span className="calc-option__label">{t.types[pt.id]}</span>
-                      <span className="calc-option__hint">
-                        {pt.base === null ? t.customTitle : `${t.fromLabel} ${formatMXN(pt.base)}`}
+      <div className="calc__layout">
+        {/* Main panel */}
+        <div className="calc__main">
+          <h3 className="calc__step-title">
+            {step + 1}. {stepTitles[step]}
+          </h3>
+          <p className="calc__step-sub">{stepSubs[step]}</p>
+
+          {step === 0 && (
+            <div className="calc__types">
+              {GRID_ORDER.map((id) => {
+                const pt = PROJECT_TYPES.find((p) => p.id === id)!;
+                const m = META[id];
+                const info = t.types[id];
+                const active = type === id;
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    className={`ctype${active ? " ctype--active" : ""}`}
+                    style={{ "--accent": m.accent } as React.CSSProperties}
+                    onClick={() => setType(id)}
+                    aria-pressed={active}
+                  >
+                    <span className="ctype__media">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={m.image} alt="" aria-hidden="true" loading="lazy" draggable={false} />
+                      <span className="ctype__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                          <path d={m.icon} />
+                        </svg>
                       </span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
+                    </span>
+                    {active && (
+                      <span className="ctype__check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12l4 4 10-11" />
+                        </svg>
+                      </span>
+                    )}
+                    <span className="ctype__name">{info.name}</span>
+                    <span className="ctype__desc">{info.desc}</span>
+                    <span className="ctype__price">
+                      {pt.base !== null ? `${t.fromLabel} ${formatMXN(pt.base)}` : t.customPrice}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
 
-            {current === "size" && (
-              <div className="calc-step">
-                <h3 className="calc-step__q">{w.sizeQuestion}</h3>
-                <div className="calc-step__grid calc-step__grid--3">
-                  {SIZES.map((s) => (
-                    <button
-                      key={s}
-                      type="button"
-                      className={`calc-option calc-option--center${size === s ? " calc-option--active" : ""}`}
-                      onClick={() => chooseSize(s)}
-                    >
-                      <span className="calc-option__label">{t.sizes[s]}</span>
-                      <span className="calc-option__hint">×{SIZE_MULTIPLIERS[s]}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {current === "extras" && (
-              <div className="calc-step">
-                <h3 className="calc-step__q">{w.extrasQuestion}</h3>
-                <p className="calc-step__hint">{w.extrasHint}</p>
-                <div className="calc-step__grid">
-                  {EXTRA_IDS.map((id) => (
+          {step === 1 &&
+            (isCustom ? (
+              <p className="calc__note">{t.step2Custom}</p>
+            ) : (
+              <div className="calc__feats">
+                {EXTRA_IDS.map((id) => {
+                  const active = extras.includes(id);
+                  return (
                     <button
                       key={id}
                       type="button"
-                      className={`calc-option calc-option--toggle${extras.includes(id) ? " calc-option--active" : ""}`}
+                      className={`cfeat${active ? " cfeat--active" : ""}`}
                       onClick={() => toggleExtra(id)}
-                      aria-pressed={extras.includes(id)}
+                      aria-pressed={active}
                     >
-                      <span className="calc-option__label">{t.extras[id]}</span>
-                      <span className="calc-option__hint">+ {formatMXN(EXTRAS[id])}</span>
-                      <span className="calc-option__check" aria-hidden="true" />
+                      <span className="cfeat__check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12l4 4 10-11" />
+                        </svg>
+                      </span>
+                      <span className="cfeat__body">
+                        <span className="cfeat__name">{t.extras[id]}</span>
+                        <span className="cfeat__desc">{t.extrasDesc[id]}</span>
+                      </span>
+                      <span className="cfeat__price">+ {formatMXN(EXTRAS[id])}</span>
                     </button>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
-            )}
+            ))}
 
-            {current === "result" && result?.kind === "price" && (
-              <div className="calc-step calc-step--result">
-                <span className="calc-result__from">{w.resultTitle}</span>
-                <strong className="calc-result__price">
-                  <AnimatedPrice amount={result.amount} />
-                </strong>
-                <ul className="calc-result__summary">
-                  <li>
-                    <span>{t.typeLabel}</span>
-                    <strong>{type ? t.types[type] : ""}</strong>
-                  </li>
-                  <li>
-                    <span>{t.sizeLabel}</span>
-                    <strong>{size ? t.sizes[size] : ""}</strong>
-                  </li>
-                  <li>
-                    <span>{t.extrasLabel}</span>
-                    <strong>
-                      {extras.length
-                        ? extras.map((e) => t.extras[e]).join(", ")
-                        : w.noExtras}
-                    </strong>
-                  </li>
-                </ul>
-                <p className="calc__disclaimer">{t.disclaimer}</p>
-                <a href="#contacto" className="calc__cta">
-                  {t.requestCta}
-                </a>
-              </div>
-            )}
+          {step === 2 && (
+            <form
+              className="calc__form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                goNext();
+              }}
+              id="calc-form"
+            >
+              <input className="calc__input" name="name" placeholder={t.form.name} required />
+              <input className="calc__input" type="email" name="email" placeholder={t.form.email} required />
+              <input className="calc__input" name="phone" placeholder={t.form.phone} />
+              <textarea className="calc__input calc__textarea" name="brief" placeholder={t.form.brief} rows={4} />
+            </form>
+          )}
 
-            {current === "contact" &&
-              (sent ? (
-                <div className="calc-step calc-step--sent">
-                  <strong className="calc__sent">{t.form.sent}</strong>
-                </div>
-              ) : (
-                <form
-                  className="calc-step calc__form"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSent(true);
-                  }}
-                >
-                  <h3 className="calc__custom-title">{t.customTitle}</h3>
-                  <p className="calc__custom-text">{t.customText}</p>
-                  <input className="calc__input" name="name" placeholder={t.form.name} required />
-                  <input className="calc__input" type="email" name="email" placeholder={t.form.email} required />
-                  <input className="calc__input" name="phone" placeholder={t.form.phone} />
-                  <textarea className="calc__input calc__textarea" name="brief" placeholder={t.form.brief} rows={3} />
-                  <button type="submit" className="calc__cta">
-                    {t.form.submit}
-                  </button>
-                </form>
-              ))}
-          </div>
-
-          <div className="calc-wizard__nav">
-            {step > 0 && !sent && (
-              <button type="button" className="calc-wizard__back" onClick={back}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M15 6l-6 6 6 6" />
+          {step === 3 && (
+            <div className="calc__done">
+              <span className="calc__done-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12l4 4 10-11" />
                 </svg>
-                {w.back}
+              </span>
+              <h4 className="calc__done-title">{t.doneTitle}</h4>
+              <p className="calc__done-sub">{t.doneSub}</p>
+              <button type="button" className="calc__restart" onClick={restart}>
+                {t.restart}
               </button>
-            )}
+            </div>
+          )}
 
-            <span className="calc-wizard__spacer" />
-
-            {current === "extras" && (
-              <button type="button" className="calc-wizard__next" onClick={() => setStep(3)}>
-                {w.next}
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M9 6l6 6-6 6" />
-                </svg>
-              </button>
-            )}
-
-            {(current === "result" || sent) && (
-              <button type="button" className="calc-wizard__restart" onClick={restart}>
-                {w.restart}
-              </button>
-            )}
-          </div>
+          <ul className="calc__badges">
+            {t.badges.map((b, i) => (
+              <li key={i} className="calc-badge">
+                <span className="calc-badge__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    <path
+                      d={
+                        i === 0
+                          ? "M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"
+                          : i === 1
+                            ? "M12 7v5l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+                            : "M3 14v-1a9 9 0 0 1 18 0v1M5 12h1v7H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2Zm14 0h-1v7h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2ZM12 21h3"
+                      }
+                    />
+                  </svg>
+                </span>
+                <span className="calc-badge__body">
+                  <span className="calc-badge__title">{b.title}</span>
+                  <span className="calc-badge__text">{b.text}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        {/* Live summary sidebar */}
+        <aside className="calc__summary">
+          <div className="calc-sum">
+            <p className="calc-sum__title">{t.summaryTitle}</p>
+            <div className="calc-sum__mockup">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={meta.image} alt="" aria-hidden="true" />
+            </div>
+            <div className="calc-sum__type" style={{ "--accent": meta.accent } as React.CSSProperties}>
+              <span className="calc-sum__type-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                  <path d={meta.icon} />
+                </svg>
+              </span>
+              <span className="calc-sum__type-name">{t.types[type].name}</span>
+              <button type="button" className="calc-sum__change" onClick={() => setStep(0)}>
+                {t.change}
+              </button>
+            </div>
+
+            <p className="calc-sum__features-label">{t.selectedFeatures}</p>
+            <ul className="calc-sum__lines">
+              {!isCustom && typeInfo?.base != null && (
+                <li>
+                  <span className="calc-sum__line-name">
+                    <span className="calc-sum__tick" aria-hidden="true" />
+                    {t.types[type].short} {t.baseSuffix}
+                  </span>
+                  <span className="calc-sum__line-price">{formatMXN(typeInfo.base)}</span>
+                </li>
+              )}
+              {!isCustom &&
+                extras.map((id) => (
+                  <li key={id}>
+                    <span className="calc-sum__line-name">
+                      <span className="calc-sum__tick" aria-hidden="true" />
+                      {t.extras[id]}
+                    </span>
+                    <span className="calc-sum__line-price">{formatMXN(EXTRAS[id])}</span>
+                  </li>
+                ))}
+              {isCustom && <li className="calc-sum__custom">{t.customPrice}</li>}
+              {!isCustom && extras.length === 0 && typeInfo?.base == null && (
+                <li className="calc-sum__empty">{t.noFeatures}</li>
+              )}
+            </ul>
+
+            <div className="calc-sum__total-row">
+              <span className="calc-sum__total-label">{t.total}</span>
+              <strong className="calc-sum__total">
+                {est.kind === "price" ? (
+                  <>
+                    <AnimatedPrice amount={est.amount} />
+                    <span className="calc-sum__cur"> MXN</span>
+                  </>
+                ) : (
+                  <span className="calc-sum__custom-total">{t.customPrice}</span>
+                )}
+              </strong>
+            </div>
+
+            <div className="calc-sum__time">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12 7v5l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+              </svg>
+              {t.time}: {typeInfo?.weeks ?? t.timeCustom}
+            </div>
+
+            {step < 3 ? (
+              <button
+                type={step === 2 ? "submit" : "button"}
+                form={step === 2 ? "calc-form" : undefined}
+                className="calc-sum__cta"
+                onClick={step === 2 ? undefined : goNext}
+              >
+                {step === 2 ? t.send : t.continue}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </button>
+            ) : (
+              <button type="button" className="calc-sum__cta" onClick={restart}>
+                {t.restart}
+              </button>
+            )}
+
+            {step < 3 && t.nextHints[step] && (
+              <p className="calc-sum__next">
+                {t.nextLabel}: {t.nextHints[step]}
+              </p>
+            )}
+          </div>
+
+          <div className="calc__social">
+            <span className="calc__avatars" aria-hidden="true">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <span key={i} className={`calc__avatar calc__avatar--${i}`} />
+              ))}
+            </span>
+            <span className="calc__social-text">
+              <span className="calc__stars" aria-hidden="true">★★★★★</span>
+              {t.socialProof}
+            </span>
+          </div>
+        </aside>
       </div>
     </section>
   );
