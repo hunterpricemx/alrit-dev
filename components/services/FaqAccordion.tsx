@@ -4,8 +4,8 @@ import { useState } from "react";
 
 type Faq = { q: string; a: string };
 
-export default function FaqAccordion({ items }: { items: Faq[] }) {
-  const [open, setOpen] = useState<number | null>(0);
+export default function FaqAccordion({ items, defaultOpen = 0 }: { items: Faq[]; defaultOpen?: number | null }) {
+  const [open, setOpen] = useState<number | null>(defaultOpen);
 
   return (
     <ul className="faq">
