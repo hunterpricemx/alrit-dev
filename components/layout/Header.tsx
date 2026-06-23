@@ -93,23 +93,23 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     });
 
   return (
-    <header className={`header${scrolled || open ? " header--scrolled" : ""}`}>
+    <header className={`header${scrolled || open ? " header--scrolled" : ""}`} onMouseLeave={scheduleClose}>
       <div className="header__inner">
-        <Link href={base} className="header__logo" aria-label="Alrit.dev" onClick={() => setMobileOpen(false)}>
+        <Link href={base} className="header__logo" aria-label="Alrit.dev" onMouseEnter={() => setOpen(null)} onClick={() => setMobileOpen(false)}>
           Alrit<span className="header__logo-dot">.dev</span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="header__nav" onMouseLeave={scheduleClose}>
+        <div className="header__nav">
           <div className="nav__item" onMouseEnter={() => openMenu("services")}>
-            <button type="button" className="nav__link" aria-expanded={open === "services"} aria-haspopup="true" onClick={() => setOpen(open === "services" ? null : "services")}>
+            <Link href={`${base}/servicios`} className="nav__link" aria-haspopup="true" aria-expanded={open === "services"} onClick={() => setOpen(null)}>
               {dict.nav.services} <Chevron />
-            </button>
+            </Link>
           </div>
           <div className="nav__item" onMouseEnter={() => openMenu("portfolio")}>
-            <button type="button" className="nav__link" aria-expanded={open === "portfolio"} aria-haspopup="true" onClick={() => setOpen(open === "portfolio" ? null : "portfolio")}>
+            <Link href={`${base}/portafolio`} className="nav__link" aria-haspopup="true" aria-expanded={open === "portfolio"} onClick={() => setOpen(null)}>
               {dict.nav.portfolio} <Chevron />
-            </button>
+            </Link>
           </div>
           <div className="nav__item" onMouseEnter={() => openMenu("blog")}>
             <button type="button" className="nav__link" aria-expanded={open === "blog"} aria-haspopup="true" onClick={() => setOpen(open === "blog" ? null : "blog")}>
@@ -126,7 +126,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           </Link>
 
           {/* Mega panel */}
-          <div className={`mega-wrap${open ? " is-open" : ""}`} onMouseEnter={() => closeTimer.current && clearTimeout(closeTimer.current)} onMouseLeave={scheduleClose}>
+          <div className={`mega-wrap${open ? " is-open" : ""}`} onMouseEnter={() => closeTimer.current && clearTimeout(closeTimer.current)} onMouseLeave={scheduleClose} onClick={() => setOpen(null)}>
             {open === "services" && (
               <div className="mega mega--services">
                 <div className="mega__col">
@@ -210,7 +210,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           </div>
         </div>
 
-        <div className="header__actions">
+        <div className="header__actions" onMouseEnter={() => setOpen(null)}>
           <LocaleSwitcher locale={locale} />
           <Link href={`${base}#calculator`} className="header__cta">
             {dict.nav.cta}
