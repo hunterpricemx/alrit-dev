@@ -73,9 +73,9 @@ const es = {
     cta: "Ver servicio",
   },
   servicesX: {
-    eyebrow: "Servicios",
+    eyebrow: "Lo que construimos",
     titleA: "Soluciones digitales que",
-    titleAccent: "impulsan tu negocio",
+    titleAccent: "impulsan negocios.",
     subtitle:
       "Desarrollamos plataformas, aplicaciones y sistemas a la medida de tus objetivos. Tecnología que genera resultados.",
     stats: [
@@ -84,14 +84,14 @@ const es = {
       { value: "3", label: "Países", caption: "México · USA · España" },
     ],
     cards: {
-      webdev: { title: "Desarrollo a medida", text: "Sitios web rápidos, escalables y pensados para convertir." },
-      lms: { title: "Sitios LMS", text: "Plataformas educativas modernas, intuitivas y fáciles de administrar." },
-      ecommerce: { title: "E-commerce", text: "Tiendas online optimizadas para vender más y brindar la mejor experiencia." },
-      realestate: { title: "Real Estate", text: "Portales inmobiliarios con búsqueda avanzada, mapas y experiencias únicas." },
-      mobile: { title: "Apps móviles", text: "Aplicaciones iOS y Android con diseño moderno y alto rendimiento." },
-      systems: { title: "Sistemas y automatización", text: "Herramientas internas que optimizan procesos y ahorran tiempo." },
+      ecommerce: { title: "Ecommerce", text: "Tiendas online rápidas, seguras y pensadas para vender más." },
+      lms: { title: "LMS & Educación", text: "Plataformas de aprendizaje modernas, intuitivas y fáciles de administrar." },
+      systems: { title: "Sistemas a medida", text: "Soluciones escalables que automatizan procesos y hacen crecer tu empresa." },
+      mobile: { title: "Apps móviles", text: "Aplicaciones iOS y Android con excelente experiencia y alto rendimiento." },
+      automation: { title: "Automatizaciones", text: "Integramos herramientas y flujos que ahorran tiempo y aumentan resultados." },
+      realestate: { title: "Portales Inmobiliarios", text: "Sitios y portales para inmobiliarias con búsqueda avanzada y mapas." },
     },
-    trust: "Empresas que confían en nuestro trabajo",
+    trust: "Empresas que han confiado en nosotros",
     badges: [
       { title: "Comprometidos con la calidad", text: "Código limpio y buenas prácticas" },
       { title: "Seguridad y rendimiento", text: "Sitios rápidos y protegidos" },

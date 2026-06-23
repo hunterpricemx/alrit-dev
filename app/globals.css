@@ -196,8 +196,8 @@ body {
   left: 50%;
   bottom: 0.85rem;
   z-index: 2;
-  transform: translate(-50%, 10px);
-  opacity: 0;
+  transform: translate(-50%, 0);
+  opacity: 1;
   padding: 0.4rem 0.95rem;
   border-radius: 999px;
   background: rgba(18, 18, 22, 0.78);
@@ -208,11 +208,11 @@ body {
   font-size: 0.78rem;
   white-space: nowrap;
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.45s var(--ease-spring);
+  transition: transform 0.45s var(--ease-spring), box-shadow 0.3s ease;
 }
 .hero__card:hover .hero__card-label {
-  opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ---- supporting copy + actions ---- */

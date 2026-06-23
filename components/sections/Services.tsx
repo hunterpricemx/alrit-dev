@@ -6,15 +6,15 @@ import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { SERVICES, type ServiceId } from "@/lib/services";
 
-const HOME_IDS = ["webdev", "lms", "ecommerce", "realestate", "mobile", "systems"] as const;
+const HOME_IDS = ["ecommerce", "lms", "systems", "mobile", "automation", "realestate"] as const;
 
 // Card mockups (placeholders reusing hero art until the final images arrive).
 const CARD_IMG: Partial<Record<ServiceId, string>> = {
-  webdev: "/hero/sass.png",
-  lms: "/hero/lms.png",
   ecommerce: "/hero/ecommerce.png",
-  realestate: "/hero/realstate.png",
+  lms: "/hero/lms.png",
+  systems: "/hero/sass.png",
   mobile: "/hero/app.png",
+  realestate: "/hero/realstate.png",
 };
 
 const STAT_ICONS = [
@@ -51,16 +51,20 @@ export default function Services({
 }) {
   const t = dict.servicesX;
   const viewportRef = useRef<HTMLUListElement>(null);
+  const activeRef = useRef(0);
   const [active, setActive] = useState(0);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
+  const [paused, setPaused] = useState(false);
 
   const update = useCallback(() => {
     const el = viewportRef.current;
     if (!el) return;
     const card = el.querySelector<HTMLElement>(".svcx-card");
     const step = card ? card.offsetWidth + 20 : 1;
-    setActive(Math.round(el.scrollLeft / step));
+    const idx = Math.round(el.scrollLeft / step);
+    activeRef.current = idx;
+    setActive(idx);
     setAtStart(el.scrollLeft <= 4);
     setAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 4);
   }, []);
@@ -77,12 +81,58 @@ export default function Services({
     };
   }, [update]);
 
-  const scrollToCard = (index: number) => {
+  const scrollToCard = useCallback((index: number) => {
     const el = viewportRef.current;
     if (!el) return;
     const card = el.querySelector<HTMLElement>(".svcx-card");
     const step = card ? card.offsetWidth + 20 : el.clientWidth * 0.8;
     el.scrollTo({ left: index * step, behavior: "smooth" });
+  }, []);
+
+  // Autoplay (loops back to start; pauses on hover / reduced motion).
+  useEffect(() => {
+    if (paused) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = setInterval(() => {
+      const el = viewportRef.current;
+      if (!el) return;
+      const atEndNow = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4;
+      scrollToCard(atEndNow ? 0 : activeRef.current + 1);
+    }, 3800);
+    return () => clearInterval(id);
+  }, [paused, scrollToCard]);
+
+  // Drag-to-scroll (mouse). Touch uses native scrolling.
+  const drag = useRef({ active: false, startX: 0, startScroll: 0, moved: false });
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType !== "mouse") return;
+    const el = viewportRef.current;
+    if (!el) return;
+    drag.current = { active: true, startX: e.clientX, startScroll: el.scrollLeft, moved: false };
+    el.classList.add("is-dragging");
+    setPaused(true);
+  };
+  const onPointerMove = (e: React.PointerEvent) => {
+    const d = drag.current;
+    if (!d.active) return;
+    const el = viewportRef.current;
+    if (!el) return;
+    const dx = e.clientX - d.startX;
+    if (Math.abs(dx) > 4) d.moved = true;
+    el.scrollLeft = d.startScroll - dx;
+  };
+  const endDrag = () => {
+    const el = viewportRef.current;
+    if (el) el.classList.remove("is-dragging");
+    drag.current.active = false;
+  };
+  const onClickCapture = (e: React.MouseEvent) => {
+    if (drag.current.moved) {
+      e.preventDefault();
+      e.stopPropagation();
+      drag.current.moved = false;
+    }
   };
 
   return (
@@ -119,7 +169,21 @@ export default function Services({
         </div>
 
         {/* Cards carousel */}
-        <ul className="svcx__viewport" ref={viewportRef}>
+        <ul
+          className="svcx__viewport"
+          ref={viewportRef}
+          onPointerEnter={() => setPaused(true)}
+          onPointerLeave={() => {
+            endDrag();
+            setPaused(false);
+          }}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={endDrag}
+          onClickCapture={onClickCapture}
+          onFocusCapture={() => setPaused(true)}
+          onBlurCapture={() => setPaused(false)}
+        >
           {HOME_IDS.map((id) => {
             const svc = SERVICES.find((s) => s.id === id)!;
             const copy = t.cards[id];
@@ -203,17 +267,15 @@ export default function Services({
 
         {/* Trust bar */}
         <div className="svcx__trust">
-          <div className="svcx__trust-row">
-            <p className="svcx__trust-label">{t.trust}</p>
-            <ul className="svcx__logos">
-              {LOGOS.map((b) => (
-                <li key={b.file} className="svcx__logo">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`/brands/${b.file}.png`} alt={b.name} loading="lazy" draggable={false} />
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p className="svcx__trust-label">{t.trust}</p>
+          <ul className="svcx__logos">
+            {LOGOS.map((b) => (
+              <li key={b.file} className="svcx__logo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`/brands/${b.file}.png`} alt={b.name} loading="lazy" draggable={false} />
+              </li>
+            ))}
+          </ul>
           <ul className="svcx__badges">
             {t.badges.map((b, i) => {
               const [main, check] = BADGE_ICONS[i].split("|");

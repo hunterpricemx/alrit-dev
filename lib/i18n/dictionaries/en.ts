@@ -75,9 +75,9 @@ const en: Dictionary = {
     cta: "View service",
   },
   servicesX: {
-    eyebrow: "Services",
+    eyebrow: "What we build",
     titleA: "Digital solutions that",
-    titleAccent: "drive your business",
+    titleAccent: "drive businesses.",
     subtitle:
       "We build platforms, apps and systems tailored to your goals. Technology that delivers results.",
     stats: [
@@ -86,14 +86,14 @@ const en: Dictionary = {
       { value: "3", label: "Countries", caption: "Mexico · USA · Spain" },
     ],
     cards: {
-      webdev: { title: "Custom development", text: "Fast, scalable websites built to convert." },
-      lms: { title: "LMS sites", text: "Modern, intuitive learning platforms that are easy to manage." },
-      ecommerce: { title: "E-commerce", text: "Online stores optimized to sell more and delight customers." },
-      realestate: { title: "Real Estate", text: "Real estate portals with advanced search, maps and unique experiences." },
-      mobile: { title: "Mobile apps", text: "iOS and Android apps with modern design and high performance." },
-      systems: { title: "Systems & automation", text: "Internal tools that streamline processes and save time." },
+      ecommerce: { title: "E-commerce", text: "Fast, secure online stores built to sell more." },
+      lms: { title: "LMS & Education", text: "Modern, intuitive learning platforms that are easy to manage." },
+      systems: { title: "Custom systems", text: "Scalable solutions that automate processes and grow your business." },
+      mobile: { title: "Mobile apps", text: "iOS and Android apps with great UX and high performance." },
+      automation: { title: "Automations", text: "We integrate tools and flows that save time and boost results." },
+      realestate: { title: "Real estate portals", text: "Sites and portals for real estate with advanced search and maps." },
     },
-    trust: "Companies that trust our work",
+    trust: "Companies that have trusted us",
     badges: [
       { title: "Committed to quality", text: "Clean code and best practices" },
       { title: "Security and performance", text: "Fast, protected sites" },

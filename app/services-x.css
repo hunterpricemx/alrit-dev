@@ -81,7 +81,11 @@
   display: grid;
   place-items: center;
   color: var(--accent, #8a6bff);
-  background: color-mix(in srgb, var(--accent, #8a6bff) 13%, white);
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--accent, #8a6bff) 14%, white),
+    color-mix(in srgb, var(--accent, #8a6bff) 5%, white)
+  );
 }
 .svcx-stat__icon svg { width: 24px; height: 24px; }
 .svcx-stat__value {
@@ -121,24 +125,34 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(90deg, #000 0, #000 90%, transparent 100%);
+  mask-image: linear-gradient(90deg, #000 0, #000 90%, transparent 100%);
+  cursor: grab;
 }
 .svcx__viewport::-webkit-scrollbar { display: none; }
+.svcx__viewport.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+.svcx__viewport.is-dragging a { pointer-events: none; }
 .svcx-card {
   --accent: #6c5ce7;
   flex: 0 0 auto;
-  width: clamp(15rem, 23vw, 18.5rem);
+  width: clamp(14rem, 18vw, 16.5rem);
   scroll-snap-align: start;
 }
 .svcx-card__link {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
   border-radius: 22px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   text-decoration: none;
+  overflow: hidden;
   transition: transform 0.5s var(--ease-spring), box-shadow 0.4s ease, border-color 0.3s ease;
 }
 .svcx-card__link:hover {
@@ -159,7 +173,11 @@
   display: grid;
   place-items: center;
   color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 14%, white);
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--accent) 15%, white),
+    color-mix(in srgb, var(--accent) 5%, white)
+  );
   transition: transform 0.5s var(--ease-spring);
 }
 .svcx-card__icon svg { width: 26px; height: 26px; }
@@ -189,7 +207,7 @@
   color: var(--color-ink);
 }
 .svcx-card__text {
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.4rem;
   color: var(--color-muted);
   font-size: 0.95rem;
   line-height: 1.5;
@@ -197,7 +215,7 @@
 }
 .svcx-card__shot {
   display: block;
-  border-radius: 14px;
+  margin: 0 -1.5rem;
   overflow: hidden;
   aspect-ratio: 16 / 11;
   background: linear-gradient(160deg, #1c1c24, #121217);
@@ -259,76 +277,64 @@
 
 /* ---- trust bar ---- */
 .svcx__trust {
-  margin-top: 3rem;
-  padding: 2rem clamp(1.5rem, 4vw, 2.5rem);
-  border-radius: 24px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-}
-.svcx__trust-row {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem 2rem;
-  flex-wrap: wrap;
+  margin-top: 3.5rem;
 }
 .svcx__trust-label {
-  flex: 0 0 auto;
-  max-width: 11rem;
-  margin: 0;
+  margin: 0 0 1.5rem;
   font-family: var(--font-display), sans-serif;
   font-weight: 600;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-muted);
-  line-height: 1.4;
+  color: #8a6bff;
 }
 .svcx__logos {
   list-style: none;
-  margin: 0;
+  margin: 0 0 2rem;
   padding: 0;
-  display: flex;
-  align-items: center;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .svcx__logos { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 600px) {
+  .svcx__logos { grid-template-columns: repeat(2, 1fr); }
 }
 .svcx__logo {
-  position: relative;
   display: grid;
   place-items: center;
-  height: 50px;
-  padding: 0 clamp(0.75rem, 1.6vw, 1.5rem);
+  height: 104px;
+  padding: 1.1rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease;
 }
-.svcx__logo + .svcx__logo::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 30px;
-  background: rgba(0, 0, 0, 0.1);
+.svcx__logo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
 }
 .svcx__logo img {
-  max-height: 42px;
-  max-width: 104px;
+  max-height: 46px;
+  max-width: 112px;
   object-fit: contain;
   filter: grayscale(1);
-  opacity: 0.58;
+  opacity: 0.6;
   transition: filter 0.35s ease, opacity 0.35s ease;
 }
 .svcx__logo:hover img { filter: grayscale(0); opacity: 1; }
 
 .svcx__badges {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem 3rem;
-  margin-top: 1.75rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  margin: 0;
+  padding: 0;
 }
 .svcx-badge { display: flex; align-items: center; gap: 0.8rem; }
 .svcx-badge__icon {
