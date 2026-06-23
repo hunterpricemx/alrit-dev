@@ -26,7 +26,7 @@ export default async function Home({
       <SocialProof dict={dict} />
       <Services dict={dict} locale={l} />
       <Calculator dict={dict} />
-      <Portfolio dict={dict} />
+      <Portfolio dict={dict} locale={l} />
       <Process dict={dict} />
       <Testimonials dict={dict} />
       <FinalCta dict={dict} locale={l} />

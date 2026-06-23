@@ -130,7 +130,17 @@ const en: Dictionary = {
     eyebrow: "Portfolio",
     title: "Projects that speak for us",
     text: "A sample of what we build. Full case studies coming soon.",
-    cta: "View all",
+    cta: "View all projects",
+    seeMore: "See more",
+    quote: "Quote a project",
+    projects: [
+      { name: "Aurora Store", desc: "Fashion e-commerce with integrated payments and shipping." },
+      { name: "EduMás LMS", desc: "Online course platform with certificates and payments." },
+      { name: "Vértice Realty", desc: "Real estate portal with advanced search and leads." },
+      { name: "Sazón Bistró", desc: "Website with online reservations and a digital menu." },
+      { name: "LogiTrack", desc: "Custom system for fleet and route management." },
+      { name: "PulseFit", desc: "Mobile training and personal tracking app." },
+    ],
   },
   process: {
     eyebrow: "How we work",

@@ -128,7 +128,17 @@ const es = {
     eyebrow: "Portafolio",
     title: "Proyectos que hablan por nosotros",
     text: "Una muestra de lo que construimos. Pronto, casos de estudio completos.",
-    cta: "Ver todos",
+    cta: "Ver todos los proyectos",
+    seeMore: "Ver más",
+    quote: "Cotizar proyecto",
+    projects: [
+      { name: "Tienda Aurora", desc: "E-commerce de moda con pagos y envíos integrados." },
+      { name: "EduMás LMS", desc: "Plataforma de cursos en línea con certificados y pagos." },
+      { name: "Inmobiliaria Vértice", desc: "Portal inmobiliario con búsqueda avanzada y leads." },
+      { name: "Sazón Bistró", desc: "Sitio con reservaciones en línea y menú digital." },
+      { name: "LogiTrack", desc: "Sistema a medida para gestión de flotas y rutas." },
+      { name: "PulseFit", desc: "App móvil de entrenamiento y seguimiento personal." },
+    ],
   },
   process: {
     eyebrow: "Cómo trabajamos",
