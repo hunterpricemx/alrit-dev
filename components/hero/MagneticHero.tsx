@@ -15,11 +15,11 @@ type Card = {
 };
 
 const CARDS: Card[] = [
-  { src: "https://picsum.photos/seed/alrit-1/600", alt: "Proyecto web", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
-  { src: "https://picsum.photos/seed/alrit-2/600", alt: "E-commerce", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
-  { src: "https://picsum.photos/seed/alrit-3/600", alt: "Sistema a medida", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
-  { src: "https://picsum.photos/seed/alrit-4/600", alt: "App móvil", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
-  { src: "https://picsum.photos/seed/alrit-5/600", alt: "Plataforma LMS", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
+  { src: "/hero/sass.png", alt: "Plataforma y dashboard a la medida", rot: 2, depth: 0.9, floatDur: 5.4, floatDelay: 0 },
+  { src: "/hero/ecommerce.png", alt: "Tienda en línea (e-commerce)", rot: -3, depth: 1.3, floatDur: 6.1, floatDelay: -1.2 },
+  { src: "/hero/realstate.png", alt: "Portal inmobiliario", rot: 6, depth: 1.7, floatDur: 4.8, floatDelay: -2.4 },
+  { src: "/hero/app.png", alt: "App móvil", rot: -2, depth: 1.3, floatDur: 5.7, floatDelay: -0.6 },
+  { src: "/hero/lms.png", alt: "Plataforma LMS de cursos", rot: 2, depth: 0.9, floatDur: 6.4, floatDelay: -3 },
 ];
 
 const PULL_RADIUS = 260;
