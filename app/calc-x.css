@@ -64,7 +64,7 @@
   color: rgba(255, 255, 255, 0.5);
   transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
-.cstep--active .cstep__num { border-color: #8a6bff; color: #fff; box-shadow: 0 0 0 4px rgba(138, 107, 255, 0.2); }
+.cstep--active .cstep__num { border-color: #8a6bff; color: #fff; }
 .cstep--done .cstep__num { background: #8a6bff; border-color: #8a6bff; color: #fff; }
 .cstep__title { display: block; font-family: var(--font-display), sans-serif; font-weight: 600; font-size: 0.92rem; color: rgba(255, 255, 255, 0.55); }
 .cstep--active .cstep__title, .cstep--done .cstep__title { color: #fff; }
@@ -119,7 +119,7 @@
 .ctype:hover { transform: translateY(-4px); border-color: rgba(255, 255, 255, 0.25); }
 .ctype--active {
   border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent), 0 18px 40px color-mix(in srgb, var(--accent) 25%, transparent);
+  box-shadow: 0 0 0 1px var(--accent);
 }
 .ctype__media { position: relative; display: block; aspect-ratio: 16 / 9; background: #111118; }
 .ctype__media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
@@ -134,7 +134,6 @@
   place-items: center;
   color: #fff;
   background: var(--accent);
-  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 45%, transparent);
 }
 .ctype__icon svg { width: 24px; height: 24px; }
 .ctype__check {
@@ -337,11 +336,10 @@
   cursor: pointer;
   color: #fff;
   background: linear-gradient(120deg, #ff4d8d, #8a6bff);
-  box-shadow: 0 12px 28px rgba(138, 107, 255, 0.32);
-  transition: transform 0.4s var(--ease-spring), box-shadow 0.3s ease;
+  transition: transform 0.4s var(--ease-spring), filter 0.3s ease;
 }
 .calc-sum__cta svg { width: 18px; height: 18px; transition: transform 0.35s var(--ease-spring); }
-.calc-sum__cta:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(138, 107, 255, 0.4); }
+.calc-sum__cta:hover { transform: translateY(-2px); filter: brightness(1.06); }
 .calc-sum__cta:hover svg { transform: translateX(4px); }
 .calc-sum__next { text-align: center; margin: 0.85rem 0 0; font-size: 0.82rem; color: rgba(255, 255, 255, 0.45); }
 

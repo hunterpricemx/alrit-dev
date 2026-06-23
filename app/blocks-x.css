@@ -289,7 +289,6 @@
   place-items: center;
   color: #8a6bff;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(138, 107, 255, 0.22);
   flex-shrink: 0;
 }
 .cta2__icon svg { width: 30px; height: 30px; }

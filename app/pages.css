@@ -69,7 +69,6 @@
   margin: 0 auto 1.5rem;
   color: #fff;
   background: linear-gradient(150deg, var(--accent), color-mix(in srgb, var(--accent) 50%, #15151a));
-  box-shadow: 0 14px 32px color-mix(in srgb, var(--accent) 38%, transparent);
 }
 .svc__hero-icon svg { width: 30px; height: 30px; }
 .svc__h1 {
@@ -121,7 +120,6 @@
 .case__btn--primary {
   background: var(--accent, var(--color-ink));
   color: #fff;
-  box-shadow: 0 10px 24px color-mix(in srgb, var(--accent, #000) 30%, transparent);
 }
 .svc__btn--primary:hover,
 .case__btn--primary:hover { transform: translateY(-3px); }
