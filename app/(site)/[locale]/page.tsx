@@ -1,5 +1,5 @@
 import { isLocale, type Locale } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n";
+import { getDictionaryAsync } from "@/lib/i18n";
 import { getPricingAsync } from "@/lib/content/pricing";
 import { getSlotMap } from "@/lib/content/media";
 import { notFound } from "next/navigation";
@@ -23,8 +23,11 @@ export default async function Home({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
-  const dict = getDictionary(l);
-  const [pricing, slotMap] = await Promise.all([getPricingAsync(), getSlotMap()]);
+  const [dict, pricing, slotMap] = await Promise.all([
+    getDictionaryAsync(l),
+    getPricingAsync(),
+    getSlotMap(),
+  ]);
 
   return (
     <>

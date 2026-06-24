@@ -16,7 +16,7 @@ const NAV = [
   { href: "/admin/pricing", label: "Precios", icon: ICONS.pricing, ready: true },
   { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: true },
-  { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: false },
+  { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: true },
 ];
 
 function NavIcon({ d }: { d: string }) {

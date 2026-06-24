@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n";
+import { getDictionaryAsync } from "@/lib/i18n";
 import { SERVICES } from "@/lib/services";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import Reveal from "@/components/ui/Reveal";
@@ -23,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  const dict = getDictionary(locale as Locale);
+  const dict = await getDictionaryAsync(locale as Locale);
   const path = `/${locale}/servicios`;
   return {
     title: `${dict.servicesHub.title} | Alrit.dev`,
@@ -43,7 +43,7 @@ export default async function ServicesHub({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
-  const dict = getDictionary(l);
+  const dict = await getDictionaryAsync(l);
 
   return (
     <>

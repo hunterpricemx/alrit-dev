@@ -3,7 +3,7 @@ import { Poppins, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../../globals.css";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n";
+import { getDictionaryAsync } from "@/lib/i18n";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { OrganizationJsonLd } from "@/lib/seo/jsonld";
@@ -33,7 +33,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const dict = getDictionary(isLocale(locale) ? locale : "es");
+  const dict = await getDictionaryAsync(isLocale(locale) ? locale : "es");
   return {
     metadataBase: new URL(SITE_URL),
     title: dict.meta.title,
@@ -63,7 +63,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  const dict = getDictionary(locale as Locale);
+  const dict = await getDictionaryAsync(locale as Locale);
 
   return (
     <html

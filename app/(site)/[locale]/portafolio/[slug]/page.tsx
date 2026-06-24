@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n";
+import { getDictionaryAsync } from "@/lib/i18n";
 import { getProjectAsync, getAllProjectSlugs } from "@/lib/content/portfolio";
 import { getServiceContent } from "@/lib/content/services";
 import { type ServiceId } from "@/lib/services";
@@ -57,7 +57,7 @@ export default async function CaseStudyPage({
   const project = await getProjectAsync(slug);
   if (!isLocale(locale) || !project) notFound();
   const l = locale as Locale;
-  const dict = getDictionary(l);
+  const dict = await getDictionaryAsync(l);
   const p = project[l];
 
   const categoryLabel =

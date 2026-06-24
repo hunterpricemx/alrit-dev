@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
-import { getDictionary } from "@/lib/i18n";
+import { getDictionaryAsync } from "@/lib/i18n";
 import {
   getServiceContent,
   getAllServiceSlugs,
@@ -66,7 +66,7 @@ export default async function ServicePage({
   const content = getServiceContent(slug);
   if (!isLocale(locale) || !content) notFound();
   const l = locale as Locale;
-  const dict = getDictionary(l);
+  const dict = await getDictionaryAsync(l);
   const c = content[l];
 
   const serviceTitle = dict.services.items[content.serviceId as ServiceId].title;
