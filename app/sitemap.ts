@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/lib/i18n/config";
 import { getAllServiceSlugs } from "@/lib/content/services";
 import { getAllProjectSlugs } from "@/lib/content/portfolio";
+import { getAllCourseSlugs } from "@/lib/content/courses";
 
 const SITE_URL = "https://alrit.dev";
 const LAST = new Date("2026-06-22");
@@ -26,9 +27,10 @@ function entry(
   }));
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const services = getAllServiceSlugs();
   const projects = getAllProjectSlugs();
+  const courses = await getAllCourseSlugs();
 
   return [
     ...entry("", "weekly", 1),
@@ -36,5 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...services.flatMap((s) => entry(`/servicios/${s}`, "monthly", 0.8)),
     ...entry("/portafolio", "weekly", 0.7),
     ...projects.flatMap((p) => entry(`/portafolio/${p}`, "monthly", 0.6)),
+    ...entry("/cursos", "weekly", 0.7),
+    ...courses.flatMap((c) => entry(`/cursos/${c}`, "monthly", 0.6)),
   ];
 }
