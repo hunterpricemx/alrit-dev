@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
-import { auth } from "@/auth";
+import { isAdmin } from "@/lib/authz";
 import { getDictionary } from "@/lib/i18n";
 import { EDITABLE_KEYS, getByPath } from "@/lib/i18n/overrides";
 import { locales } from "@/lib/i18n/config";
@@ -13,8 +13,7 @@ export async function saveTextOverrides(
   _prev: TextState,
   formData: FormData,
 ): Promise<TextState> {
-  const session = await auth();
-  if (!session) return { ok: false, error: "No autorizado" };
+  if (!(await isAdmin())) return { ok: false, error: "No autorizado" };
 
   const ops: Promise<unknown>[] = [];
   for (const loc of locales) {

@@ -16,14 +16,17 @@ model User {
   email        String   @unique
   name         String?
   passwordHash String
-  role         Role     @default(ADMIN)
+  role         Role // sin default: se fija explícito (seed=ADMIN, registro=STUDENT)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  enrollments  Enrollment[]
+  progress     LessonProgress[]
 }
 
 enum Role {
   ADMIN
   EDITOR
+  STUDENT
 }
 
 // ---------- Precios (M1) — sembrado de lib/pricing.ts ----------
@@ -102,4 +105,73 @@ model MediaSlot {
   updatedAt DateTime @updatedAt
 
   @@index([mediaId])
+}
+
+// ---------- LMS (cursos, inscripción, progreso) ----------
+model Course {
+  id          String       @id @default(cuid())
+  slug        String       @unique
+  language    String       @default("es")
+  title       String
+  summary     String       @db.Text
+  description String       @db.Text
+  coverImage  String?
+  level       String       @default("intro")
+  priceCents  Int          @default(0) // 0 = gratis (reservado para Stripe)
+  published   Boolean      @default(false)
+  sortOrder   Int          @default(0)
+  sections    Section[]
+  enrollments Enrollment[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Section {
+  id        String   @id @default(cuid())
+  courseId  String
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title     String
+  sortOrder Int      @default(0)
+  lessons   Lesson[]
+
+  @@index([courseId])
+}
+
+model Lesson {
+  id          String           @id @default(cuid())
+  sectionId   String
+  section     Section          @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  title       String
+  videoUrl    String?
+  content     String?          @db.Text
+  durationMin Int?
+  preview     Boolean          @default(false)
+  sortOrder   Int              @default(0)
+  progress    LessonProgress[]
+
+  @@index([sectionId])
+}
+
+model Enrollment {
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, courseId])
+  @@index([courseId])
+}
+
+model LessonProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  lessonId    String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson      Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  completedAt DateTime @default(now())
+
+  @@unique([userId, lessonId])
+  @@index([userId])
 }

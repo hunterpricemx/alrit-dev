@@ -3,7 +3,7 @@
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
-import { auth } from "@/auth";
+import { isAdmin } from "@/lib/authz";
 import { locales } from "@/lib/i18n/config";
 import { DEFAULT_PRICING, EXTRA_IDS } from "@/lib/pricing";
 
@@ -32,8 +32,7 @@ export async function savePricing(
   _prev: PricingState,
   formData: FormData,
 ): Promise<PricingState> {
-  const session = await auth();
-  if (!session) return { ok: false, error: "No autorizado." };
+  if (!(await isAdmin())) return { ok: false, error: "No autorizado." };
 
   let bad = false;
   const types = DEFAULT_PRICING.types.map((t) => {

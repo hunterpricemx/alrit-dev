@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { auth } from "@/auth";
+import { isAdmin } from "@/lib/authz";
 import { db } from "@/lib/db";
 import { putObject } from "@/lib/storage/s3";
 
@@ -9,8 +9,7 @@ const ALLOWED = new Set(["image/png", "image/jpeg", "image/webp", "image/gif", "
 const MAX_BYTES = 8 * 1024 * 1024;
 
 export async function POST(req: Request) {
-  const session = await auth();
-  if (!session) return NextResponse.json({ error: "No autorizado" }, { status: 401 });
+  if (!(await isAdmin())) return NextResponse.json({ error: "No autorizado" }, { status: 401 });
 
   const form = await req.formData();
   const file = form.get("file");

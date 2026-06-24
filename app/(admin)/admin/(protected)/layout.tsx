@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth, signOut } from "@/auth";
+import { roleOf } from "@/lib/authz";
 import AdminNav from "./_nav";
 
 export default async function ProtectedLayout({
@@ -9,7 +10,7 @@ export default async function ProtectedLayout({
   children: React.ReactNode;
 }) {
   const session = await auth();
-  if (!session) redirect("/admin/login");
+  if (roleOf(session) !== "ADMIN") redirect("/admin/login");
 
   return (
     <div className="adm">
@@ -19,7 +20,7 @@ export default async function ProtectedLayout({
         </Link>
         <AdminNav />
         <div className="adm__side-foot">
-          <p className="adm__user">{session.user?.email}</p>
+          <p className="adm__user">{session?.user?.email}</p>
           <form
             action={async () => {
               "use server";

@@ -3,12 +3,9 @@
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
-import { auth } from "@/auth";
+import { requireAdmin } from "@/lib/authz";
 
-async function guard() {
-  const session = await auth();
-  if (!session) throw new Error("No autorizado");
-}
+const guard = requireAdmin;
 
 function revalidateSite() {
   revalidatePath("/[locale]", "layout");

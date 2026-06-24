@@ -2,13 +2,10 @@
 
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
-import { auth } from "@/auth";
+import { requireAdmin } from "@/lib/authz";
 import { deleteObject } from "@/lib/storage/s3";
 
-async function guard() {
-  const session = await auth();
-  if (!session) throw new Error("No autorizado");
-}
+const guard = requireAdmin;
 
 function revalidateSite() {
   // Las imágenes aparecen en todo el sitio (layout incluido).

@@ -6,6 +6,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Providers from "@/components/Providers";
 import { OrganizationJsonLd } from "@/lib/seo/jsonld";
 
 const poppins = Poppins({
@@ -72,9 +73,11 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col">
         <OrganizationJsonLd url={SITE_URL} />
-        <Header dict={dict} locale={locale as Locale} />
-        <main className="flex-1">{children}</main>
-        <Footer dict={dict} locale={locale as Locale} />
+        <Providers>
+          <Header dict={dict} locale={locale as Locale} />
+          <main className="flex-1">{children}</main>
+          <Footer dict={dict} locale={locale as Locale} />
+        </Providers>
       </body>
     </html>
   );
