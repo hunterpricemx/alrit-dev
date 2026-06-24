@@ -27,7 +27,7 @@ export default function LoginPage() {
       setError("Credenciales inválidas.");
       return;
     }
-    router.push(`/${locale}/mi-aprendizaje`);
+    router.push(`/${locale}/cuenta`);
     router.refresh();
   }
 

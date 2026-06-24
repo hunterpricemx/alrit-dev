@@ -21,12 +21,16 @@ model User {
   updatedAt    DateTime @updatedAt
   enrollments  Enrollment[]
   progress     LessonProgress[]
+  clientProjects   ClientProject[]  @relation("ClientProjects")
+  authoredComments ProjectComment[] @relation("AuthoredComments")
+  createdIssues    Issue[]          @relation("CreatedIssues")
 }
 
 enum Role {
   ADMIN
   EDITOR
   STUDENT
+  CLIENT
 }
 
 // ---------- Precios (M1) — sembrado de lib/pricing.ts ----------
@@ -174,4 +178,83 @@ model LessonProgress {
 
   @@unique([userId, lessonId])
   @@index([userId])
+}
+
+// ---------- Portal de clientes ----------
+enum IssueStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+}
+
+enum IssuePriority {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+model ClientProject {
+  id        String           @id @default(cuid())
+  name      String
+  clientId  String
+  client    User             @relation("ClientProjects", fields: [clientId], references: [id], onDelete: Cascade)
+  summary   String?          @db.Text
+  status    String           @default("en progreso")
+  phases    Phase[]
+  updates   ProjectUpdate[]
+  comments  ProjectComment[]
+  issues    Issue[]
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([clientId])
+}
+
+model Phase {
+  id        String        @id @default(cuid())
+  projectId String
+  project   ClientProject @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title     String
+  done      Boolean       @default(false)
+  sortOrder Int           @default(0)
+
+  @@index([projectId])
+}
+
+model ProjectUpdate {
+  id        String        @id @default(cuid())
+  projectId String
+  project   ClientProject @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  body      String        @db.Text
+  createdAt DateTime      @default(now())
+
+  @@index([projectId])
+}
+
+model ProjectComment {
+  id        String        @id @default(cuid())
+  projectId String
+  project   ClientProject @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User          @relation("AuthoredComments", fields: [authorId], references: [id], onDelete: Cascade)
+  body      String        @db.Text
+  createdAt DateTime      @default(now())
+
+  @@index([projectId])
+}
+
+model Issue {
+  id          String        @id @default(cuid())
+  projectId   String
+  project     ClientProject @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title       String
+  description String?       @db.Text
+  priority    IssuePriority @default(MEDIUM)
+  status      IssueStatus   @default(OPEN)
+  createdById String
+  createdBy   User          @relation("CreatedIssues", fields: [createdById], references: [id], onDelete: Cascade)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([projectId])
 }

@@ -36,6 +36,9 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
   const base = `/${locale}`;
   const m = dict.mega;
   const { data: session } = useSession();
+  const role = (session?.user as { role?: string } | undefined)?.role;
+  const dashHref = role === "CLIENT" ? `${base}/portal` : role === "STUDENT" ? `${base}/mi-aprendizaje` : `${base}/cuenta`;
+  const dashLabel = role === "CLIENT" ? dict.nav.portal : dict.nav.dashboard;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -217,11 +220,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
         <div className="header__actions" onMouseEnter={() => setOpen(null)}>
           <LocaleSwitcher locale={locale} />
-          <Link
-            href={session ? `${base}/mi-aprendizaje` : `${base}/ingresar`}
-            className="header__login"
-          >
-            {session ? dict.nav.dashboard : dict.nav.login}
+          <Link href={session ? dashHref : `${base}/ingresar`} className="header__login">
+            {session ? dashLabel : dict.nav.login}
           </Link>
           <Link href={`${base}#calculator`} className="header__cta">
             {dict.nav.cta}
@@ -261,8 +261,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           <Link href={`${base}/portafolio`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.portfolio}</Link>
           <Link href={`${base}/cursos`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.courses}</Link>
           <Link href={`${base}#calculator`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.calculator}</Link>
-          <Link href={session ? `${base}/mi-aprendizaje` : `${base}/ingresar`} className="drawer__sec" onClick={() => setMobileOpen(false)}>
-            {session ? dict.nav.dashboard : dict.nav.login}
+          <Link href={session ? dashHref : `${base}/ingresar`} className="drawer__sec" onClick={() => setMobileOpen(false)}>
+            {session ? dashLabel : dict.nav.login}
           </Link>
 
           <Link href={`${base}#calculator`} className="drawer__cta" onClick={() => setMobileOpen(false)}>{dict.nav.cta}</Link>

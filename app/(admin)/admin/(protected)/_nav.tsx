@@ -10,11 +10,13 @@ const ICONS = {
   portfolio: "M4 7h16v13H4zM9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2",
   text: "M4 7V5h16v2M9 5v14M7 19h4",
   courses: "M3 7l9-4 9 4-9 4-9-4Zm0 0v6m6 3v-7M21 9v4",
+  clients: "M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M11 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0M21 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75",
 };
 
 const NAV = [
   { href: "/admin", label: "Dashboard", icon: ICONS.dashboard, ready: true },
   { href: "/admin/cursos", label: "Cursos", icon: ICONS.courses, ready: true },
+  { href: "/admin/clientes", label: "Clientes", icon: ICONS.clients, ready: true },
   { href: "/admin/pricing", label: "Precios", icon: ICONS.pricing, ready: true },
   { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: true },

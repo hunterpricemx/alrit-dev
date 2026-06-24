@@ -39,7 +39,7 @@ export default function RegisterPage() {
       setError("Cuenta creada. Inicia sesión para continuar.");
       return;
     }
-    router.push(`/${locale}/mi-aprendizaje`);
+    router.push(`/${locale}/cuenta`);
     router.refresh();
   }
 
