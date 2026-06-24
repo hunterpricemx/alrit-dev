@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import type { ServiceId } from "@/lib/services";
+import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
 
 type Card = {
   src: string;
@@ -31,9 +32,11 @@ const MAX_PARALLAX = 16;
 export default function MagneticHero({
   dict,
   locale,
+  slotMap,
 }: {
   dict: Dictionary;
   locale: Locale;
+  slotMap?: SlotMap;
 }) {
   const stageRef = useRef<HTMLDivElement>(null);
   const magnetsRef = useRef<HTMLDivElement[]>([]);
@@ -142,7 +145,7 @@ export default function MagneticHero({
                   }
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img className="hero__card-img" src={card.src} alt={card.alt} draggable={false} />
+                  <img className="hero__card-img" src={resolveSlot(slotMap, mockupSlot(card.serviceId), card.src)} alt={card.alt} draggable={false} />
                   <span className="hero__card-label">
                     {dict.services.items[card.serviceId].title}
                   </span>

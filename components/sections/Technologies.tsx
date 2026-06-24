@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/lib/i18n";
 import Reveal from "@/components/ui/Reveal";
+import { resolveSlot, techSlot, type SlotMap } from "@/lib/slots";
 
 const TECH: { name: string; file?: string; text?: string }[] = [
   { name: "Next.js", file: "nextjs" },
@@ -12,7 +13,7 @@ const TECH: { name: string; file?: string; text?: string }[] = [
   { name: "React Native", file: "reactnative" },
 ];
 
-export default function Technologies({ dict }: { dict: Dictionary }) {
+export default function Technologies({ dict, slotMap }: { dict: Dictionary; slotMap?: SlotMap }) {
   const t = dict.tech;
 
   return (
@@ -28,7 +29,7 @@ export default function Technologies({ dict }: { dict: Dictionary }) {
             <span className="tech-card__logo">
               {item.file ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={`/tech/${item.file}.svg`} alt={item.name} loading="lazy" draggable={false} />
+                <img src={resolveSlot(slotMap, techSlot(item.file), `/tech/${item.file}.svg`)} alt={item.name} loading="lazy" draggable={false} />
               ) : (
                 <span className="tech-card__text">{item.text}</span>
               )}

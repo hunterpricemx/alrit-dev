@@ -1,6 +1,7 @@
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { getPricingAsync } from "@/lib/content/pricing";
+import { getSlotMap } from "@/lib/content/media";
 import { notFound } from "next/navigation";
 import MagneticHero from "@/components/hero/MagneticHero";
 import Services from "@/components/sections/Services";
@@ -23,17 +24,17 @@ export default async function Home({
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
   const dict = getDictionary(l);
-  const pricing = await getPricingAsync();
+  const [pricing, slotMap] = await Promise.all([getPricingAsync(), getSlotMap()]);
 
   return (
     <>
-      <MagneticHero dict={dict} locale={l} />
-      <Services dict={dict} locale={l} />
-      <Calculator dict={dict} pricing={pricing} />
+      <MagneticHero dict={dict} locale={l} slotMap={slotMap} />
+      <Services dict={dict} locale={l} slotMap={slotMap} />
+      <Calculator dict={dict} pricing={pricing} slotMap={slotMap} />
       <Portfolio dict={dict} locale={l} />
       <Process dict={dict} />
       <Results dict={dict} />
-      <Technologies dict={dict} />
+      <Technologies dict={dict} slotMap={slotMap} />
       <FinalCta dict={dict} locale={l} />
     </>
   );

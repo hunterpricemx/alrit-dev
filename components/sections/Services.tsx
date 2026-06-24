@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { SERVICES, type ServiceId } from "@/lib/services";
+import { resolveSlot, mockupSlot, brandSlot, type SlotMap } from "@/lib/slots";
 
 const HOME_IDS = ["ecommerce", "lms", "systems", "mobile", "automation", "realestate"] as const;
 
@@ -35,9 +36,11 @@ const BADGE_ICONS = [
 export default function Services({
   dict,
   locale,
+  slotMap,
 }: {
   dict: Dictionary;
   locale: Locale;
+  slotMap?: SlotMap;
 }) {
   const t = dict.servicesX;
   const viewportRef = useRef<HTMLUListElement>(null);
@@ -158,7 +161,7 @@ export default function Services({
           {HOME_IDS.map((id) => {
             const svc = SERVICES.find((s) => s.id === id)!;
             const copy = t.cards[id];
-            const img = CARD_IMG[id];
+            const img = resolveSlot(slotMap, mockupSlot(id), CARD_IMG[id] ?? "");
             return (
               <li
                 key={id}
@@ -243,7 +246,7 @@ export default function Services({
             {LOGOS.map((b) => (
               <li key={b.file} className="svcx__logo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`/brands/${b.file}.png`} alt={b.name} loading="lazy" draggable={false} />
+                <img src={resolveSlot(slotMap, brandSlot(b.file), `/brands/${b.file}.png`)} alt={b.name} loading="lazy" draggable={false} />
               </li>
             ))}
           </ul>

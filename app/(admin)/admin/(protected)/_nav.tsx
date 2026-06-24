@@ -14,7 +14,7 @@ const ICONS = {
 const NAV = [
   { href: "/admin", label: "Dashboard", icon: ICONS.dashboard, ready: true },
   { href: "/admin/pricing", label: "Precios", icon: ICONS.pricing, ready: true },
-  { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: false },
+  { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: false },
   { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: false },
 ];

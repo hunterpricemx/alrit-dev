@@ -11,6 +11,7 @@ import {
   type ProjectTypeId,
   type ExtraId,
 } from "@/lib/pricing";
+import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
 
 const GRID_ORDER: ProjectTypeId[] = ["landing", "ecommerce", "lms", "realestate", "custom", "mobile"];
 
@@ -46,7 +47,7 @@ function AnimatedPrice({ amount }: { amount: number }) {
   return <>{formatMXN(shown)}</>;
 }
 
-export default function Calculator({ dict, pricing }: { dict: Dictionary; pricing: Pricing }) {
+export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionary; pricing: Pricing; slotMap?: SlotMap }) {
   const t = dict.calculator;
   const [step, setStep] = useState(0);
   const [type, setType] = useState<ProjectTypeId>("landing");
@@ -127,7 +128,7 @@ export default function Calculator({ dict, pricing }: { dict: Dictionary; pricin
                   >
                     <span className="ctype__media">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={m.image} alt="" aria-hidden="true" loading="lazy" draggable={false} />
+                      <img src={resolveSlot(slotMap, mockupSlot(id), m.image)} alt="" aria-hidden="true" loading="lazy" draggable={false} />
                       <span className="ctype__icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                           <path d={m.icon} />
@@ -245,7 +246,7 @@ export default function Calculator({ dict, pricing }: { dict: Dictionary; pricin
             <p className="calc-sum__title">{t.summaryTitle}</p>
             <div className="calc-sum__mockup">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={meta.image} alt="" aria-hidden="true" />
+              <img src={resolveSlot(slotMap, mockupSlot(type), meta.image)} alt="" aria-hidden="true" />
             </div>
             <div className="calc-sum__type" style={{ "--accent": meta.accent } as React.CSSProperties}>
               <span className="calc-sum__type-icon" aria-hidden="true">
