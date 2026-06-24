@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
-import { getAllProjects } from "@/lib/content/portfolio";
+import { getAllProjectsAsync } from "@/lib/content/portfolio";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
 
 const SITE_URL = "https://alrit.dev";
@@ -42,7 +42,7 @@ export default async function PortfolioHub({
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
   const dict = getDictionary(l);
-  const projects = getAllProjects();
+  const projects = await getAllProjectsAsync();
 
   return (
     <>

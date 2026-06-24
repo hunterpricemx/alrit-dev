@@ -228,3 +228,28 @@ a.adm-card:hover { box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08); transform: trans
 .adm-gallery__item figcaption { font-size: 0.75rem; color: var(--color-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .adm-gallery__del { align-self: flex-start; font-size: 0.78rem; color: #dc2626; background: none; border: 0; cursor: pointer; padding: 0; }
 .adm-gallery__del:hover { text-decoration: underline; }
+
+/* ---- list (portafolio) ---- */
+.adm__head--row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.adm-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.adm-list__row { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+.adm-list__row:last-child { border-bottom: 0; }
+.adm-list__name { font-family: var(--font-display), sans-serif; font-weight: 600; }
+.adm-list__meta { font-size: 0.82rem; color: var(--color-muted); }
+.adm-list__edit { font-weight: 600; color: #8a6bff; text-decoration: none; font-size: 0.9rem; }
+.adm-list__edit:hover { text-decoration: underline; }
+
+/* ---- form (editor) ---- */
+.adm-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.adm-field__label { font-size: 0.82rem; font-weight: 600; }
+.adm-field__hint { font-style: normal; font-weight: 400; color: var(--color-muted); }
+.adm-form__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.adm-form__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+@media (max-width: 720px) { .adm-form__cols { grid-template-columns: 1fr; } }
+.adm-fieldset { border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 14px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.adm-fieldset legend { font-family: var(--font-display), sans-serif; font-weight: 700; font-size: 0.85rem; padding: 0 0.4rem; }
+.adm-textarea { resize: vertical; font: inherit; line-height: 1.5; }
+.adm-check { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.25rem; font-weight: 600; }
+.adm-danger { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(0, 0, 0, 0.08); }
+.adm-danger__btn { background: none; border: 1px solid #dc2626; color: #dc2626; border-radius: 999px; padding: 0.55rem 1.1rem; font-weight: 600; cursor: pointer; }
+.adm-danger__btn:hover { background: #dc2626; color: #fff; }

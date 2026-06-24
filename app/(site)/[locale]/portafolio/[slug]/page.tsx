@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
-import { getProject, getAllProjectSlugs } from "@/lib/content/portfolio";
+import { getProjectAsync, getAllProjectSlugs } from "@/lib/content/portfolio";
 import { getServiceContent } from "@/lib/content/services";
 import { type ServiceId } from "@/lib/services";
 import CaseStudy from "@/components/portfolio/CaseStudy";
@@ -23,7 +23,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const project = getProject(slug);
+  const project = await getProjectAsync(slug);
   if (!isLocale(locale) || !project) return {};
   const p = project[locale as Locale];
   const path = `/${locale}/portafolio/${slug}`;
@@ -54,7 +54,7 @@ export default async function CaseStudyPage({
   params: Promise<{ locale: string; slug: string }>;
 }) {
   const { locale, slug } = await params;
-  const project = getProject(slug);
+  const project = await getProjectAsync(slug);
   if (!isLocale(locale) || !project) notFound();
   const l = locale as Locale;
   const dict = getDictionary(l);

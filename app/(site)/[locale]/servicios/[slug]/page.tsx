@@ -8,7 +8,7 @@ import {
   RELATED_PORTFOLIO,
 } from "@/lib/content/services";
 import { SERVICES, type ServiceId } from "@/lib/services";
-import { getProject } from "@/lib/content/portfolio";
+import { getProjectAsync } from "@/lib/content/portfolio";
 import ServiceLanding from "@/components/services/ServiceLanding";
 import {
   ServiceJsonLd,
@@ -73,9 +73,9 @@ export default async function ServicePage({
   const icon = SERVICES.find((s) => s.id === content.serviceId)?.icon ?? "";
 
   const relatedSlugs = RELATED_PORTFOLIO[content.serviceId] ?? [];
-  const related = relatedSlugs
-    .map((s) => getProject(s))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const related = (await Promise.all(relatedSlugs.map((s) => getProjectAsync(s)))).filter(
+    (p): p is NonNullable<typeof p> => Boolean(p),
+  );
 
   const url = `${SITE_URL}/${locale}/servicios/${slug}`;
 
