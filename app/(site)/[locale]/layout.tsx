@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import "../globals.css";
+import "../../globals.css";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import Header from "@/components/layout/Header";

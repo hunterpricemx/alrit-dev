@@ -17,6 +17,8 @@ import {
 
 const SITE_URL = "https://alrit.dev";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   const slugs = getAllServiceSlugs();
   return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));

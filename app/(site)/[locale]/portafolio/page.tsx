@@ -8,6 +8,8 @@ import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
 
 const SITE_URL = "https://alrit.dev";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

@@ -43,18 +43,29 @@ export const EXTRAS: Record<ExtraId, number> = {
 
 export const EXTRA_IDS = Object.keys(EXTRAS) as ExtraId[];
 
+/** Conjunto de precios resuelto (constantes por defecto o overrides de la DB). */
+export type Pricing = { types: ProjectType[]; extras: Record<ExtraId, number> };
+
+/** Fallback en código — lo usa `getPricingAsync` si la DB está vacía/caída. */
+export const DEFAULT_PRICING: Pricing = { types: PROJECT_TYPES, extras: EXTRAS };
+
 export function getType(id: ProjectTypeId): ProjectType | undefined {
   return PROJECT_TYPES.find((t) => t.id === id);
+}
+
+export function getTypeFrom(types: ProjectType[], id: ProjectTypeId): ProjectType | undefined {
+  return types.find((t) => t.id === id);
 }
 
 export type Estimate =
   | { kind: "price"; amount: number }
   | { kind: "custom" };
 
-export function estimate(typeId: ProjectTypeId, extras: ExtraId[]): Estimate {
-  const t = getType(typeId);
+/** Estimación pura: recibe los precios por argumento (no importa constantes). */
+export function estimateFrom(pricing: Pricing, typeId: ProjectTypeId, extras: ExtraId[]): Estimate {
+  const t = getTypeFrom(pricing.types, typeId);
   if (!t || t.base === null) return { kind: "custom" };
-  const extrasTotal = extras.reduce((sum, id) => sum + (EXTRAS[id] ?? 0), 0);
+  const extrasTotal = extras.reduce((sum, id) => sum + (pricing.extras[id] ?? 0), 0);
   return { kind: "price", amount: t.base + extrasTotal };
 }
 

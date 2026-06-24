@@ -10,6 +10,8 @@ import { CaseStudyJsonLd, BreadcrumbJsonLd } from "@/lib/seo/jsonld";
 
 const SITE_URL = "https://alrit.dev";
 
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   const slugs = getAllProjectSlugs();
   return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));

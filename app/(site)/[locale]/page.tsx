@@ -1,5 +1,6 @@
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
+import { getPricingAsync } from "@/lib/content/pricing";
 import { notFound } from "next/navigation";
 import MagneticHero from "@/components/hero/MagneticHero";
 import Services from "@/components/sections/Services";
@@ -10,6 +11,9 @@ import Results from "@/components/sections/Results";
 import Technologies from "@/components/sections/Technologies";
 import FinalCta from "@/components/sections/FinalCta";
 
+// ISR: contenido editable desde el admin; revalida en background y on-demand.
+export const revalidate = 3600;
+
 export default async function Home({
   params,
 }: {
@@ -19,12 +23,13 @@ export default async function Home({
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
   const dict = getDictionary(l);
+  const pricing = await getPricingAsync();
 
   return (
     <>
       <MagneticHero dict={dict} locale={l} />
       <Services dict={dict} locale={l} />
-      <Calculator dict={dict} />
+      <Calculator dict={dict} pricing={pricing} />
       <Portfolio dict={dict} locale={l} />
       <Process dict={dict} />
       <Results dict={dict} />

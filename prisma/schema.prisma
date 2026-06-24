@@ -1,0 +1,105 @@
+// Alrit.dev — esquema CMS v1.
+// Patrón OVERRIDES: el contenido en código es el default; aquí solo vive lo editado.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- Auth (Auth.js Credentials, single-tenant) ----------
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  role         Role     @default(ADMIN)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+// ---------- Precios (M1) — sembrado de lib/pricing.ts ----------
+model PricingType {
+  id        String   @id // "landing" | "ecommerce" | "lms" | "realestate" | "mobile" | "custom"
+  base      Int? // MXN; null => proyecto a medida
+  weeks     String? // null para proyectos a medida
+  sortOrder Int      @default(0)
+  updatedAt DateTime @updatedAt
+}
+
+model PricingExtra {
+  id        String   @id // "multilang" | "blog" | "payments" | "seo"
+  price     Int
+  sortOrder Int      @default(0)
+  updatedAt DateTime @updatedAt
+}
+
+// ---------- Portafolio (M3) — sembrado de portfolio.data.json ----------
+model Project {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  image          String
+  imageMobile    String
+  bg             String
+  cat            String
+  relatedService String
+  url            String
+  status         String
+  industry       String   @db.Text
+  tech           String   @db.Text
+  locales        Json // { es:{title,short,long}, en:{...} }
+  highlights     Json // string[]
+  tags           Json // string[]
+  sortOrder      Int      @default(0)
+  published      Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+// ---------- Textos curados (M4) — solo lo cambiado ----------
+model TextOverride {
+  id        String   @id @default(cuid())
+  key       String // dotted path: "hero.titleAccent"
+  locale    Locale
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt
+
+  @@unique([key, locale])
+}
+
+enum Locale {
+  es
+  en
+}
+
+// ---------- Biblioteca de medios (M2) — MinIO ----------
+model Media {
+  id        String      @id @default(cuid())
+  filename  String
+  objectKey String      @unique
+  url       String
+  alt       String?
+  mime      String
+  width     Int?
+  height    Int?
+  bytes     Int?
+  createdAt DateTime    @default(now())
+  slots     MediaSlot[]
+}
+
+model MediaSlot {
+  slot      String   @id // id del catálogo de slots (lib/slots.ts)
+  mediaId   String
+  media     Media    @relation(fields: [mediaId], references: [id], onDelete: Restrict)
+  updatedAt DateTime @updatedAt
+
+  @@index([mediaId])
+}

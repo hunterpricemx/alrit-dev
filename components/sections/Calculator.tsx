@@ -3,12 +3,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Dictionary } from "@/lib/i18n";
 import {
-  PROJECT_TYPES,
-  EXTRAS,
   EXTRA_IDS,
-  getType,
-  estimate,
+  getTypeFrom,
+  estimateFrom,
   formatMXN,
+  type Pricing,
   type ProjectTypeId,
   type ExtraId,
 } from "@/lib/pricing";
@@ -47,16 +46,16 @@ function AnimatedPrice({ amount }: { amount: number }) {
   return <>{formatMXN(shown)}</>;
 }
 
-export default function Calculator({ dict }: { dict: Dictionary }) {
+export default function Calculator({ dict, pricing }: { dict: Dictionary; pricing: Pricing }) {
   const t = dict.calculator;
   const [step, setStep] = useState(0);
   const [type, setType] = useState<ProjectTypeId>("landing");
   const [extras, setExtras] = useState<ExtraId[]>([]);
 
   const meta = META[type];
-  const typeInfo = getType(type);
+  const typeInfo = getTypeFrom(pricing.types, type);
   const isCustom = typeInfo?.base === null;
-  const est = useMemo(() => estimate(type, extras), [type, extras]);
+  const est = useMemo(() => estimateFrom(pricing, type, extras), [pricing, type, extras]);
 
   const toggleExtra = (id: ExtraId) =>
     setExtras((prev) => (prev.includes(id) ? prev.filter((e) => e !== id) : [...prev, id]));
@@ -113,7 +112,7 @@ export default function Calculator({ dict }: { dict: Dictionary }) {
           {step === 0 && (
             <div className="calc__types">
               {GRID_ORDER.map((id) => {
-                const pt = PROJECT_TYPES.find((p) => p.id === id)!;
+                const pt = pricing.types.find((p) => p.id === id)!;
                 const m = META[id];
                 const info = t.types[id];
                 const active = type === id;
@@ -177,7 +176,7 @@ export default function Calculator({ dict }: { dict: Dictionary }) {
                         <span className="cfeat__name">{t.extras[id]}</span>
                         <span className="cfeat__desc">{t.extrasDesc[id]}</span>
                       </span>
-                      <span className="cfeat__price">+ {formatMXN(EXTRAS[id])}</span>
+                      <span className="cfeat__price">+ {formatMXN(pricing.extras[id])}</span>
                     </button>
                   );
                 })}
@@ -278,7 +277,7 @@ export default function Calculator({ dict }: { dict: Dictionary }) {
                       <span className="calc-sum__tick" aria-hidden="true" />
                       {t.extras[id]}
                     </span>
-                    <span className="calc-sum__line-price">{formatMXN(EXTRAS[id])}</span>
+                    <span className="calc-sum__line-price">{formatMXN(pricing.extras[id])}</span>
                   </li>
                 ))}
               {isCustom && <li className="calc-sum__custom">{t.customPrice}</li>}

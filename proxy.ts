@@ -6,10 +6,11 @@ const PUBLIC_FILE = /\.[^/]+$/;
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip internals, API and static files
+  // Skip internals, API, the admin panel and static files
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname.startsWith("/admin") ||
     PUBLIC_FILE.test(pathname)
   ) {
     return NextResponse.next();
@@ -30,5 +31,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|api|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|admin|.*\\..*).*)"],
 };
