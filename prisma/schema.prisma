@@ -258,3 +258,25 @@ model Issue {
 
   @@index([projectId])
 }
+
+// ---------- Cotizaciones (leads de la calculadora) ----------
+enum QuoteStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
+
+model Quote {
+  id          String      @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  brief       String?     @db.Text
+  projectType String // ProjectTypeId
+  extras      Json // ExtraId[]
+  amount      Int? // MXN (pesos); null = a medida
+  custom      Boolean     @default(false)
+  status      QuoteStatus @default(NEW)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}

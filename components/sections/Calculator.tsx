@@ -12,6 +12,7 @@ import {
   type ExtraId,
 } from "@/lib/pricing";
 import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
+import { submitQuote } from "@/app/(site)/[locale]/_actions/quote";
 
 const GRID_ORDER: ProjectTypeId[] = ["landing", "ecommerce", "lms", "realestate", "custom", "mobile"];
 
@@ -62,6 +63,26 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
     setExtras((prev) => (prev.includes(id) ? prev.filter((e) => e !== id) : [...prev, id]));
 
   const goNext = () => setStep((s) => Math.min(3, s + 1));
+
+  const handleQuoteSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    try {
+      await submitQuote({
+        name: String(fd.get("name") ?? ""),
+        email: String(fd.get("email") ?? ""),
+        phone: String(fd.get("phone") ?? ""),
+        brief: String(fd.get("brief") ?? ""),
+        projectType: type,
+        extras,
+        amount: est.kind === "price" ? est.amount : null,
+        custom: est.kind === "custom",
+      });
+    } catch {
+      // best-effort: igual mostramos la pantalla de "listo"
+    }
+    goNext();
+  };
   const restart = () => {
     setStep(0);
     setType("landing");
@@ -185,14 +206,7 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
             ))}
 
           {step === 2 && (
-            <form
-              className="calc__form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                goNext();
-              }}
-              id="calc-form"
-            >
+            <form className="calc__form" onSubmit={handleQuoteSubmit} id="calc-form">
               <input className="calc__input" name="name" placeholder={t.form.name} required />
               <input className="calc__input" type="email" name="email" placeholder={t.form.email} required />
               <input className="calc__input" name="phone" placeholder={t.form.phone} />
