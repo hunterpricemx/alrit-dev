@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import "../../globals.css";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
+import { getAllProjectsAsync } from "@/lib/content/portfolio";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
@@ -65,6 +66,15 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const dict = await getDictionaryAsync(locale as Locale);
+  const projects = await getAllProjectsAsync();
+  const toFeatured = (p: (typeof projects)[number]) => ({
+    slug: p.slug,
+    name: p[locale as Locale].name || p[locale as Locale].title,
+    image: p.image,
+    cat: p.cat,
+  });
+  const picked = projects.filter((p) => p.featured).slice(0, 4);
+  const featured = (picked.length ? picked : projects.slice(0, 4)).map(toFeatured);
 
   return (
     <html
@@ -74,7 +84,7 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col">
         <OrganizationJsonLd url={SITE_URL} />
         <Providers>
-          <Header dict={dict} locale={locale as Locale} />
+          <Header dict={dict} locale={locale as Locale} featured={featured} />
           <main className="flex-1">{children}</main>
           <Footer dict={dict} locale={locale as Locale} />
         </Providers>

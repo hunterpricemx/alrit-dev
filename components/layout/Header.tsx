@@ -13,12 +13,7 @@ type MenuKey = "services" | "portfolio" | "blog" | "company";
 const WEB_IDS: ServiceId[] = ["wordpress", "webdev", "lms", "ecommerce", "realestate"];
 const APP_IDS: ServiceId[] = ["systems", "mobile", "automation"];
 
-const FEATURED = [
-  { slug: "conectas-plataforma-experiencias-gastronomicas", name: "Conectas.ai", image: "/portfolio/conectas.png", cat: "webdev" },
-  { slug: "bdweb-plataforma-inmobiliaria", name: "BDweb", image: "/portfolio/bdweb.png", cat: "realestate" },
-  { slug: "programarte-plataforma-bienestar-mental", name: "Programarte", image: "/portfolio/programarte.png", cat: "webdev" },
-  { slug: "bds-motos", name: "BDS Motos", image: "/portfolio/bds-motos.png", cat: "wordpress" },
-] as const;
+type FeaturedItem = { slug: string; name: string; image: string; cat: string };
 
 const Chevron = () => (
   <svg className="nav__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -26,7 +21,7 @@ const Chevron = () => (
   </svg>
 );
 
-export default function Header({ dict, locale }: { dict: Dictionary; locale: Locale }) {
+export default function Header({ dict, locale, featured }: { dict: Dictionary; locale: Locale; featured: FeaturedItem[] }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState<MenuKey | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -164,7 +159,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               <div className="mega mega--portfolio">
                 <p className="mega__group">{m.featured}</p>
                 <div className="mega__cases">
-                  {FEATURED.map((p) => (
+                  {featured.map((p) => (
                     <Link key={p.slug} href={`${base}/portafolio/${p.slug}`} className="mega-case">
                       <span className="mega-case__media">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
