@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 type JsonLdProps = { data: Record<string, unknown> };
 
 function JsonLd({ data }: JsonLdProps) {
@@ -12,6 +10,10 @@ function JsonLd({ data }: JsonLdProps) {
 }
 
 export function OrganizationJsonLd({ url }: { url: string }) {
+  const areaServed = [
+    { "@type": "Country", name: "México" },
+    { "@type": "Country", name: "España" },
+  ];
   const data = {
     "@context": "https://schema.org",
     "@graph": [
@@ -21,8 +23,35 @@ export function OrganizationJsonLd({ url }: { url: string }) {
         name: "Alrit.dev",
         url,
         description:
-          "Estudio de desarrollo web. La evolución de Hunter Price Mx.",
-        sameAs: [] as string[],
+          "Estudio mexicano de desarrollo web y software a la medida. La evolución de Hunter Price Mx.",
+        logo: { "@type": "ImageObject", "@id": `${url}/#logo`, url: `${url}/icon.svg`, caption: "Alrit.dev" },
+        image: `${url}/og.png`,
+        email: "hola@alrit.dev",
+        knowsLanguage: ["es", "en"],
+        areaServed,
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "sales",
+          email: "hola@alrit.dev",
+          availableLanguage: ["Spanish", "English"],
+          areaServed: ["MX", "ES"],
+        },
+        // TODO (datos del cliente): telephone, address (PostalAddress), foundingDate.
+        sameAs: [] as string[], // TODO: perfiles reales (LinkedIn, Instagram, GitHub).
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": `${url}/#localbusiness`,
+        name: "Alrit.dev",
+        url,
+        image: `${url}/og.png`,
+        logo: `${url}/icon.svg`,
+        description:
+          "Desarrollo web y software a la medida: sitios, e-commerce, plataformas, sistemas y apps.",
+        priceRange: "$$",
+        areaServed,
+        parentOrganization: { "@id": `${url}/#organization` },
+        // TODO (datos del cliente): telephone, address (PostalAddress) y geo si hay oficina.
       },
       {
         "@type": "WebSite",
@@ -34,11 +63,7 @@ export function OrganizationJsonLd({ url }: { url: string }) {
       },
     ],
   };
-  return (
-    <Fragment>
-      <JsonLd data={data} />
-    </Fragment>
-  );
+  return <JsonLd data={data} />;
 }
 
 const SITE_URL = "https://alrit.dev";
@@ -57,6 +82,7 @@ export function ServiceJsonLd({
   const graph: Record<string, unknown>[] = [
     {
       "@type": "Service",
+      "@id": `${url}#service`,
       name,
       description,
       url,
@@ -66,11 +92,22 @@ export function ServiceJsonLd({
         { "@type": "Country", name: "España" },
       ],
       serviceType: name,
+      mainEntityOfPage: url,
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      offers: {
+        "@type": "Offer",
+        url: `${url}#calculator`,
+        priceCurrency: "MXN",
+        availability: "https://schema.org/InStock",
+        seller: { "@id": `${SITE_URL}/#organization` },
+      },
     },
   ];
   if (faq && faq.length) {
     graph.push({
       "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      isPartOf: { "@id": `${SITE_URL}/#website` },
       mainEntity: faq.map((f) => ({
         "@type": "Question",
         name: f.q,
