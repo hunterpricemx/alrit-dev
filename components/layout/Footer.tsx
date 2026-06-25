@@ -37,6 +37,9 @@ export default function Footer({
           <Link href={`${base}/portafolio`} className="footer__link">
             {dict.footer.company.portfolio}
           </Link>
+          <Link href={`${base}/blog`} className="footer__link">
+            {dict.footer.company.blog}
+          </Link>
           <Link href={`${base}#process`} className="footer__link">
             {dict.footer.company.process}
           </Link>

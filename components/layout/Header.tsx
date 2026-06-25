@@ -6,6 +6,7 @@ import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { useSession } from "next-auth/react";
 import { SERVICES, type ServiceId } from "@/lib/services";
+import { BLOG_CATEGORIES, categoryLabel } from "@/lib/content/blog-categories";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type MenuKey = "services" | "portfolio" | "blog" | "company";
@@ -14,6 +15,7 @@ const WEB_IDS: ServiceId[] = ["wordpress", "webdev", "lms", "ecommerce", "reales
 const APP_IDS: ServiceId[] = ["systems", "mobile", "automation"];
 
 type FeaturedItem = { slug: string; name: string; image: string; cat: string };
+type LatestPost = { slug: string; title: string; cover: string | null; category: string };
 
 const Chevron = () => (
   <svg className="nav__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -21,7 +23,7 @@ const Chevron = () => (
   </svg>
 );
 
-export default function Header({ dict, locale, featured }: { dict: Dictionary; locale: Locale; featured: FeaturedItem[] }) {
+export default function Header({ dict, locale, featured, latestPosts }: { dict: Dictionary; locale: Locale; featured: FeaturedItem[]; latestPosts: LatestPost[] }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState<MenuKey | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -178,13 +180,33 @@ export default function Header({ dict, locale, featured }: { dict: Dictionary; l
             )}
 
             {open === "blog" && (
-              <div className="mega mega--blog">
-                {m.blogCats.map((c) => (
-                  <span key={c} className="mega-soon">
-                    <span className="mega-soon__name">{c}</span>
-                    <span className="mega-soon__badge">{m.blogSoon}</span>
-                  </span>
-                ))}
+              <div className="mega mega--portfolio">
+                <p className="mega__group">{dict.nav.blog}</p>
+                <div className="mega__cases">
+                  {latestPosts.map((p) => (
+                    <Link key={p.slug} href={`${base}/blog/${p.slug}`} className="mega-case">
+                      {p.cover && (
+                        <span className="mega-case__media">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={p.cover} alt={p.title} loading="lazy" />
+                        </span>
+                      )}
+                      <span className="mega-case__cat">{categoryLabel(p.category, locale)}</span>
+                      <span className="mega-case__name">{p.title}</span>
+                    </Link>
+                  ))}
+                </div>
+                <div className="mega__col">
+                  {BLOG_CATEGORIES.map((c) => (
+                    <Link key={c.key} href={`${base}/blog?cat=${c.key}`} className="mega-link">
+                      <span className="mega-link__body"><span className="mega-link__name">{c[locale]}</span></span>
+                    </Link>
+                  ))}
+                  <Link href={`${base}/blog`} className="mega__all">
+                    {m.allProjects}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                  </Link>
+                </div>
               </div>
             )}
 
@@ -255,6 +277,7 @@ export default function Header({ dict, locale, featured }: { dict: Dictionary; l
 
           <Link href={`${base}/portafolio`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.portfolio}</Link>
           <Link href={`${base}/cursos`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.courses}</Link>
+          <Link href={`${base}/blog`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.blog}</Link>
           <Link href={`${base}#calculator`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.calculator}</Link>
           <Link href={session ? dashHref : `${base}/ingresar`} className="drawer__sec" onClick={() => setMobileOpen(false)}>
             {session ? dashLabel : dict.nav.login}
