@@ -76,6 +76,10 @@ export default async function PortfolioHub({
                 </span>
                 <span className="pf-card__name">{p[l].name || p[l].title}</span>
                 <span className="pf-card__desc">{p[l].short}</span>
+                <span className="pf-card__cta">
+                  {dict.portfolio.seeMore}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                </span>
               </Link>
             </li>
           ))}

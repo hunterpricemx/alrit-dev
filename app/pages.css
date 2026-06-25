@@ -701,6 +701,7 @@
 .pf-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   text-decoration: none;
   border-radius: 20px;
   overflow: hidden;
@@ -708,6 +709,7 @@
   border: 1px solid rgba(0, 0, 0, 0.06);
   transition: transform 0.5s var(--ease-spring), box-shadow 0.4s ease;
 }
+.hub__grid > li { height: 100%; }
 .pf-card:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(0, 0, 0, 0.1); }
 .pf-card__media { display: block; aspect-ratio: 16 / 10; background: var(--bg, #eee); overflow: hidden; }
 .pf-card__media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform 0.7s var(--ease-spring); }
@@ -722,7 +724,20 @@
   padding: 1.1rem 1.25rem 0.3rem;
 }
 .pf-card__name { font-family: var(--font-display), sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--color-ink); padding: 0 1.25rem 0.4rem; }
-.pf-card__desc { color: var(--color-muted); font-size: 0.95rem; line-height: 1.5; padding: 0 1.25rem 1.4rem; }
+.pf-card__desc { color: var(--color-muted); font-size: 0.95rem; line-height: 1.5; padding: 0 1.25rem 1rem; flex: 1; }
+.pf-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-ink);
+  padding: 0 1.25rem 1.4rem;
+  transition: gap 0.3s var(--ease-spring), color 0.3s ease;
+}
+.pf-card__cta svg { width: 16px; height: 16px; }
+.pf-card:hover .pf-card__cta { gap: 0.7rem; color: #ff5a3d; }
 
 /* ---- Case study ---- */
 .case__hero { padding: 1rem 0 2rem; }
