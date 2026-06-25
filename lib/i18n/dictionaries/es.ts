@@ -166,7 +166,7 @@ const es = {
     stats: [
       { value: "+50", label: "Proyectos entregados", caption: "en los últimos años" },
       { value: "10+", label: "Años de experiencia", caption: "construyendo soluciones" },
-      { value: "3", label: "Países", caption: "México · USA · España" },
+      { value: "3", label: "Países", caption: "alcance internacional" },
     ],
     cards: {
       ecommerce: { title: "Ecommerce", text: "Tiendas online rápidas, seguras y pensadas para vender más." },
@@ -370,9 +370,9 @@ const es = {
     stats: [
       { value: "+50", label: "Proyectos entregados", caption: "en diferentes industrias" },
       { value: "10+", label: "Años de experiencia", caption: "desarrollando soluciones" },
-      { value: "3", label: "Países", caption: "México · USA · España" },
-      { value: "99%", label: "Clientes satisfechos", caption: "y proyectos exitosos" },
-      { value: "24/7", label: "Soporte y mantenimiento", caption: "para tu tranquilidad" },
+      { value: "3", label: "Países", caption: "alcance internacional" },
+      { value: "Calidad", label: "En cada entrega", caption: "código limpio y probado" },
+      { value: "Soporte", label: "Continuo", caption: "te acompañamos tras el lanzamiento" },
     ],
   },
   tech: {

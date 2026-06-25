@@ -168,7 +168,7 @@ const en: Dictionary = {
     stats: [
       { value: "+50", label: "Projects delivered", caption: "in recent years" },
       { value: "10+", label: "Years of experience", caption: "building solutions" },
-      { value: "3", label: "Countries", caption: "Mexico · USA · Spain" },
+      { value: "3", label: "Countries", caption: "international reach" },
     ],
     cards: {
       ecommerce: { title: "E-commerce", text: "Fast, secure online stores built to sell more." },
@@ -372,9 +372,9 @@ const en: Dictionary = {
     stats: [
       { value: "+50", label: "Projects delivered", caption: "across industries" },
       { value: "10+", label: "Years of experience", caption: "building solutions" },
-      { value: "3", label: "Countries", caption: "Mexico · USA · Spain" },
-      { value: "99%", label: "Satisfied clients", caption: "and successful projects" },
-      { value: "24/7", label: "Support and maintenance", caption: "for your peace of mind" },
+      { value: "3", label: "Countries", caption: "international reach" },
+      { value: "Quality", label: "In every delivery", caption: "clean, tested code" },
+      { value: "Support", label: "Ongoing", caption: "we stay with you after launch" },
     ],
   },
   tech: {
