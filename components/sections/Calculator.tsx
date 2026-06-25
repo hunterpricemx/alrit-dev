@@ -13,6 +13,7 @@ import {
 } from "@/lib/pricing";
 import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
 import { submitQuote } from "@/app/(site)/[locale]/_actions/quote";
+import { trackEvent } from "@/lib/analytics";
 
 const GRID_ORDER: ProjectTypeId[] = ["landing", "ecommerce", "lms", "realestate", "custom", "mobile"];
 
@@ -77,6 +78,11 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
         extras,
         amount: est.kind === "price" ? est.amount : null,
         custom: est.kind === "custom",
+      });
+      trackEvent("generate_lead", {
+        currency: "MXN",
+        value: est.kind === "price" ? est.amount : 0,
+        project_type: type,
       });
     } catch {
       // best-effort: igual mostramos la pantalla de "listo"

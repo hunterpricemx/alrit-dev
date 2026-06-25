@@ -10,6 +10,8 @@ import { FEATURES } from "@/lib/features";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
+import SiteAnalytics from "@/components/analytics/SiteAnalytics";
+import ConsentBanner from "@/components/analytics/ConsentBanner";
 import { OrganizationJsonLd } from "@/lib/seo/jsonld";
 
 const poppins = Poppins({
@@ -98,7 +100,9 @@ export default async function LocaleLayout({
           <Header dict={dict} locale={locale as Locale} featured={featured} latestPosts={latestPosts} />
           <main className="flex-1">{children}</main>
           <Footer dict={dict} locale={locale as Locale} />
+          <ConsentBanner />
         </Providers>
+        <SiteAnalytics />
       </body>
     </html>
   );
