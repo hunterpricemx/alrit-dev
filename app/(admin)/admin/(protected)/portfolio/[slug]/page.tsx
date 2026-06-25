@@ -44,6 +44,9 @@ export default async function EditProjectPage({
     tags: (Array.isArray(p.tags) ? (p.tags as string[]) : []).join("\n"),
     published: p.published,
     sortOrder: p.sortOrder,
+    featured: p.featured,
+    accent: p.accent ?? "",
+    icon: p.icon ?? "",
   };
 
   return (

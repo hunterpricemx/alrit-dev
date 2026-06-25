@@ -66,8 +66,11 @@ export async function saveProject(
   const tags = lines(formData.get("tags"));
   const published = formData.get("published") === "on";
   const sortOrder = Number(str(formData.get("sortOrder"))) || 0;
+  const featured = formData.get("featured") === "on";
+  const accent = str(formData.get("accent"));
+  const icon = str(formData.get("icon"));
 
-  const data = { ...parsed.data, locales, highlights, tags, published, sortOrder };
+  const data = { ...parsed.data, locales, highlights, tags, published, sortOrder, featured, accent, icon };
 
   try {
     await db.project.upsert({

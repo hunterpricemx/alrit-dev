@@ -27,6 +27,9 @@ const EMPTY: ProjectInitial = {
   tags: "",
   published: true,
   sortOrder: 0,
+  featured: false,
+  accent: "",
+  icon: "",
 };
 
 export default async function NewProjectPage() {

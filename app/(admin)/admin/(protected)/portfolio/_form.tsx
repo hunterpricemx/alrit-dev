@@ -3,6 +3,7 @@
 import { useActionState, useState } from "react";
 import Link from "next/link";
 import { saveProject, type ProjectFormState } from "../../_actions/portfolio";
+import { PORTFOLIO_ICON_KEYS } from "@/lib/content/portfolio-icons";
 
 export type ProjectInitial = {
   slug: string;
@@ -27,6 +28,9 @@ export type ProjectInitial = {
   tags: string;
   published: boolean;
   sortOrder: number;
+  featured: boolean;
+  accent: string;
+  icon: string;
 };
 
 type MediaItem = { id: string; url: string; filename: string };
@@ -81,6 +85,14 @@ export default function ProjectForm({
         <Field label="Industria" name="industry" defaultValue={initial.industry} />
         <Field label="Tecnología" name="tech" defaultValue={initial.tech} />
         <Field label="Orden" name="sortOrder" defaultValue={String(initial.sortOrder)} />
+        <Field label="Acento (bento)" name="accent" defaultValue={initial.accent} hint="#hex" />
+        <label className="adm-field">
+          <span className="adm-field__label">Ícono (bento)</span>
+          <select className="adm-input" name="icon" defaultValue={initial.icon}>
+            <option value="">— por categoría —</option>
+            {PORTFOLIO_ICON_KEYS.map((k) => <option key={k} value={k}>{k}</option>)}
+          </select>
+        </label>
         <MediaField label="Imagen escritorio" name="image" defaultValue={initial.image} media={media} />
         <MediaField label="Imagen móvil" name="imageMobile" defaultValue={initial.imageMobile} media={media} />
       </div>
@@ -121,6 +133,9 @@ export default function ProjectForm({
 
       <label className="adm-check">
         <input type="checkbox" name="published" defaultChecked={initial.published} /> Publicado
+      </label>
+      <label className="adm-check">
+        <input type="checkbox" name="featured" defaultChecked={initial.featured} /> Destacado (home + megamenú)
       </label>
 
       <div className="adm-actions">
