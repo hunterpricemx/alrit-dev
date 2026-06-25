@@ -15,9 +15,11 @@ export type ProjectInitial = {
   status: string;
   industry: string;
   tech: string;
+  es_name: string;
   es_title: string;
   es_short: string;
   es_long: string;
+  en_name: string;
   en_title: string;
   en_short: string;
   en_long: string;
@@ -86,6 +88,7 @@ export default function ProjectForm({
       <div className="adm-form__cols">
         <fieldset className="adm-fieldset">
           <legend>Español</legend>
+          <Field label="Nombre corto" name="es_name" defaultValue={initial.es_name} hint="el que se ve en las tarjetas, ej. Conectas" />
           <Field label="Título" name="es_title" defaultValue={initial.es_title} />
           <Field label="Resumen" name="es_short" defaultValue={initial.es_short} />
           <label className="adm-field">
@@ -95,6 +98,7 @@ export default function ProjectForm({
         </fieldset>
         <fieldset className="adm-fieldset">
           <legend>English</legend>
+          <Field label="Short name" name="en_name" defaultValue={initial.en_name} hint="shown on cards, e.g. Conectas" />
           <Field label="Title" name="en_title" defaultValue={initial.en_title} />
           <Field label="Short" name="en_short" defaultValue={initial.en_short} />
           <label className="adm-field">

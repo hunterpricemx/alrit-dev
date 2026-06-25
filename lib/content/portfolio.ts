@@ -2,7 +2,7 @@ import data from "./portfolio.data.json";
 import { db } from "@/lib/db";
 import { safeQuery } from "./safe";
 
-export type ProjectLocale = { title: string; short: string; long: string };
+export type ProjectLocale = { name?: string; title: string; short: string; long: string };
 
 export type Project = {
   slug: string;
@@ -55,7 +55,7 @@ type ProjectRow = {
 
 function mapRowToProject(row: ProjectRow): Project {
   const loc = (row.locales ?? {}) as { es?: ProjectLocale; en?: ProjectLocale };
-  const empty: ProjectLocale = { title: "", short: "", long: "" };
+  const empty: ProjectLocale = { name: "", title: "", short: "", long: "" };
   return {
     slug: row.slug,
     image: row.image,

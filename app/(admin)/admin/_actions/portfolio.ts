@@ -59,8 +59,8 @@ export async function saveProject(
   }
 
   const locales = {
-    es: { title: str(formData.get("es_title")), short: str(formData.get("es_short")), long: str(formData.get("es_long")) },
-    en: { title: str(formData.get("en_title")), short: str(formData.get("en_short")), long: str(formData.get("en_long")) },
+    es: { name: str(formData.get("es_name")), title: str(formData.get("es_title")), short: str(formData.get("es_short")), long: str(formData.get("es_long")) },
+    en: { name: str(formData.get("en_name")), title: str(formData.get("en_title")), short: str(formData.get("en_short")), long: str(formData.get("en_long")) },
   };
   const highlights = lines(formData.get("highlights"));
   const tags = lines(formData.get("tags"));

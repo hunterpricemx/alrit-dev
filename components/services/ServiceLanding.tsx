@@ -243,7 +243,7 @@ export default function ServiceLanding({
                   <span className="svc-rcase__cat">
                     {dict.portfolio.categories[p.cat as keyof typeof dict.portfolio.categories]}
                   </span>
-                  <h3 className="svc-rcase__name">{p[locale].title}</h3>
+                  <h3 className="svc-rcase__name">{p[locale].name || p[locale].title}</h3>
                   <p className="svc-rcase__desc">{p[locale].short}</p>
                   {p.highlights.length > 0 && (
                     <ul className="svc-rcase__feats">

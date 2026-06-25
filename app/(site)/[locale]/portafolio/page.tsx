@@ -74,7 +74,7 @@ export default async function PortfolioHub({
                 <span className="pf-card__cat">
                   {dict.portfolio.categories[p.cat as keyof typeof dict.portfolio.categories]}
                 </span>
-                <span className="pf-card__name">{p[l].title}</span>
+                <span className="pf-card__name">{p[l].name || p[l].title}</span>
                 <span className="pf-card__desc">{p[l].short}</span>
               </Link>
             </li>

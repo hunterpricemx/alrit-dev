@@ -32,9 +32,11 @@ export default async function EditProjectPage({
     status: p.status,
     industry: p.industry,
     tech: p.tech,
+    es_name: loc.es?.name ?? "",
     es_title: loc.es?.title ?? "",
     es_short: loc.es?.short ?? "",
     es_long: loc.es?.long ?? "",
+    en_name: loc.en?.name ?? "",
     en_title: loc.en?.title ?? "",
     en_short: loc.en?.short ?? "",
     en_long: loc.en?.long ?? "",
@@ -67,4 +69,4 @@ export default async function EditProjectPage({
   );
 }
 
-type Loc = { title?: string; short?: string; long?: string };
+type Loc = { name?: string; title?: string; short?: string; long?: string };
