@@ -307,3 +307,12 @@ a.adm-card:hover { box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08); transform: trans
 .adm-quote__brief { margin: 0 0 0.75rem; color: var(--color-muted); font-size: 0.92rem; line-height: 1.5; white-space: pre-wrap; }
 .adm-quote__actions { display: flex; align-items: center; gap: 0.75rem; }
 .adm-quote__actions .adm-input { max-width: 180px; }
+
+/* ---- logos ---- */
+.adm-logos { display: flex; flex-direction: column; gap: 1.25rem; }
+.adm-logo-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
+.adm-logo-row--new { border-bottom: 0; opacity: 0.9; }
+.adm-logo-edit { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; flex: 1; }
+.adm-logo-edit .adm-input { max-width: 180px; }
+.adm-logo-edit__order { max-width: 72px !important; }
+.adm-logo-edit .adm-slot__img { height: 34px; width: auto; }

@@ -12,6 +12,7 @@ const ICONS = {
   courses: "M3 7l9-4 9 4-9 4-9-4Zm0 0v6m6 3v-7M21 9v4",
   clients: "M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M11 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0M21 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75",
   quotes: "M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1ZM3 7l9 6 9-6",
+  logos: "M4 7h16M4 12h16M4 17h10M19 15l2 2-2 2",
 };
 
 const NAV = [
@@ -22,6 +23,7 @@ const NAV = [
   { href: "/admin/pricing", label: "Precios", icon: ICONS.pricing, ready: true },
   { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: true },
+  { href: "/admin/logos", label: "Logos", icon: ICONS.logos, ready: true },
   { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: true },
 ];
 
