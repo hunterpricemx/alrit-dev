@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 64" fill="none">
+  <text x="50" y="34" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="30" fill="#232F3E">aws</text>
+  <path d="M16 46 q34 16 64 1.5" stroke="#FF9900" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M74 42.5 l9 4.5 -9 4.5 z" fill="#FF9900"/>
+</svg>

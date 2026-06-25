@@ -1,19 +1,8 @@
 import type { Dictionary } from "@/lib/i18n";
 import Reveal from "@/components/ui/Reveal";
-import { resolveSlot, techSlot, type SlotMap } from "@/lib/slots";
+import type { LogoItem } from "@/lib/content/logos.data";
 
-const TECH: { name: string; file?: string; text?: string }[] = [
-  { name: "Next.js", file: "nextjs" },
-  { name: "React", file: "react" },
-  { name: "WordPress", file: "wordpress" },
-  { name: "TypeScript", file: "typescript" },
-  { name: "Supabase", file: "supabase" },
-  { name: "AWS", text: "aws" },
-  { name: "Stripe", file: "stripe" },
-  { name: "React Native", file: "reactnative" },
-];
-
-export default function Technologies({ dict, slotMap }: { dict: Dictionary; slotMap?: SlotMap }) {
+export default function Technologies({ dict, techLogos }: { dict: Dictionary; techLogos: LogoItem[] }) {
   const t = dict.tech;
 
   return (
@@ -24,15 +13,11 @@ export default function Technologies({ dict, slotMap }: { dict: Dictionary; slot
       </Reveal>
 
       <ul className="tech__grid">
-        {TECH.map((item, i) => (
+        {techLogos.map((item, i) => (
           <Reveal as="li" key={item.name} className="tech-card" delay={i * 45}>
             <span className="tech-card__logo">
-              {item.file ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={resolveSlot(slotMap, techSlot(item.file), `/tech/${item.file}.svg`)} alt={item.name} loading="lazy" draggable={false} />
-              ) : (
-                <span className="tech-card__text">{item.text}</span>
-              )}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={item.image} alt={item.name} loading="lazy" draggable={false} />
             </span>
             <span className="tech-card__name">{item.name}</span>
           </Reveal>

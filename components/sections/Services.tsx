@@ -5,7 +5,8 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { SERVICES, type ServiceId } from "@/lib/services";
-import { resolveSlot, mockupSlot, brandSlot, type SlotMap } from "@/lib/slots";
+import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
+import type { LogoItem } from "@/lib/content/logos.data";
 
 const HOME_IDS = ["ecommerce", "lms", "systems", "mobile", "automation", "realestate"] as const;
 
@@ -18,16 +19,6 @@ const CARD_IMG: Partial<Record<ServiceId, string>> = {
   realestate: "/hero/realstate.png",
 };
 
-const LOGOS = [
-  { name: "Interlace", file: "interlace" },
-  { name: "Comint", file: "comint" },
-  { name: "Tierra Forestal", file: "tienda-forestal" },
-  { name: "Evolution Week", file: "evolution-week" },
-  { name: "TAME", file: "tame" },
-  { name: "Toma", file: "toma" },
-  { name: "Casa Klik", file: "casas-krea" },
-];
-
 const BADGE_ICONS = [
   "M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z|m9 12 2 2 4-4",
   "M6 10V7a6 6 0 1 1 12 0v3|M5 10h14v10H5z",
@@ -37,10 +28,12 @@ export default function Services({
   dict,
   locale,
   slotMap,
+  logos,
 }: {
   dict: Dictionary;
   locale: Locale;
   slotMap?: SlotMap;
+  logos: LogoItem[];
 }) {
   const t = dict.servicesX;
   const viewportRef = useRef<HTMLUListElement>(null);
@@ -243,10 +236,10 @@ export default function Services({
         <div className="svcx__trust">
           <p className="svcx__trust-label">{t.trust}</p>
           <ul className="svcx__logos">
-            {LOGOS.map((b) => (
-              <li key={b.file} className="svcx__logo">
+            {logos.map((b) => (
+              <li key={b.name} className="svcx__logo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={resolveSlot(slotMap, brandSlot(b.file), `/brands/${b.file}.png`)} alt={b.name} loading="lazy" draggable={false} />
+                <img src={b.image} alt={b.name} loading="lazy" draggable={false} />
               </li>
             ))}
           </ul>

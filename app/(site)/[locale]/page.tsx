@@ -3,6 +3,7 @@ import { getDictionaryAsync } from "@/lib/i18n";
 import { getPricingAsync } from "@/lib/content/pricing";
 import { getSlotMap } from "@/lib/content/media";
 import { getAllProjectsAsync } from "@/lib/content/portfolio";
+import { getLogosAsync } from "@/lib/content/logos";
 import { notFound } from "next/navigation";
 import MagneticHero from "@/components/hero/MagneticHero";
 import Services from "@/components/sections/Services";
@@ -24,22 +25,24 @@ export default async function Home({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
-  const [dict, pricing, slotMap, projects] = await Promise.all([
+  const [dict, pricing, slotMap, projects, brandLogos, techLogos] = await Promise.all([
     getDictionaryAsync(l),
     getPricingAsync(),
     getSlotMap(),
     getAllProjectsAsync(),
+    getLogosAsync("BRAND"),
+    getLogosAsync("TECH"),
   ]);
 
   return (
     <>
       <MagneticHero dict={dict} locale={l} slotMap={slotMap} />
-      <Services dict={dict} locale={l} slotMap={slotMap} />
+      <Services dict={dict} locale={l} slotMap={slotMap} logos={brandLogos} />
       <Calculator dict={dict} pricing={pricing} slotMap={slotMap} />
       <Portfolio dict={dict} locale={l} projects={projects} />
       <Process dict={dict} />
       <Results dict={dict} />
-      <Technologies dict={dict} slotMap={slotMap} />
+      <Technologies dict={dict} techLogos={techLogos} />
       <FinalCta dict={dict} locale={l} />
     </>
   );
