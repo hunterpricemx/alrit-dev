@@ -4,6 +4,7 @@ import { getAllServiceSlugs } from "@/lib/content/services";
 import { getAllProjectSlugs } from "@/lib/content/portfolio";
 import { getAllCourseSlugs } from "@/lib/content/courses";
 import { getAllPostSlugs } from "@/lib/content/blog";
+import { FEATURES } from "@/lib/features";
 
 const SITE_URL = "https://alrit.dev";
 const LAST = new Date("2026-06-22");
@@ -31,23 +32,32 @@ function entry(
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const services = getAllServiceSlugs();
   const projects = getAllProjectSlugs();
-  const courses = await getAllCourseSlugs();
-  const posts = await getAllPostSlugs();
+  const courses = FEATURES.lms ? await getAllCourseSlugs() : [];
+  const posts = FEATURES.blog ? await getAllPostSlugs() : [];
 
-  const blogPosts: MetadataRoute.Sitemap = posts.flatMap((p) =>
-    locales.map((locale) => ({
-      url: `${SITE_URL}/${locale}/blog/${p.slug}`,
-      lastModified: new Date(p.updatedAt),
-      changeFrequency: "monthly" as const,
-      priority: locale === "es" ? 0.6 : 0.55,
-      alternates: {
-        languages: {
-          es: `${SITE_URL}/es/blog/${p.slug}`,
-          en: `${SITE_URL}/en/blog/${p.slug}`,
-        },
-      },
-    }))
-  );
+  const lmsEntries: MetadataRoute.Sitemap = FEATURES.lms
+    ? [...entry("/cursos", "weekly", 0.7), ...courses.flatMap((c) => entry(`/cursos/${c}`, "monthly", 0.6))]
+    : [];
+
+  const blogEntries: MetadataRoute.Sitemap = FEATURES.blog
+    ? [
+        ...entry("/blog", "weekly", 0.7),
+        ...posts.flatMap((p) =>
+          locales.map((locale) => ({
+            url: `${SITE_URL}/${locale}/blog/${p.slug}`,
+            lastModified: new Date(p.updatedAt),
+            changeFrequency: "monthly" as const,
+            priority: locale === "es" ? 0.6 : 0.55,
+            alternates: {
+              languages: {
+                es: `${SITE_URL}/es/blog/${p.slug}`,
+                en: `${SITE_URL}/en/blog/${p.slug}`,
+              },
+            },
+          }))
+        ),
+      ]
+    : [];
 
   return [
     ...entry("", "weekly", 1),
@@ -55,9 +65,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...services.flatMap((s) => entry(`/servicios/${s}`, "monthly", 0.8)),
     ...entry("/portafolio", "weekly", 0.7),
     ...projects.flatMap((p) => entry(`/portafolio/${p}`, "monthly", 0.6)),
-    ...entry("/cursos", "weekly", 0.7),
-    ...courses.flatMap((c) => entry(`/cursos/${c}`, "monthly", 0.6)),
-    ...entry("/blog", "weekly", 0.7),
-    ...blogPosts,
+    ...lmsEntries,
+    ...blogEntries,
   ];
 }

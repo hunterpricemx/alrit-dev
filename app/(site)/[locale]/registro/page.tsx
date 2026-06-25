@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useParams, notFound } from "next/navigation";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { registerStudent } from "../_actions/auth";
+import { FEATURES } from "@/lib/features";
 
 export default function RegisterPage() {
+  if (!FEATURES.lms) notFound();
   const router = useRouter();
   const params = useParams();
   const locale = (params?.locale as string) ?? "es";

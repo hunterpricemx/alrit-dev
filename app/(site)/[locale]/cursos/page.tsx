@@ -5,10 +5,12 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { getPublishedCoursesAsync } from "@/lib/content/courses";
 import { formatMXN } from "@/lib/pricing";
+import { FEATURES } from "@/lib/features";
 
 export const revalidate = 3600;
 
 export function generateStaticParams() {
+  if (!FEATURES.lms) return [];
   return locales.map((locale) => ({ locale }));
 }
 
@@ -33,6 +35,7 @@ export default async function CoursesCatalogPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
+  if (!FEATURES.lms) notFound();
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;

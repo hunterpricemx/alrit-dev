@@ -7,6 +7,7 @@ import { auth } from "@/auth";
 import { db } from "@/lib/db";
 import EnrollButton from "@/components/courses/EnrollButton";
 import CompleteButton from "@/components/courses/CompleteButton";
+import { FEATURES } from "@/lib/features";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +16,7 @@ export default async function LessonPlayerPage({
 }: {
   params: Promise<{ locale: string; slug: string; lessonId: string }>;
 }) {
+  if (!FEATURES.lms) notFound();
   const { locale, slug, lessonId } = await params;
   if (!isLocale(locale)) notFound();
   const course = await getCourseBySlugAsync(slug);

@@ -6,10 +6,12 @@ import { getDictionaryAsync } from "@/lib/i18n";
 import { getCourseBySlugAsync, getAllCourseSlugs } from "@/lib/content/courses";
 import { formatMXN } from "@/lib/pricing";
 import EnrollButton from "@/components/courses/EnrollButton";
+import { FEATURES } from "@/lib/features";
 
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
+  if (!FEATURES.lms) return [];
   const slugs = await getAllCourseSlugs();
   return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
 }
@@ -38,6 +40,7 @@ export default async function CourseLandingPage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
+  if (!FEATURES.lms) notFound();
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const course = await getCourseBySlugAsync(slug);

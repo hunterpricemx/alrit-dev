@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { SERVICES } from "@/lib/services";
+import { FEATURES } from "@/lib/features";
 
 export default function Footer({
   dict,
@@ -37,9 +38,11 @@ export default function Footer({
           <Link href={`${base}/portafolio`} className="footer__link">
             {dict.footer.company.portfolio}
           </Link>
-          <Link href={`${base}/blog`} className="footer__link">
-            {dict.footer.company.blog}
-          </Link>
+          {FEATURES.blog && (
+            <Link href={`${base}/blog`} className="footer__link">
+              {dict.footer.company.blog}
+            </Link>
+          )}
           <Link href={`${base}#process`} className="footer__link">
             {dict.footer.company.process}
           </Link>

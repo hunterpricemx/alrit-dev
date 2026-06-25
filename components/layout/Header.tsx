@@ -7,6 +7,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { useSession } from "next-auth/react";
 import { SERVICES, type ServiceId } from "@/lib/services";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/content/blog-categories";
+import { FEATURES } from "@/lib/features";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type MenuKey = "services" | "portfolio" | "blog" | "company";
@@ -34,7 +35,7 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
   const m = dict.mega;
   const { data: session } = useSession();
   const role = (session?.user as { role?: string } | undefined)?.role;
-  const dashHref = role === "CLIENT" ? `${base}/portal` : role === "STUDENT" ? `${base}/mi-aprendizaje` : `${base}/cuenta`;
+  const dashHref = role === "CLIENT" ? `${base}/portal` : role === "STUDENT" ? (FEATURES.lms ? `${base}/mi-aprendizaje` : base) : `${base}/cuenta`;
   const dashLabel = role === "CLIENT" ? dict.nav.portal : dict.nav.dashboard;
 
   useEffect(() => {
@@ -113,19 +114,23 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
               {dict.nav.portfolio} <Chevron />
             </Link>
           </div>
-          <div className="nav__item" onMouseEnter={() => openMenu("blog")}>
-            <button type="button" className="nav__link" aria-expanded={open === "blog"} aria-haspopup="true" onClick={() => setOpen(open === "blog" ? null : "blog")}>
-              {dict.nav.blog} <Chevron />
-            </button>
-          </div>
+          {FEATURES.blog && (
+            <div className="nav__item" onMouseEnter={() => openMenu("blog")}>
+              <button type="button" className="nav__link" aria-expanded={open === "blog"} aria-haspopup="true" onClick={() => setOpen(open === "blog" ? null : "blog")}>
+                {dict.nav.blog} <Chevron />
+              </button>
+            </div>
+          )}
           <div className="nav__item" onMouseEnter={() => openMenu("company")}>
             <button type="button" className="nav__link" aria-expanded={open === "company"} aria-haspopup="true" onClick={() => setOpen(open === "company" ? null : "company")}>
               {dict.nav.company} <Chevron />
             </button>
           </div>
-          <Link href={`${base}/cursos`} className="nav__link nav__link--plain" onMouseEnter={() => setOpen(null)}>
-            {dict.nav.courses}
-          </Link>
+          {FEATURES.lms && (
+            <Link href={`${base}/cursos`} className="nav__link nav__link--plain" onMouseEnter={() => setOpen(null)}>
+              {dict.nav.courses}
+            </Link>
+          )}
           <Link href={`${base}#calculator`} className="nav__link nav__link--plain" onMouseEnter={() => setOpen(null)}>
             {dict.nav.calculator}
           </Link>
@@ -179,7 +184,7 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
               </div>
             )}
 
-            {open === "blog" && (
+            {FEATURES.blog && open === "blog" && (
               <div className="mega mega--portfolio">
                 <p className="mega__group">{dict.nav.blog}</p>
                 <div className="mega__cases">
@@ -276,8 +281,8 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
           )}
 
           <Link href={`${base}/portafolio`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.portfolio}</Link>
-          <Link href={`${base}/cursos`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.courses}</Link>
-          <Link href={`${base}/blog`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.blog}</Link>
+          {FEATURES.lms && <Link href={`${base}/cursos`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.courses}</Link>}
+          {FEATURES.blog && <Link href={`${base}/blog`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.blog}</Link>}
           <Link href={`${base}#calculator`} className="drawer__sec" onClick={() => setMobileOpen(false)}>{dict.nav.calculator}</Link>
           <Link href={session ? dashHref : `${base}/ingresar`} className="drawer__sec" onClick={() => setMobileOpen(false)}>
             {session ? dashLabel : dict.nav.login}

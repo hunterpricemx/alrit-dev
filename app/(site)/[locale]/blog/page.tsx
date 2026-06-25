@@ -5,11 +5,13 @@ import { isLocale, type Locale, locales } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { getPublishedPostsAsync, postLocale, readingTime } from "@/lib/content/blog";
 import BlogFilter, { type BlogCard } from "@/components/blog/BlogFilter";
+import { FEATURES } from "@/lib/features";
 
 export const revalidate = 3600;
 const SITE_URL = "https://alrit.dev";
 
 export function generateStaticParams() {
+  if (!FEATURES.blog) return [];
   return locales.map((locale) => ({ locale }));
 }
 
@@ -44,6 +46,7 @@ function fmtDate(iso: string | null, l: Locale): string {
 }
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  if (!FEATURES.blog) notFound();
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;

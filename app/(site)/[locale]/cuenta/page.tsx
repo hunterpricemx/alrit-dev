@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { isLocale } from "@/lib/i18n/config";
 import { auth } from "@/auth";
+import { FEATURES } from "@/lib/features";
 
 export const dynamic = "force-dynamic";
 
@@ -19,5 +20,6 @@ export default async function CuentaPage({
   if (!role) redirect(`/${locale}/ingresar`);
   if (role === "ADMIN" || role === "EDITOR") redirect(`/admin`);
   if (role === "CLIENT") redirect(`/${locale}/portal`);
-  redirect(`/${locale}/mi-aprendizaje`);
+  // STUDENT: con el LMS oculto no hay panel de alumno → al home.
+  redirect(FEATURES.lms ? `/${locale}/mi-aprendizaje` : `/${locale}`);
 }

@@ -6,6 +6,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { getAllProjectsAsync } from "@/lib/content/portfolio";
 import { getLatestPostsAsync, postLocale } from "@/lib/content/blog";
+import { FEATURES } from "@/lib/features";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
@@ -77,7 +78,7 @@ export default async function LocaleLayout({
   const picked = projects.filter((p) => p.featured).slice(0, 4);
   const featured = (picked.length ? picked : projects.slice(0, 4)).map(toFeatured);
 
-  const latest = await getLatestPostsAsync(3);
+  const latest = FEATURES.blog ? await getLatestPostsAsync(3) : [];
   const latestPosts = latest.map((p) => ({
     slug: p.slug,
     title: postLocale(p, locale as Locale).title,

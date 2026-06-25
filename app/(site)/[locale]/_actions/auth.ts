@@ -3,6 +3,7 @@
 import { z } from "zod";
 import bcrypt from "bcryptjs";
 import { db } from "@/lib/db";
+import { FEATURES } from "@/lib/features";
 
 const schema = z.object({
   name: z.string().min(1).max(120),
@@ -18,6 +19,7 @@ export async function registerStudent(input: {
   email: string;
   password: string;
 }): Promise<RegisterState> {
+  if (!FEATURES.lms) return { ok: false, error: "El registro no está disponible." };
   const parsed = schema.safeParse({
     name: input.name?.trim(),
     email: input.email?.trim().toLowerCase(),

@@ -4,6 +4,7 @@ import { isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
+import { FEATURES } from "@/lib/features";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export default async function DashboardPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
+  if (!FEATURES.lms) notFound();
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;

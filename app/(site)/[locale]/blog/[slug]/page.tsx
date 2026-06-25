@@ -7,11 +7,13 @@ import { getPostBySlugAsync, getAllPostSlugs, getPublishedPostsAsync, postLocale
 import { categoryLabel } from "@/lib/content/blog-categories";
 import { BlogPostingJsonLd, BreadcrumbJsonLd } from "@/lib/seo/jsonld";
 import Markdown from "@/components/blog/Markdown";
+import { FEATURES } from "@/lib/features";
 
 export const revalidate = 3600;
 const SITE_URL = "https://alrit.dev";
 
 export async function generateStaticParams() {
+  if (!FEATURES.blog) return [];
   const rows = await getAllPostSlugs();
   return locales.flatMap((locale) => rows.map((r) => ({ locale, slug: r.slug })));
 }
@@ -64,6 +66,7 @@ function fmtDate(iso: string | null, l: Locale): string {
 }
 
 export default async function PostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  if (!FEATURES.blog) notFound();
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
