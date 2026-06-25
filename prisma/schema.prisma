@@ -66,6 +66,9 @@ model Project {
   highlights     Json // string[]
   tags           Json // string[]
   sortOrder      Int      @default(0)
+  featured       Boolean  @default(false)
+  accent         String?
+  icon           String?
   published      Boolean  @default(true)
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt

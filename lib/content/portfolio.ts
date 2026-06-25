@@ -19,9 +19,17 @@ export type Project = {
   en: ProjectLocale;
   highlights: string[];
   tags: string[];
+  featured: boolean;
+  accent: string;
+  icon: string;
 };
 
-const PROJECTS = data as Project[];
+const PROJECTS = (data as Omit<Project, "featured" | "accent" | "icon">[]).map((p) => ({
+  ...p,
+  featured: false,
+  accent: "",
+  icon: "",
+})) as Project[];
 
 export function getAllProjects(): Project[] {
   return PROJECTS;
@@ -51,6 +59,9 @@ type ProjectRow = {
   locales: unknown;
   highlights: unknown;
   tags: unknown;
+  featured?: boolean;
+  accent?: string | null;
+  icon?: string | null;
 };
 
 function mapRowToProject(row: ProjectRow): Project {
@@ -71,6 +82,9 @@ function mapRowToProject(row: ProjectRow): Project {
     en: loc.en ?? empty,
     highlights: Array.isArray(row.highlights) ? (row.highlights as string[]) : [],
     tags: Array.isArray(row.tags) ? (row.tags as string[]) : [],
+    featured: row.featured ?? false,
+    accent: row.accent ?? "",
+    icon: row.icon ?? "",
   };
 }
 
