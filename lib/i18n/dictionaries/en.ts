@@ -397,11 +397,7 @@ const en: Dictionary = {
   testimonials: {
     eyebrow: "Testimonials",
     title: "Businesses already growing with us",
-    items: [
-      { quote: "We migrated with Alrit and our online sales doubled in three months.", author: "Placeholder client", role: "Director, Retail" },
-      { quote: "Professional, fast and always one step ahead. The site turned out amazing.", author: "Placeholder client", role: "Founder, EdTech" },
-      { quote: "They automated processes that ate up our hours. Now everything flows.", author: "Placeholder client", role: "Operations, Real Estate" },
-    ],
+    items: [] as { quote: string; author: string; role: string }[],
   },
   finalCta: {
     title: "Ready to build your next project?",

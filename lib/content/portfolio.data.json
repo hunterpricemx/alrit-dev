@@ -11,9 +11,9 @@
     "tech": "Aplicacion web custom construida con Next.js (React); pagos integrados con Stripe; sistema de autenticacion con paneles por rol. No usa CMS tipo WordPress.",
     "es": {
       "name": "Conectas",
-      "title": "Conectas - Plataforma de experiencias gastronomicas que conecta marcas, influencers y usuarios",
-      "short": "Marketplace web a medida que une a marcas, influencers y comensales en experiencias gastronomicas reservables.",
-      "long": "El reto era unir a tres audiencias muy distintas (marcas, influencers y usuarios) en una sola plataforma sin friccion. Desarrollamos un marketplace a medida en Next.js con paneles por rol, membresias, reservas, mapas y cobros seguros con Stripe. El resultado es una experiencia unificada donde restaurantes, hoteles y museos publican beneficios y los usuarios reservan y los aprovechan en pocos clics."
+      "title": "Conectas - Plataforma de experiencias gastronómicas que conecta marcas, influencers y usuarios",
+      "short": "Marketplace web a medida que une a marcas, influencers y comensales en experiencias gastronómicas reservables.",
+      "long": "El reto era unir a tres audiencias muy distintas (marcas, influencers y usuarios) en una sola plataforma sin fricción. Desarrollamos un marketplace a medida en Next.js con paneles por rol, membresias, reservas, mapas y cobros seguros con Stripe. El resultado es una experiencia unificada donde restaurantes, hoteles y museos publican beneficios y los usuarios reservan y los aprovechan en pocos clics."
     },
     "en": {
       "name": "Conectas",
@@ -168,7 +168,7 @@
       "name": "Programarte",
       "title": "Programarte: plataforma web de bienestar mental con experiencias guiadas",
       "short": "Plataforma web a la medida para sesiones guiadas de bienestar mental, con acceso seguro de usuarios y entrega de audio en la nube.",
-      "long": "El reto era llevar un metodo de transformacion personal basado en psicologia y neurociencia a una experiencia digital inmersiva y facil de usar. Desarrollamos una aplicacion web a la medida con flujo de registro e inicio de sesion, organizacion por intenciones (amor propio, duelo, autodisciplina, sanacion fisica y gratitud) y entrega de contenido de audio respaldada por Supabase. El resultado es una plataforma moderna y escalable que guia al usuario en su proceso de bienestar con un entorno sonoro y visual cuidado."
+      "long": "El reto era llevar un metodo de transformacion personal basado en psicologia y neurociencia a una experiencia digital inmersiva y facil de usar. Desarrollamos una aplicación web a la medida con flujo de registro e inicio de sesion, organizacion por intenciones (amor propio, duelo, autodisciplina, sanacion fisica y gratitud) y entrega de contenido de audio respaldada por Supabase. El resultado es una plataforma moderna y escalable que guia al usuario en su proceso de bienestar con un entorno sonoro y visual cuidado."
     },
     "en": {
       "name": "Programarte",
@@ -242,9 +242,9 @@
     "tech": "WordPress (estructura /wp-content/ visible, blog, formularios de contacto y cotizacion; catalogo administrado por CMS, sin carrito ni checkout transaccional)",
     "es": {
       "name": "BDS Motos",
-      "title": "BDS Motos — Catalogo digital y localizador de distribuidores para una marca de motocicletas",
-      "short": "Sitio en WordPress que convierte el catalogo de motos BDS en prospectos para su red de mas de 150 distribuidores.",
-      "long": "El reto era presentar una linea amplia de motocicletas, motonetas y cuatrimotos, y conectar a cada visitante con el distribuidor o taller correcto en todo Mexico. Construimos un sitio en WordPress con catalogo por categorias, fichas de modelo con especificaciones, cotizador de refacciones y un localizador de distribuidores por estado. El resultado es una vitrina digital clara y escalable que canaliza la intencion de compra hacia la red de mas de 150 puntos de venta y talleres autorizados."
+      "title": "BDS Motos — Catálogo digital y localizador de distribuidores para una marca de motocicletas",
+      "short": "Sitio en WordPress que convierte el catálogo de motos BDS en prospectos para su red de mas de 150 distribuidores.",
+      "long": "El reto era presentar una linea amplia de motocicletas, motonetas y cuatrimotos, y conectar a cada visitante con el distribuidor o taller correcto en todo Mexico. Construimos un sitio en WordPress con catálogo por categorias, fichas de modelo con especificaciones, cotizador de refacciones y un localizador de distribuidores por estado. El resultado es una vitrina digital clara y escalable que canaliza la intencion de compra hacia la red de mas de 150 puntos de venta y talleres autorizados."
     },
     "en": {
       "name": "BDS Motos",

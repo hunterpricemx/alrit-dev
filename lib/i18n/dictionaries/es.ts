@@ -395,11 +395,7 @@ const es = {
   testimonials: {
     eyebrow: "Testimonios",
     title: "Negocios que ya crecen con nosotros",
-    items: [
-      { quote: "Migramos con Alrit y nuestras ventas en línea se duplicaron en tres meses.", author: "Cliente placeholder", role: "Director, Retail" },
-      { quote: "Profesionales, rápidos y siempre un paso adelante. El sitio quedó increíble.", author: "Cliente placeholder", role: "Fundadora, EdTech" },
-      { quote: "Automatizaron procesos que nos quitaban horas. Ahora todo fluye.", author: "Cliente placeholder", role: "Operaciones, Inmobiliaria" },
-    ],
+    items: [] as { quote: string; author: string; role: string }[],
   },
   finalCta: {
     title: "¿Listo para construir tu próximo proyecto?",

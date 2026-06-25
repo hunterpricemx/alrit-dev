@@ -353,10 +353,7 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
                 <span key={i} className={`calc__avatar calc__avatar--${i}`} />
               ))}
             </span>
-            <span className="calc__social-text">
-              <span className="calc__stars" aria-hidden="true">★★★★★</span>
-              {t.socialProof}
-            </span>
+            <span className="calc__social-text">{t.socialProof}</span>
           </div>
         </aside>
       </div>
