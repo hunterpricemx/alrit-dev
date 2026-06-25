@@ -3,6 +3,7 @@ import { locales } from "@/lib/i18n/config";
 import { getAllServiceSlugs } from "@/lib/content/services";
 import { getAllProjectSlugs } from "@/lib/content/portfolio";
 import { getAllCourseSlugs } from "@/lib/content/courses";
+import { getAllPostSlugs } from "@/lib/content/blog";
 
 const SITE_URL = "https://alrit.dev";
 const LAST = new Date("2026-06-22");
@@ -31,6 +32,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const services = getAllServiceSlugs();
   const projects = getAllProjectSlugs();
   const courses = await getAllCourseSlugs();
+  const posts = await getAllPostSlugs();
+
+  const blogPosts: MetadataRoute.Sitemap = posts.flatMap((p) =>
+    locales.map((locale) => ({
+      url: `${SITE_URL}/${locale}/blog/${p.slug}`,
+      lastModified: new Date(p.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: locale === "es" ? 0.6 : 0.55,
+      alternates: {
+        languages: {
+          es: `${SITE_URL}/es/blog/${p.slug}`,
+          en: `${SITE_URL}/en/blog/${p.slug}`,
+        },
+      },
+    }))
+  );
 
   return [
     ...entry("", "weekly", 1),
@@ -40,5 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...projects.flatMap((p) => entry(`/portafolio/${p}`, "monthly", 0.6)),
     ...entry("/cursos", "weekly", 0.7),
     ...courses.flatMap((c) => entry(`/cursos/${c}`, "monthly", 0.6)),
+    ...entry("/blog", "weekly", 0.7),
+    ...blogPosts,
   ];
 }

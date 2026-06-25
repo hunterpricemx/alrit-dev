@@ -127,3 +127,38 @@ export function CaseStudyJsonLd({
     />
   );
 }
+
+export function BlogPostingJsonLd({
+  url,
+  headline,
+  description,
+  image,
+  datePublished,
+  dateModified,
+  author,
+  locale,
+}: {
+  url: string;
+  headline: string;
+  description: string;
+  image?: string;
+  datePublished: string | null;
+  dateModified: string;
+  author: string;
+  locale: "es" | "en";
+}) {
+  const data: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline,
+    description,
+    datePublished: datePublished ?? dateModified,
+    dateModified,
+    author: { "@type": "Person", name: author },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    mainEntityOfPage: url,
+    inLanguage: locale === "en" ? "en-US" : "es-MX",
+  };
+  if (image) data.image = image;
+  return <JsonLd data={data} />;
+}
