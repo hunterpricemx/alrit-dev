@@ -207,6 +207,7 @@ export default function ServiceLanding({
           <h2 className="svc-card__h">
             {l.stepsTitle} <span className="svc-card__accent">{l.stepsTitleAccent}</span>
           </h2>
+          {content.sections[2] && <p className="svc-card__p">{content.sections[2].body}</p>}
         </div>
         <ol className="svc-steps">
           {l.steps.map((s, i) => (
@@ -219,13 +220,29 @@ export default function ServiceLanding({
         </ol>
       </Reveal>
 
+      {/* Tecnología e integraciones locales — prose keyword-rich (CFDI, OXXO, DC3…) */}
+      {content.sections[3] && (
+        <Reveal as="section" className="svc-card svc-card--tech" style={{ "--accent": "#fb8c2e" } as React.CSSProperties}>
+          <div className="svc-card__main svc-card__main--full">
+            <span className="svc-card__bar" aria-hidden="true" />
+            <span className="svc-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2M7 7h10v10H7z" />
+              </svg>
+            </span>
+            <h2 className="svc-card__h">{accentLast(content.sections[3].heading, "svc-card__accent")}</h2>
+            <p className="svc-card__p">{content.sections[3].body}</p>
+          </div>
+        </Reveal>
+      )}
+
       {/* Proyectos relacionados */}
       {related.length > 0 && (
         <section className="svc__section">
           <Reveal className="svc-rel__head">
             <div>
               <h2 className="svc__h2">{l.relatedTitle}</h2>
-              <p className="svc__related-sub">{l.relatedText}</p>
+              <p className="svc__related-sub">{content.sections[4]?.body ?? l.relatedText}</p>
             </div>
             <Link href={`${base}/portafolio`} className="svc-rel__all">
               {dict.portfolio.cta}

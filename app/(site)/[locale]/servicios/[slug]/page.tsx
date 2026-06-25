@@ -35,7 +35,7 @@ export async function generateMetadata({
   const c = content[locale as Locale];
   const path = `/${locale}/servicios/${slug}`;
   return {
-    title: c.metaTitle,
+    title: { absolute: c.metaTitle },
     description: c.metaDescription,
     keywords: content.targetKeywords,
     alternates: {
@@ -53,7 +53,9 @@ export async function generateMetadata({
       siteName: "Alrit.dev",
       locale: locale === "en" ? "en_US" : "es_MX",
       type: "website",
+      images: ["/og.png"],
     },
+    twitter: { card: "summary_large_image", title: c.metaTitle, description: c.metaDescription, images: ["/og.png"] },
   };
 }
 

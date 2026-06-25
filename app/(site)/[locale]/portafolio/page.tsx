@@ -23,13 +23,24 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionaryAsync(locale as Locale);
   const path = `/${locale}/portafolio`;
+  const title = locale === "en" ? "Portfolio: custom web & software projects" : "Portafolio: proyectos web y software a medida";
   return {
-    title: `${dict.portfolio.title} | Alrit.dev`,
+    title,
     description: dict.portfolio.text,
     alternates: {
       canonical: path,
       languages: { es: "/es/portafolio", en: "/en/portafolio", "x-default": "/es/portafolio" },
     },
+    openGraph: {
+      title: `${title} | Alrit.dev`,
+      description: dict.portfolio.text,
+      url: `${SITE_URL}${path}`,
+      siteName: "Alrit.dev",
+      locale: locale === "en" ? "en_US" : "es_MX",
+      type: "website",
+      images: ["/og.png"],
+    },
+    twitter: { card: "summary_large_image", title: `${title} | Alrit.dev`, description: dict.portfolio.text, images: ["/og.png"] },
   };
 }
 
@@ -59,6 +70,7 @@ export default async function PortfolioHub({
           <p className="hub__sub">{dict.portfolio.text}</p>
         </header>
 
+        <h2 className="sr-only">{l === "en" ? "Featured projects" : "Proyectos destacados"}</h2>
         <ul className="pf-grid">
           {projects.map((p) => (
             <li key={p.slug}>

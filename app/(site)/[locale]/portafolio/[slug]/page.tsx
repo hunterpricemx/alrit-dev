@@ -27,8 +27,10 @@ export async function generateMetadata({
   if (!isLocale(locale) || !project) return {};
   const p = project[locale as Locale];
   const path = `/${locale}/portafolio/${slug}`;
+  const shortName = p.name || p.title.slice(0, 48);
+  const title = `${shortName} — ${locale === "en" ? "case study" : "caso de éxito"}`;
   return {
-    title: `${p.title} | Portafolio Alrit.dev`,
+    title,
     description: p.short,
     alternates: {
       canonical: path,
@@ -43,8 +45,10 @@ export async function generateMetadata({
       description: p.short,
       url: `${SITE_URL}${path}`,
       images: [{ url: project.image }],
+      locale: locale === "en" ? "en_US" : "es_MX",
       type: "article",
     },
+    twitter: { card: "summary_large_image", title: p.title, description: p.short, images: [project.image] },
   };
 }
 

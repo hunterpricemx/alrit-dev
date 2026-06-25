@@ -1,8 +1,8 @@
 const es = {
   meta: {
-    title: "Alrit.dev — Desarrollo web que convierte",
+    title: "Desarrollo web y software a medida en México | Alrit.dev",
     description:
-      "Estudio de desarrollo web. Sitios WordPress, e-commerce, LMS, Real Estate, sistemas a medida, apps móviles y automatizaciones. La evolución de Hunter Price Mx.",
+      "Estudio mexicano de desarrollo web y software a medida: sitios rápidos, e-commerce y sistemas que convierten y posicionan en Google. Cotiza tu proyecto hoy.",
   },
   nav: {
     services: "Servicios",
@@ -97,7 +97,7 @@ const es = {
     soon: "Pronto",
   },
   hero: {
-    titleA: "Construimos el sitio que",
+    titleA: "Desarrollo web a medida que",
     titleAccent: "tu negocio merece",
     lede: "Diseñamos y desarrollamos experiencias web que se sienten vivas y convierten visitantes en clientes. Cada proyecto, una pieza que merece mostrarse.",
     primary: "Cotiza tu proyecto",

@@ -2,9 +2,9 @@ import type { Dictionary } from "./es";
 
 const en: Dictionary = {
   meta: {
-    title: "Alrit.dev — Web development that converts",
+    title: "Custom web & software development in Mexico | Alrit.dev",
     description:
-      "Web development studio. WordPress sites, e-commerce, LMS, Real Estate, custom systems, mobile apps and automations. The evolution of Hunter Price Mx.",
+      "Mexican studio for custom web and software development: fast sites, e-commerce and systems that convert and rank on Google. Get your quote today.",
   },
   nav: {
     services: "Services",
@@ -99,7 +99,7 @@ const en: Dictionary = {
     soon: "Soon",
   },
   hero: {
-    titleA: "We build the website",
+    titleA: "Custom web development that",
     titleAccent: "your business deserves",
     lede: "We design and develop web experiences that feel alive and turn visitors into customers. Every project, a piece worth showing off.",
     primary: "Get a quote",

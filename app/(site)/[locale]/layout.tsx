@@ -40,11 +40,11 @@ export async function generateMetadata({
   const dict = await getDictionaryAsync(isLocale(locale) ? locale : "es");
   return {
     metadataBase: new URL(SITE_URL),
-    title: dict.meta.title,
+    title: { default: dict.meta.title, template: "%s | Alrit.dev" },
     description: dict.meta.description,
     alternates: {
       canonical: `/${locale}`,
-      languages: { es: "/es", en: "/en" },
+      languages: { es: "/es", en: "/en", "x-default": "/es" },
     },
     openGraph: {
       title: dict.meta.title,
@@ -53,8 +53,9 @@ export async function generateMetadata({
       siteName: "Alrit.dev",
       locale: locale === "en" ? "en_US" : "es_MX",
       type: "website",
+      images: ["/og.png"],
     },
-    twitter: { card: "summary_large_image", title: dict.meta.title, description: dict.meta.description },
+    twitter: { card: "summary_large_image", title: dict.meta.title, description: dict.meta.description, images: ["/og.png"] },
   };
 }
 

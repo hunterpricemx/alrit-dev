@@ -25,13 +25,24 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionaryAsync(locale as Locale);
   const path = `/${locale}/servicios`;
+  const title = locale === "en" ? "Web & software development services in Mexico" : "Servicios de desarrollo web y software a medida en México";
   return {
-    title: `${dict.servicesHub.title} | Alrit.dev`,
+    title,
     description: dict.servicesHub.subtitle,
     alternates: {
       canonical: path,
       languages: { es: "/es/servicios", en: "/en/servicios", "x-default": "/es/servicios" },
     },
+    openGraph: {
+      title: `${title} | Alrit.dev`,
+      description: dict.servicesHub.subtitle,
+      url: `${SITE_URL}${path}`,
+      siteName: "Alrit.dev",
+      locale: locale === "en" ? "en_US" : "es_MX",
+      type: "website",
+      images: ["/og.png"],
+    },
+    twitter: { card: "summary_large_image", title: `${title} | Alrit.dev`, description: dict.servicesHub.subtitle, images: ["/og.png"] },
   };
 }
 

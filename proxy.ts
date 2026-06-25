@@ -27,7 +27,10 @@ export function proxy(request: NextRequest) {
 
   const url = request.nextUrl.clone();
   url.pathname = `/${preferred}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.redirect(url);
+  const res = NextResponse.redirect(url, 308);
+  // El destino depende del idioma negociado → que los caches/CDN lo respeten.
+  res.headers.set("Vary", "Accept-Language");
+  return res;
 }
 
 export const config = {
