@@ -4,15 +4,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 
 const KEY = "alrit-consent";
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-export default function ConsentBanner() {
+export default function ConsentBanner({ enabled }: { enabled: boolean }) {
   const [show, setShow] = useState(false);
   const params = useParams();
   const en = (params?.locale as string) === "en";
 
   useEffect(() => {
-    if (!GA_ID) return;
+    if (!enabled) return;
     try {
       // Sincroniza con localStorage al montar: muestra el banner solo si no hay decisión previa.
       // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -20,7 +19,7 @@ export default function ConsentBanner() {
     } catch {
       /* localStorage no disponible */
     }
-  }, []);
+  }, [enabled]);
 
   const decide = (granted: boolean) => {
     try {
@@ -39,7 +38,7 @@ export default function ConsentBanner() {
     setShow(false);
   };
 
-  if (!GA_ID || !show) return null;
+  if (!enabled || !show) return null;
 
   return (
     <div className="consent" role="dialog" aria-live="polite" aria-label={en ? "Cookie consent" : "Consentimiento de cookies"}>

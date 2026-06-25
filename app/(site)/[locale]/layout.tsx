@@ -6,6 +6,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { getAllProjectsAsync } from "@/lib/content/portfolio";
 import { getLatestPostsAsync, postLocale } from "@/lib/content/blog";
+import { getSettingsAsync } from "@/lib/content/settings";
 import { FEATURES } from "@/lib/features";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -81,6 +82,8 @@ export default async function LocaleLayout({
   const picked = projects.filter((p) => p.featured).slice(0, 4);
   const featured = (picked.length ? picked : projects.slice(0, 4)).map(toFeatured);
 
+  const settings = await getSettingsAsync();
+  const gaId = settings.gaId || process.env.NEXT_PUBLIC_GA_ID || "";
   const latest = FEATURES.blog ? await getLatestPostsAsync(3) : [];
   const latestPosts = latest.map((p) => ({
     slug: p.slug,
@@ -95,14 +98,14 @@ export default async function LocaleLayout({
       className={`${poppins.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <OrganizationJsonLd url={SITE_URL} />
+        <OrganizationJsonLd url={SITE_URL} settings={settings} />
         <Providers>
           <Header dict={dict} locale={locale as Locale} featured={featured} latestPosts={latestPosts} />
           <main className="flex-1">{children}</main>
-          <Footer dict={dict} locale={locale as Locale} />
-          <ConsentBanner />
+          <Footer dict={dict} locale={locale as Locale} settings={settings} />
+          <ConsentBanner enabled={!!gaId} />
         </Providers>
-        <SiteAnalytics />
+        <SiteAnalytics gaId={gaId} />
       </body>
     </html>
   );

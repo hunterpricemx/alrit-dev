@@ -3,15 +3,19 @@ import type { Dictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n/config";
 import { SERVICES } from "@/lib/services";
 import { FEATURES } from "@/lib/features";
+import { whatsappHref, type SiteSettings } from "@/lib/content/settings";
 
 export default function Footer({
   dict,
   locale,
+  settings,
 }: {
   dict: Dictionary;
   locale: Locale;
+  settings: SiteSettings;
 }) {
   const base = `/${locale}`;
+  const wa = whatsappHref(settings);
   const year = 2026;
 
   return (
@@ -53,12 +57,16 @@ export default function Footer({
 
         <div className="footer__col">
           <h3 className="footer__heading">{dict.footer.columns.contact}</h3>
-          <a href="mailto:hola@alrit.dev" className="footer__link">
-            hola@alrit.dev
-          </a>
-          <a href="https://wa.me/520000000000" className="footer__link">
-            WhatsApp
-          </a>
+          {settings.email && (
+            <a href={`mailto:${settings.email}`} className="footer__link">
+              {settings.email}
+            </a>
+          )}
+          {wa && (
+            <a href={wa} className="footer__link" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+          )}
         </div>
       </div>
 

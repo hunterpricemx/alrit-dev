@@ -319,3 +319,24 @@ model Post {
   @@index([published, publishedAt])
   @@index([category, published, publishedAt])
 }
+
+// ---------- Configuración del sitio (singleton, editable en el admin) ----------
+model SiteSettings {
+  id              String   @id @default("site")
+  email           String   @default("")
+  whatsapp        String   @default("") // solo dígitos, formato internacional (wa.me/<whatsapp>)
+  phone           String   @default("") // E.164 con + (tel: y schema telephone)
+  streetAddress   String   @default("")
+  addressLocality String   @default("")
+  addressRegion   String   @default("")
+  postalCode      String   @default("")
+  addressCountry  String   @default("MX")
+  instagram       String   @default("")
+  linkedin        String   @default("")
+  github          String   @default("")
+  facebook        String   @default("")
+  x               String   @default("")
+  gaId            String   @default("") // GA4 Measurement ID (G-XXXX)
+  priceRange      String   @default("$$")
+  updatedAt       DateTime @updatedAt
+}

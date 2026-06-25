@@ -14,6 +14,7 @@ const ICONS = {
   quotes: "M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1ZM3 7l9 6 9-6",
   logos: "M4 7h16M4 12h16M4 17h10M19 15l2 2-2 2",
   blog: "M4 4h13l3 3v13H4zM17 4v3h3M8 12h8M8 16h8M8 8h4",
+  settings: "M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM19.4 13a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 7 19.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 3 12.6H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.7 5.7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 11 3.6V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.9H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z",
 };
 
 const NAV = [
@@ -27,6 +28,7 @@ const NAV = [
   { href: "/admin/logos", label: "Logos", icon: ICONS.logos, ready: true },
   { href: "/admin/blog", label: "Blog", icon: ICONS.blog, ready: true },
   { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: true },
+  { href: "/admin/configuracion", label: "Configuración", icon: ICONS.settings, ready: true },
 ];
 
 function NavIcon({ d }: { d: string }) {

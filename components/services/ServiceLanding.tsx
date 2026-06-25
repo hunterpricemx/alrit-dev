@@ -34,6 +34,7 @@ export default function ServiceLanding({
   serviceTitle,
   keywords,
   related,
+  whatsapp,
 }: {
   locale: Locale;
   dict: Dictionary;
@@ -43,6 +44,7 @@ export default function ServiceLanding({
   serviceTitle: string;
   keywords: string[];
   related: Project[];
+  whatsapp: string | null;
 }) {
   const l = dict.serviceLanding;
   const base = `/${locale}`;
@@ -309,10 +311,12 @@ export default function ServiceLanding({
               {l.ctaPrimary}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </Link>
-            <a href="https://wa.me/520000000000" className="svc-cta2__btn svc-cta2__btn--ghost">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.4.5-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z" /></svg>
-              {l.ctaSecondary}
-            </a>
+            {whatsapp && (
+              <a href={whatsapp} className="svc-cta2__btn svc-cta2__btn--ghost" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.4.5-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.3.1.5.2.5.4.1.2.1.9-.1 1.5Z" /></svg>
+                {l.ctaSecondary}
+              </a>
+            )}
           </div>
         </Reveal>
       </section>

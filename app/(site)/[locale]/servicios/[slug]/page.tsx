@@ -10,6 +10,7 @@ import {
 import { SERVICES, type ServiceId } from "@/lib/services";
 import { getProjectAsync } from "@/lib/content/portfolio";
 import ServiceLanding from "@/components/services/ServiceLanding";
+import { getSettingsAsync, whatsappHref } from "@/lib/content/settings";
 import {
   ServiceJsonLd,
   BreadcrumbJsonLd,
@@ -80,6 +81,7 @@ export default async function ServicePage({
   );
 
   const url = `${SITE_URL}/${locale}/servicios/${slug}`;
+  const settings = await getSettingsAsync();
 
   return (
     <>
@@ -100,6 +102,7 @@ export default async function ServicePage({
         serviceTitle={serviceTitle}
         keywords={content.targetKeywords}
         related={related}
+        whatsapp={whatsappHref(settings)}
       />
     </>
   );

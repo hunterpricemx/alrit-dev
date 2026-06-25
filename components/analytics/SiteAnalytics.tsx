@@ -3,14 +3,13 @@
 import Script from "next/script";
 import { useEffect } from "react";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-
 /**
  * GA4 con Consent Mode v2 (todo denegado por defecto hasta que el usuario acepte).
- * Inerte si NEXT_PUBLIC_GA_ID no está definido (no carga nada).
+ * Inerte si `gaId` está vacío (se configura en /admin/configuracion).
  * Además rastrea por delegación los clics de contacto (WhatsApp / email).
  */
-export default function SiteAnalytics() {
+export default function SiteAnalytics({ gaId }: { gaId: string }) {
+  const GA_ID = gaId;
   useEffect(() => {
     if (!GA_ID) return;
     const onClick = (e: MouseEvent) => {
@@ -27,7 +26,7 @@ export default function SiteAnalytics() {
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
-  }, []);
+  }, [GA_ID]);
 
   if (!GA_ID) return null;
 

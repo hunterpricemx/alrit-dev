@@ -1,3 +1,5 @@
+import { sameAs, type SiteSettings } from "@/lib/content/settings";
+
 type JsonLdProps = { data: Record<string, unknown> };
 
 function JsonLd({ data }: JsonLdProps) {
@@ -9,50 +11,69 @@ function JsonLd({ data }: JsonLdProps) {
   );
 }
 
-export function OrganizationJsonLd({ url }: { url: string }) {
+export function OrganizationJsonLd({ url, settings }: { url: string; settings: SiteSettings }) {
   const areaServed = [
     { "@type": "Country", name: "México" },
     { "@type": "Country", name: "España" },
   ];
+  const social = sameAs(settings);
+  const address =
+    settings.addressLocality || settings.streetAddress
+      ? {
+          "@type": "PostalAddress",
+          ...(settings.streetAddress && { streetAddress: settings.streetAddress }),
+          ...(settings.addressLocality && { addressLocality: settings.addressLocality }),
+          ...(settings.addressRegion && { addressRegion: settings.addressRegion }),
+          ...(settings.postalCode && { postalCode: settings.postalCode }),
+          addressCountry: settings.addressCountry || "MX",
+        }
+      : undefined;
+
+  const org: Record<string, unknown> = {
+    "@type": "Organization",
+    "@id": `${url}/#organization`,
+    name: "Alrit.dev",
+    url,
+    description: "Estudio mexicano de desarrollo web y software a la medida. La evolución de Hunter Price Mx.",
+    logo: { "@type": "ImageObject", "@id": `${url}/#logo`, url: `${url}/icon.svg`, caption: "Alrit.dev" },
+    image: `${url}/og.png`,
+    knowsLanguage: ["es", "en"],
+    areaServed,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      ...(settings.email && { email: settings.email }),
+      ...(settings.phone && { telephone: settings.phone }),
+      availableLanguage: ["Spanish", "English"],
+      areaServed: ["MX", "ES"],
+    },
+  };
+  if (settings.email) org.email = settings.email;
+  if (settings.phone) org.telephone = settings.phone;
+  if (address) org.address = address;
+  if (social.length) org.sameAs = social;
+
+  const local: Record<string, unknown> = {
+    "@type": "ProfessionalService",
+    "@id": `${url}/#localbusiness`,
+    name: "Alrit.dev",
+    url,
+    image: `${url}/og.png`,
+    logo: `${url}/icon.svg`,
+    description: "Desarrollo web y software a la medida: sitios, e-commerce, plataformas, sistemas y apps.",
+    priceRange: settings.priceRange || "$$",
+    areaServed,
+    parentOrganization: { "@id": `${url}/#organization` },
+  };
+  if (settings.phone) local.telephone = settings.phone;
+  if (address) local.address = address;
+  if (social.length) local.sameAs = social;
+
   const data = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${url}/#organization`,
-        name: "Alrit.dev",
-        url,
-        description:
-          "Estudio mexicano de desarrollo web y software a la medida. La evolución de Hunter Price Mx.",
-        logo: { "@type": "ImageObject", "@id": `${url}/#logo`, url: `${url}/icon.svg`, caption: "Alrit.dev" },
-        image: `${url}/og.png`,
-        email: "hola@alrit.dev",
-        knowsLanguage: ["es", "en"],
-        areaServed,
-        contactPoint: {
-          "@type": "ContactPoint",
-          contactType: "sales",
-          email: "hola@alrit.dev",
-          availableLanguage: ["Spanish", "English"],
-          areaServed: ["MX", "ES"],
-        },
-        // TODO (datos del cliente): telephone, address (PostalAddress), foundingDate.
-        sameAs: [] as string[], // TODO: perfiles reales (LinkedIn, Instagram, GitHub).
-      },
-      {
-        "@type": "ProfessionalService",
-        "@id": `${url}/#localbusiness`,
-        name: "Alrit.dev",
-        url,
-        image: `${url}/og.png`,
-        logo: `${url}/icon.svg`,
-        description:
-          "Desarrollo web y software a la medida: sitios, e-commerce, plataformas, sistemas y apps.",
-        priceRange: "$$",
-        areaServed,
-        parentOrganization: { "@id": `${url}/#organization` },
-        // TODO (datos del cliente): telephone, address (PostalAddress) y geo si hay oficina.
-      },
+      org,
+      local,
       {
         "@type": "WebSite",
         "@id": `${url}/#website`,
