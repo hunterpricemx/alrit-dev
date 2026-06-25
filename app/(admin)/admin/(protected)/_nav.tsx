@@ -13,6 +13,7 @@ const ICONS = {
   clients: "M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M11 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0M21 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75",
   quotes: "M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1ZM3 7l9 6 9-6",
   logos: "M4 7h16M4 12h16M4 17h10M19 15l2 2-2 2",
+  blog: "M4 4h13l3 3v13H4zM17 4v3h3M8 12h8M8 16h8M8 8h4",
 };
 
 const NAV = [
@@ -24,6 +25,7 @@ const NAV = [
   { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: true },
   { href: "/admin/logos", label: "Logos", icon: ICONS.logos, ready: true },
+  { href: "/admin/blog", label: "Blog", icon: ICONS.blog, ready: true },
   { href: "/admin/text", label: "Textos", icon: ICONS.text, ready: true },
 ];
 
