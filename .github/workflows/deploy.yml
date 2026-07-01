@@ -1,0 +1,33 @@
+name: Deploy a producción
+
+# Cada push a master despliega solo en el servidor (WHM + Docker).
+# También se puede lanzar a mano desde la pestaña "Actions" (botón "Run workflow").
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+# Evita que dos despliegues corran a la vez.
+concurrency:
+  group: deploy-produccion
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Desplegar por SSH
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          command_timeout: 30m
+          script: |
+            set -e
+            cd /root/alrit
+            git pull --ff-only
+            docker compose -f docker-compose.prod.yml up -d --build
+            docker image prune -f
+            echo "✅ Deploy terminado"
