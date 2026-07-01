@@ -18,17 +18,17 @@ const es = {
     cta: "Cotiza tu proyecto",
   },
   promo: {
-    text: "Precios de temporada hasta el 31 de agosto — Landing $7,000 · Tienda en línea $20,000 · LMS $30,000 · App desde $50,000.",
+    text: "Precios de temporada hasta el 31 de agosto: Landing $7,000 · Tienda en línea $20,000 · LMS $30,000 · App desde $50,000.",
   },
   nosotros: {
-    metaTitle: "Nosotros — estudio de desarrollo web en México | Alrit.dev",
+    metaTitle: "Nosotros: estudio de desarrollo web en México | Alrit.dev",
     metaDescription:
       "Alrit.dev es la evolución de Hunter Price Mx: +10 años y +50 proyectos. Ingeniería web moderna con precios claros en MXN.",
     eyebrow: "Nosotros",
     title: "La evolución de Hunter Price Mx",
     lede: "Somos un estudio mexicano de desarrollo web y software a medida. Pasamos de agencia de marketing a estudio de ingeniería: sitios rápidos, escalables y pensados para vender.",
     body: [
-      "Más de una década creando presencia digital nos enseñó algo: un sitio bonito que carga lento y no aparece en Google no sirve. Por eso hoy trabajamos con enfoque de ingeniería — velocidad real (PageSpeed 90+ y Core Web Vitals en verde), SEO técnico desde el código e integración nativa con el ecosistema mexicano: Mercado Pago, OXXO, SPEI, CFDI-SAT y WhatsApp Business.",
+      "Más de una década creando presencia digital nos enseñó algo: un sitio bonito que carga lento y no aparece en Google no sirve. Por eso hoy trabajamos con enfoque de ingeniería: velocidad real (PageSpeed 90+ y Core Web Vitals en verde), SEO técnico desde el código e integración nativa con el ecosistema mexicano (Mercado Pago, OXXO, SPEI, CFDI-SAT y WhatsApp Business).",
       "No entregamos plantillas recicladas: entregamos activos digitales documentados, listos para crecer. Cada proyecto se construye alrededor de tus objetivos, con precios transparentes en pesos y sin costos ocultos.",
     ],
     valuesTitle: "Cómo trabajamos",
@@ -44,7 +44,7 @@ const es = {
     ctaSecondary: "Contáctanos",
   },
   contacto: {
-    metaTitle: "Contacto — Alrit.dev | Desarrollo web en México",
+    metaTitle: "Contacto: desarrollo web a medida en México | Alrit.dev",
     metaDescription:
       "Hablemos de tu proyecto. Escríbenos por el formulario, WhatsApp o correo y te respondemos con una propuesta clara en MXN.",
     eyebrow: "Contacto",

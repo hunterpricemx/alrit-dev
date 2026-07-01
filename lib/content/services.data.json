@@ -54,7 +54,7 @@
         },
         {
           "q": "¿Qué es una página web autoadministrable?",
-          "a": "Es un sitio que tú mismo editas —textos, fotos, productos, secciones— desde un panel, sin saber programar y sin pagarle a nadie por cada cambio. WordPress es ideal para esto."
+          "a": "Es un sitio que tú mismo editas (textos, fotos, productos, secciones) desde un panel, sin saber programar y sin pagarle a nadie por cada cambio. WordPress es ideal para esto."
         },
         {
           "q": "¿Cómo logran que un sitio WordPress cargue rápido?",
@@ -131,7 +131,7 @@
         },
         {
           "q": "What is a self-managed website?",
-          "a": "It's a site you edit yourself —text, photos, products, sections— from a dashboard, without knowing how to code and without paying anyone for every change. WordPress is ideal for this."
+          "a": "It's a site you edit yourself (text, photos, products, sections) from a dashboard, without knowing how to code and without paying anyone for every change. WordPress is ideal for this."
         },
         {
           "q": "How do you make a WordPress site load fast?",
@@ -1044,7 +1044,7 @@
       "metaTitle": "Desarrollo de Apps Móviles iOS y Android en México | Alrit.dev",
       "metaDescription": "Desarrollamos apps iOS y Android a medida con React Native, conectadas a tu ERP, CRM y pagos. Publicación en tiendas incluida. Desde $60,000 MXN.",
       "h1": "Desarrollo de apps móviles que conectan tu negocio con tus clientes",
-      "heroSub": "Una app móvil a medida en México en precio de temporada desde $50,000 MXN (antes $60,000), con un MVP en 8 a 12 semanas. Desarrollamos aplicaciones iOS y Android con React Native —una sola base para ambas tiendas— integradas a tu ERP, CRM y pagos. No plantillas: software propio que abre rápido, convierte y crece contigo.",
+      "heroSub": "Una app móvil a medida en México en precio de temporada desde $50,000 MXN (antes $60,000), con un MVP en 8 a 12 semanas. Desarrollamos aplicaciones iOS y Android con React Native (una sola base para ambas tiendas), integradas a tu ERP, CRM y pagos. No plantillas: software propio que abre rápido, convierte y crece contigo.",
       "benefits": [
         {
           "title": "Conectada a tu negocio de verdad",
@@ -1121,7 +1121,7 @@
       "metaTitle": "iOS and Android Mobile App Development in Mexico | Alrit.dev",
       "metaDescription": "We build custom iOS and Android apps with React Native, connected to your ERP, CRM and payments. Store publishing included. From $60,000 MXN.",
       "h1": "Mobile app development that connects your business to your customers",
-      "heroSub": "A custom mobile app in Mexico at a seasonal price from $50,000 MXN (was $60,000), with an MVP in 8 to 12 weeks. We build iOS and Android apps with React Native —a single codebase for both stores— integrated with your ERP, CRM and payments. Not templates: real software that opens fast, converts and scales with you.",
+      "heroSub": "A custom mobile app in Mexico at a seasonal price from $50,000 MXN (was $60,000), with an MVP in 8 to 12 weeks. We build iOS and Android apps with React Native (a single codebase for both stores), integrated with your ERP, CRM and payments. Not templates: real software that opens fast, converts and scales with you.",
       "benefits": [
         {
           "title": "Truly connected to your business",
@@ -1388,7 +1388,7 @@
       "metaTitle": "Chatbot de WhatsApp con IA para Ventas | Alrit.dev",
       "metaDescription": "Instalamos un chatbot con IA que atiende a tus clientes 24/7 en WhatsApp y web, conectado a tu catálogo y precios reales. Menos mensajes sin responder, más ventas. Diagnóstico gratis.",
       "h1": "Chatbots con IA que atienden por ti, 24/7",
-      "heroSub": "¿Pierdes clientes por no responder a tiempo? Instalamos un chatbot con IA conectado a tu información real —tu catálogo, tus precios, tus horarios— que responde en segundos en WhatsApp, tu sitio web y donde tus clientes ya te escriben. Agenda citas, recomienda productos y captura prospectos al instante. Tú te enfocas en tu negocio; el bot atiende el resto.",
+      "heroSub": "¿Pierdes clientes por no responder a tiempo? Instalamos un chatbot con IA conectado a tu información real (tu catálogo, tus precios y tus horarios) que responde en segundos en WhatsApp, tu sitio web y donde tus clientes ya te escriben. Agenda citas, recomienda productos y captura prospectos al instante. Tú te enfocas en tu negocio; el bot atiende el resto.",
       "benefits": [
         {
           "title": "Responde en segundos, todos los días, a toda hora",
@@ -1449,7 +1449,7 @@
         },
         {
           "heading": "Un bot que sabe de tu negocio, no un robot genérico",
-          "body": "La mayoría de los chatbots dan respuestas de manual y frustran al cliente. El nuestro se conecta a tu información real —catálogo, precios, horarios— para responder como lo haría tu mejor vendedor, 24/7. Es la misma ingeniería con la que construimos plataformas como Conectas: integraciones reales, no parches. [En (cliente) el bot atendió (X) conversaciones y generó (Y) prospectos en el primer mes.]"
+          "body": "La mayoría de los chatbots dan respuestas de manual y frustran al cliente. El nuestro se conecta a tu información real (catálogo, precios y horarios) para responder como lo haría tu mejor vendedor, 24/7. Es la misma ingeniería con la que construimos plataformas como Conectas: integraciones reales, no parches. [En (cliente) el bot atendió (X) conversaciones y generó (Y) prospectos en el primer mes.]"
         },
         {
           "heading": "Cómo trabajamos",
@@ -1465,7 +1465,7 @@
       "metaTitle": "AI WhatsApp Chatbot for Sales | Alrit.dev",
       "metaDescription": "We install an AI chatbot that serves your customers 24/7 on WhatsApp and web, connected to your real catalog and prices. Fewer unanswered messages, more sales. Free assessment.",
       "h1": "AI chatbots that answer for you, 24/7",
-      "heroSub": "Losing customers because you don't reply in time? We install an AI chatbot connected to your real information —your catalog, your prices, your hours— that responds in seconds on WhatsApp, your website and wherever your customers already message you. It books appointments, recommends products and captures prospects instantly. You focus on your business; the bot handles the rest.",
+      "heroSub": "Losing customers because you don't reply in time? We install an AI chatbot connected to your real information (your catalog, your prices and your hours) that responds in seconds on WhatsApp, your website and wherever your customers already message you. It books appointments, recommends products and captures prospects instantly. You focus on your business; the bot handles the rest.",
       "benefits": [
         {
           "title": "Replies in seconds, every day, around the clock",
@@ -1526,7 +1526,7 @@
         },
         {
           "heading": "A bot that knows your business, not a generic robot",
-          "body": "Most chatbots give scripted answers and frustrate the customer. Ours connects to your real information —catalog, prices, hours— to respond like your best salesperson would, 24/7. It's the same engineering we use to build platforms like Conectas: real integrations, not patches. [With (client) the bot handled (X) conversations and generated (Y) prospects in the first month.]"
+          "body": "Most chatbots give scripted answers and frustrate the customer. Ours connects to your real information (catalog, prices and hours) to respond like your best salesperson would, 24/7. It's the same engineering we use to build platforms like Conectas: real integrations, not patches. [With (client) the bot handled (X) conversations and generated (Y) prospects in the first month.]"
         },
         {
           "heading": "How we work",

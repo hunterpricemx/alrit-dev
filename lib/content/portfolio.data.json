@@ -128,13 +128,13 @@
     "tech": "Plataforma a la medida (custom web app) sobre Supabase (almacenamiento/backend); CDN de medios dedicado; sin CMS tradicional tipo WordPress detectado",
     "es": {
       "name": "BDweb",
-      "title": "BDweb — Plataforma inmobiliaria integral con marketplace, red de asesores y academia",
+      "title": "BDweb: plataforma inmobiliaria integral con marketplace, red de asesores y academia",
       "short": "Plataforma PropTech a la medida que conecta asesores, proveedores y propiedades en un solo ecosistema con membresías y academia de formación.",
       "long": "El reto era unificar marketplace de propiedades, directorio de asesores verificados, red de proveedores y formación profesional en una sola plataforma escalable. Desarrollamos un ecosistema inmobiliario a la medida sobre Supabase, con búsqueda y filtrado de inmuebles, mapas interactivos, gestión de clientes, membresías anuales y una academia (LMS) integrada. El resultado es una plataforma operativa que centraliza la operación comercial de cientos de profesionales del sector en México."
     },
     "en": {
       "name": "BDweb",
-      "title": "BDweb — All-in-one real estate platform with marketplace, advisor network and academy",
+      "title": "BDweb: all-in-one real estate platform with marketplace, advisor network and academy",
       "short": "Custom PropTech platform connecting advisors, vendors and properties in a single ecosystem with memberships and a training academy.",
       "long": "The challenge was to unify a property marketplace, a verified advisor directory, a vendor network and professional training into one scalable platform. We built a custom real estate ecosystem on Supabase featuring property search and filtering, interactive maps, client management, annual memberships and an integrated learning academy (LMS). The result is a working platform that centralizes the commercial operations of hundreds of real estate professionals across Mexico."
     },
@@ -242,13 +242,13 @@
     "tech": "WordPress (estructura /wp-content/ visible, blog, formularios de contacto y cotizacion; catalogo administrado por CMS, sin carrito ni checkout transaccional)",
     "es": {
       "name": "BDS Motos",
-      "title": "BDS Motos — Catálogo digital y localizador de distribuidores para una marca de motocicletas",
+      "title": "BDS Motos: catálogo digital y localizador de distribuidores para una marca de motocicletas",
       "short": "Sitio en WordPress que convierte el catálogo de motos BDS en prospectos para su red de mas de 150 distribuidores.",
       "long": "El reto era presentar una linea amplia de motocicletas, motonetas y cuatrimotos, y conectar a cada visitante con el distribuidor o taller correcto en todo Mexico. Construimos un sitio en WordPress con catálogo por categorias, fichas de modelo con especificaciones, cotizador de refacciones y un localizador de distribuidores por estado. El resultado es una vitrina digital clara y escalable que canaliza la intencion de compra hacia la red de mas de 150 puntos de venta y talleres autorizados."
     },
     "en": {
       "name": "BDS Motos",
-      "title": "BDS Motos — Digital Catalog and Dealer Locator for a Motorcycle Brand",
+      "title": "BDS Motos: Digital Catalog and Dealer Locator for a Motorcycle Brand",
       "short": "A WordPress site that turns the BDS motorcycle catalog into leads for a network of 150+ dealers.",
       "long": "The challenge was to showcase a broad lineup of motorcycles, scooters and ATVs while connecting each visitor to the right dealer or service shop across Mexico. We built a WordPress site featuring a category-based catalog, model spec sheets, a spare-parts quoting flow, and a state-by-state dealer locator. The result is a clear, scalable digital storefront that channels purchase intent toward a network of 150+ authorized sales and service points."
     },

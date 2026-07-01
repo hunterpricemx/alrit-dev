@@ -20,17 +20,17 @@ const en: Dictionary = {
     cta: "Get a quote",
   },
   promo: {
-    text: "Season pricing through August 31 — Landing $7,000 · Online store $20,000 · LMS $30,000 · App from $50,000.",
+    text: "Season pricing through August 31: Landing $7,000 · Online store $20,000 · LMS $30,000 · App from $50,000.",
   },
   nosotros: {
-    metaTitle: "About — web development studio in Mexico | Alrit.dev",
+    metaTitle: "About: web development studio in Mexico | Alrit.dev",
     metaDescription:
       "Alrit.dev is the evolution of Hunter Price Mx: 10+ years and 50+ projects. Modern web engineering with clear pricing in MXN.",
     eyebrow: "About",
     title: "The evolution of Hunter Price Mx",
     lede: "We're a Mexican studio for custom web and software development. We went from marketing agency to engineering studio: fast, scalable sites built to sell.",
     body: [
-      "Over a decade building digital presence taught us one thing: a pretty site that loads slowly and doesn't show up on Google is useless. That's why we work with an engineering mindset — real speed (PageSpeed 90+ and green Core Web Vitals), technical SEO from the code, and native integration with Mexico's ecosystem: Mercado Pago, OXXO, SPEI, CFDI-SAT and WhatsApp Business.",
+      "Over a decade building digital presence taught us one thing: a pretty site that loads slowly and doesn't show up on Google is useless. That's why we work with an engineering mindset: real speed (PageSpeed 90+ and green Core Web Vitals), technical SEO from the code, and native integration with Mexico's ecosystem (Mercado Pago, OXXO, SPEI, CFDI-SAT and WhatsApp Business).",
       "We don't ship recycled templates: we deliver documented digital assets, ready to grow. Every project is built around your goals, with transparent pricing in pesos and no hidden costs.",
     ],
     valuesTitle: "How we work",
@@ -46,7 +46,7 @@ const en: Dictionary = {
     ctaSecondary: "Contact us",
   },
   contacto: {
-    metaTitle: "Contact — Alrit.dev | Web development in Mexico",
+    metaTitle: "Contact: custom web development in Mexico | Alrit.dev",
     metaDescription:
       "Let's talk about your project. Reach us via the form, WhatsApp or email and we'll reply with a clear proposal in MXN.",
     eyebrow: "Contact",

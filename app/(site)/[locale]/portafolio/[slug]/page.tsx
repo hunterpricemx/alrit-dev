@@ -28,7 +28,7 @@ export async function generateMetadata({
   const p = project[locale as Locale];
   const path = `/${locale}/portafolio/${slug}`;
   const shortName = p.name || p.title.slice(0, 48);
-  const title = `${shortName} — ${locale === "en" ? "case study" : "caso de éxito"}`;
+  const title = `${shortName}: ${locale === "en" ? "case study" : "caso de éxito"}`;
   return {
     title,
     description: p.short,
