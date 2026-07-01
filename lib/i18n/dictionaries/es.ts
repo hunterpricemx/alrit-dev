@@ -29,7 +29,7 @@ const es = {
     lede: "Somos un estudio mexicano de desarrollo web y software a medida. Pasamos de agencia de marketing a estudio de ingeniería: sitios rápidos, escalables y pensados para vender.",
     body: [
       "Más de una década creando presencia digital nos enseñó algo: un sitio bonito que carga lento y no aparece en Google no sirve. Por eso hoy trabajamos con enfoque de ingeniería: velocidad real (PageSpeed 90+ y Core Web Vitals en verde), SEO técnico desde el código e integración nativa con el ecosistema mexicano (Mercado Pago, OXXO, SPEI, CFDI-SAT y WhatsApp Business).",
-      "No entregamos plantillas recicladas: entregamos activos digitales documentados, listos para crecer. Cada proyecto se construye alrededor de tus objetivos, con precios transparentes en pesos y sin costos ocultos.",
+      "No usamos plantillas recicladas: te entregamos un producto propio, documentado y listo para crecer. Cada proyecto se construye alrededor de tus objetivos, con precios transparentes en pesos y sin costos ocultos.",
     ],
     valuesTitle: "Cómo trabajamos",
     values: [

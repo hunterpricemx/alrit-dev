@@ -20,7 +20,7 @@
       "metaTitle": "Diseño Web WordPress en México (autoadministrable) | Alrit.dev",
       "metaDescription": "Sitios WordPress rápidos, seguros y autoadministrables con PageSpeed 90+. Los editas tú, sin depender de nadie. Desde $10,000 MXN. Cotiza sin costo.",
       "h1": "Sitios WordPress administrables, rápidos y seguros que sí convierten",
-      "heroSub": "Diseñamos páginas web en WordPress que cargan en segundos, posicionan en Google y actualizas tú mismo sin pagar por cada cambio. Un sitio WordPress profesional a medida parte de [$10,000] MXN y se entrega en 2 a 4 semanas. Ingeniería real, no plantillas lentas cargadas de plugins.",
+      "heroSub": "Diseñamos páginas web en WordPress que cargan en segundos, posicionan en Google y actualizas tú mismo sin pagar por cada cambio. Un sitio WordPress profesional a medida parte de [$10,000] MXN y se entrega en 2 a 4 semanas. Con ingeniería de verdad, sin los plugins de más que vuelven lento a WordPress.",
       "benefits": [
         {
           "title": "Lo administras tú, sin depender de nadie",
@@ -97,7 +97,7 @@
       "metaTitle": "WordPress Web Design in Mexico (self-managed) | Alrit.dev",
       "metaDescription": "Fast, secure, self-managed WordPress sites with PageSpeed 90+. You edit them yourself, no one to depend on. From $10,000 MXN. Get a free quote.",
       "h1": "Fast, secure WordPress sites you can manage yourself, built to convert",
-      "heroSub": "We design WordPress websites that load in seconds, rank on Google, and you update yourself without paying for every change. A professional custom WordPress site starts from [$10,000] MXN and ships in 2 to 4 weeks. Real engineering, not slow templates stuffed with plugins.",
+      "heroSub": "We design WordPress websites that load in seconds, rank on Google, and you update yourself without paying for every change. A professional custom WordPress site starts from [$10,000] MXN and ships in 2 to 4 weeks. Real engineering, without the plugin bloat that slows WordPress down.",
       "benefits": [
         {
           "title": "You manage it, no one to depend on",
@@ -192,7 +192,7 @@
       "metaTitle": "Desarrollo Web a Medida en México (Next.js) | Alrit.dev",
       "metaDescription": "Desarrollo de páginas web a medida con Next.js/React: PageSpeed 90+, SEO desde el código y precios desde $8,000 MXN. Cotiza tu sitio hoy.",
       "h1": "Desarrollo de páginas web a medida que cargan rápido, posicionan y convierten",
-      "heroSub": "El desarrollo web a medida en México con Alrit.dev arranca con una landing de conversión en precio de temporada de $7,000 MXN (antes $8,000), lista en 2 a 3 semanas; un sitio corporativo completo va de $18,000 a $55,000 MXN. Construimos con Next.js y React para lograr Core Web Vitals en verde y SEO técnico desde el código, no como parche final. Olvídate de plantillas lentas: activos digitales que rinden.",
+      "heroSub": "El desarrollo web a medida en México con Alrit.dev arranca con una landing de conversión en precio de temporada de $7,000 MXN (antes $8,000), lista en 2 a 3 semanas; un sitio corporativo completo va de $18,000 a $55,000 MXN. Construimos con Next.js y React para lograr Core Web Vitals en verde y SEO técnico desde el código, no como un parche al final. El resultado es un sitio veloz que trabaja para tu negocio, no una plantilla más.",
       "benefits": [
         {
           "title": "Velocidad real, no promesas",
@@ -265,7 +265,7 @@
       "metaTitle": "Custom Web Development in Mexico (Next.js) | Alrit.dev",
       "metaDescription": "Custom web development with Next.js/React: PageSpeed 90+, SEO baked into the code and pricing from $8,000 MXN. Get your website quote today.",
       "h1": "Custom web development that loads fast, ranks and converts",
-      "heroSub": "Custom web development in Mexico with Alrit.dev starts with a conversion landing page at a seasonal price of $7,000 MXN (was $8,000), ready in 2 to 3 weeks; a full corporate site runs from $18,000 to $55,000 MXN. We build with Next.js and React to reach green Core Web Vitals and technical SEO from the code, not as a final patch. Forget slow templates: digital assets that perform.",
+      "heroSub": "Custom web development in Mexico with Alrit.dev starts with a conversion landing page at a seasonal price of $7,000 MXN (was $8,000), ready in 2 to 3 weeks; a full corporate site runs from $18,000 to $55,000 MXN. We build with Next.js and React to reach green Core Web Vitals and technical SEO from the code, not as an afterthought. The result is a fast site that works for your business, not just another template.",
       "benefits": [
         {
           "title": "Real speed, not promises",
@@ -528,7 +528,7 @@
       "metaTitle": "Desarrollo de Tienda en Línea a Medida en México | Alrit.dev",
       "metaDescription": "Creamos tu tienda en línea que vende: pagos locales, CFDI y logística. PageSpeed 90+ y SEO desde el código. Desde $35,000 MXN. Cotiza hoy.",
       "h1": "Crea una tienda en línea a medida que carga rápido, posiciona y vende",
-      "heroSub": "Tu tienda en línea a medida en México en precio de temporada desde $20,000 MXN (antes $35,000), lista en 4 a 6 semanas. La desarrollamos con pagos locales (Mercado Pago, OXXO, SPEI), facturación CFDI ante el SAT y logística lista para operar. No plantillas lentas: una tienda que convierte visitas en ventas.",
+      "heroSub": "Tu tienda en línea a medida en México en precio de temporada desde $20,000 MXN (antes $35,000), lista en 4 a 6 semanas. La desarrollamos con pagos locales (Mercado Pago, OXXO, SPEI), facturación CFDI ante el SAT y logística lista para operar. Una tienda pensada para convertir visitas en ventas, no una plantilla más.",
       "benefits": [
         {
           "title": "Carga rápida que vende más",
@@ -584,8 +584,8 @@
           "body": "Catálogo con variantes, inventario y categorías; carrito y checkout optimizado; panel de administración; pagos locales (Mercado Pago, OXXO, SPEI); facturación CFDI ante el SAT; buscador; fichas de producto para convertir; envíos configurables; y notificaciones por WhatsApp y correo. Un activo listo para vender, no una plantilla a medias."
         },
         {
-          "heading": "Velocidad y ecosistema mexicano, de raíz",
-          "body": "La mayoría de las tiendas son lentas y eso cuesta ventas: cada segundo de carga tira tu conversión y tu posición en Google. Desarrollamos con foco en Core Web Vitals y SEO técnico desde el código, integrado de raíz con Mercado Pago, OXXO/SPEI, CFDI y WhatsApp Business. [En (cliente) (métrica de ventas/velocidad).] Precios claros en MXN."
+          "heading": "Velocidad y ecosistema mexicano desde el primer día",
+          "body": "La mayoría de las tiendas son lentas y eso cuesta ventas: cada segundo de carga tira tu conversión y tu posición en Google. Desarrollamos con foco en Core Web Vitals y SEO técnico desde el código, integrado desde el inicio con Mercado Pago, OXXO/SPEI, CFDI y WhatsApp Business. [En (cliente) (métrica de ventas/velocidad).] Precios claros en MXN."
         },
         {
           "heading": "Cómo trabajamos",
@@ -605,7 +605,7 @@
       "metaTitle": "Custom Online Store Development in Mexico | Alrit.dev",
       "metaDescription": "We build online stores that sell: local payments, CFDI and logistics. PageSpeed 90+ and SEO from the code. From $35,000 MXN. Get your quote today.",
       "h1": "Build a custom online store that loads fast, ranks and sells",
-      "heroSub": "Your custom online store in Mexico at a seasonal price from $20,000 MXN (was $35,000), ready in 4 to 6 weeks. We build it with local payments (Mercado Pago, OXXO, SPEI), CFDI invoicing with the SAT and logistics ready to operate. No slow templates: a store that turns visits into sales.",
+      "heroSub": "Your custom online store in Mexico at a seasonal price from $20,000 MXN (was $35,000), ready in 4 to 6 weeks. We build it with local payments (Mercado Pago, OXXO, SPEI), CFDI invoicing with the SAT and logistics ready to operate. A store built to turn visits into sales, not another template.",
       "benefits": [
         {
           "title": "Fast loading that sells more",
@@ -661,8 +661,8 @@
           "body": "A catalog with variants, inventory and categories; an optimized cart and checkout; an admin panel; local payments (Mercado Pago, OXXO, SPEI); CFDI invoicing with the SAT; search; conversion-focused product pages; configurable shipping; and WhatsApp and email notifications. An asset that's ready to sell, not a half-finished template."
         },
         {
-          "heading": "Speed and the Mexican ecosystem, from the ground up",
-          "body": "Most stores are slow, and that costs sales: every second of load time drags down your conversion and your Google ranking. We develop with a focus on Core Web Vitals and technical SEO from the code, integrated from the ground up with Mercado Pago, OXXO/SPEI, CFDI and WhatsApp Business. [With (client) (sales/speed metric).] Clear pricing in MXN."
+          "heading": "Speed and the Mexican ecosystem from day one",
+          "body": "Most stores are slow, and that costs sales: every second of load time drags down your conversion and your Google ranking. We develop with a focus on Core Web Vitals and technical SEO from the code, integrated from the start with Mercado Pago, OXXO/SPEI, CFDI and WhatsApp Business. [With (client) (sales/speed metric).] Clear pricing in MXN."
         },
         {
           "heading": "How we work",
@@ -700,7 +700,7 @@
       "metaTitle": "Página Web para Inmobiliaria con Buscador | Alrit.dev",
       "metaDescription": "Portal inmobiliario a medida con buscador avanzado de propiedades, CRM y captación de leads. Carga rápido y posiciona en Google. Desde $40,000 MXN.",
       "h1": "Página web para inmobiliaria que capta leads y vende propiedades",
-      "heroSub": "Un portal inmobiliario a medida en precio de temporada desde $20,000 MXN (antes $40,000), listo en 5 a 8 semanas. Incluye buscador avanzado de propiedades, integración con tu CRM y captación de leads calificados. No plantillas lentas: un portal que carga rápido, posiciona en Google y te deja de hacer depender solo de los portales de terceros.",
+      "heroSub": "Un portal inmobiliario a medida en precio de temporada desde $20,000 MXN (antes $40,000), listo en 5 a 8 semanas. Incluye buscador avanzado de propiedades, integración con tu CRM y captación de leads calificados. Un portal que carga rápido, posiciona en Google y te quita la dependencia de los portales de terceros.",
       "benefits": [
         {
           "title": "Buscador avanzado de propiedades",
@@ -777,7 +777,7 @@
       "metaTitle": "Real Estate Website with Property Search | Alrit.dev",
       "metaDescription": "Custom real estate portal with advanced property search, CRM and lead capture. Loads fast and ranks on Google. From $40,000 MXN.",
       "h1": "Real estate website that captures leads and sells properties",
-      "heroSub": "A custom real estate portal at a seasonal price from $20,000 MXN (was $40,000), ready in 5 to 8 weeks. It includes an advanced property search, integration with your CRM and qualified lead capture. Not slow templates: a portal that loads fast, ranks on Google and stops you from depending only on third-party listing portals.",
+      "heroSub": "A custom real estate portal at a seasonal price from $20,000 MXN (was $40,000), ready in 5 to 8 weeks. It includes an advanced property search, integration with your CRM and qualified lead capture. A portal that loads fast, ranks on Google and frees you from depending only on third-party listing portals.",
       "benefits": [
         {
           "title": "Advanced property search",
@@ -1044,7 +1044,7 @@
       "metaTitle": "Desarrollo de Apps Móviles iOS y Android en México | Alrit.dev",
       "metaDescription": "Desarrollamos apps iOS y Android a medida con React Native, conectadas a tu ERP, CRM y pagos. Publicación en tiendas incluida. Desde $60,000 MXN.",
       "h1": "Desarrollo de apps móviles que conectan tu negocio con tus clientes",
-      "heroSub": "Una app móvil a medida en México en precio de temporada desde $50,000 MXN (antes $60,000), con un MVP en 8 a 12 semanas. Desarrollamos aplicaciones iOS y Android con React Native (una sola base para ambas tiendas), integradas a tu ERP, CRM y pagos. No plantillas: software propio que abre rápido, convierte y crece contigo.",
+      "heroSub": "Una app móvil a medida en México en precio de temporada desde $50,000 MXN (antes $60,000), con un MVP en 8 a 12 semanas. Desarrollamos aplicaciones iOS y Android con React Native (una sola base para ambas tiendas), integradas a tu ERP, CRM y pagos. Software propio que abre rápido, convierte y crece contigo.",
       "benefits": [
         {
           "title": "Conectada a tu negocio de verdad",
@@ -1121,7 +1121,7 @@
       "metaTitle": "iOS and Android Mobile App Development in Mexico | Alrit.dev",
       "metaDescription": "We build custom iOS and Android apps with React Native, connected to your ERP, CRM and payments. Store publishing included. From $60,000 MXN.",
       "h1": "Mobile app development that connects your business to your customers",
-      "heroSub": "A custom mobile app in Mexico at a seasonal price from $50,000 MXN (was $60,000), with an MVP in 8 to 12 weeks. We build iOS and Android apps with React Native (a single codebase for both stores), integrated with your ERP, CRM and payments. Not templates: real software that opens fast, converts and scales with you.",
+      "heroSub": "A custom mobile app in Mexico at a seasonal price from $50,000 MXN (was $60,000), with an MVP in 8 to 12 weeks. We build iOS and Android apps with React Native (a single codebase for both stores), integrated with your ERP, CRM and payments. Real software of your own that opens fast, converts and scales with you.",
       "benefits": [
         {
           "title": "Truly connected to your business",

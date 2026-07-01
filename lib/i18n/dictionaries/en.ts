@@ -31,7 +31,7 @@ const en: Dictionary = {
     lede: "We're a Mexican studio for custom web and software development. We went from marketing agency to engineering studio: fast, scalable sites built to sell.",
     body: [
       "Over a decade building digital presence taught us one thing: a pretty site that loads slowly and doesn't show up on Google is useless. That's why we work with an engineering mindset: real speed (PageSpeed 90+ and green Core Web Vitals), technical SEO from the code, and native integration with Mexico's ecosystem (Mercado Pago, OXXO, SPEI, CFDI-SAT and WhatsApp Business).",
-      "We don't ship recycled templates: we deliver documented digital assets, ready to grow. Every project is built around your goals, with transparent pricing in pesos and no hidden costs.",
+      "We don't reuse templates: we hand you your own product, documented and ready to grow. Every project is built around your goals, with transparent pricing in pesos and no hidden costs.",
     ],
     valuesTitle: "How we work",
     values: [
