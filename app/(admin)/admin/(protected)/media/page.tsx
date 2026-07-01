@@ -1,7 +1,7 @@
 import { db } from "@/lib/db";
 import { safeQuery } from "@/lib/content/safe";
 import { getSlotMap } from "@/lib/content/media";
-import { SLOTS } from "@/lib/slots";
+import { MOCKUP_SLOTS } from "@/lib/slots";
 import MediaManager from "./_manager";
 
 export const dynamic = "force-dynamic";
@@ -28,10 +28,10 @@ export default async function MediaPage() {
   return (
     <>
       <header className="adm__head">
-        <h1 className="adm__title">Medios</h1>
-        <p className="adm__subtitle">Sube imágenes y asígnalas a los espacios del sitio (logos, mockups, tecnologías).</p>
+        <h1 className="adm__title">Imágenes del sitio</h1>
+        <p className="adm__subtitle">Cambia las imágenes principales en un clic. Cada tarjeta muestra la imagen actual; si no la has cambiado, se ve la predeterminada.</p>
       </header>
-      <MediaManager media={plainMedia} slotMap={slotMap} assignments={assignments} slots={SLOTS} />
+      <MediaManager media={plainMedia} slotMap={slotMap} assignments={assignments} slots={MOCKUP_SLOTS} />
     </>
   );
 }

@@ -23,7 +23,7 @@ const NAV = [
   { href: "/admin/clientes", label: "Clientes", icon: ICONS.clients, ready: true },
   { href: "/admin/cotizaciones", label: "Cotizaciones", icon: ICONS.quotes, ready: true },
   { href: "/admin/pricing", label: "Precios", icon: ICONS.pricing, ready: true },
-  { href: "/admin/media", label: "Medios", icon: ICONS.media, ready: true },
+  { href: "/admin/media", label: "Imágenes", icon: ICONS.media, ready: true },
   { href: "/admin/portfolio", label: "Portafolio", icon: ICONS.portfolio, ready: true },
   { href: "/admin/logos", label: "Logos", icon: ICONS.logos, ready: true },
   { href: "/admin/blog", label: "Blog", icon: ICONS.blog, ready: true },

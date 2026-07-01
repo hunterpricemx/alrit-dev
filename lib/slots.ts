@@ -11,11 +11,11 @@ export type SlotDef = { id: string; label: string; group: SlotGroup; fallback: s
 export type SlotMap = Record<string, string>;
 
 export const MOCKUP_SLOTS: SlotDef[] = [
-  { id: "mockup-systems", label: "Mockup · Sistemas / Landing", group: "mockup", fallback: "/hero/sass.png" },
-  { id: "mockup-ecommerce", label: "Mockup · E-commerce", group: "mockup", fallback: "/hero/ecommerce.png" },
-  { id: "mockup-lms", label: "Mockup · LMS", group: "mockup", fallback: "/hero/lms.png" },
-  { id: "mockup-realestate", label: "Mockup · Real Estate", group: "mockup", fallback: "/hero/realstate.png" },
-  { id: "mockup-mobile", label: "Mockup · App móvil", group: "mockup", fallback: "/hero/app.png" },
+  { id: "mockup-systems", label: "Sistemas y Landing", group: "mockup", fallback: "/hero/sass.png" },
+  { id: "mockup-ecommerce", label: "E-commerce", group: "mockup", fallback: "/hero/ecommerce.png" },
+  { id: "mockup-lms", label: "LMS / Cursos", group: "mockup", fallback: "/hero/lms.png" },
+  { id: "mockup-realestate", label: "Real Estate", group: "mockup", fallback: "/hero/realstate.png" },
+  { id: "mockup-mobile", label: "App móvil", group: "mockup", fallback: "/hero/app.png" },
 ];
 
 const BRANDS: [file: string, label: string][] = [
