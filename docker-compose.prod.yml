@@ -1,0 +1,83 @@
+# Producción — Alrit.dev en un servidor con Docker (detrás de WHM/cPanel + Cloudflare).
+#
+#   1) cp .env.production.example .env   (y rellena los valores reales)
+#   2) docker compose -f docker-compose.prod.yml up -d --build
+#   3) primera vez, crear el admin:
+#        docker compose -f docker-compose.prod.yml run --rm migrate npm run db:seed
+#
+# `web` y `minio` escuchan SOLO en 127.0.0.1 → se publican vía el reverse proxy de WHM.
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  minio:
+    image: minio/minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    # Solo localhost. 9000 = API S3 (la publica el proxy en media.alrit.dev); 9001 = consola (deja privada).
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio_data:/data
+
+  createbuckets:
+    image: minio/mc
+    depends_on:
+      - minio
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+      S3_BUCKET: ${S3_BUCKET}
+    entrypoint: >
+      /bin/sh -c "
+      until mc alias set local http://minio:9000 $$MINIO_ROOT_USER $$MINIO_ROOT_PASSWORD; do echo 'esperando a minio...'; sleep 2; done;
+      mc mb --ignore-existing local/$$S3_BUCKET;
+      mc anonymous set download local/$$S3_BUCKET;
+      echo 'bucket listo'; exit 0;
+      "
+
+  # Corre las migraciones antes de levantar la web (imagen builder: tiene prisma + schema).
+  migrate:
+    build:
+      context: .
+      target: builder
+    env_file: .env
+    restart: "no"
+    command: sh -c "npx prisma migrate deploy"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: .
+      target: runner
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
+  minio_data:
