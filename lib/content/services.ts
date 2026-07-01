@@ -55,4 +55,5 @@ export const RELATED_PORTFOLIO: Record<string, string[]> = {
     "programarte-plataforma-bienestar-mental",
   ],
   automation: [],
+  chatbots: ["conectas-plataforma-experiencias-gastronomicas"],
 };

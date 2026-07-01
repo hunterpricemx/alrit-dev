@@ -13,7 +13,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 type MenuKey = "services" | "portfolio" | "blog" | "company";
 
 const WEB_IDS: ServiceId[] = ["wordpress", "webdev", "lms", "ecommerce", "realestate"];
-const APP_IDS: ServiceId[] = ["systems", "mobile", "automation"];
+const APP_IDS: ServiceId[] = ["systems", "mobile", "automation", "chatbots"];
 
 type FeaturedItem = { slug: string; name: string; image: string; cat: string };
 type LatestPost = { slug: string; title: string; cover: string | null; category: string };
@@ -217,24 +217,24 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
 
             {open === "company" && (
               <div className="mega mega--company">
-                <span className="mega-link mega-link--soon">
+                <Link href={`${base}/nosotros`} className="mega-link">
                   <span className="mega-link__body">
-                    <span className="mega-link__name">{dict.footer.company.about} <em className="mega-tag">{m.soon}</em></span>
+                    <span className="mega-link__name">{dict.footer.company.about}</span>
                     <span className="mega-link__desc">{m.aboutDesc}</span>
                   </span>
-                </span>
+                </Link>
                 <Link href={`${base}#process`} className="mega-link">
                   <span className="mega-link__body">
                     <span className="mega-link__name">{dict.nav.process}</span>
                     <span className="mega-link__desc">{m.processDesc}</span>
                   </span>
                 </Link>
-                <span className="mega-link mega-link--soon">
+                <Link href={`${base}/contacto`} className="mega-link">
                   <span className="mega-link__body">
-                    <span className="mega-link__name">{dict.footer.columns.contact} <em className="mega-tag">{m.soon}</em></span>
+                    <span className="mega-link__name">{dict.footer.columns.contact}</span>
                     <span className="mega-link__desc">{m.contactDesc}</span>
                   </span>
-                </span>
+                </Link>
               </div>
             )}
           </div>

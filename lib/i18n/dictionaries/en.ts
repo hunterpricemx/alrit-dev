@@ -2,9 +2,9 @@ import type { Dictionary } from "./es";
 
 const en: Dictionary = {
   meta: {
-    title: "Custom web & software development in Mexico | Alrit.dev",
+    title: "Web Development Agency in Mexico | Alrit.dev",
     description:
-      "Mexican studio for custom web and software development: fast sites, e-commerce and systems that convert and rank on Google. Get your quote today.",
+      "Mexican studio for custom web and software development. Fast sites (PageSpeed 90+) that rank on Google and convert. Estimate your project in 1 minute.",
   },
   nav: {
     services: "Services",
@@ -18,6 +18,53 @@ const en: Dictionary = {
     portal: "My portal",
     login: "Sign in",
     cta: "Get a quote",
+  },
+  promo: {
+    text: "Season pricing through August 31 — Landing $7,000 · Online store $20,000 · LMS $30,000 · App from $50,000.",
+  },
+  nosotros: {
+    metaTitle: "About — web development studio in Mexico | Alrit.dev",
+    metaDescription:
+      "Alrit.dev is the evolution of Hunter Price Mx: 10+ years and 50+ projects. Modern web engineering with clear pricing in MXN.",
+    eyebrow: "About",
+    title: "The evolution of Hunter Price Mx",
+    lede: "We're a Mexican studio for custom web and software development. We went from marketing agency to engineering studio: fast, scalable sites built to sell.",
+    body: [
+      "Over a decade building digital presence taught us one thing: a pretty site that loads slowly and doesn't show up on Google is useless. That's why we work with an engineering mindset — real speed (PageSpeed 90+ and green Core Web Vitals), technical SEO from the code, and native integration with Mexico's ecosystem: Mercado Pago, OXXO, SPEI, CFDI-SAT and WhatsApp Business.",
+      "We don't ship recycled templates: we deliver documented digital assets, ready to grow. Every project is built around your goals, with transparent pricing in pesos and no hidden costs.",
+    ],
+    valuesTitle: "How we work",
+    values: [
+      { title: "Engineering, not templates", text: "Custom, clean, documented code. You own your asset." },
+      { title: "Measurable speed", text: "PageSpeed 90+ and green Core Web Vitals as a standard, not an add-on." },
+      { title: "Built for Mexico", text: "Payments, CFDI invoicing and WhatsApp integrated from the ground up." },
+      { title: "Clear pricing in MXN", text: "Honest ranges, no hidden costs. What you see is what you pay." },
+    ],
+    ctaTitle: "Shall we build something that performs?",
+    ctaText: "Estimate your project in a minute or tell us what you need.",
+    ctaPrimary: "Estimate your project",
+    ctaSecondary: "Contact us",
+  },
+  contacto: {
+    metaTitle: "Contact — Alrit.dev | Web development in Mexico",
+    metaDescription:
+      "Let's talk about your project. Reach us via the form, WhatsApp or email and we'll reply with a clear proposal in MXN.",
+    eyebrow: "Contact",
+    title: "Let's talk about your project",
+    lede: "Tell us what you need and we'll reply with a clear proposal. You can also reach us directly on WhatsApp or email.",
+    formName: "Your name",
+    formEmail: "Your email",
+    formPhone: "Phone (optional)",
+    formMessage: "What do you need? Tell us about your project.",
+    formSubmit: "Send message",
+    formSending: "Sending…",
+    formOk: "Thanks! We got your message and will get back to you shortly.",
+    formError: "Something went wrong. Try again or reach us on WhatsApp.",
+    directTitle: "Or reach us directly",
+    labelWhatsapp: "WhatsApp",
+    labelEmail: "Email",
+    labelPhone: "Phone",
+    labelAddress: "Where we are",
   },
   lms: {
     catalog: {
@@ -99,9 +146,9 @@ const en: Dictionary = {
     soon: "Soon",
   },
   hero: {
-    titleA: "Custom web development that",
-    titleAccent: "your business deserves",
-    lede: "We design and develop web experiences that feel alive and turn visitors into customers. Every project, a piece worth showing off.",
+    titleA: "Custom web development for",
+    titleAccent: "your online business",
+    lede: "We're Alrit.dev, a Mexican studio for custom web and software development. We build sites, online stores and platforms that load in seconds, rank on Google and turn visits into customers.",
     primary: "Get a quote",
     secondary: "See portfolio",
   },
@@ -154,6 +201,11 @@ const en: Dictionary = {
         eyebrow: "Operational efficiency",
         title: "Automations",
         text: "We integrate your tools and remove repetitive manual work.",
+      },
+      chatbots: {
+        eyebrow: "AI support",
+        title: "WhatsApp chatbots",
+        text: "AI assistants that support and sell 24/7 on WhatsApp, web and Instagram.",
       },
     },
     title2: "Discover what we do",
@@ -325,6 +377,32 @@ const en: Dictionary = {
       { title: "No bloat", sub: "Clean code, no excess" },
       { title: "Clear pricing", sub: "Transparent in MXN" },
     ],
+    differentiatorsByService: {
+      systems: [
+        { title: "Performance", sub: "Fast and stable" },
+        { title: "Security & backups", sub: "Your data protected" },
+        { title: "You own the code", sub: "No lock-in" },
+        { title: "Clear pricing", sub: "Transparent in MXN" },
+      ],
+      mobile: [
+        { title: "Native performance", sub: "Real fluidity" },
+        { title: "iOS + Android", sub: "One codebase" },
+        { title: "Wired to your ERP/CRM", sub: "Connected to your business" },
+        { title: "Clear pricing", sub: "Transparent in MXN" },
+      ],
+      automation: [
+        { title: "Measurable ROI", sub: "Real hours saved" },
+        { title: "n8n self-hosted", sub: "Your data, your server" },
+        { title: "Built for Mexico", sub: "CFDI, SPEI, WhatsApp" },
+        { title: "Clear pricing", sub: "Transparent in MXN" },
+      ],
+      chatbots: [
+        { title: "Replies 24/7", sub: "Never miss a message" },
+        { title: "Your real info", sub: "Catalog, prices, hours" },
+        { title: "WhatsApp + web", sub: "Where they already write you" },
+        { title: "Clear pricing", sub: "Transparent in MXN" },
+      ],
+    },
     stepsTitle: "How we work on",
     stepsTitleAccent: "your project",
     steps: [

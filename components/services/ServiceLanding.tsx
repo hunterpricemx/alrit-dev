@@ -32,7 +32,7 @@ export default function ServiceLanding({
   accent,
   icon,
   serviceTitle,
-  keywords,
+  serviceId,
   related,
   whatsapp,
 }: {
@@ -42,12 +42,16 @@ export default function ServiceLanding({
   accent: string;
   icon: string;
   serviceTitle: string;
-  keywords: string[];
+  serviceId: string;
   related: Project[];
   whatsapp: string | null;
 }) {
   const l = dict.serviceLanding;
   const base = `/${locale}`;
+  // Badges por servicio (Sistemas/Apps/Automatización/Chatbots no muestran PageSpeed/SEO).
+  const differentiators =
+    (l.differentiatorsByService as Record<string, readonly { title: string; sub: string }[]>)[serviceId] ??
+    l.differentiators;
 
   // Accent the last word of a heading (e.g. "...con Alrit.dev")
   const accentLast = (text: string, cls: string) => {
@@ -182,7 +186,7 @@ export default function ServiceLanding({
             <p className="svc-card__p">{content.sections[1].body}</p>
           </div>
           <div className="svc-why">
-            {l.differentiators.map((d, i) => (
+            {differentiators.map((d, i) => (
               <div key={d.title} className="svc-feat">
                 <span className="svc-feat__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
@@ -321,17 +325,6 @@ export default function ServiceLanding({
         </Reveal>
       </section>
 
-      {/* Keyword footer (semantic relevance) */}
-      {keywords.length > 0 && (
-        <aside className="svc__kw">
-          <span className="svc__kw-label">{l.keywordsLabel}:</span>
-          {keywords.slice(0, 10).map((k) => (
-            <span key={k} className="svc__kw-chip">
-              {k}
-            </span>
-          ))}
-        </aside>
-      )}
     </article>
   );
 }

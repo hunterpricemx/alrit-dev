@@ -6,7 +6,8 @@ export type ServiceId =
   | "realestate"
   | "systems"
   | "mobile"
-  | "automation";
+  | "automation"
+  | "chatbots";
 
 export type Service = {
   id: ServiceId;
@@ -32,4 +33,5 @@ export const SERVICES: Service[] = [
   { id: "systems", slug: "sistemas-a-medida", accent: "#7c5cff", tone: "dark", image: img("alrit-svc-sys"), icon: "M5 4h14v12H5zM3 20h18M9 8h6M9 11h6" },
   { id: "mobile", slug: "apps-moviles", accent: "#ff4f8b", tone: "dark", image: img("alrit-svc-app"), icon: "M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm3 15h2" },
   { id: "automation", slug: "automatizaciones", accent: "#fb8c2e", tone: "light", image: img("alrit-svc-auto"), icon: "M12 8V5m0 14v-3m4-5h3M5 12h3m7.5-4.5 2-2m-13 13 2-2m9 0 2 2m-13-13 2 2M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" },
+  { id: "chatbots", slug: "chatbots-whatsapp", accent: "#25d366", tone: "dark", image: img("alrit-svc-chat"), icon: "M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-7l-4 3v-3H6a2 2 0 0 1-2-2V6Zm4 4h.01M12 10h.01M16 10h.01" },
 ];

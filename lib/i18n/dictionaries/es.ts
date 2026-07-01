@@ -1,8 +1,8 @@
 const es = {
   meta: {
-    title: "Desarrollo web y software a medida en México | Alrit.dev",
+    title: "Agencia de Desarrollo Web en México | Alrit.dev",
     description:
-      "Estudio mexicano de desarrollo web y software a medida: sitios rápidos, e-commerce y sistemas que convierten y posicionan en Google. Cotiza tu proyecto hoy.",
+      "Estudio mexicano de desarrollo web y software a medida. Sitios rápidos (PageSpeed 90+) que posicionan en Google y convierten. Calcula tu proyecto en 1 minuto.",
   },
   nav: {
     services: "Servicios",
@@ -16,6 +16,53 @@ const es = {
     portal: "Mi portal",
     login: "Ingresar",
     cta: "Cotiza tu proyecto",
+  },
+  promo: {
+    text: "Precios de temporada hasta el 31 de agosto — Landing $7,000 · Tienda en línea $20,000 · LMS $30,000 · App desde $50,000.",
+  },
+  nosotros: {
+    metaTitle: "Nosotros — estudio de desarrollo web en México | Alrit.dev",
+    metaDescription:
+      "Alrit.dev es la evolución de Hunter Price Mx: +10 años y +50 proyectos. Ingeniería web moderna con precios claros en MXN.",
+    eyebrow: "Nosotros",
+    title: "La evolución de Hunter Price Mx",
+    lede: "Somos un estudio mexicano de desarrollo web y software a medida. Pasamos de agencia de marketing a estudio de ingeniería: sitios rápidos, escalables y pensados para vender.",
+    body: [
+      "Más de una década creando presencia digital nos enseñó algo: un sitio bonito que carga lento y no aparece en Google no sirve. Por eso hoy trabajamos con enfoque de ingeniería — velocidad real (PageSpeed 90+ y Core Web Vitals en verde), SEO técnico desde el código e integración nativa con el ecosistema mexicano: Mercado Pago, OXXO, SPEI, CFDI-SAT y WhatsApp Business.",
+      "No entregamos plantillas recicladas: entregamos activos digitales documentados, listos para crecer. Cada proyecto se construye alrededor de tus objetivos, con precios transparentes en pesos y sin costos ocultos.",
+    ],
+    valuesTitle: "Cómo trabajamos",
+    values: [
+      { title: "Ingeniería, no plantillas", text: "Código a medida, limpio y documentado. Tú eres dueño de tu activo." },
+      { title: "Velocidad medible", text: "PageSpeed 90+ y Core Web Vitals en verde como estándar, no como extra." },
+      { title: "Hecho para México", text: "Pagos, facturación CFDI y WhatsApp integrados de raíz." },
+      { title: "Precios claros en MXN", text: "Rangos honestos y sin costos ocultos. Lo que ves es lo que pagas." },
+    ],
+    ctaTitle: "¿Construimos algo que rinda?",
+    ctaText: "Calcula tu proyecto en un minuto o cuéntanos qué necesitas.",
+    ctaPrimary: "Calcula tu proyecto",
+    ctaSecondary: "Contáctanos",
+  },
+  contacto: {
+    metaTitle: "Contacto — Alrit.dev | Desarrollo web en México",
+    metaDescription:
+      "Hablemos de tu proyecto. Escríbenos por el formulario, WhatsApp o correo y te respondemos con una propuesta clara en MXN.",
+    eyebrow: "Contacto",
+    title: "Hablemos de tu proyecto",
+    lede: "Cuéntanos qué necesitas y te respondemos con una propuesta clara. También puedes escribirnos directo por WhatsApp o correo.",
+    formName: "Tu nombre",
+    formEmail: "Tu correo",
+    formPhone: "Teléfono (opcional)",
+    formMessage: "¿Qué necesitas? Cuéntanos de tu proyecto.",
+    formSubmit: "Enviar mensaje",
+    formSending: "Enviando…",
+    formOk: "¡Gracias! Recibimos tu mensaje y te contactamos muy pronto.",
+    formError: "Algo salió mal. Intenta de nuevo o escríbenos por WhatsApp.",
+    directTitle: "O escríbenos directo",
+    labelWhatsapp: "WhatsApp",
+    labelEmail: "Correo",
+    labelPhone: "Teléfono",
+    labelAddress: "Dónde estamos",
   },
   lms: {
     catalog: {
@@ -97,9 +144,9 @@ const es = {
     soon: "Pronto",
   },
   hero: {
-    titleA: "Desarrollo web a medida que",
-    titleAccent: "tu negocio merece",
-    lede: "Diseñamos y desarrollamos experiencias web que se sienten vivas y convierten visitantes en clientes. Cada proyecto, una pieza que merece mostrarse.",
+    titleA: "Desarrollo web a medida para",
+    titleAccent: "tu negocio online",
+    lede: "Somos Alrit.dev, un estudio mexicano de desarrollo web y software a medida. Construimos sitios, tiendas en línea y plataformas que cargan en segundos, posicionan en Google y convierten visitas en clientes.",
     primary: "Cotiza tu proyecto",
     secondary: "Ver portafolio",
   },
@@ -152,6 +199,11 @@ const es = {
         eyebrow: "Eficiencia operativa",
         title: "Automatizaciones",
         text: "Integramos tus herramientas y eliminamos el trabajo manual repetitivo.",
+      },
+      chatbots: {
+        eyebrow: "Atención con IA",
+        title: "Chatbots de WhatsApp",
+        text: "Asistentes con IA que atienden y venden 24/7 en WhatsApp, web e Instagram.",
       },
     },
     title2: "Descubre lo que hacemos",
@@ -303,7 +355,7 @@ const es = {
     relatedTitle: "Proyectos relacionados",
     relatedText: "Casos reales de esta especialidad.",
     allServices: "Ver todos los servicios",
-    ctaTitle: "¿List@ para empezar tu proyecto?",
+    ctaTitle: "¿Listo para empezar tu proyecto?",
     ctaText:
       "Calcula un estimado al instante o cuéntanos qué necesitas. Te respondemos con una propuesta clara y precios en MXN.",
     ctaPrimary: "Calcula tu presupuesto",
@@ -323,6 +375,32 @@ const es = {
       { title: "Sin bloat", sub: "Código limpio, sin excesos" },
       { title: "Precios claros", sub: "Transparentes en MXN" },
     ],
+    differentiatorsByService: {
+      systems: [
+        { title: "Rendimiento", sub: "Rápido y estable" },
+        { title: "Seguridad y respaldos", sub: "Tus datos protegidos" },
+        { title: "El código es tuyo", sub: "Sin ataduras" },
+        { title: "Precios claros", sub: "Transparentes en MXN" },
+      ],
+      mobile: [
+        { title: "Rendimiento nativo", sub: "Fluidez real" },
+        { title: "iOS + Android", sub: "Una sola base" },
+        { title: "Integrada a tu ERP/CRM", sub: "Conectada a tu negocio" },
+        { title: "Precios claros", sub: "Transparentes en MXN" },
+      ],
+      automation: [
+        { title: "ROI medible", sub: "Ahorro real de horas" },
+        { title: "n8n self-hosted", sub: "Tus datos, tu servidor" },
+        { title: "Integrado a México", sub: "CFDI, SPEI, WhatsApp" },
+        { title: "Precios claros", sub: "Transparentes en MXN" },
+      ],
+      chatbots: [
+        { title: "Responde 24/7", sub: "Nunca pierdes un mensaje" },
+        { title: "Con tu info real", sub: "Catálogo, precios, horarios" },
+        { title: "WhatsApp + web", sub: "Donde ya te escriben" },
+        { title: "Precios claros", sub: "Transparentes en MXN" },
+      ],
+    },
     stepsTitle: "Cómo trabajamos",
     stepsTitleAccent: "tu proyecto",
     steps: [

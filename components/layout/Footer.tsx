@@ -39,6 +39,9 @@ export default function Footer({
 
         <nav className="footer__col" aria-label={dict.footer.columns.company}>
           <h3 className="footer__heading">{dict.footer.columns.company}</h3>
+          <Link href={`${base}/nosotros`} className="footer__link">
+            {dict.footer.company.about}
+          </Link>
           <Link href={`${base}/portafolio`} className="footer__link">
             {dict.footer.company.portfolio}
           </Link>
@@ -52,6 +55,9 @@ export default function Footer({
           </Link>
           <Link href={`${base}/servicios`} className="footer__link">
             {dict.nav.services}
+          </Link>
+          <Link href={`${base}/contacto`} className="footer__link">
+            {dict.footer.columns.contact}
           </Link>
         </nav>
 

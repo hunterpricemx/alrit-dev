@@ -38,7 +38,6 @@ export async function generateMetadata({
   return {
     title: { absolute: c.metaTitle },
     description: c.metaDescription,
-    keywords: content.targetKeywords,
     alternates: {
       canonical: path,
       languages: {
@@ -100,7 +99,7 @@ export default async function ServicePage({
         accent={content.accent}
         icon={icon}
         serviceTitle={serviceTitle}
-        keywords={content.targetKeywords}
+        serviceId={content.serviceId}
         related={related}
         whatsapp={whatsappHref(settings)}
       />

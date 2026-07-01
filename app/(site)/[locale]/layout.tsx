@@ -9,6 +9,7 @@ import { getLatestPostsAsync, postLocale } from "@/lib/content/blog";
 import { getSettingsAsync } from "@/lib/content/settings";
 import { FEATURES } from "@/lib/features";
 import Header from "@/components/layout/Header";
+import PromoBanner from "@/components/layout/PromoBanner";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
 import SiteAnalytics from "@/components/analytics/SiteAnalytics";
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col">
         <OrganizationJsonLd url={SITE_URL} settings={settings} />
         <Providers>
+          <PromoBanner dict={dict} />
           <Header dict={dict} locale={locale as Locale} featured={featured} latestPosts={latestPosts} />
           <main className="flex-1">{children}</main>
           <Footer dict={dict} locale={locale as Locale} settings={settings} />
