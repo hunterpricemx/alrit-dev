@@ -4,6 +4,7 @@ import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { requireAdmin } from "@/lib/authz";
+import { SCRIPTS_KEY } from "@/lib/content/scripts";
 
 export type SettingsFormState = { ok: boolean; error?: string };
 
@@ -51,11 +52,26 @@ export async function saveSettings(_prev: SettingsFormState, formData: FormData)
   const parsed = schema.safeParse(fields);
   if (!parsed.success) return { ok: false, error: parsed.error.issues[0]?.message ?? "Datos inválidos." };
 
+  // Scripts y etiquetas: se guardan como JSON en TextOverride (sin migración).
+  const scripts = {
+    gtmId: str(formData.get("gtmId")),
+    metaPixelId: str(formData.get("metaPixelId")).replace(/\D/g, ""),
+    googleVerification: str(formData.get("googleVerification")),
+    bingVerification: str(formData.get("bingVerification")),
+    headScripts: str(formData.get("headScripts")).slice(0, 20000),
+    bodyScripts: str(formData.get("bodyScripts")).slice(0, 20000),
+  };
+
   try {
     await db.siteSettings.upsert({
       where: { id: "site" },
       create: { id: "site", ...parsed.data },
       update: parsed.data,
+    });
+    await db.textOverride.upsert({
+      where: { key_locale: { key: SCRIPTS_KEY, locale: "es" } },
+      create: { key: SCRIPTS_KEY, locale: "es", value: JSON.stringify(scripts) },
+      update: { value: JSON.stringify(scripts) },
     });
   } catch {
     return { ok: false, error: "No se pudo guardar." };

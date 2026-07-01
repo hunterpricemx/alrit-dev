@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 import { saveSettings, type SettingsFormState } from "../../_actions/settings";
 import type { SiteSettings } from "@/lib/content/settings";
+import type { SiteScripts } from "@/lib/content/scripts";
 
 function Field({ label, name, defaultValue, hint, placeholder }: { label: string; name: string; defaultValue?: string; hint?: string; placeholder?: string }) {
   return (
@@ -13,7 +14,16 @@ function Field({ label, name, defaultValue, hint, placeholder }: { label: string
   );
 }
 
-export default function SettingsForm({ initial }: { initial: SiteSettings }) {
+function TextArea({ label, name, defaultValue, hint, placeholder }: { label: string; name: string; defaultValue?: string; hint?: string; placeholder?: string }) {
+  return (
+    <label className="adm-field" style={{ gridColumn: "1 / -1" }}>
+      <span className="adm-field__label">{label}{hint && <em className="adm-field__hint"> · {hint}</em>}</span>
+      <textarea className="adm-input" name={name} defaultValue={defaultValue} placeholder={placeholder} rows={4} spellCheck={false} style={{ minHeight: "6rem", fontFamily: "ui-monospace, monospace", fontSize: "0.8rem" }} />
+    </label>
+  );
+}
+
+export default function SettingsForm({ initial, scripts }: { initial: SiteSettings; scripts: SiteScripts }) {
   const [state, formAction, pending] = useActionState<SettingsFormState, FormData>(saveSettings, { ok: false });
 
   return (
@@ -54,6 +64,18 @@ export default function SettingsForm({ initial }: { initial: SiteSettings }) {
           <Field label="Estado" name="addressRegion" defaultValue={initial.addressRegion} placeholder="CDMX" />
           <Field label="Código postal" name="postalCode" defaultValue={initial.postalCode} />
           <Field label="País" name="addressCountry" defaultValue={initial.addressCountry} hint="ISO-2" placeholder="MX" />
+        </div>
+      </fieldset>
+
+      <fieldset className="adm-fieldset">
+        <legend>Scripts y etiquetas</legend>
+        <div className="adm-form__grid">
+          <Field label="Google Tag Manager" name="gtmId" defaultValue={scripts.gtmId} hint="ID GTM" placeholder="GTM-XXXXXXX" />
+          <Field label="Meta / Facebook Pixel" name="metaPixelId" defaultValue={scripts.metaPixelId} hint="ID numérico" placeholder="123456789012345" />
+          <Field label="Verificación Google" name="googleVerification" defaultValue={scripts.googleVerification} hint="Search Console · solo el token content" placeholder="AbC123…" />
+          <Field label="Verificación Bing" name="bingVerification" defaultValue={scripts.bingVerification} hint="msvalidate.01 · solo el token" placeholder="ABC123…" />
+          <TextArea label="Código en <head>" name="headScripts" defaultValue={scripts.headScripts} hint="⚠️ avanzado · se inyecta en todo el sitio" placeholder="<!-- Pega aquí scripts para el <head> -->" />
+          <TextArea label="Código antes de </body>" name="bodyScripts" defaultValue={scripts.bodyScripts} hint="⚠️ avanzado" placeholder="<!-- Pega aquí scripts para el final del <body> -->" />
         </div>
       </fieldset>
 

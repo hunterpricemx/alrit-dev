@@ -7,12 +7,14 @@ import { getDictionaryAsync } from "@/lib/i18n";
 import { getAllProjectsAsync } from "@/lib/content/portfolio";
 import { getLatestPostsAsync, postLocale } from "@/lib/content/blog";
 import { getSettingsAsync } from "@/lib/content/settings";
+import { getScriptsAsync } from "@/lib/content/scripts";
 import { FEATURES } from "@/lib/features";
 import Header from "@/components/layout/Header";
 import PromoBanner from "@/components/layout/PromoBanner";
 import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
 import SiteAnalytics from "@/components/analytics/SiteAnalytics";
+import SiteScripts from "@/components/analytics/SiteScripts";
 import ConsentBanner from "@/components/analytics/ConsentBanner";
 import { OrganizationJsonLd } from "@/lib/seo/jsonld";
 
@@ -42,8 +44,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionaryAsync(isLocale(locale) ? locale : "es");
+  const scripts = await getScriptsAsync();
   return {
     metadataBase: new URL(SITE_URL),
+    verification: {
+      google: scripts.googleVerification || undefined,
+      other: scripts.bingVerification ? { "msvalidate.01": scripts.bingVerification } : {},
+    },
     title: { default: dict.meta.title, template: "%s | Alrit.dev" },
     description: dict.meta.description,
     alternates: {
@@ -84,6 +91,7 @@ export default async function LocaleLayout({
   const featured = (picked.length ? picked : projects.slice(0, 4)).map(toFeatured);
 
   const settings = await getSettingsAsync();
+  const scripts = await getScriptsAsync();
   const gaId = settings.gaId || process.env.NEXT_PUBLIC_GA_ID || "";
   const latest = FEATURES.blog ? await getLatestPostsAsync(3) : [];
   const latestPosts = latest.map((p) => ({
@@ -108,6 +116,7 @@ export default async function LocaleLayout({
           <ConsentBanner enabled={!!gaId} />
         </Providers>
         <SiteAnalytics gaId={gaId} />
+        <SiteScripts scripts={scripts} />
       </body>
     </html>
   );
