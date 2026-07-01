@@ -1203,7 +1203,7 @@
         },
         {
           "title": "Payments and local ecosystem",
-          "text": "Take in-app payments and connect billing and messaging tools without last-minute workarounds."
+          "text": "Take in-app payments with Mercado Pago, SPEI and OXXO, and invoice with CFDI-SAT without last-minute workarounds."
         },
         {
           "title": "Fast and stable",
@@ -1233,7 +1233,7 @@
         },
         {
           "q": "Can you integrate the app with my system or ERP?",
-          "a": "Yes. We connect your app with your ERP, CRM, inventory, payment gateways, billing and WhatsApp Business through secure APIs. That way your app works with real, real-time data instead of being a tool isolated from the rest of your operation."
+          "a": "Yes. We connect your app with your ERP, CRM, inventory, payment gateways, billing and WhatsApp Business through secure APIs. That way your app works with real-time data instead of being a tool isolated from the rest of your operation."
         },
         {
           "q": "Do you publish the app on the App Store and Google Play?",
