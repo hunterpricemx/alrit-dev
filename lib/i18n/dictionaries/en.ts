@@ -229,7 +229,9 @@ const en: Dictionary = {
       mobile: { title: "Mobile apps", text: "iOS and Android apps with great UX and high performance." },
       automation: { title: "Automations", text: "We integrate tools and flows that save time and boost results." },
       realestate: { title: "Real estate portals", text: "Sites and portals for real estate with advanced search and maps." },
+      chatbots: { title: "WhatsApp chatbots", text: "AI assistants that support and sell 24/7 on WhatsApp, web and Instagram." },
     },
+    priceFrom: "From",
     trust: "Companies that have trusted us",
     badges: [
       { title: "Committed to quality", text: "Clean code and best practices" },

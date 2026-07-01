@@ -7,8 +7,17 @@ import type { Locale } from "@/lib/i18n/config";
 import { SERVICES, type ServiceId } from "@/lib/services";
 import { resolveSlot, mockupSlot, type SlotMap } from "@/lib/slots";
 import type { LogoItem } from "@/lib/content/logos.data";
+import { PROMO_PRICES, PROJECT_TYPES, isPromoActive, formatMXN, type ProjectTypeId } from "@/lib/pricing";
 
-const HOME_IDS = ["ecommerce", "lms", "systems", "mobile", "automation", "realestate"] as const;
+const HOME_IDS = ["ecommerce", "lms", "systems", "mobile", "automation", "realestate", "chatbots"] as const;
+
+// Mapea la tarjeta de la home a un tipo de la calculadora para mostrar "Desde $X" (promo).
+const CARD_TYPE: Partial<Record<ServiceId, ProjectTypeId>> = {
+  ecommerce: "ecommerce",
+  lms: "lms",
+  realestate: "realestate",
+  mobile: "mobile",
+};
 
 // Card mockups (placeholders reusing hero art until the final images arrive).
 const CARD_IMG: Partial<Record<ServiceId, string>> = {
@@ -36,6 +45,7 @@ export default function Services({
   logos: LogoItem[];
 }) {
   const t = dict.servicesX;
+  const promoActive = isPromoActive();
   const viewportRef = useRef<HTMLUListElement>(null);
   const activeRef = useRef(0);
   const [active, setActive] = useState(0);
@@ -176,6 +186,18 @@ export default function Services({
                   </div>
                   <h3 className="svcx-card__title">{copy.title}</h3>
                   <p className="svcx-card__text">{copy.text}</p>
+                  {(() => {
+                    const typeId = CARD_TYPE[id];
+                    const base = typeId ? PROJECT_TYPES.find((p) => p.id === typeId)?.base ?? null : null;
+                    if (base == null) return null;
+                    const promo = promoActive && typeId ? PROMO_PRICES[typeId] ?? null : null;
+                    return (
+                      <span className="mt-1 block text-sm font-semibold text-stone-700">
+                        {t.priceFrom} {formatMXN(promo ?? base)}
+                        {promo != null && <s className="ml-1.5 font-normal text-stone-400">{formatMXN(base)}</s>}
+                      </span>
+                    );
+                  })()}
                   <span className="svcx-card__shot">
                     {img ? (
                       // eslint-disable-next-line @next/next/no-img-element

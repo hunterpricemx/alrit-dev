@@ -7,6 +7,8 @@ import {
   getTypeFrom,
   estimateFrom,
   formatMXN,
+  isPromoActive,
+  PROMO_PRICES,
   type Pricing,
   type ProjectTypeId,
   type ExtraId,
@@ -60,6 +62,14 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
   const isCustom = typeInfo?.base === null;
   const est = useMemo(() => estimateFrom(pricing, type, extras), [pricing, type, extras]);
 
+  // Promo de temporada: precio actual (promo) con el regular tachado.
+  const promoActive = isPromoActive();
+  const extrasTotal = extras.reduce((sum, id) => sum + (pricing.extras[id] ?? 0), 0);
+  const promoBase = promoActive && typeInfo?.base != null ? PROMO_PRICES[type] ?? null : null;
+  const regularAmount = est.kind === "price" ? est.amount : null;
+  const promoAmount = promoBase != null && regularAmount != null ? promoBase + extrasTotal : null;
+  const effectiveAmount = promoAmount ?? regularAmount;
+
   const toggleExtra = (id: ExtraId) =>
     setExtras((prev) => (prev.includes(id) ? prev.filter((e) => e !== id) : [...prev, id]));
 
@@ -76,12 +86,12 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
         brief: String(fd.get("brief") ?? ""),
         projectType: type,
         extras,
-        amount: est.kind === "price" ? est.amount : null,
+        amount: effectiveAmount,
         custom: est.kind === "custom",
       });
       trackEvent("generate_lead", {
         currency: "MXN",
-        value: est.kind === "price" ? est.amount : 0,
+        value: effectiveAmount ?? 0,
         project_type: type,
       });
     } catch {
@@ -172,7 +182,19 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
                     <span className="ctype__name">{info.name}</span>
                     <span className="ctype__desc">{info.desc}</span>
                     <span className="ctype__price">
-                      {pt.base !== null ? `${t.fromLabel} ${formatMXN(pt.base)}` : t.customPrice}
+                      {pt.base !== null ? (
+                        (() => {
+                          const promo = promoActive ? PROMO_PRICES[id] ?? null : null;
+                          return (
+                            <>
+                              {t.fromLabel} {formatMXN(promo ?? pt.base)}
+                              {promo != null && <s className="ml-1.5 opacity-50">{formatMXN(pt.base)}</s>}
+                            </>
+                          );
+                        })()
+                      ) : (
+                        t.customPrice
+                      )}
                     </span>
                   </button>
                 );
@@ -288,7 +310,15 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
                     <span className="calc-sum__tick" aria-hidden="true" />
                     {t.types[type].short} {t.baseSuffix}
                   </span>
-                  <span className="calc-sum__line-price">{formatMXN(typeInfo.base)}</span>
+                  <span className="calc-sum__line-price">
+                    {promoBase != null ? (
+                      <>
+                        {formatMXN(promoBase)} <s className="opacity-50">{formatMXN(typeInfo.base)}</s>
+                      </>
+                    ) : (
+                      formatMXN(typeInfo.base)
+                    )}
+                  </span>
                 </li>
               )}
               {!isCustom &&
@@ -312,7 +342,10 @@ export default function Calculator({ dict, pricing, slotMap }: { dict: Dictionar
               <strong className="calc-sum__total">
                 {est.kind === "price" ? (
                   <>
-                    <AnimatedPrice amount={est.amount} />
+                    {promoAmount != null && regularAmount != null && (
+                      <s className="mr-2 align-middle text-[0.55em] font-normal opacity-40">{formatMXN(regularAmount)}</s>
+                    )}
+                    <AnimatedPrice amount={effectiveAmount ?? est.amount} />
                     <span className="calc-sum__cur"> MXN</span>
                   </>
                 ) : (

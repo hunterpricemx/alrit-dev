@@ -227,7 +227,9 @@ const es = {
       mobile: { title: "Apps móviles", text: "Aplicaciones iOS y Android con excelente experiencia y alto rendimiento." },
       automation: { title: "Automatizaciones", text: "Integramos herramientas y flujos que ahorran tiempo y aumentan resultados." },
       realestate: { title: "Portales Inmobiliarios", text: "Sitios y portales para inmobiliarias con búsqueda avanzada y mapas." },
+      chatbots: { title: "Chatbots de WhatsApp", text: "Asistentes con IA que atienden y venden 24/7 en WhatsApp, web e Instagram." },
     },
+    priceFrom: "Desde",
     trust: "Empresas que han confiado en nosotros",
     badges: [
       { title: "Comprometidos con la calidad", text: "Código limpio y buenas prácticas" },
