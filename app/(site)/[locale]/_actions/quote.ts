@@ -40,8 +40,9 @@ export async function submitQuote(input: {
   });
   if (!parsed.success) return { ok: false };
 
+  let quoteId = "";
   try {
-    await db.quote.create({
+    const created = await db.quote.create({
       data: {
         name: parsed.data.name,
         email: parsed.data.email,
@@ -53,13 +54,19 @@ export async function submitQuote(input: {
         custom: parsed.data.custom,
       },
     });
+    quoteId = created.id;
   } catch {
     return { ok: false };
   }
 
-  // Aviso de lead al negocio (best-effort: no rompe el guardado).
+  // Avisos best-effort (no rompen el guardado): email al negocio + webhook al bot.
   try {
     await notifyNewLead(parsed.data);
+  } catch {
+    // silencioso
+  }
+  try {
+    await notifyBot(parsed.data, quoteId);
   } catch {
     // silencioso
   }
@@ -116,5 +123,70 @@ async function notifyNewLead(lead: z.infer<typeof schema>): Promise<void> {
     subject: `${isContact ? "Contacto" : "Lead"}: ${lead.name.replace(/\s+/g, " ").slice(0, 80)}`,
     html,
     replyTo: lead.email,
+  });
+}
+
+const LEAD_TYPE_LABELS: Record<string, string> = {
+  landing: "Landing / Página web",
+  ecommerce: "E-commerce",
+  lms: "Plataforma LMS",
+  realestate: "Portal inmobiliario",
+  mobile: "App móvil",
+  custom: "Sistema / App a medida",
+  contacto: "Mensaje de contacto",
+};
+
+/** Normaliza a E.164 (México por defecto para números de 10 dígitos). */
+function toE164(raw: string): string {
+  const d = raw.replace(/\D/g, "");
+  if (!d) return "";
+  if (raw.trim().startsWith("+")) return "+" + d;
+  if (d.length === 10) return "+52" + d;
+  return "+" + d;
+}
+
+/** POST del lead a un webhook externo (bot / n8n / CRM). Best-effort; la key va en el server. */
+async function notifyBot(lead: z.infer<typeof schema>, id: string): Promise<void> {
+  const url = process.env.LEADS_WEBHOOK_URL;
+  if (!url) return;
+  const key = process.env.LEADS_WEBHOOK_KEY;
+
+  const isContact = lead.projectType === "contacto";
+  const typeLabel = LEAD_TYPE_LABELS[lead.projectType] ?? lead.projectType;
+  const amountFormatted = lead.amount != null ? formatMXN(lead.amount) : lead.custom ? "A medida" : "—";
+  const phone = toE164(lead.phone ?? "");
+  const waDigits = phone.replace(/\D/g, "");
+
+  const payload = {
+    event: "lead.created",
+    source: "alrit.dev",
+    form: isContact ? "contacto" : "calculadora",
+    createdAt: new Date().toISOString(),
+    lead: {
+      id,
+      name: lead.name,
+      email: lead.email,
+      phone,
+      whatsapp: waDigits ? `https://wa.me/${waDigits}` : "",
+      message: lead.brief ?? "",
+      type: lead.projectType,
+      typeLabel,
+      extras: lead.extras,
+      amount: lead.amount,
+      currency: "MXN",
+      amountFormatted,
+      custom: lead.custom,
+      status: "NEW",
+    },
+    text: `Nuevo lead (${typeLabel}${lead.amount != null ? ` · ~${amountFormatted}` : ""}): ${lead.name} · ${lead.email} · ${phone}`,
+  };
+
+  await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...(key ? { "x-lead-key": key } : {}),
+    },
+    body: JSON.stringify(payload),
   });
 }
