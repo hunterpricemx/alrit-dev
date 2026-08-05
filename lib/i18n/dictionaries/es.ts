@@ -346,6 +346,7 @@ const es = {
     title: "Desarrollo web y software a la medida de tu negocio",
     subtitle:
       "Elige el servicio que necesitas. Cada proyecto se construye para cargar rápido, posicionar en Google y convertir.",
+    customPrice: "Cotización a medida",
   },
   serviceLanding: {
     home: "Inicio",

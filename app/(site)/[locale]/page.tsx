@@ -37,7 +37,7 @@ export default async function Home({
   return (
     <>
       <MagneticHero dict={dict} locale={l} slotMap={slotMap} />
-      <Services dict={dict} locale={l} slotMap={slotMap} logos={brandLogos} />
+      <Services dict={dict} locale={l} slotMap={slotMap} logos={brandLogos} pricing={pricing} />
       <Calculator dict={dict} pricing={pricing} slotMap={slotMap} />
       <Portfolio dict={dict} locale={l} projects={projects} />
       <Process dict={dict} />

@@ -75,8 +75,12 @@ export async function savePricing(
     return { ok: false, error: "No se pudo guardar en la base de datos." };
   }
 
-  // La calculadora vive en la home de cada locale.
-  for (const l of locales) revalidatePath(`/${l}`);
+  // Los precios se muestran en la home (calculadora + "Lo que construimos") y
+  // en el hub de servicios; ambos hay que revalidarlos o se quedan con el viejo.
+  for (const l of locales) {
+    revalidatePath(`/${l}`);
+    revalidatePath(`/${l}/servicios`);
+  }
 
   return { ok: true };
 }
