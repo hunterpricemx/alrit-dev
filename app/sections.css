@@ -367,8 +367,9 @@
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
-.footer__logo { font-family: var(--font-display), sans-serif; font-weight: 800; font-size: 1.5rem; color: #fff; text-decoration: none; }
-.footer__logo-dot { background: linear-gradient(120deg, #ff8a3d, #ff4d8d 50%, #8a6bff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* `color` alimenta el `currentColor` del trazo del logo. */
+.footer__logo { color: #fff; text-decoration: none; display: inline-flex; align-items: center; }
+.footer__logo-svg { display: block; height: 40px; width: auto; }
 .footer__tagline { margin: 1rem 0 0; max-width: 22rem; font-size: 0.95rem; line-height: 1.6; }
 .footer__col { display: flex; flex-direction: column; gap: 0.7rem; }
 .footer__heading { font-family: var(--font-display), sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; margin: 0 0 0.4rem; }

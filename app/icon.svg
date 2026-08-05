@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Alrit.dev">
-  <defs>
-    <linearGradient id="alrit" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff8a3d" />
-      <stop offset="0.45" stop-color="#ff4d8d" />
-      <stop offset="1" stop-color="#8a6bff" />
-    </linearGradient>
-  </defs>
-  <rect width="32" height="32" rx="8" fill="url(#alrit)" />
-  <text x="16" y="23" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#fff" text-anchor="middle">A</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Alrit.dev">
+  <!-- Isotipo de marca sobre fondo oscuro: el trazo del logo es blanco, así que
+       necesita contraste propio para leerse en pestañas claras y oscuras.
+       Sustituye al icono anterior, que dibujaba una "A" con <text> y dependía de
+       que Poppins existiera en el entorno que rasteriza el favicon. -->
+  <rect width="512" height="512" rx="114" fill="#0f0f13" />
+  <g transform="translate(112.6 118) scale(0.6)">
+    <path fill="#fcfcfc" d="M0,456.51l46.46-79.27,95.98-167.75c2.68-4.69,3.83-9.28,7.51-12.92l73.24-72.55,44.93-44.19,40.58-39.37L350.56,0c1.32.14,3.14,1.32,3.72,2.76l.04,177.27-233.74,191.18-94.86,75.05-16.78,13.65c-3.19-2.19-5.86-2.59-8.93-3.39Z" />
+    <path fill="#fcfcfc" d="M385.29,240.11l92.8,200.7-58.55-.6c-11.94-1.94-23-5.14-33.66-10.27-13.48-7.28-24.91-16.24-36.48-26.68l-156.69-.06-3.56-7.05,56.36-50.76,24.06-21.36,14.87.48c9.13,1.32,16.05-1.85,22.57-7.71l78.28-76.7Z" />
+    <path fill="#01e7f0" d="M370.03,213.97s8.17,19.48,2.43,28.17l-48.96,48.17c-2.08,3.13-9.48,8.87-9.22,8.87-2.98-9.82-3.57-22.72-1.65-29.91l57.39-55.3Z" />
+  </g>
 </svg>

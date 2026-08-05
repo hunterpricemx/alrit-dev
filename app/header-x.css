@@ -22,18 +22,21 @@
   gap: 1.5rem;
 }
 .header__logo {
-  font-family: var(--font-display), sans-serif;
-  font-weight: 800;
-  font-size: 1.4rem;
-  letter-spacing: -0.02em;
+  /* `color` alimenta el `currentColor` del trazo del logo. */
   color: var(--color-ink);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
-.header__logo-dot {
-  background: linear-gradient(120deg, #ff8a3d, #ff4d8d 50%, #8a6bff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* El isotipo ocupa el alto completo del lockup y ".dev" solo 84 de 460 unidades,
+   así que por debajo de ~34px el sufijo deja de leerse. */
+.header__logo-svg {
+  display: block;
+  height: 34px;
+  width: auto;
+}
+@media (max-width: 560px) {
+  .header__logo-svg { height: 28px; }
 }
 
 /* ---- desktop nav ---- */

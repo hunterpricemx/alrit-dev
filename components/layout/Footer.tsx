@@ -4,6 +4,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { SERVICES } from "@/lib/services";
 import { FEATURES } from "@/lib/features";
 import { whatsappHref, type SiteSettings } from "@/lib/content/settings";
+import Logo from "@/components/brand/Logo";
 
 export default function Footer({
   dict,
@@ -22,8 +23,8 @@ export default function Footer({
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <Link href={base} className="footer__logo">
-            Alrit<span className="footer__logo-dot">.dev</span>
+          <Link href={base} className="footer__logo" aria-label="Alrit.dev">
+            <Logo className="footer__logo-svg" />
           </Link>
           <p className="footer__tagline">{dict.footer.tagline}</p>
         </div>
