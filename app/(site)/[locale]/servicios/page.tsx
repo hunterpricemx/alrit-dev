@@ -7,7 +7,6 @@ import { SERVICES } from "@/lib/services";
 import { getPricingAsync } from "@/lib/content/pricing";
 import { servicePrice, formatMXN } from "@/lib/pricing";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
-import Reveal from "@/components/ui/Reveal";
 import Tilt from "@/components/ui/Tilt";
 
 const SITE_URL = "https://alrit.dev";
@@ -78,7 +77,13 @@ export default async function ServicesHub({
             const copy = dict.services.items[s.id];
             const price = servicePrice(s.id, pricing);
             return (
-              <Reveal as="li" key={s.id} delay={i * 55}>
+              // La primera fila cae sobre el pliegue: animacion CSS en
+              // vez del reveal por JS, para no retrasar el LCP.
+              <li
+                key={s.id}
+                className="reveal-now"
+                style={{ "--reveal-delay": `${i * 55}ms` } as React.CSSProperties}
+              >
                 <Tilt>
                   <Link
                     href={`/${locale}/servicios/${s.slug}`}
@@ -112,7 +117,7 @@ export default async function ServicesHub({
                     </span>
                   </Link>
                 </Tilt>
-              </Reveal>
+              </li>
             );
           })}
         </ul>

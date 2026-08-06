@@ -1,15 +1,44 @@
 /* ============================================================
    Shared primitives
    ============================================================ */
-.reveal {
+/* Reveal al hacer scroll.
+
+   El estado oculto cuelga de `.js` a proposito. Esa clase la pone un
+   script inline del layout antes del primer paint, asi que si el JS
+   nunca corre el contenido se sirve visible en vez de quedarse en
+   opacity: 0 para siempre. Reveal.tsx añade `is-visible` al entrar
+   en viewport. */
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.7s ease, transform 0.7s var(--ease-spring);
   transition-delay: var(--reveal-delay, 0ms);
 }
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Entrada para bloques que caen sobre el pliegue.
+
+   Es una animacion CSS, no un reveal por JS: arranca al parsearse el
+   HTML y no al hidratar React, asi el elemento sale de opacity: 0 en
+   el primer frame y sigue siendo candidato a LCP. Un elemento en
+   opacity: 0 no lo es, y por eso el hero de las landings retrasaba la
+   metrica hasta la hidratacion. */
+.reveal-now {
+  animation: reveal-rise 0.7s var(--ease-spring) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 [class$="__eyebrow"] {

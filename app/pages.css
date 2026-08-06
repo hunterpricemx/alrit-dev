@@ -634,7 +634,8 @@
   transition: transform 0.5s var(--ease-spring);
   transform-style: preserve-3d;
 }
-.hub__grid > .reveal { height: 100%; }
+.hub__grid > .reveal,
+.hub__grid > .reveal-now { height: 100%; }
 
 .hub-card {
   position: relative;
