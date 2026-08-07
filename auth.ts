@@ -2,6 +2,11 @@ import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import { db } from "@/lib/db";
+import { rateLimit, clientIp } from "@/lib/rate-limit";
+
+/** Freno a la fuerza bruta: por IP y por cuenta atacada. */
+const MAX_LOGIN_ATTEMPTS = 8;
+const LOGIN_WINDOW_MS = 15 * 60 * 1000; // 15 minutos
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   session: { strategy: "jwt" },
@@ -17,6 +22,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         const email = credentials?.email;
         const password = credentials?.password;
         if (typeof email !== "string" || typeof password !== "string") return null;
+
+        // Se limita por IP y por cuenta: lo primero frena a un atacante contra
+        // muchos correos, lo segundo a una botnet contra una sola cuenta.
+        const ip = await clientIp();
+        const normalized = email.trim().toLowerCase();
+        if (!rateLimit(`login:ip:${ip}`, MAX_LOGIN_ATTEMPTS, LOGIN_WINDOW_MS).ok) return null;
+        if (!rateLimit(`login:user:${normalized}`, MAX_LOGIN_ATTEMPTS, LOGIN_WINDOW_MS).ok) return null;
 
         const user = await db.user.findUnique({ where: { email } });
         if (!user) return null;

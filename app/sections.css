@@ -1,15 +1,44 @@
 /* ============================================================
    Shared primitives
    ============================================================ */
-.reveal {
+/* Reveal al hacer scroll.
+
+   El estado oculto cuelga de `.js` a proposito. Esa clase la pone un
+   script inline del layout antes del primer paint, asi que si el JS
+   nunca corre el contenido se sirve visible en vez de quedarse en
+   opacity: 0 para siempre. Reveal.tsx añade `is-visible` al entrar
+   en viewport. */
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.7s ease, transform 0.7s var(--ease-spring);
   transition-delay: var(--reveal-delay, 0ms);
 }
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Entrada para bloques que caen sobre el pliegue.
+
+   Es una animacion CSS, no un reveal por JS: arranca al parsearse el
+   HTML y no al hidratar React, asi el elemento sale de opacity: 0 en
+   el primer frame y sigue siendo candidato a LCP. Un elemento en
+   opacity: 0 no lo es, y por eso el hero de las landings retrasaba la
+   metrica hasta la hidratacion. */
+.reveal-now {
+  animation: reveal-rise 0.7s var(--ease-spring) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 [class$="__eyebrow"] {
@@ -367,8 +396,9 @@
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
-.footer__logo { font-family: var(--font-display), sans-serif; font-weight: 800; font-size: 1.5rem; color: #fff; text-decoration: none; }
-.footer__logo-dot { background: linear-gradient(120deg, #ff8a3d, #ff4d8d 50%, #8a6bff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* `color` alimenta el `currentColor` del trazo del logo. */
+.footer__logo { color: #fff; text-decoration: none; display: inline-flex; align-items: center; }
+.footer__logo-svg { display: block; height: 40px; width: auto; }
 .footer__tagline { margin: 1rem 0 0; max-width: 22rem; font-size: 0.95rem; line-height: 1.6; }
 .footer__col { display: flex; flex-direction: column; gap: 0.7rem; }
 .footer__heading { font-family: var(--font-display), sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; margin: 0 0 0.4rem; }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { auth, signOut } from "@/auth";
 import { roleOf } from "@/lib/authz";
+import Logo from "@/components/brand/Logo";
 import AdminNav from "./_nav";
 
 export default async function ProtectedLayout({
@@ -15,8 +16,8 @@ export default async function ProtectedLayout({
   return (
     <div className="adm">
       <aside className="adm__side">
-        <Link href="/admin" className="adm__brand">
-          Alrit<span>.dev</span>
+        <Link href="/admin" className="adm__brand" aria-label="Alrit.dev">
+          <Logo className="adm__brand-svg" />
         </Link>
         <AdminNav />
         <div className="adm__side-foot">

@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { SERVICES } from "@/lib/services";
+import { getPricingAsync } from "@/lib/content/pricing";
+import { servicePrice, formatMXN } from "@/lib/pricing";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
-import Reveal from "@/components/ui/Reveal";
 import Tilt from "@/components/ui/Tilt";
 
 const SITE_URL = "https://alrit.dev";
@@ -54,7 +55,7 @@ export default async function ServicesHub({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const l = locale as Locale;
-  const dict = await getDictionaryAsync(l);
+  const [dict, pricing] = await Promise.all([getDictionaryAsync(l), getPricingAsync()]);
 
   return (
     <>
@@ -74,8 +75,15 @@ export default async function ServicesHub({
         <ul className="hub__grid">
           {SERVICES.map((s, i) => {
             const copy = dict.services.items[s.id];
+            const price = servicePrice(s.id, pricing);
             return (
-              <Reveal as="li" key={s.id} delay={i * 55}>
+              // La primera fila cae sobre el pliegue: animacion CSS en
+              // vez del reveal por JS, para no retrasar el LCP.
+              <li
+                key={s.id}
+                className="reveal-now"
+                style={{ "--reveal-delay": `${i * 55}ms` } as React.CSSProperties}
+              >
                 <Tilt>
                   <Link
                     href={`/${locale}/servicios/${s.slug}`}
@@ -89,6 +97,18 @@ export default async function ServicesHub({
                     </span>
                     <h2 className="hub-card__title">{copy.title}</h2>
                     <p className="hub-card__text">{copy.text}</p>
+                    {price ? (
+                      <span className="hub-card__price">
+                        {dict.servicesX.priceFrom} {formatMXN(price.current)}
+                        {price.was != null && (
+                          <s className="hub-card__price-was">{formatMXN(price.was)}</s>
+                        )}
+                      </span>
+                    ) : (
+                      <span className="hub-card__price hub-card__price--custom">
+                        {dict.servicesHub.customPrice}
+                      </span>
+                    )}
                     <span className="hub-card__cta">
                       {dict.services.cta}
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -97,7 +117,7 @@ export default async function ServicesHub({
                     </span>
                   </Link>
                 </Tilt>
-              </Reveal>
+              </li>
             );
           })}
         </ul>

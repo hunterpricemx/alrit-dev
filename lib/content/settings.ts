@@ -22,8 +22,9 @@ export type SiteSettings = {
 
 export const DEFAULT_SETTINGS: SiteSettings = {
   email: "hola@alrit.dev",
-  whatsapp: "",
-  phone: "",
+  // Solo dígitos, formato wa.me (+52 722 563 3811).
+  whatsapp: "527225633811",
+  phone: "+52 722 563 3811",
   streetAddress: "",
   addressLocality: "",
   addressRegion: "",

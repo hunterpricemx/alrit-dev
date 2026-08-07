@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 import { SERVICES, type ServiceId } from "@/lib/services";
 import { BLOG_CATEGORIES, categoryLabel } from "@/lib/content/blog-categories";
 import { FEATURES } from "@/lib/features";
+import Logo from "@/components/brand/Logo";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type MenuKey = "services" | "portfolio" | "blog" | "company";
@@ -99,7 +100,7 @@ export default function Header({ dict, locale, featured, latestPosts }: { dict: 
     <header className={`header${scrolled || open ? " header--scrolled" : ""}`} onMouseLeave={scheduleClose}>
       <div className="header__inner">
         <Link href={base} className="header__logo" aria-label="Alrit.dev" onMouseEnter={() => setOpen(null)} onClick={() => setMobileOpen(false)}>
-          Alrit<span className="header__logo-dot">.dev</span>
+          <Logo className="header__logo-svg" />
         </Link>
 
         {/* Desktop nav */}

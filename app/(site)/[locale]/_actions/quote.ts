@@ -2,9 +2,14 @@
 
 import { z } from "zod";
 import { db } from "@/lib/db";
+import { rateLimit, clientIp } from "@/lib/rate-limit";
 import { getSettingsAsync } from "@/lib/content/settings";
 import { sendMail, isMailConfigured } from "@/lib/mail/sender";
 import { formatMXN } from "@/lib/pricing";
+
+/** Holgado para una persona (calculadora + contacto), asfixiante para un script. */
+const MAX_QUOTES_PER_IP = 5;
+const QUOTE_WINDOW_MS = 60 * 60 * 1000; // 1 hora
 
 const schema = z.object({
   name: z.string().min(1).max(160),
@@ -28,6 +33,11 @@ export async function submitQuote(input: {
   amount: number | null;
   custom: boolean;
 }): Promise<{ ok: boolean }> {
+  // Acción pública y cara: escribe en la DB, manda un correo por Resend y hace
+  // POST al webhook del bot. Sin freno, un script llena la base y quema la cuota.
+  const limit = rateLimit(`quote:${await clientIp()}`, MAX_QUOTES_PER_IP, QUOTE_WINDOW_MS);
+  if (!limit.ok) return { ok: false };
+
   const parsed = schema.safeParse({
     name: input.name.trim(),
     email: input.email.trim().toLowerCase(),

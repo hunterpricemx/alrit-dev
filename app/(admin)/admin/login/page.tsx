@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import Logo from "@/components/brand/Logo";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function LoginPage() {
     <main className="adm-login">
       <form className="adm-login__card" onSubmit={onSubmit}>
         <h1 className="adm-login__brand">
-          Alrit<span>.dev</span>
+          <Logo className="adm-login__brand-svg" title="Alrit.dev" />
         </h1>
         <p className="adm-login__sub">Panel de administración</p>
 

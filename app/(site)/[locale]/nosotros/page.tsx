@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionaryAsync } from "@/lib/i18n";
 import { BreadcrumbJsonLd } from "@/lib/seo/jsonld";
-import Reveal from "@/components/ui/Reveal";
 
 const SITE_URL = "https://alrit.dev";
 
@@ -65,11 +64,13 @@ export default async function NosotrosPage({
         ]}
       />
       <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <Reveal>
+        {/* Sobre el pliegue: animacion CSS en vez del reveal por JS,
+            para no retrasar el LCP hasta la hidratacion. */}
+        <div className="reveal-now">
           <p className="text-sm font-semibold uppercase tracking-wide text-stone-500">{n.eyebrow}</p>
           <h1 className="mt-3 text-4xl font-extrabold tracking-tight text-stone-900 md:text-5xl">{n.title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-stone-600">{n.lede}</p>
-        </Reveal>
+        </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {dict.servicesX.stats.map((s) => (

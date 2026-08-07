@@ -84,8 +84,9 @@ export default function ServiceLanding({
         <span aria-current="page">{serviceTitle}</span>
       </nav>
 
-      {/* Hero */}
-      <Reveal className="svc__hero">
+      {/* Hero. Sobre el pliegue: entra por animacion CSS y no por el
+          reveal de JS, o el h1 no seria candidato a LCP hasta hidratar. */}
+      <div className="svc__hero reveal-now">
         <span className="svc__spark" aria-hidden="true" />
         <span className="svc__hero-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
@@ -103,7 +104,7 @@ export default function ServiceLanding({
             {content.cta}
           </Link>
         </div>
-      </Reveal>
+      </div>
 
       {/* Benefits */}
       <section className="svc__section svc__benefits-section">

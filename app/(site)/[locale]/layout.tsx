@@ -107,6 +107,15 @@ export default async function LocaleLayout({
       className={`${poppins.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* Marca que el JS esta vivo. Va primero y sin defer para que
+            corra antes del primer paint: el CSS solo esconde los bloques
+            .reveal cuando existe esta clase, de modo que si el script no
+            llega el sitio se ve completo igual. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add("js")`,
+          }}
+        />
         <OrganizationJsonLd url={SITE_URL} settings={settings} />
         <Providers>
           <PromoBanner dict={dict} />

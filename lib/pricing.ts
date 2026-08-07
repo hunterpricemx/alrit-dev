@@ -1,9 +1,13 @@
 /**
- * Modelo de precios de la calculadora.
+ * Modelo de precios de la calculadora (MXN).
  *
- * ⚠️ VALORES PLACEHOLDER (MXN). Reemplaza `base`, `weeks` y `EXTRAS` con los
- * precios y tiempos reales — la calculadora y el resumen se actualizan solos.
+ * Estos son los precios de lista. `base` y `weeks` se pueden sobrescribir desde
+ * /admin/pricing; los overrides los resuelve `getPricingAsync`, así que todo lo
+ * que muestre precios debe recibir un `Pricing` por argumento en vez de leer
+ * estas constantes directamente.
  */
+
+import type { ServiceId } from "@/lib/services";
 
 export type ProjectTypeId =
   | "landing"
@@ -84,6 +88,41 @@ export function getType(id: ProjectTypeId): ProjectType | undefined {
 
 export function getTypeFrom(types: ProjectType[], id: ProjectTypeId): ProjectType | undefined {
   return types.find((t) => t.id === id);
+}
+
+// ─── Precio por servicio ──────────────────────────────────────────────
+/**
+ * Único mapeo servicio → tipo de la calculadora. Lo consumen la home y el hub
+ * de servicios; si necesitas el precio de un servicio, pásalo por aquí.
+ *
+ * `landing` se etiqueta "Landing / Página web" en el flujo de leads, así que
+ * cubre tanto los sitios WordPress como el desarrollo web a medida.
+ *
+ * Ausentes a propósito: `systems`, `automation` y `chatbots` van a cotización.
+ */
+export const SERVICE_PRICE_TYPE: Partial<Record<ServiceId, ProjectTypeId>> = {
+  wordpress: "landing",
+  webdev: "landing",
+  ecommerce: "ecommerce",
+  lms: "lms",
+  realestate: "realestate",
+  mobile: "mobile",
+};
+
+/**
+ * Precio a mostrar para un servicio, respetando los overrides de /admin/pricing.
+ * Devuelve `null` cuando el servicio va a cotización a medida.
+ */
+export function servicePrice(
+  id: ServiceId,
+  pricing: Pricing,
+  now: Date = new Date(),
+): { current: number; was: number | null } | null {
+  const typeId = SERVICE_PRICE_TYPE[id];
+  if (!typeId) return null;
+  const type = getTypeFrom(pricing.types, typeId);
+  if (!type) return null;
+  return displayPrice(type, now);
 }
 
 export type Estimate =

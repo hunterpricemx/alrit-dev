@@ -348,6 +348,7 @@ const en: Dictionary = {
     title: "Web development and software tailored to your business",
     subtitle:
       "Pick the service you need. Every project is built to load fast, rank on Google and convert.",
+    customPrice: "Custom quote",
   },
   serviceLanding: {
     home: "Home",
