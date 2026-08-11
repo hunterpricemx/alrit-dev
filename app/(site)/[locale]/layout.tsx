@@ -15,6 +15,7 @@ import Footer from "@/components/layout/Footer";
 import Providers from "@/components/Providers";
 import SiteAnalytics from "@/components/analytics/SiteAnalytics";
 import SiteScripts from "@/components/analytics/SiteScripts";
+import WebChat from "@/components/analytics/WebChat";
 import ConsentBanner from "@/components/analytics/ConsentBanner";
 import { OrganizationJsonLd } from "@/lib/seo/jsonld";
 
@@ -126,6 +127,7 @@ export default async function LocaleLayout({
         </Providers>
         <SiteAnalytics gaId={gaId} />
         <SiteScripts scripts={scripts} />
+        <WebChat />
       </body>
     </html>
   );
