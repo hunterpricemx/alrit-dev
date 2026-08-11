@@ -7,6 +7,9 @@ import { getSettingsAsync } from "@/lib/content/settings";
 import { sendMail, isMailConfigured } from "@/lib/mail/sender";
 import { formatMXN } from "@/lib/pricing";
 
+/** Tope de espera del webhook. El visitante no debe pagar la lentitud del bot. */
+const WEBHOOK_TIMEOUT_MS = 5000;
+
 /** Holgado para una persona (calculadora + contacto), asfixiante para un script. */
 const MAX_QUOTES_PER_IP = 5;
 const QUOTE_WINDOW_MS = 60 * 60 * 1000; // 1 hora
@@ -69,16 +72,18 @@ export async function submitQuote(input: {
     return { ok: false };
   }
 
-  // Avisos best-effort (no rompen el guardado): email al negocio + webhook al bot.
+  // Avisos best-effort: el lead ya está guardado, así que un fallo aquí no debe
+  // romperle el envío al visitante. Pero se registra: un aviso que falla en
+  // silencio es un lead que nadie atiende.
   try {
     await notifyNewLead(parsed.data);
-  } catch {
-    // silencioso
+  } catch (err) {
+    console.error("[lead] falló el aviso por email:", err);
   }
   try {
     await notifyBot(parsed.data, quoteId);
-  } catch {
-    // silencioso
+  } catch (err) {
+    console.error("[lead] falló el webhook al bot:", err);
   }
 
   return { ok: true };
@@ -191,12 +196,19 @@ async function notifyBot(lead: z.infer<typeof schema>, id: string): Promise<void
     text: `Nuevo lead (${typeLabel}${lead.amount != null ? ` · ~${amountFormatted}` : ""}): ${lead.name} · ${lead.email} · ${phone}`,
   };
 
-  await fetch(url, {
+  // Con timeout: esta llamada se espera antes de responderle al visitante, así
+  // que un webhook colgado dejaría el formulario girando.
+  const res = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       ...(key ? { "x-lead-key": key } : {}),
     },
     body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(WEBHOOK_TIMEOUT_MS),
   });
+
+  // fetch no lanza ante un 4xx/5xx: sin esto, un 401 por clave mal puesta
+  // pasaría por éxito y el lead se perdería sin rastro.
+  if (!res.ok) throw new Error(`webhook respondió ${res.status}`);
 }
