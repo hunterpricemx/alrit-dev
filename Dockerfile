@@ -25,6 +25,15 @@ CMD ["npm", "run", "dev", "--", "-H", "0.0.0.0", "-p", "3000"]
 
 # ---------- builder (build de producción, output standalone) ----------
 FROM deps AS builder
+# Next incrusta las NEXT_PUBLIC_* al compilar, no al arrancar. El `.env` está
+# excluido en .dockerignore (y `env_file` de compose es solo de runtime), así
+# que sin estos ARG llegarían vacías al bundle y a las páginas prerenderizadas:
+# la analítica y el widget desaparecerían en cada reconstrucción.
+# No son secretos: viajan visibles en el HTML del sitio.
+ARG NEXT_PUBLIC_GA_ID=""
+ARG NEXT_PUBLIC_WEBCHAT_KEY=""
+ENV NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID
+ENV NEXT_PUBLIC_WEBCHAT_KEY=$NEXT_PUBLIC_WEBCHAT_KEY
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build

@@ -68,6 +68,12 @@ services:
     build:
       context: .
       target: runner
+      # Compose interpola estas desde el .env de esta carpeta. Hacen falta en el
+      # build porque Next incrusta las NEXT_PUBLIC_* al compilar; `env_file` de
+      # abajo solo cubre el runtime y llegaría tarde.
+      args:
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID:-}
+        NEXT_PUBLIC_WEBCHAT_KEY: ${NEXT_PUBLIC_WEBCHAT_KEY:-}
     restart: unless-stopped
     env_file: .env
     ports:
