@@ -39,6 +39,24 @@
   .header__logo-svg { height: 28px; }
 }
 
+/* En pantallas estrechas el logo más el trío ES/EN + Ingresar + hamburguesa no
+   cabe en `.header__inner`, y el header acaba más ancho que el viewport. Eso
+   arrastra el ancho del documento: `.drawer` y `.consent` son `fixed` con
+   `left/right`, así que heredan el ancho inflado y desbordan también.
+   Medido: 42px de exceso a 320px y 1px a 360px; a 390px ya entra.
+   Se ataca la causa en vez de tapar con `overflow-x: hidden` en el body, que
+   además rompería `position: sticky`. */
+@media (max-width: 400px) {
+  .header__inner { padding-left: 1rem; padding-right: 1rem; }
+  .header__actions { gap: 0.5rem; }
+}
+/* Solo por debajo de ~350px hace falta además soltar el enlace de acceso: el
+   ajuste de arriba ya basta para 360px. El acceso no se pierde, el mismo enlace
+   vive dentro del menú desplegable. */
+@media (max-width: 350px) {
+  .header__login { display: none; }
+}
+
 /* ---- desktop nav ---- */
 .header__nav { display: none; }
 @media (min-width: 980px) {
